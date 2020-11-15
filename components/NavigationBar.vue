@@ -26,7 +26,7 @@
             </li>
           </ul>
           <button class="cta-button">
-              Register Now
+            Register Now
           </button>
         </div>
       </div>
@@ -46,12 +46,13 @@ export default {
 
 <style lang="scss" scoped>
 .navigation-bar {
+  z-index: 99;
+  background: var(--color-secondary-transparent);
   .navigation-contents {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background: var(--color-secondary);
     padding: 10px;
 
     .branding {
@@ -72,37 +73,37 @@ export default {
       align-items: center;
 
       ul.nav-links {
-          display: flex;
-          align-items: center;
-          margin-right: 10px;
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
 
-          li {
-              a {
-                  padding: 10px 15px;
-                  color: var(--font-color);
-                  opacity: 0.7;
-                  transition: 0.2s all ease-in-out;
+        li {
+          a {
+            padding: 10px 15px;
+            color: var(--font-color);
+            opacity: 0.7;
+            transition: 0.2s all ease-in-out;
 
-                  &:hover {
-                      opacity: 1;
-                      cursor: pointer;
-                  }
-              }
+            &:hover {
+              opacity: 1;
+              cursor: pointer;
+            }
           }
+        }
       }
 
       .cta-button {
-          padding: 15px 20px;
-          background: var(--gradient-blue);
-          border: 0;
-          border-radius: 5px;
-          color: var(--font-color);
-          font-weight: bold;
-          box-shadow: 0px 10px 20px rgba(40, 129, 245, 0.164);
+        padding: 15px 20px;
+        background: var(--gradient-blue);
+        border: 0;
+        border-radius: 5px;
+        color: var(--font-color);
+        font-weight: bold;
+        box-shadow: 0px 10px 20px rgba(40, 129, 245, 0.164);
 
-          &:hover {
-              cursor: pointer;
-          }
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }
