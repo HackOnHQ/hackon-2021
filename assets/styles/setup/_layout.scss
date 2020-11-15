@@ -1,0 +1,24 @@
+html,
+body,
+#__nuxt,
+#__layout {
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-secondary);
+}
+
+.smooth-shadow {
+  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.03);
+  -moz-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.03);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+.primary-shadow {
+  -webkit-box-shadow: 0px 10px 30px rgba(10, 100, 219, 0.03);
+  -moz-box-shadow: 0px 10px 30px rgba(10, 100, 219, 0.03);
+  box-shadow: 0px 10px 30px rgba(10, 100, 219, 0.03);
+}
+
+*:focus {
+  outline: none;
+}
