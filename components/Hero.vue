@@ -23,6 +23,7 @@
             Register Now<ArrowRightIcon class="icon" />
           </div>
         </button>
+        <p class="call-for-proposals">Interested in giving a talk or workshop? <a href="">CFPs Open Now!</a></p>
       </div>
       <div class="dummy-circle">
         <div class="inner-circle"></div>
@@ -130,6 +131,15 @@ export default {
         box-shadow: 0px 10px 20px rgba(40, 129, 245, 0.164);
         cursor: pointer;
       }
+    }
+
+    .call-for-proposals {
+        margin-top: 15px;
+        font-size: 0.9rem;
+        
+        a {
+            color: var(--color-accent);
+        }
     }
   }
 }
