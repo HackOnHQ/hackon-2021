@@ -8,6 +8,9 @@
         alignItems: 'center'
       }"
     >
+      <div class="dummy-circle">
+        <div class="inner-circle"></div>
+      </div>
       <div class="texts">
         <h1 class="hero-text">Let's Build Big!</h1>
         <h1 class="hero-text">Pan-India Virtual Hackathon</h1>
@@ -23,10 +26,9 @@
             Register Now<ArrowRightIcon class="icon" />
           </div>
         </button>
-        <p class="call-for-proposals">Interested in giving a talk or workshop? <a href="">CFPs Open Now!</a></p>
-      </div>
-      <div class="dummy-circle">
-        <div class="inner-circle"></div>
+        <p class="call-for-proposals">
+          Interested in giving a talk or workshop? <a href="">CFPs Open Now!</a>
+        </p>
       </div>
     </Container>
   </div>
@@ -67,6 +69,13 @@ export default {
     background: var(--color-secondary);
     border-radius: 100%;
   }
+
+  @include respond-below(sm) {
+    right: 0;
+    // right: 0;
+    margin: auto auto;
+    // width: 100%;
+  }
 }
 
 .home-page-hero {
@@ -81,6 +90,7 @@ export default {
   .texts {
     display: flex;
     flex-direction: column;
+    z-index: 10;
 
     h1.hero-text {
       font-size: 2.5rem;
@@ -134,12 +144,12 @@ export default {
     }
 
     .call-for-proposals {
-        margin-top: 15px;
-        font-size: 0.9rem;
-        
-        a {
-            color: var(--color-accent);
-        }
+      margin-top: 15px;
+      font-size: 0.9rem;
+
+      a {
+        color: var(--color-accent);
+      }
     }
   }
 }

@@ -13,16 +13,16 @@
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="/">About</a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a href="/">Speakers</a>
+              <a href="#speakers">Speakers</a>
             </li>
             <li>
-              <a href="/">Schedule</a>
+              <a href="#schedule">Schedule</a>
             </li>
             <li>
-              <a href="/">FAQ</a>
+              <a href="#faq">FAQ</a>
             </li>
           </ul>
           <button class="cta-button">
@@ -71,6 +71,10 @@ export default {
     .menu-area {
       display: flex;
       align-items: center;
+
+      @include respond-below(sm) {
+        display: none;
+      }
 
       ul.nav-links {
         display: flex;

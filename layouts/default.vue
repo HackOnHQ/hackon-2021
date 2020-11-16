@@ -4,15 +4,18 @@
     <main>
       <Nuxt />
     </main>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import NavigationBar from '~/components/NavigationBar';
+import Footer from '~/components/Footer';
 
 export default {
   components: {
     NavigationBar,
+    Footer
   }
 }
 </script>

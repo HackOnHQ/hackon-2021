@@ -26,7 +26,9 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
-  buildModules: [],
+  buildModules: [
+    '@nuxtjs/style-resources',
+  ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: ["nuxt-webfontloader"],
@@ -39,6 +41,6 @@ export default {
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
   styleResources: {
-    scss: ["assets/styles/setup/_mixins.scss"]
+    scss: ["./assets/styles/setup/_mixins.scss"]
   }
 };
