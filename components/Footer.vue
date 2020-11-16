@@ -30,7 +30,7 @@
         </div>
       </div>
       <div class="attribution">
-          Designed by <a href="https://twitter.com/haxzie" target="_blank" rel="noopener noreferrer">@haxzie</a>
+          Designed by <a href="https://twitter.com/haxzie_" target="_blank" rel="noopener noreferrer">@haxzie</a>
       </div>
     </Container>
   </div>
