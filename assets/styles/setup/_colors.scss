@@ -1,6 +1,6 @@
 :root {
-  --color-secondary: #0C1724;
-  --color-secondary-light: #141F2D;
+  --color-secondary: #0C0D21;
+  --color-secondary-light: #151629;
   --color-secondary-transparent: #0c172446;
   --color-primary: #2882F5;
   --color-primary-light: #2881f52f;
@@ -15,12 +15,11 @@
   --font-color-light: #ffffff42;
   --border-color: rgb(219, 221, 223);
   --border-color-light: #eee;
-
+  --colour-pink: #E58AB2;
   --color-error: #e97414;
   --color-success: #01c251;
 
-  --gradient-blue: linear-gradient(94.99deg, #00FFA4 2.48%, #6E12CA 52.18%, #2882F5 95.72%);;
-  // --gradient-pink: linear-gradient(113.81deg, #e92c7e 15.19%, #e93058 71.43%);
+  --gradient-blue: linear-gradient(94.99deg, #00FFA4 2.48%, #6E12CA 52.18%, #2882F5 95.72%);
 
   // --default-shadow: 0px 16px 30px rgba(7, 74, 126, 0.06);
   --default-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
