@@ -32,7 +32,7 @@ export default {
   .line {
     flex: 1;
     height: 1px;
-    background: var(--gradient-blue);
+    background: var(--colour-pink);
   }
 
   @include respond-below(sm) {

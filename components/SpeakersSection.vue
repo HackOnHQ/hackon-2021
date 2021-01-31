@@ -1,7 +1,7 @@
 <template>
   <Container id="speakers">
     <section class="content-section">
-      <HashHeader title="Speakers" />
+      <HashHeader title="Past Speakers" />
       <div class="contents">
         <div class="speakers-grid">
           <div
@@ -124,7 +124,7 @@ export default {
           display: flex;
           align-items: center;
           justify-content: center;
-          //   background: var(--gradient-blue);
+          background: var(--colour-pink);
           border-radius: 50%;
           transition: 0.3s all ease-in-out;
 
