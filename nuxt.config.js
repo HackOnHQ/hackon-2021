@@ -34,7 +34,7 @@ export default {
   modules: ["nuxt-webfontloader"],
   webfontloader: {
     google: {
-      families: ["Sen", "Roboto Mono"] //Loads Lato font with weights 400 and 700
+      families: ["Sen", "Roboto Mono", "Inter"] //Loads Lato font with weights 400 and 700
     }
   },
 

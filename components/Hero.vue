@@ -5,12 +5,10 @@
         position: 'relative',
         height: '100%',
         display: 'flex',
-        alignItems: 'center'
+        alignItems: 'center',
       }"
     >
-      <div class="dummy-circle">
-        <div class="inner-circle"></div>
-      </div>
+      <div class="hero-img"></div>
       <div class="texts">
         <h1 class="hero-text">Let's Build Big!</h1>
         <h1 class="hero-text">Pan-India Virtual Hackathon</h1>
@@ -41,43 +39,12 @@ import ArrowRightIcon from "~/components/Icons/ArrowRight";
 export default {
   components: {
     Container,
-    ArrowRightIcon
-  }
+    ArrowRightIcon,
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-.dummy-circle {
-  position: absolute;
-  right: 50px;
-  top: 0px;
-  bottom: 0px;
-  margin: auto 0;
-  z-index: 0;
-  background: var(--gradient-blue);
-  border-radius: 100%;
-  padding: 10px;
-  width: 510px;
-  height: 510px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  .inner-circle {
-    width: 500px;
-    height: 500px;
-    background: var(--color-secondary);
-    border-radius: 100%;
-  }
-
-  @include respond-below(sm) {
-    right: 0;
-    // right: 0;
-    margin: auto auto;
-    // width: 100%;
-  }
-}
-
 .home-page-hero {
   height: 600px;
   max-height: 800px;
@@ -87,6 +54,36 @@ export default {
   align-items: center;
   justify-content: center;
 
+  .hero-img {
+    background-image: url(~assets/hero-img.svg);
+    position: absolute;
+    background-position: right top;
+    width: 850px;
+    height: 730px;
+    right: -30px;
+    top: -75px;
+    -webkit-mask-image: radial-gradient(
+      54.23% 54.23% at 54.76% 43.67%,
+      #c4c4c4 0%,
+      rgba(196, 196, 196, 0) 100%
+    );
+    mask-image: radial-gradient(
+      54.23% 54.23% at 54.76% 43.67%,
+      #c4c4c4 0%,
+      rgba(196, 196, 196, 0) 100%
+    );
+
+    @include respond-below(md) {
+      background-position: center top;
+      right: -10px;
+      width: 80%;
+    }
+
+    @include respond-below(sm) {
+      right: -10px;
+    }
+  }
+  
   .texts {
     display: flex;
     flex-direction: column;

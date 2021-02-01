@@ -4,7 +4,7 @@
       <div class="navigation-contents">
         <!-- Branding area -->
         <div class="branding">
-          <h1 class="brand-text">HACKON<span>2.0</span></h1>
+          <h1 class="brand-text">HACK<span class="brand-char-o">O</span>N<span class="brand-edition">2.0</span></h1>
         </div>
         <!-- Menu area -->
         <div class="menu-area">
@@ -47,7 +47,6 @@ export default {
 <style lang="scss" scoped>
 .navigation-bar {
   z-index: 99;
-  background: var(--color-secondary-transparent);
   .navigation-contents {
     display: flex;
     flex-direction: row;
@@ -61,7 +60,11 @@ export default {
         font-weight: bold;
         font-size: 1.5rem;
 
-        span {
+        .brand-char-o {
+          color: #E58AB2;
+        }
+
+        .brand-edition {
           color: var(--font-color-light);
           margin-left: 10px;
         }
@@ -71,6 +74,7 @@ export default {
     .menu-area {
       display: flex;
       align-items: center;
+      font-family: 'Inter';
 
       @include respond-below(sm) {
         display: none;
@@ -102,7 +106,7 @@ export default {
         border: 0;
         border-radius: 5px;
         color: var(--color-secondary);
-        font-weight: bold;
+        // font-weight: bold;
         box-shadow: 0px 10px 20px rgba(40, 129, 245, 0.164);
 
         &:hover {
