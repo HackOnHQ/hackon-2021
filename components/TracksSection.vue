@@ -1,10 +1,13 @@
 <template>
   <Container>
     <section class="content-section">
-      <HashHeader title="Tracks"/>
+      <HashHeader title="Tracks" />
       <div class="contents">
         <div class="grid">
-          <div class="panel text">
+          <div class="panel text box-one">
+            <div class="track-box healthcare">
+              <img src="~/assets/track-healthcare.png" />
+            </div>
             <div class="texts">
               <h3 class="title">HealthCare Technology</h3>
               <p class="description">
@@ -12,27 +15,13 @@
                 sit convallis sit odio ante.
               </p>
             </div>
-            <div class="texts">
-              <h3 class="title">Remote Work and Ed.</h3>
-              <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in
-                sit convallis sit odio ante.
-              </p>
-            </div>
           </div>
-          <div class="panel illustration">
-              <img src="~/assets/tracks-illustration.svg"/>
-          </div>
-          <div class="panel text">
-            <div class="texts">
-              <h3 class="title">Awareness & Behaviour</h3>
-              <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in
-                sit convallis sit odio ante.
-              </p>
+          <div class="panel text box-two">
+            <div class="track-box mental-health">
+              <img src="~/assets/track-mental-health.png" />
             </div>
             <div class="texts">
-              <h3 class="title">Supporting COVID Patients</h3>
+              <h3 class="title">Mental Health</h3>
               <p class="description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in
                 sit convallis sit odio ante.
@@ -52,8 +41,8 @@ import HashHeader from "~/components/HashHeader";
 export default {
   components: {
     Container,
-    HashHeader
-  }
+    HashHeader,
+  },
 };
 </script>
 
@@ -63,60 +52,85 @@ export default {
   flex-direction: column;
   padding: 20px 0;
 
+  .track-box {
+    border-radius: 20%;
+    display: inline-block;
+    padding: 1rem;
+    height: 5.5rem;
+    margin-top: 1rem;
+    width: 5.5rem;
+    box-sizing: border-box;
+  }
+
+  .healthcare {
+    border: 3px solid #e58ab2;
+  }
+
+  .mental-health {
+    border: 3px solid #7fc1c8;
+  }
+
+  img {
+    float: left;
+    width: 3rem;
+    align-content: center;
+  }
+
   .contents {
     padding: 10px 0;
 
     .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 4rem;
 
-        .panel {
-            display: flex;
-            flex-direction: column;
-            &.text {
-                justify-content: space-between;
-            }
-            &.illustration {
-                justify-content: center;
-                align-items: center;
-
-                img {
-                    width: 250px;
-                }
-            }
-
-            .texts {
-                display: flex;
-                flex-direction: column;
-                padding: 10px;
-
-                &:last-child {
-                    margin-top: 50px;
-                }
-
-                .title {
-                    font-weight: bold;
-                    font-size: 1.2rem;
-                }
-
-                .description {
-                    opacity: 0.7;
-                }
-            }
+      .panel {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &.text {
+          justify-content: space-between;
         }
 
-        @include respond-below(sm) {
-          grid-template-columns: 1fr;
+        .texts {
+          margin-left: 1em;
+          display: flex;
+          flex-direction: column;
+          padding: 10px;
 
-          .illustration {
-            display: none;
+          .title {
+            font-family: "Roboto Mono";
+            font-weight: 400;
+            font-size: 1.5rem;
           }
 
+          .description {
+            margin-top: 1em;
+            opacity: 0.7;
+          }
+        }
+      }
+
+      @include respond-below(sm) {
+        .box-one {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 1;
+        }
+
+        .box-two {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 2;
+        }
+
+        .grid {
           .texts {
             margin-top: 20px;
             padding: 10px 0;
           }
         }
+      }
     }
   }
 }
