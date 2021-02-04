@@ -106,11 +106,13 @@ export default {
         border: 0;
         border-radius: 5px;
         color: var(--color-secondary);
-        // font-weight: bold;
+        font-weight: bold;
         box-shadow: 0px 10px 20px rgba(40, 129, 245, 0.164);
 
         &:hover {
           cursor: pointer;
+          background: transparent;
+          color: var(--font-color);
         }
       }
     }
