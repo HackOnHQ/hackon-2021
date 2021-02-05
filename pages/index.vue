@@ -1,24 +1,26 @@
 <template>
   <div class="home-page">
-    <Hero/>
-    <ContentSection/>
-    <TracksSection/>
-    <SpeakersSection/>
-    <WorkshopsSection/>
-    <SchedulesSection/>
-    <SponsorsSection/>
+    <Hero />
+    <ContentSection />
+    <TracksSection />
+    <SpeakersSection />
+    <WorkshopsSection />
+    <SchedulesSection />
+    <SponsorsSection />
+    <FAQSection />
   </div>
 </template>
 
 <script>
-import Container from '~/components/Container';
-import Hero from '~/components/Hero';
-import ContentSection from '~/components/ContentSection';
-import TracksSection from '~/components/TracksSection';
-import SpeakersSection from '~/components/SpeakersSection';
-import WorkshopsSection from '~/components/WorkshopsSection';
-import SponsorsSection from '~/components/SponsorsSection';
-import SchedulesSection from '~/components/SchedulesSection';
+import Container from "~/components/Container";
+import Hero from "~/components/Hero";
+import ContentSection from "~/components/ContentSection";
+import TracksSection from "~/components/TracksSection";
+import SpeakersSection from "~/components/SpeakersSection";
+import WorkshopsSection from "~/components/WorkshopsSection";
+import FAQSection from "~/components/FAQSection";
+import SponsorsSection from "~/components/SponsorsSection";
+import SchedulesSection from "~/components/SchedulesSection";
 
 export default {
   components: {
@@ -29,9 +31,10 @@ export default {
     SpeakersSection,
     SponsorsSection,
     SchedulesSection,
-    WorkshopsSection
-  }
-}
+    WorkshopsSection,
+    FAQSection,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
