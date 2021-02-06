@@ -8,29 +8,38 @@
             <p class="description">
               Hackon &copy; 2020
             </p>
-          </div>
+            <span> Hackon and it's trademarks are
+              associated as a registered
+              <i style="color: var(--colour-pink)">Non-Profit</i> 
+              Company
+            </span>
+        </div>
+        <div class="socialLinks">
+          <a href="https://instagram.com/hackon">
+          <img src="~/assets/facebook.svg" alt="FacebookLink" class="socialImage"/>
+          </a>
+          <a href="https://instagram.com/hackon">
+          <img src="~/assets/discord.svg" alt="DiscordLink" class="socialImage"/>
+          </a>
+          <a href="https://instagram.com/hackon">
+          <img src="~/assets/twitter.svg" alt="TwitterLink" class="socialImage"/>
+          </a>
+        </div>
         </div>
 
         <div class="panel">
           <h4 class="title">Links</h4>
           <a href="https://github.com">Code Of Conduct</a>
-          <a href="https://github.com">Privacy Policy</a>
-        
-          <h4 class="title">Social</h4>
-          <a href="https://instagram.com/hackon">Twitter</a>
-          <a href="https://instagram.com/hackon">Instagram</a>
-          <a href="https://instagram.com/hackon">Facebook</a>
-          <a href="https://instagram.com/hackon">Discord</a>
+          <a href="https://github.com">Oath of Undertaking</a>
+          <a href="https://github.com">Sponsorship Brochure</a>
+          <a href="https://github.com">Branding Guidelines</a>
         </div>
 
         <div class="panel">
-          <div class="title">Contact us</div>
+          <div class="title">Contact Us</div>
           <p class="info">hello@hackon.tech</p>
           <p class="info">+919876543210</p>
         </div>
-      </div>
-      <div class="attribution">
-          Designed by <a href="https://twitter.com/haxzie_" target="_blank" rel="noopener noreferrer">@haxzie</a>
       </div>
     </Container>
   </div>
@@ -48,30 +57,29 @@ export default {
 
 <style lang="scss" scoped>
 .footer {
-  padding: 15px;
+  padding: 60px 30px;
   background: var(--color-secondary-light);
   display: flex;
   flex-direction: column;
 
+  @include respond-between(sm, md) {
+    padding: 60px 20px;
+}
+
   .contents {
     display: flex;
     flex-direction: column;
-
-    .attribution {
-        padding: 10px 0;
-        border-top: 1px solid var(--color-secondary);
-        margin-top: 20px;
-
-        a {
-            color: var(--color-accent);
-        }
     }
 
     .content-grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      column-gap: 15px;
-      row-gap: 15px;
+      column-gap: 180px;
+      row-gap: 30px;
+
+    @include respond-below(md) {
+    column-gap: 140px;
+  }
 
       @include respond-below(sm) {
         grid-template-columns: 1fr;
@@ -81,7 +89,9 @@ export default {
     .panel {
       display: flex;
       flex-direction: column;
+      
       .branding {
+        
         h1.brand-text {
           font-family: var(--title-font);
           font-weight: bold;
@@ -90,6 +100,37 @@ export default {
           span {
             color: var(--font-color-light);
             margin-left: 10px;
+          }
+        }
+      }
+
+      .socialLinks {
+        padding: 20px 0 10px;
+
+        a {
+          padding: 15px 10px;
+          margin: 10px;
+          background: #252638;
+          border-radius: 50%;
+          text-align: center;
+
+          @include respond-between(sm, md) {
+            margin: 0;
+            padding: 15px;
+        }
+
+          img {
+            height: 30px;
+            width: 30px;
+            position: relative;
+            top: 9px;
+
+            @include respond-between(sm, md) {
+              height: 20px;
+              width: 20px;
+              position: relative;
+              top: 5px;  
+        }
           }
         }
       }
@@ -103,9 +144,8 @@ export default {
       }
 
       a {
-          color: var(--color-accent);
+          color: var(--colour-pink);
       }
     }
   }
-}
 </style>
