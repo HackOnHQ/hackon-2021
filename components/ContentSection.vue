@@ -90,7 +90,7 @@ export default {
   .stats {
     text-align: center;
     justify-content: center;
-    padding: 20px;
+    padding: 30px 0 10px;
 
     .gridLayout {
       display: grid;
