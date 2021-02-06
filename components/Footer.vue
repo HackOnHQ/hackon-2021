@@ -93,6 +93,10 @@ export default {
       column-gap: 140px;
     }
 
+    @include respond-between(sm, md) {
+      column-gap: 90px;
+    }
+
     @include respond-below(sm) {
       grid-template-columns: 1fr;
     }
