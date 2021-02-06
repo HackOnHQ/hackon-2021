@@ -4,7 +4,11 @@
       <div class="navigation-contents">
         <!-- Branding area -->
         <div class="branding">
-          <h1 class="brand-text">HACK<span class="brand-char-o">O</span>N<span class="brand-edition">2.0</span></h1>
+          <h1 class="brand-text">
+            HACK<span class="brand-char-o">O</span>N<span class="brand-edition"
+              >2.0</span
+            >
+          </h1>
         </div>
         <!-- Menu area -->
         <div class="menu-area">
@@ -61,7 +65,7 @@ export default {
         font-size: 1.5rem;
 
         .brand-char-o {
-          color: #E58AB2;
+          color: #e58ab2;
         }
 
         .brand-edition {
@@ -74,7 +78,7 @@ export default {
     .menu-area {
       display: flex;
       align-items: center;
-      font-family: 'Inter';
+      font-family: "Inter";
 
       @include respond-below(sm) {
         display: none;

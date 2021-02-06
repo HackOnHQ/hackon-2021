@@ -62,7 +62,7 @@ export default {
           time: "9:00 PM",
           speaker: {
             name: "Paras Pundir",
-            designation: "Designation",
+            designation: "Program Manager, Reactor Bangalore",
             picture: "https://miro.medium.com/fit/c/1360/1360/2*1d2PU06qLbaY-3EqeQBUZQ.jpeg",
           },
         },

@@ -8,23 +8,35 @@
             <p class="description">
               Hackon &copy; 2020
             </p>
-            <span> Hackon and it's trademarks are
-              associated as a registered
-              <i style="color: var(--colour-pink)">Non-Profit</i> 
+            <span>
+              Hackon and it's trademarks are associated as a registered
+              <i style="color: var(--colour-pink)">Non-Profit</i>
               Company
             </span>
-        </div>
-        <div class="socialLinks">
-          <a href="https://instagram.com/hackon">
-          <img src="~/assets/facebook.svg" alt="FacebookLink" class="socialImage"/>
-          </a>
-          <a href="https://instagram.com/hackon">
-          <img src="~/assets/discord.svg" alt="DiscordLink" class="socialImage"/>
-          </a>
-          <a href="https://instagram.com/hackon">
-          <img src="~/assets/twitter.svg" alt="TwitterLink" class="socialImage"/>
-          </a>
-        </div>
+          </div>
+          <div class="socialLinks">
+            <a href="https://instagram.com/hackon">
+              <img
+                src="~/assets/facebook.svg"
+                alt="FacebookLink"
+                class="socialImage"
+              />
+            </a>
+            <a href="https://instagram.com/hackon">
+              <img
+                src="~/assets/discord.svg"
+                alt="DiscordLink"
+                class="socialImage"
+              />
+            </a>
+            <a href="https://instagram.com/hackon">
+              <img
+                src="~/assets/twitter.svg"
+                alt="TwitterLink"
+                class="socialImage"
+              />
+            </a>
+          </div>
         </div>
 
         <div class="panel">
@@ -64,88 +76,87 @@ export default {
 
   @include respond-between(sm, md) {
     padding: 60px 20px;
-}
+  }
 
   .contents {
     display: flex;
     flex-direction: column;
-    }
+  }
 
-    .content-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      column-gap: 180px;
-      row-gap: 30px;
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 180px;
+    row-gap: 30px;
 
     @include respond-below(md) {
-    column-gap: 140px;
+      column-gap: 140px;
+    }
+
+    @include respond-below(sm) {
+      grid-template-columns: 1fr;
+    }
   }
 
-      @include respond-below(sm) {
-        grid-template-columns: 1fr;
+  .panel {
+    display: flex;
+    flex-direction: column;
+
+    .branding {
+      h1.brand-text {
+        font-family: var(--title-font);
+        font-weight: bold;
+        font-size: 1.2rem;
+
+        span {
+          color: var(--font-color-light);
+          margin-left: 10px;
+        }
       }
     }
 
-    .panel {
-      display: flex;
-      flex-direction: column;
-      
-      .branding {
-        
-        h1.brand-text {
-          font-family: var(--title-font);
-          font-weight: bold;
-          font-size: 1.2rem;
-
-          span {
-            color: var(--font-color-light);
-            margin-left: 10px;
-          }
-        }
-      }
-
-      .socialLinks {
-        padding: 20px 0 10px;
-
-        a {
-          padding: 15px 10px;
-          margin: 10px;
-          background: #252638;
-          border-radius: 50%;
-          text-align: center;
-
-          @include respond-between(sm, md) {
-            margin: 0;
-            padding: 15px;
-        }
-
-          img {
-            height: 30px;
-            width: 30px;
-            position: relative;
-            top: 9px;
-
-            @include respond-between(sm, md) {
-              height: 20px;
-              width: 20px;
-              position: relative;
-              top: 5px;  
-        }
-          }
-        }
-      }
-
-      .description {
-        opacity: 0.5;
-      }
-
-      .title {
-          padding: 10px 0;
-      }
+    .socialLinks {
+      padding: 20px 0 10px;
 
       a {
-          color: var(--colour-pink);
+        padding: 15px 10px;
+        margin: 10px;
+        background: #252638;
+        border-radius: 50%;
+        text-align: center;
+
+        @include respond-between(sm, md) {
+          margin: 0;
+          padding: 15px;
+        }
+
+        img {
+          height: 30px;
+          width: 30px;
+          position: relative;
+          top: 9px;
+
+          @include respond-between(sm, md) {
+            height: 20px;
+            width: 20px;
+            position: relative;
+            top: 5px;
+          }
+        }
       }
     }
+
+    .description {
+      opacity: 0.5;
+    }
+
+    .title {
+      padding: 10px 0;
+    }
+
+    a {
+      color: var(--colour-pink);
+    }
   }
+}
 </style>
