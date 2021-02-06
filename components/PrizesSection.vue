@@ -9,8 +9,8 @@
               <img :src="prize.image" :alt="prize.name" class="prizeImage" />
             </div>
             <div class="texts">
-            <p class="prizeName">{{ prize.name }}</p>
-            <h4 class="prizeAmount">{{ prize.amount }}</h4>
+              <p class="prizeName">{{ prize.name }}</p>
+              <h4 class="prizeAmount">{{ prize.amount }}</h4>
             </div>
           </div>
         </div>
@@ -35,28 +35,32 @@ export default {
           name: "First Prize",
           image: require("~/assets/first.svg"),
           amount: "₹25,000"
-        },        {
+        },
+        {
           name: "Second Prize",
           image: require("~/assets/second.svg"),
           amount: "₹15,000"
-        },        {
+        },
+        {
           name: "Third Prize",
           image: require("~/assets/third.svg"),
           amount: "₹10,000"
-        },        {
+        },
+        {
           name: "Best hack built on Blockchain",
           image: require("~/assets/blockchain.png"),
           amount: "₹5,000"
-        },        {
+        },
+        {
           name: "Best hack built on Elastic",
           image: require("~/assets/elastic.png"),
           amount: "₹5,000"
-        },        {
+        },
+        {
           name: "Best hack built on voice",
           image: require("~/assets/voice.svg"),
           amount: "₹5,000"
-        },
-        
+        }
       ]
     };
   }
@@ -68,7 +72,7 @@ export default {
   display: flex;
   flex-direction: column;
   padding: 20px 0;
-  
+
   .contents {
     padding: 20px 0;
 
@@ -81,11 +85,10 @@ export default {
       @include respond-below(md) {
         grid-template-columns: repeat(2, 1fr);
       }
-      
+
       @include respond-below(sm) {
         grid-template-columns: repeat(1, 1fr);
       }
-      
 
       .card {
         display: flex;
@@ -104,9 +107,9 @@ export default {
             margin: 10px;
           }
         }
-        
+
         .texts {
-            text-align: center;
+          text-align: center;
           .prizeAmount {
             font-size: 1.2rem;
             font-weight: bold;

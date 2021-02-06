@@ -86,7 +86,7 @@ export default {
       row-gap: 20px;
 
       @include respond-below(sm) {
-          grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
       }
 
       .card {
@@ -98,7 +98,7 @@ export default {
         min-height: 200px;
 
         .texts {
-            flex: 1;
+          flex: 1;
           .title {
             font-size: 1.2rem;
             font-weight: bold;
@@ -112,15 +112,15 @@ export default {
         }
 
         .description {
-            display: flex;
-            align-items: center;
+          display: flex;
+          align-items: center;
 
-            img.avatar {
-                width: 30px;
-                height: 30px;
-                border-radius: 50%;
-                margin-right: 10px;
-            }
+          img.avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+          }
         }
       }
     }

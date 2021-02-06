@@ -38,7 +38,7 @@ export default {
   @include respond-below(sm) {
     flex-direction: column;
     align-items: stretch;
-    
+
     .line {
       flex: none;
       height: 1px;

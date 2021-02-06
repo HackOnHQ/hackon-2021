@@ -5,7 +5,7 @@
         position: 'relative',
         height: '100%',
         display: 'flex',
-        alignItems: 'center',
+        alignItems: 'center'
       }"
     >
       <div class="hero-img"></div>
@@ -39,8 +39,8 @@ import ArrowRightIcon from "~/components/Icons/ArrowRight";
 export default {
   components: {
     Container,
-    ArrowRightIcon,
-  },
+    ArrowRightIcon
+  }
 };
 </script>
 
@@ -83,7 +83,7 @@ export default {
       right: -10px;
     }
   }
-  
+
   .texts {
     display: flex;
     flex-direction: column;

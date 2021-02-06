@@ -1,10 +1,8 @@
 <template>
   <Container id="schedule">
     <section class="content-section">
-      <HashHeader title="Schedule"/>
-      <div class="contents">
-        
-      </div>
+      <HashHeader title="Schedule" />
+      <div class="contents"></div>
     </section>
   </Container>
 </template>
@@ -27,11 +25,11 @@ export default {
   flex-direction: column;
   padding: 20px 0;
   .contents {
-      padding: 10px 0;
+    padding: 10px 0;
 
-      p {
-          padding-top: 20px;
-      }
+    p {
+      padding-top: 20px;
+    }
   }
 }
 </style>
