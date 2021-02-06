@@ -85,20 +85,6 @@ export default {
   align-items: center;
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #171e2e;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
 .modal {
   max-width: 600px;
   min-width: 40%;
