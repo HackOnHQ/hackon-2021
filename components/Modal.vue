@@ -27,10 +27,10 @@ export default {
         <div class="hashtags">#workshop #hackon2</div>
         <div class="date">
           <img src="~/assets/calender.svg" />
-          {{ workshop.date }} IST
+          {{ workshop.date }} {{ workshop.time }} IST
         </div>
         <section class="modal-body" id="modalDescription">
-          <div class="title">About the workshop</div>
+          <div v-if="workshop.about !== undefined" class="title">About the workshop</div>
           <div class="content">
             {{ workshop.about }}
           </div>
@@ -46,7 +46,7 @@ export default {
               </span>
             </div>
           </div>
-          <div class="content">
+          <div class="content" v-if="workshop.speaker.about !== undefined">
             {{ workshop.speaker.about }}
           </div>
         </section>
@@ -101,6 +101,7 @@ export default {
 
 .modal {
   max-width: 600px;
+  min-width: 40%;
   background: #171e2e;
   padding: 3rem;
   max-height: 80vh;
