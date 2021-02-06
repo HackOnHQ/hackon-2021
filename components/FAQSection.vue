@@ -149,7 +149,7 @@ export default {
           margin: 0px 6px 6px;
           height: 100%;
           background-color: #151629;
-          max-height: 100px;
+          max-height: 200px;
           overflow: hidden;
           transition: all 0.3s ease-out;
 
