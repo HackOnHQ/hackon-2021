@@ -60,7 +60,7 @@ export default {
     background-position: right top;
     width: 850px;
     height: 730px;
-    right: -38px;
+    right: -36px;
     top: -75px;
     -webkit-mask-image: radial-gradient(
       54.23% 54.23% at 54.76% 43.67%,

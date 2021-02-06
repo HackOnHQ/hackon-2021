@@ -12,14 +12,11 @@ body,
   }
 
   ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px #2c2d3e;
-    box-shadow: inset 0 0 6px #2c2d3e;
+    background: #171e2e;
   }
 
   ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px #3c3f76;
-    box-shadow: inset 0 0 6px #3c3f76;
+    background: #888;
   }
 }
 

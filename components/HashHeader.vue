@@ -8,8 +8,8 @@
 <script>
 export default {
   props: {
-    title: String
-  }
+    title: String,
+  },
 };
 </script>
 
@@ -19,8 +19,9 @@ export default {
   align-items: center;
 
   h2.section-title {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-family: "Sen";
+    font-size: 1.8rem;
+    font-weight: 600;
     padding: 10px 10px 10px 0;
 
     &:before {
