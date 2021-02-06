@@ -74,8 +74,16 @@ export default {
   display: flex;
   flex-direction: column;
 
+  @include respond-between(md, lg) {
+    padding: 60px 20px;
+  }
+
   @include respond-between(sm, md) {
     padding: 60px 20px;
+  }
+
+  @include respond-below(sm) {
+    padding: 60px 10px;
   }
 
   .contents {
@@ -89,8 +97,16 @@ export default {
     column-gap: 180px;
     row-gap: 30px;
 
+    @include respond-between(md, lg) {
+      column-gap: 140px;
+    }
+
     @include respond-below(md) {
       column-gap: 140px;
+    }
+
+    @include respond-between(sm, md) {
+      column-gap: 90px;
     }
 
     @include respond-below(sm) {
@@ -125,7 +141,17 @@ export default {
         border-radius: 50%;
         text-align: center;
 
+        @include respond-between(md, lg) {
+          margin: 0;
+          padding: 15px;
+        }
+
         @include respond-between(sm, md) {
+          margin: 0;
+          padding: 15px;
+        }
+
+        @include respond-below(sm) {
           margin: 0;
           padding: 15px;
         }
@@ -135,8 +161,21 @@ export default {
           width: 30px;
           position: relative;
           top: 9px;
+          @include respond-between(md, lg) {
+            height: 20px;
+            width: 20px;
+            position: relative;
+            top: 5px;
+          }
 
           @include respond-between(sm, md) {
+            height: 20px;
+            width: 20px;
+            position: relative;
+            top: 5px;
+          }
+
+          @include respond-below(sm) {
             height: 20px;
             width: 20px;
             position: relative;
