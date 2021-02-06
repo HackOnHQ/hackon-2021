@@ -21,6 +21,11 @@ export default {
         aria-labelledby="modalTitle"
         aria-describedby="modalDescription"
       >
+        <img
+          class="close-modal"
+          src="~/assets/close-modal.svg"
+          v-on:click.self="close()"
+        />
         <header class="modal-header" id="modalTitle">
           {{ workshop.name }}
         </header>
@@ -30,7 +35,9 @@ export default {
           {{ workshop.date }} {{ workshop.time }} IST
         </div>
         <section class="modal-body" id="modalDescription">
-          <div v-if="workshop.about !== undefined" class="title">About the workshop</div>
+          <div v-if="workshop.about !== undefined" class="title">
+            About the workshop
+          </div>
           <div class="content">
             {{ workshop.about }}
           </div>
@@ -89,12 +96,23 @@ export default {
   max-width: 600px;
   min-width: 40%;
   background: #171e2e;
-  padding: 3rem;
+  padding: 2rem 3rem;
   max-height: 80vh;
   overflow-y: auto;
+  overflow-x: hidden;
   z-index: 10000;
   display: flex;
   flex-direction: column;
+  position: relative;
+
+  .close-modal {
+    cursor: pointer;
+    transform: rotate(45deg);
+    width: 1.8rem;
+    position: absolute;
+    right: 0.4rem;
+    top: 0.4rem;
+  }
 
   .modal-header {
     font-family: "Sen";
@@ -109,7 +127,6 @@ export default {
     font-size: 1rem;
     margin: 0.4rem 0;
     margin-left: 0.5rem;
-
   }
 
   .date {
