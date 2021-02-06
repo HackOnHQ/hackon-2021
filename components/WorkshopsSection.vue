@@ -1,8 +1,12 @@
 <template>
   <Container id="workshops">
-    <Modal v-show="isModalVisible" @close="closeModal()" :workshop="workshops[modalData]" />
+    <Modal
+      v-show="isModalVisible"
+      @close="closeModal()"
+      :workshop="workshops[modalData]"
+    />
     <section class="content-section">
-      <HashHeader title="Workshops" />
+      <HashHeader title="Past Workshops" />
       <div class="contents workshops">
         <div class="cards-grid">
           <div
@@ -28,7 +32,7 @@
                 </div>
               </div>
               <div class="date">
-                {{ workshop.date }}
+                {{ workshop.date }} <wbr />{{ workshop.time }}
               </div>
             </div>
           </div>
@@ -53,59 +57,46 @@ export default {
     return {
       workshops: [
         {
-          name: "Workshop Title",
-          about:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n Velurna lectus arcu ipsum aliquam sit ornare.",
-          date: "12/10/2020 9:30 am",
+          name: "Community as a Cure",
+          date: "10/04/2020",
+          time: "9:00 PM",
           speaker: {
-            name: "Musthaq Ahamad",
+            name: "Paras Pundir",
             designation: "Designation",
-            about:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n Velurna lectus arcu ipsum aliquam sit ornare.",
-
-            picture: "https://github.com/haxzie.png",
+            picture: "https://miro.medium.com/fit/c/1360/1360/2*1d2PU06qLbaY-3EqeQBUZQ.jpeg",
           },
         },
         {
-          name: "Introduction to Prototyping with Figma",
-          about:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velurna lectus arcu ipsum aliquam sit ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velurna lectus arcu ipsum aliquam sit ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velurna lectus arcu ipsum aliquam sit ornare. ",
-          date: "12/10/2020 9:30 am",
+          name: "What is a Full Stack Developer and how to become One!",
+          date: "14/04/2020",
+          time: "10:00 PM",
           speaker: {
-            name: "Musthaq Ahamad",
-            designation: "UI/UX Designer",
-            about:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n Velurna lectus arcu ipsum aliquam sit ornare.",
-
-            picture: "https://github.com/haxzie.png",
+            name: "Arnav Gupta",
+            designation: "Engineering Lead, Zomato",
+            picture:
+              "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/de2017b2f5cd44da90dc782b28469487/703.jpeg",
           },
         },
         {
-          name: "Introduction to Prototyping with Figma",
-          about:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velurna lectus arcu ipsum aliquam sit ornare.",
-          date: "12/10/2020 9:30 am",
+          name: "Hackathon 101",
+          date: "11/04/2020",
+          time: "4:00 PM",
           speaker: {
-            name: "Musthaq Ahamad",
-            designation: "Designation",
-            about:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n Velurna lectus arcu ipsum aliquam sit ornare.",
-
-            picture: "https://github.com/haxzie.png",
+            name: "Jatin Katyal",
+            designation: "Engineering Lead, Zomato",
+            picture:
+              "https://assets.devfolio.co/hackathons/be0de8e087c844d79199695d8997779f/judges/bea23fa33ba74fa589fa2d56b958741a/309.jpeg",
           },
         },
         {
-          name: "Introduction to Prototyping with Figma",
-          about:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velurna lectus arcu ipsum aliquam sit ornare.",
-          date: "12/10/2020 9:30 am",
+          name: "Brand Storytelling",
+          date: "15/04/2020",
+          time: "10:00 PM",
           speaker: {
-            name: "Musthaq Ahamad",
-            designation: "Designation",
-            about:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n Velurna lectus arcu ipsum aliquam sit ornare.",
-
-            picture: "https://github.com/haxzie.png",
+            name: "Miri Rodriguez",
+            designation: "Head of Global Internship Program, Microsoft",
+            picture:
+              "https://media-exp1.licdn.com/dms/image/C5603AQGccVXExmWSeg/profile-displayphoto-shrink_800_800/0/1585676059716?e=1617840000&v=beta&t=UV7D6RHqvHtQcVKCPfbyXxyXcXCM9setOzo4XI5NBlE",
           },
         },
       ],
@@ -122,7 +113,6 @@ export default {
     },
     closeModal() {
       this.isModalVisible = false;
-      this.modalData = 0;
       document.querySelector("body").style.overflow = "initial";
       document.querySelector(".workshops").classList.remove = "modalOpen";
     },
@@ -194,9 +184,14 @@ export default {
               flex-direction: column;
               justify-content: center;
 
+              .name {
+                // margin-bottom: -0.4rem;
+              }
+
               .designation {
                 margin-top: -1rem;
                 color: rgba(255, 255, 255, 0.5);
+                // line-height: 1rem;
               }
             }
           }
