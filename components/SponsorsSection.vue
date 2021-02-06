@@ -147,8 +147,8 @@ export default {
       
       @include respond-below(sm) {
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 15px;
-      row-gap: 15px;
+        column-gap: 10px;
+        row-gap: 10px;
       }
       
 
@@ -163,7 +163,7 @@ export default {
         height: 200px;
 
         @include respond-below(sm) {
-        height: 140px;
+        height: 120px;
       }
 
           img {
@@ -171,7 +171,7 @@ export default {
             margin: auto;
 
             @include respond-below(sm) {
-            width: 140px;
+            width: 120px;
           }
         }
       }
