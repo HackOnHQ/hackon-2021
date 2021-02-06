@@ -3,9 +3,9 @@
     <Hero/>
     <ContentSection/>
     <TracksSection/>
+    <PrizesSection />
     <SpeakersSection/>
     <WorkshopsSection/>
-    <SchedulesSection/>
     <SponsorsSection/>
   </div>
 </template>
@@ -19,6 +19,7 @@ import SpeakersSection from '~/components/SpeakersSection';
 import WorkshopsSection from '~/components/WorkshopsSection';
 import SponsorsSection from '~/components/SponsorsSection';
 import SchedulesSection from '~/components/SchedulesSection';
+import PrizesSection from '~/components/PrizesSection';
 
 export default {
   components: {
@@ -29,7 +30,8 @@ export default {
     SpeakersSection,
     SponsorsSection,
     SchedulesSection,
-    WorkshopsSection
+    WorkshopsSection,
+    PrizesSection
   }
 }
 </script>
