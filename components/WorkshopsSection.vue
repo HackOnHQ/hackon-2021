@@ -1,10 +1,16 @@
 <template>
-  <Container id="about">
+  <Container id="workshops">
+    <Modal v-show="isModalVisible" @close="closeModal()" :workshop="workshops[modalData]" />
     <section class="content-section">
       <HashHeader title="Workshops" />
-      <div class="contents">
+      <div class="contents workshops">
         <div class="cards-grid">
-          <div v-for="(workshop, index) in workshops" :key="index" class="card">
+          <div
+            v-for="(workshop, index) in workshops"
+            :key="index"
+            class="card"
+            @click="showModal(index)"
+          >
             <div class="texts">
               <h4 class="title">{{ workshop.name }}</h4>
               <p class="about">{{ workshop.about }}</p>
@@ -35,11 +41,13 @@
 <script>
 import Container from "~/components/Container";
 import HashHeader from "~/components/HashHeader";
+import Modal from "~/components/Modal";
 
 export default {
   components: {
     Container,
     HashHeader,
+    Modal,
   },
   data() {
     return {
@@ -52,6 +60,9 @@ export default {
           speaker: {
             name: "Musthaq Ahamad",
             designation: "Designation",
+            about:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n Velurna lectus arcu ipsum aliquam sit ornare.",
+
             picture: "https://github.com/haxzie.png",
           },
         },
@@ -63,6 +74,9 @@ export default {
           speaker: {
             name: "Musthaq Ahamad",
             designation: "UI/UX Designer",
+            about:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n Velurna lectus arcu ipsum aliquam sit ornare.",
+
             picture: "https://github.com/haxzie.png",
           },
         },
@@ -74,6 +88,9 @@ export default {
           speaker: {
             name: "Musthaq Ahamad",
             designation: "Designation",
+            about:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n Velurna lectus arcu ipsum aliquam sit ornare.",
+
             picture: "https://github.com/haxzie.png",
           },
         },
@@ -85,11 +102,30 @@ export default {
           speaker: {
             name: "Musthaq Ahamad",
             designation: "Designation",
+            about:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n Velurna lectus arcu ipsum aliquam sit ornare.",
+
             picture: "https://github.com/haxzie.png",
           },
         },
       ],
+      isModalVisible: false,
+      modalData: 0,
     };
+  },
+  methods: {
+    showModal(index) {
+      this.isModalVisible = true;
+      this.modalData = index;
+      document.querySelector("body").style.overflow = "hidden";
+      document.querySelector(".workshops").classList.add = "modalOpen";
+    },
+    closeModal() {
+      this.isModalVisible = false;
+      this.modalData = 0;
+      document.querySelector("body").style.overflow = "initial";
+      document.querySelector(".workshops").classList.remove = "modalOpen";
+    },
   },
 };
 </script>
@@ -99,6 +135,7 @@ export default {
   display: flex;
   flex-direction: column;
   padding: 20px 0;
+
   .contents {
     padding: 10px 0;
 
@@ -119,7 +156,8 @@ export default {
         background: var(--color-secondary-light);
         border-radius: 5px;
         min-height: 200px;
-        font-family: 'Roboto Mono';
+        font-family: "Roboto Mono";
+        cursor: pointer;
 
         .texts {
           flex: 1;
@@ -132,7 +170,7 @@ export default {
           .about {
             width: 90%;
             font-size: 0.8rem;
-            opacity: 0.9;
+            color: rgba(255, 255, 255, 0.9);
           }
         }
 
@@ -158,7 +196,7 @@ export default {
 
               .designation {
                 margin-top: -1rem;
-                opacity: 0.5;
+                color: rgba(255, 255, 255, 0.5);
               }
             }
           }
