@@ -9,10 +9,11 @@
               <img src="~/assets/track-healthcare.png" />
             </div>
             <div class="texts">
-              <h3 class="title">HealthCare Technology</h3>
+              <h3 class="title">Diversity and Inclusion</h3>
               <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in
-                sit convallis sit odio ante.
+                Generate awareness and/or develop empathetic spaces that people
+                coming from any and every walk of life to meet and connect,
+                regardless of their background.
               </p>
             </div>
           </div>
@@ -21,10 +22,11 @@
               <img src="~/assets/track-mental-health.png" />
             </div>
             <div class="texts">
-              <h3 class="title">Mental Health</h3>
+              <h3 class="title">Mental Health and Awareness</h3>
               <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in
-                sit convallis sit odio ante.
+                Help people learn more about their mental health and take better
+                care of their well-being in these challenging times that have
+                significantly impacted our day-to-day lives.
               </p>
             </div>
           </div>
@@ -41,8 +43,8 @@ import HashHeader from "~/components/HashHeader";
 export default {
   components: {
     Container,
-    HashHeader
-  }
+    HashHeader,
+  },
 };
 </script>
 
