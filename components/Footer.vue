@@ -169,10 +169,10 @@ export default {
           }
 
           @include respond-between(sm, md) {
-            height: 20px;
-            width: 20px;
+            height: 18px;
+            width: 18px;
             position: relative;
-            top: 5px;
+            top: 4px;
           }
 
           @include respond-below(sm) {
