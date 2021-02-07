@@ -57,16 +57,91 @@ export default {
     return {
       workshops: [
         {
+          name: "Let's Be Faster than COVID with AMP",
+          about: 'Ever wanted pages to load quickly on mobile devices, but not sure about how to do that? AMP or Accelerated Mobile Pages is a Google-backed project that can help you do this! Interested in knowing more about it? Hear it from a Googler itself! ❤️',
+          date: "11/04/2020",
+          time: "7:00 PM",
+          speaker: {
+            name: "Saurabh Rajpal",
+            designation: "Technical Solutions Consultant, Google",
+            picture:
+              "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/4e828a778c604399913a1dd4e4d87e21/265.png",
+          },
+        },
+        {
           name: "Community as a Cure",
           about: 'Talk about the importance of communities, and how a group of like-minded people can bring about an essential change in our lives.',
           date: "10/04/2020",
           time: "9:00 PM",
           speaker: {
             name: "Paras Pundir",
-            designation: "Program Manager, Reactor Bangalore",
+            designation: "Program Manager, Reactor Bangalore, Microsoft",
             about: 'Paras is the Program Manager at Microsoft Reactor, Bangalore, who is also the Community Professional of the Year 2020.',
             picture:
               "https://miro.medium.com/fit/c/1360/1360/2*1d2PU06qLbaY-3EqeQBUZQ.jpeg",
+          },
+        },
+        {
+          name: "Brand Storytelling",
+          about: 'Workshop: Building your Personal Brand by none other than the amazing personality Miri Rodriguez! She is probably the first person you would want to consult if you want your personal brand. So don\'t let go of this wonderful opportunity!💖',
+          date: "15/04/2020",
+          time: "10:00 PM",
+          speaker: {
+            name: "Miri Rodriguez",
+            designation: "Head of Global Internship Program, Microsoft",
+            about: 'Miri is the Head of Global Internship Program at Microsoft and the author of Brand Storytelling.',
+            picture:
+              "https://media-exp1.licdn.com/dms/image/C5603AQGccVXExmWSeg/profile-displayphoto-shrink_800_800/0/1585676059716?e=1617840000&v=beta&t=UV7D6RHqvHtQcVKCPfbyXxyXcXCM9setOzo4XI5NBlE",
+          },
+        },
+        {
+          name: "Power of Communities",
+          about: 'Talk about the importance of communities, and how a group of like-minded people can bring about an essential change in our lives.💖',
+          date: "17/04/2020",
+          time: "10:00 PM",
+          speaker: {
+            name: "Nikita Gandhi",
+            designation: "Community Manager, Google",
+            about: 'Nikita is the Community Manager at Google Developers and was a Project Coordinator at Google.',
+            picture:
+              "https://assets.devfolio.co/hackathons/be0de8e087c844d79199695d8997779f/judges/503be308d27942c6af30aa665c9e2940/430.png",
+          },
+        },
+        {
+          name: "The World of Web Components",
+          about: 'Get ready to dive into single page applications, component based web, web component specifications and a lot more!',
+          date: "18/04/2020",
+          time: "6:00 PM",
+          speaker: {
+            name: "Nishu Goel",
+            designation: "Google Developer Expert",
+            about: 'Nishu is a Google Developers Experts(GDE) for Angular and Web Technologies and a Developer at UI Garage, IBM.',
+            picture:
+              "https://assets.devfolio.co/hackathons/be0de8e087c844d79199695d8997779f/judges/976dbbca2b7346d781894b11d4bca2f5/350.jpeg",
+          },
+        },
+        {
+          name: "Getting Started with Angular",
+          date: "12/04/2020",
+          time: "7:00 PM",
+          speaker: {
+            name: "Dhananjay Kumar",
+            designation: "Most Valuable Professional, Microsoft",
+            picture:
+              "https://assets.devfolio.co/hackathons/be0de8e087c844d79199695d8997779f/judges/519c888869584eefa120edf5e4971e22/652.jpeg",
+          },
+        },
+        {
+          name: "Taking flight with Flutter",
+          about: 'Realise the power of Flutter and start making cross-platform applications with Flutter.',
+          date: "16/04/2020",
+          time: "10:00 PM",
+          speaker: {
+            name: "Pawan Kumar",
+            designation: "Google Developer Expert",
+            about: 'Pawan is the Founder of MTechViral, and a Google Developers Experts (GDE) for Flutter by Google, Firebase, Dart and Web Tech.',
+            picture:
+              "https://media-exp1.licdn.com/dms/image/C4E03AQFU_Pks7-2qbA/profile-displayphoto-shrink_200_200/0/1610945863156?e=1617840000&v=beta&t=_pkadk5xabdD-LyBnReydJnHuO5T76OYBQZfiBdxHfc",
           },
         },
         {
@@ -83,18 +158,6 @@ export default {
           },
         },
         {
-          name: "Let's Be Faster than COVID with AMP",
-          about: 'Ever wanted pages to load quickly on mobile devices, but not sure about how to do that? AMP or Accelerated Mobile Pages is a Google-backed project that can help you do this! Interested in knowing more about it? Hear it from a Googler itself! ❤️',
-          date: "11/04/2020",
-          time: "7:00 PM",
-          speaker: {
-            name: "Saurabh Rajpal",
-            designation: "Technical Solutions Consultant, Google",
-            picture:
-              "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/4e828a778c604399913a1dd4e4d87e21/265.png",
-          },
-        },
-        {
           name: "Intro to Git/GitHub",
           about: 'This is a hands-on workshop that will teach you how Git and GitHub have been revolutionizing teamwork, how to work remotely and how version control systems are useful. ✨',
           date: "11/04/2020",
@@ -105,18 +168,6 @@ export default {
             about: 'Gunnika is a GitHub Campus Expert and Google Code-in \'19 mentor for TensorFlow.',
             picture:
               "https://he-s3.s3.amazonaws.com/media/avatars/b.gunnika/resized/180/aaue7mbcptlsehn0xoe6ddpcxas8dthvswnxzds8y6eynlq",
-          },
-        },
-
-        {
-          name: "Getting Started with Angular",
-          date: "12/04/2020",
-          time: "7:00 PM",
-          speaker: {
-            name: "Dhananjay Kumar",
-            designation: "Most Valuable Professional, Microsoft",
-            picture:
-              "https://assets.devfolio.co/hackathons/be0de8e087c844d79199695d8997779f/judges/519c888869584eefa120edf5e4971e22/652.jpeg",
           },
         },
         {
@@ -145,19 +196,6 @@ export default {
           },
         },
         {
-          name: "Brand Storytelling",
-          about: 'Workshop: Building your Personal Brand by none other than the amazing personality Miri Rodriguez! She is probably the first person you would want to consult if you want your personal brand. So don\'t let go of this wonderful opportunity!💖',
-          date: "15/04/2020",
-          time: "10:00 PM",
-          speaker: {
-            name: "Miri Rodriguez",
-            designation: "Head of Global Internship Program, Microsoft",
-            about: 'Miri is the Head of Global Internship Program at Microsoft and the author of Brand Storytelling.',
-            picture:
-              "https://media-exp1.licdn.com/dms/image/C5603AQGccVXExmWSeg/profile-displayphoto-shrink_800_800/0/1585676059716?e=1617840000&v=beta&t=UV7D6RHqvHtQcVKCPfbyXxyXcXCM9setOzo4XI5NBlE",
-          },
-        },
-        {
           name: "Elastic App Search Demo",
           about: 'Building a web application to solve a business problem is easy in today\'s world. But this workshop will teach you how to create an experience that lets the user spend more time on your service.',
           date: "16/04/2020",
@@ -168,45 +206,6 @@ export default {
             about: 'Aravind is a Senior Developer Advocate at Elastic, a tech evangelist and a FOSS enthusiast.',
             picture:
               "https://assets.devfolio.co/hackathons/be0de8e087c844d79199695d8997779f/judges/9162cfc964dd43babff57c68122d6906/460.jpeg",
-          },
-        },
-        {
-          name: "Taking flight with Flutter",
-          about: 'Realise the power of Flutter and start making cross-platform applications with Flutter.',
-          date: "16/04/2020",
-          time: "10:00 PM",
-          speaker: {
-            name: "Pawan Kumar",
-            designation: "Google Developer Expert",
-            about: 'Pawan is the Founder of MTechViral, and a Google Developers Experts (GDE) for Flutter by Google, Firebase, Dart and Web Tech.',
-            picture:
-              "https://media-exp1.licdn.com/dms/image/C4E03AQFU_Pks7-2qbA/profile-displayphoto-shrink_200_200/0/1610945863156?e=1617840000&v=beta&t=_pkadk5xabdD-LyBnReydJnHuO5T76OYBQZfiBdxHfc",
-          },
-        },
-        {
-          name: "Power of Communities",
-          about: 'Talk about the importance of communities, and how a group of like-minded people can bring about an essential change in our lives.💖',
-          date: "17/04/2020",
-          time: "10:00 PM",
-          speaker: {
-            name: "Nikita Gandhi",
-            designation: "Community Manager, Google",
-            about: 'Nikita is the Community Manager at Google Developers and was a Project Coordinator at Google.',
-            picture:
-              "https://assets.devfolio.co/hackathons/be0de8e087c844d79199695d8997779f/judges/503be308d27942c6af30aa665c9e2940/430.png",
-          },
-        },
-        {
-          name: "The World of Web Components",
-          about: 'Get ready to dive into single page applications, component based web, web component specifications and a lot more!',
-          date: "18/04/2020",
-          time: "6:00 PM",
-          speaker: {
-            name: "Nishu Goel",
-            designation: "Google Developer Expert",
-            about: 'Nishu is a Google Developers Experts(GDE) for Angular and Web Technologies and a Developer at UI Garage, IBM.',
-            picture:
-              "https://assets.devfolio.co/hackathons/be0de8e087c844d79199695d8997779f/judges/976dbbca2b7346d781894b11d4bca2f5/350.jpeg",
           },
         },
       ],
