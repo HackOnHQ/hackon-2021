@@ -84,7 +84,7 @@ export default {
           picture:
             "https://media-exp1.licdn.com/dms/image/C4D03AQFdL1QzTYhesA/profile-displayphoto-shrink_200_200/0/1585939487284?e=1618444800&v=beta&t=9_HEBnK7e8zi49Ol15qzlTOs7qLweqRCQUixiAbLZUI",
           linkedIn: "https://www.linkedin.com/in/parasg1999/",
-          github: "https://github.com/apoorvdwihttps://github.com/parasg1999"
+          github: "https://github.com/parasg1999"
         },
         {
           name: "Saish Adlak",
