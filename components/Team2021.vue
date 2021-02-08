@@ -1,0 +1,233 @@
+<template>
+  <Container id="team2021">
+    <section class="content-section">
+      <HashHeader title="Hackon Team 2021" />
+      <div class="contents">
+        <div class="team-grid">
+          <div
+            v-for="(teamMember, index) in team"
+            :key="index"
+            class="team-card"
+          >
+            <div class="picture-wrapper">
+              <img :src="teamMember.picture" alt="" class="profile-pic" />
+            </div>
+            <h4 class="title">{{ teamMember.name }}</h4>
+            <p class="description">{{ teamMember.description }}</p>
+            <div class="socialLinks">
+              <a :href="teamMember.linkedIn">
+                <img src="~/assets/linkedin.svg" alt="LinkedInLink" />
+              </a>
+              <a :href="teamMember.github">
+                <img src="~/assets/github.svg" alt="GithubLink" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </Container>
+</template>
+
+<script>
+import Container from "~/components/Container";
+import HashHeader from "~/components/HashHeader";
+
+export default {
+  components: {
+    Container,
+    HashHeader
+  },
+  data() {
+    return {
+      team: [
+        {
+          name: "Musthaq Ahamad",
+          description:
+            "Building @localeai. UX Engineer. I write, design and build things on the internet.",
+          picture:
+            "https://avatars.githubusercontent.com/u/53584487?s=460&u=958300368b2eae87277477bf1fcead4dfa2e31ec&v=4",
+          linkedIn: "https://www.linkedin.com/in/haxzie/",
+          github: "https://github.com/haxzie"
+        },
+        {
+          name: "Shubhangi Gupta",
+          description:
+            "Gold Microsoft Learn Ambassador | President at TechnoLiterati | Gold #IamRemarkable Facilitator",
+          picture:
+            "https://avatars.githubusercontent.com/u/31511497?s=460&u=8834975fa238be878ffd74092143a6bc15d38607&v=4",
+          linkedIn: "https://www.linkedin.com/in/knowshubhangi/",
+          github: "https://github.com/Shubhangi0304"
+        },
+        {
+          name: "Aditya Oberai",
+          description:
+            "MLH Coach | Gold Microsoft Learn Student Ambassador | Active Member at .NET Foundation",
+          picture:
+            "https://avatars.githubusercontent.com/u/31401437?s=460&u=1ad52dad34daf68e98fd7324c94c97c3b369d471&v=4",
+          linkedIn: "https://www.linkedin.com/in/adityaoberai1/",
+          github: "https://github.com/adityaoberai"
+        },
+        {
+          name: "Apoorv dwivedi",
+          description:
+            "Btech sophomore from MAIT | Full Stack Web Developer (MERN) | ML and AI enthusiast",
+          picture:
+            "https://avatars.githubusercontent.com/u/56197821?s=460&u=58a9bf47958bacfca794dc75b027305b7938a6a6&v=4",
+          linkedIn: "https://www.linkedin.com/in/apoorv-dwivedi-84a42a174/",
+          github: "https://github.com/apoorvdwi"
+        },
+        {
+          name: "Paras Gupta",
+          description:
+            "Final Year student at IIIT Una | Full Stack Web Developer (MERN)",
+          picture:
+            "https://media-exp1.licdn.com/dms/image/C4D03AQFdL1QzTYhesA/profile-displayphoto-shrink_200_200/0/1585939487284?e=1618444800&v=beta&t=9_HEBnK7e8zi49Ol15qzlTOs7qLweqRCQUixiAbLZUI",
+          linkedIn: "https://www.linkedin.com/in/parasg1999/",
+          github: "https://github.com/apoorvdwihttps://github.com/parasg1999"
+        },
+        {
+          name: "Saish Adlak",
+          description:
+            "UI/UX Designer | Imagination and Implementation is what I do",
+          picture:
+            "https://avatars.githubusercontent.com/u/71888339?s=460&u=2be63077304e5b88c626b1fa64bc4c3a23ba72a1&v=4",
+          linkedIn: "https://www.linkedin.com/in/saishadlak/",
+          github: "https://github.com/saish-lmx"
+        }
+      ]
+    };
+  }
+};
+</script>
+
+<style lang="scss" scoped>
+.content-section {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+
+  .contents {
+    padding: 10px 0;
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 30px;
+      row-gap: 30px;
+
+      @include respond-below(md) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @include respond-below(sm) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include respond-below(xxs) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .team-card {
+        display: flex;
+        flex-direction: column;
+        background: var(--color-secondary-light);
+        min-height: 400px;
+        border-radius: 20px;
+        padding: 15px;
+        justify-content: center;
+        align-items: center;
+
+        @include respond-below(sm) {
+          min-height: 300px;
+        }
+
+        .picture-wrapper {
+          width: 160px;
+          height: 160px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: var(--colour-pink);
+          border-radius: 50%;
+          transition: 0.3s all ease-in-out;
+
+          &:hover {
+            background: var(--gradient-blue);
+          }
+
+          .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: var(--color-secondary-light);
+          }
+
+          @include respond-below(md) {
+            width: 140px;
+            height: 140px;
+            .profile-pic {
+              width: 130px;
+              height: 130px;
+            }
+          }
+
+          @include respond-below(sm) {
+            width: 120px;
+            height: 120px;
+            .profile-pic {
+              width: 110px;
+              height: 110px;
+            }
+          }
+        }
+
+        .socialLinks {
+          padding: 20px 0 10px;
+          margin-left: -5px;
+
+          a {
+            padding: 10px;
+            margin: 5px;
+            background: #252638;
+            border-radius: 50%;
+            text-align: center;
+
+            @include respond-below(sm) {
+              margin: 0;
+            }
+
+            &:hover {
+              filter: invert(100%);
+            }
+
+            img {
+              height: 20px;
+              width: 20px;
+              position: relative;
+              top: 5px;
+            }
+          }
+        }
+
+        .title {
+          font-size: 1.2rem;
+          text-align: center;
+          margin-top: 20px;
+
+          @include respond-below(sm) {
+            font-size: 1rem;
+            margin-top: 10px;
+          }
+        }
+
+        .description {
+          font-size: 0.8rem;
+          opacity: 0.7;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+</style>

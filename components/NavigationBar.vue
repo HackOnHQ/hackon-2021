@@ -17,13 +17,19 @@
               <a href="/">Home</a>
             </li>
             <li>
+              <a href="/team">Team</a>
+            </li>
+            <li>
               <a href="#about">About</a>
             </li>
             <li>
               <a href="#speakers">Speakers</a>
             </li>
             <li>
-              <a href="#schedule">Schedule</a>
+              <a href="#workshops">Workshops</a>
+            </li>
+            <li>
+              <a href="#sponsors">Sponsors</a>
             </li>
             <li>
               <a href="#faq">FAQ</a>
@@ -80,7 +86,7 @@ export default {
       align-items: center;
       font-family: "Inter";
 
-      @include respond-below(sm) {
+      @include respond-below(md) {
         display: none;
       }
 

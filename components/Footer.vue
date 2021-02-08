@@ -14,43 +14,42 @@
               Company
             </span>
           </div>
-          <div class="socialLinks">
-            <a href="https://instagram.com/hackon">
-              <img
-                src="~/assets/facebook.svg"
-                alt="FacebookLink"
-                class="socialImage"
-              />
-            </a>
-            <a href="https://instagram.com/hackon">
-              <img
-                src="~/assets/discord.svg"
-                alt="DiscordLink"
-                class="socialImage"
-              />
-            </a>
-            <a href="https://instagram.com/hackon">
-              <img
-                src="~/assets/twitter.svg"
-                alt="TwitterLink"
-                class="socialImage"
-              />
-            </a>
-          </div>
         </div>
 
         <div class="panel">
           <h4 class="title">Links</h4>
           <a href="https://github.com">Code Of Conduct</a>
-          <a href="https://github.com">Oath of Undertaking</a>
           <a href="https://github.com">Sponsorship Brochure</a>
-          <a href="https://github.com">Branding Guidelines</a>
         </div>
 
         <div class="panel">
           <div class="title">Contact Us</div>
           <p class="info">hello@hackon.tech</p>
           <p class="info">+919876543210</p>
+          <div class="socialLinks">
+            <a href="https://www.linkedin.com/company/hackonhackathon">
+              <img src="~/assets/linkedin.svg" alt="LinkedInLink" />
+            </a>
+            <a href="https://discord.hackon.tech/">
+              <img src="~/assets/discord.svg" alt="DiscordLink" />
+            </a>
+            <a href="https://medium.com/hackonhackathon">
+              <img src="~/assets/medium.svg" alt="MediumLink" />
+            </a>
+          </div>
+          <div class="socialLinks">
+            <a href="https://instagram.com/hackon">
+              <img src="~/assets/facebook.svg" alt="FacebookLink" />
+            </a>
+            <a
+              href="https://youtube.com/playlist?list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli"
+            >
+              <img src="~/assets/youtube.svg" alt="YoutubeLink" />
+            </a>
+            <a href="https://telegram.hackon.tech/">
+              <img src="~/assets/telegram.svg" alt="TelegramLink" />
+            </a>
+          </div>
         </div>
       </div>
     </Container>
@@ -69,21 +68,21 @@ export default {
 
 <style lang="scss" scoped>
 .footer {
-  padding: 60px 30px;
+  padding: 40px 30px;
   background: var(--color-secondary-light);
   display: flex;
   flex-direction: column;
 
   @include respond-between(md, lg) {
-    padding: 60px 20px;
+    padding: 40px 20px;
   }
 
   @include respond-between(sm, md) {
-    padding: 60px 20px;
+    padding: 40px 20px;
   }
 
   @include respond-below(sm) {
-    padding: 60px 10px;
+    padding: 40px 10px;
   }
 
   .contents {
@@ -133,54 +132,24 @@ export default {
 
     .socialLinks {
       padding: 20px 0 10px;
+      margin-left: -5px;
 
       a {
-        padding: 15px 10px;
-        margin: 10px;
+        padding: 10px;
+        margin: 5px;
         background: #252638;
         border-radius: 50%;
         text-align: center;
 
-        @include respond-between(md, lg) {
-          margin: 0;
-          padding: 15px;
-        }
-
-        @include respond-between(sm, md) {
-          margin: 0;
-          padding: 15px;
-        }
-
-        @include respond-below(sm) {
-          margin: 0;
-          padding: 15px;
+        &:hover {
+          filter: invert(100%);
         }
 
         img {
-          height: 30px;
-          width: 30px;
+          height: 20px;
+          width: 20px;
           position: relative;
-          top: 9px;
-          @include respond-between(md, lg) {
-            height: 20px;
-            width: 20px;
-            position: relative;
-            top: 5px;
-          }
-
-          @include respond-between(sm, md) {
-            height: 18px;
-            width: 18px;
-            position: relative;
-            top: 4px;
-          }
-
-          @include respond-below(sm) {
-            height: 20px;
-            width: 20px;
-            position: relative;
-            top: 5px;
-          }
+          top: 5px;
         }
       }
     }

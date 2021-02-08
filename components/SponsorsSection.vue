@@ -1,5 +1,5 @@
 <template>
-  <Container id="Sponsors">
+  <Container id="sponsors">
     <section class="content-section">
       <HashHeader title="Past Sponsors" />
       <div class="contents">
