@@ -149,6 +149,8 @@ export default {
         img {
           height: 20px;
           width: 20px;
+          position: relative;
+          top: 4px;
         }
       }
     }
