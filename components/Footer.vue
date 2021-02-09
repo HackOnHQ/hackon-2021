@@ -39,8 +39,8 @@
             </a>
           </div>
           <div class="socialLinks">
-            <a href="https://instagram.com/hackon">
-              <img src="~/assets/facebook.svg" alt="FacebookLink" />
+            <a href="https://twitter.com/hackonhackathon">
+              <img src="~/assets/twitter.svg" alt="FacebookLink" />
             </a>
             <a
               href="https://youtube.com/playlist?list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli"

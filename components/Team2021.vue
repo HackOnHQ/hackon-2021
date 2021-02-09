@@ -73,7 +73,7 @@ export default {
           description:
             "Btech sophomore from MAIT | Full Stack Web Developer (MERN) | ML and AI enthusiast",
           picture:
-            "https://avatars.githubusercontent.com/u/56197821?s=460&u=58a9bf47958bacfca794dc75b027305b7938a6a6&v=4",
+            "https://avatars.githubusercontent.com/u/56197821?s=460&u=693be068482cf3a5b23a1bf708ee1e399487659a&v=4",
           linkedIn: "https://www.linkedin.com/in/apoorv-dwivedi-84a42a174/",
           github: "https://github.com/apoorvdwi"
         },

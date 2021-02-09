@@ -48,11 +48,6 @@ export default {
             "https://raw.githubusercontent.com/HackOnHackathon/hackon-2020/master/assets/img/team/akshat.png"
         },
         {
-          name: "Anjali",
-          picture:
-            "https://raw.githubusercontent.com/HackOnHackathon/hackon-2020/master/assets/img/team/anjali.png"
-        },
-        {
           name: "Bhumika",
           picture:
             "https://raw.githubusercontent.com/HackOnHackathon/hackon-2020/master/assets/img/team/bhumika.png"
@@ -95,22 +90,12 @@ export default {
         {
           name: "Manvi",
           picture:
-            "https://raw.githubusercontent.com/HackOnHackathon/hackon-2020/master/assets/img/team/manvi.png"
-        },
-        {
-          name: "Manvi",
-          picture:
             "https://raw.githubusercontent.com/HackOnHackathon/hackon-2020/master/assets/img/team/manvi_.png"
         },
         {
           name: "Nirbhay",
           picture:
             "https://raw.githubusercontent.com/HackOnHackathon/hackon-2020/master/assets/img/team/nirbhay.JPG"
-        },
-        {
-          name: "Pahul",
-          picture:
-            "https://raw.githubusercontent.com/HackOnHackathon/hackon-2020/master/assets/img/team/pahul.png"
         },
         {
           name: "Rishabh",
