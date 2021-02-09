@@ -1,7 +1,7 @@
 <template>
   <div class="home-page">
     <Team2021 />
-    <!-- <Team2020 /> -->
+    <Team2020 />
   </div>
 </template>
 

@@ -44,7 +44,7 @@ export default {
         {
           name: "Musthaq Ahamad",
           description:
-            "Building @localeai. UX Engineer. I write, design and build things on the internet.",
+            "Building @localeai. UX Engineer. I write, design and build things on the internet",
           picture:
             "https://avatars.githubusercontent.com/u/53584487?s=460&u=958300368b2eae87277477bf1fcead4dfa2e31ec&v=4",
           linkedIn: "https://www.linkedin.com/in/haxzie/",

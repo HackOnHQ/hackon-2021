@@ -20,6 +20,7 @@
           <h4 class="title">Links</h4>
           <a href="https://github.com">Code Of Conduct</a>
           <a href="https://github.com">Sponsorship Brochure</a>
+          <a href="/team">Hackon 2.0 Team</a>
         </div>
 
         <div class="panel">
@@ -148,8 +149,6 @@ export default {
         img {
           height: 20px;
           width: 20px;
-          position: relative;
-          top: 5px;
         }
       }
     }
