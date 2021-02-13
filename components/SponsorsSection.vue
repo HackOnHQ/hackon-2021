@@ -11,7 +11,7 @@
       </div>
       <div class="new-sponsor">
         <p>Interested in becoming a sponsor? Email us at</p>
-        <p><a href="mailto:sponsor@hackon.tech">sponsor@hackon.tech</a></p>
+        <p><a href="mailto:contact@hackon.tech">contact@hackon.tech</a></p>
       </div>
     </section>
   </Container>
