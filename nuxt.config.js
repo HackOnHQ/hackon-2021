@@ -11,7 +11,12 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" }
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "HackOn is a week-long global digital hackathon that is organized by hackers for hackers to bring their ideas from the point of inception to reality. No matter how new or old you may be in the world of hackathons, HackOn has a place for everyone wanting to learn, build, share, and grow in their lives."
+      }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
@@ -26,9 +31,7 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
-  buildModules: [
-    '@nuxtjs/style-resources',
-  ],
+  buildModules: ["@nuxtjs/style-resources"],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: ["nuxt-webfontloader"],
