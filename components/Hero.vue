@@ -20,9 +20,11 @@
         </h2>
         <div class="date">11<sup>th</sup> to 19<sup>th</sup> April 2021</div>
         <button class="cta">
-          <div class="contents">
-            Register Now<ArrowRightIcon class="icon" />
-          </div>
+          <a href="https://hackon.hackerearth.com" target="_blank">
+            <div class="contents">
+              Register Now<ArrowRightIcon class="icon" />
+            </div>
+          </a>
         </button>
         <p class="call-for-proposals">
           Interested in giving a talk or workshop? <a href="">CFPs Open Now!</a>

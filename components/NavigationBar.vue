@@ -35,9 +35,11 @@
               <a href="/#faq">FAQ</a>
             </li>
           </ul>
-          <button class="cta-button">
-            Register Now
-          </button>
+          <a href="https://hackon.hackerearth.com" target="_blank">
+            <button class="cta-button">
+              Register Now
+            </button>
+          </a>
         </div>
       </div>
     </Container>

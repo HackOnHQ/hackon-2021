@@ -25,7 +25,9 @@
 
         <div class="panel">
           <div class="title">Contact Us</div>
-          <p class="info">hello@hackon.tech</p>
+          <p class="info">
+            <a href="mailto:contact@hackon.tech">contact@hackon.tech</a>
+          </p>
           <p class="info">+919876543210</p>
           <div class="socialLinks">
             <a href="https://www.linkedin.com/company/hackonhackathon">
