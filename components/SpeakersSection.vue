@@ -125,13 +125,6 @@ export default {
           picture: "https://www.hackjaipur.com/images/speaker/ben.jpg"
         },
         {
-          name: "Ashish Jha",
-          description: "Alexa Community Evangelist at Amazon",
-          url: "https://www.linkedin.com/in/thedreamsaver/",
-          picture:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/206bffde42a244fcbe7b4af44102671c/208.jpeg"
-        },
-        {
           name: "Jatin Katyal",
           description: "Product Engineer and Instructor at Coding Blocks",
           url: "https://www.linkedin.com/in/jatin-katyal-5683bb137/",
