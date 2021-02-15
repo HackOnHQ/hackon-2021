@@ -191,7 +191,7 @@ button {
   float: right;
   border-radius: 20px;
   cursor: pointer;
-  margin-top: -20px;
+  margin-top: -10px;
   border: 0px;
   color: #fff;
   padding: 12px 16px;
