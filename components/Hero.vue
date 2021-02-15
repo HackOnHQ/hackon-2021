@@ -14,8 +14,8 @@
         <h1 class="hero-text">Pan-India Virtual Hackathon</h1>
         <h2 class="powered-by">
           Powered by
-          <a href="https://github.com" target="_blank" ref="noopener noreferrer"
-            >GitHub</a
+          <a href="https://raahee.in" target="_blank" ref="noopener noreferrer"
+            >Raahee</a
           >
         </h2>
         <div class="date">11<sup>th</sup> to 19<sup>th</sup> April 2021</div>
