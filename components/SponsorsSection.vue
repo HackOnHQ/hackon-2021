@@ -30,7 +30,7 @@ export default {
     return {
       sponsors: [
         {
-          image: require("~/assets/Sponsors/Google.png")
+          image: "https://webstockreview.net/images/google-logo-white-png-4.png"
         },
         {
           image: require("~/assets/Sponsors/GitHub.png")
