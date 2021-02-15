@@ -74,7 +74,7 @@ export default {
           date: "April 11",
           items: [
             {
-              title: "Community as a Cure",
+              title: "Web Development 101 with Angular",
               type: "Workshop",
               time: "11:00 am",
               about:
@@ -212,6 +212,7 @@ export default {
         flex-direction: column;
         padding: 2em 1em 2em 5em;
         text-align: right;
+        white-space: nowrap;
 
         @include respond-below(md) {
           padding: 2em 1em 2em 1em;
@@ -256,6 +257,11 @@ export default {
         .speaker {
           display: flex;
           align-items: center;
+
+          @include respond-below(md) {
+            padding-right: 0.5em;
+          }
+
           img.avatar {
             width: 5rem;
             height: 5rem;
@@ -271,6 +277,7 @@ export default {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            line-height: 1.5rem;
 
             .title {
               font-size: 1.1em;
@@ -281,7 +288,6 @@ export default {
             .designation {
               margin-top: -0.5rem;
               color: rgba(255, 255, 255, 0.5);
-              // line-height: 1rem;
             }
           }
         }
@@ -292,6 +298,10 @@ export default {
         align-items: center;
         color: #797e97;
         cursor: pointer;
+
+        @include respond-below(sm) {
+          display: none;
+        }
 
         img {
           transform: rotate(90deg);
