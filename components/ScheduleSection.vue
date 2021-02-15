@@ -76,11 +76,11 @@ export default {
             {
               title: "Web Development 101 with Angular",
               type: "Workshop",
-              time: "11:00 am",
+              time: "21:00",
               about:
                 "Talk about the importance of communities, and how a group of like-minded people can bring about an essential change in our lives.",
               speaker: {
-                name: "Paras Pundir",
+                name: "Arnav Gupta",
                 designation: "Program Manager, Reactor Bangalore, Microsoft",
                 about:
                   "Paras is the Program Manager at Microsoft Reactor, Bangalore, who is also the Community Professional of the Year 2020.",
@@ -91,7 +91,7 @@ export default {
             {
               title: "Community as a Cure",
               type: "Workshop",
-              time: "11:00 am",
+              time: "11:00",
               about:
                 "Talk about the importance of communities, and how a group of like-minded people can bring about an essential change in our lives.",
               speaker: {
@@ -106,18 +106,18 @@ export default {
             {
               title: "Hackathon Begins",
               type: "Hackathon",
-              time: "11:00 am",
+              time: "11:00",
             },
 
             {
               title: "Break",
               type: "Break",
-              time: "11:00 am",
+              time: "11:00",
             },
             {
               title: "Hackathon Begins",
               type: "Hackathon",
-              time: "11:00 am",
+              time: "11:00",
             },
           ],
         },
@@ -129,7 +129,7 @@ export default {
             {
               title: "Community as a Cure",
               type: "Workshop",
-              time: "11:00 am",
+              time: "11:00",
               about:
                 "Talk about the importance of communities, and how a group of like-minded people can bring about an essential change in our lives.",
               speaker: {
@@ -144,7 +144,7 @@ export default {
             {
               title: "Community as a Cure",
               type: "Workshop",
-              time: "11:00 am",
+              time: "11:00",
               about:
                 "Talk about the importance of communities, and how a group of like-minded people can bring about an essential change in our lives.",
               speaker: {
@@ -159,18 +159,18 @@ export default {
             {
               title: "Hackathon Begins",
               type: "Hackathon",
-              time: "11:00 am",
+              time: "11:00",
             },
 
             {
               title: "Break",
               type: "Break",
-              time: "11:00 am",
+              time: "11:00",
             },
             {
               title: "Hackathon Begins",
               type: "Hackathon",
-              time: "11:00 am",
+              time: "11:00",
             },
           ],
         },
@@ -218,6 +218,10 @@ export default {
           padding: 2em 1em 2em 1em;
         }
 
+        @include respond-below(sm) {
+          padding: 2em 0.5em 2em 0.5em;
+        }
+
         .time {
           font-size: 1.2em;
           font-weight: bold;
@@ -235,6 +239,11 @@ export default {
         display: flex;
         justify-content: space-between;
         margin-left: 1rem;
+
+        @include respond-below(sm) {
+          margin-left: 0;
+          padding-left: 1em;
+        }
 
         &.Workshop {
           border-left: 3px solid #7fc1c8;
@@ -271,6 +280,7 @@ export default {
             @include respond-below(sm) {
               width: 3rem;
               height: 3rem;
+              margin-right: 1em;
             }
           }
           .details {
@@ -283,11 +293,20 @@ export default {
               font-size: 1.1em;
               letter-spacing: 0.1rem;
               font-weight: 699;
+
+              @include respond-below(sm) {
+                letter-spacing: initial;
+                font-size: 1em;
+              }
             }
 
-            .designation {
-              margin-top: -0.5rem;
-              color: rgba(255, 255, 255, 0.5);
+            .name {
+              // margin-top: -0.5rem;
+              // color: rgba(255, 255, 255, 0.5);
+
+              @include respond-below(sm) {
+                font-size: 0.8em;
+              }
             }
           }
         }
@@ -298,6 +317,7 @@ export default {
         align-items: center;
         color: #797e97;
         cursor: pointer;
+        white-space: nowrap;
 
         @include respond-below(sm) {
           display: none;
