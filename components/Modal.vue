@@ -8,8 +8,8 @@ export default {
     },
     handleModalClose(elem) {
       console.log(elem);
-    },
-  },
+    }
+  }
 };
 </script>
 <template>
@@ -59,10 +59,12 @@ export default {
         </section>
         <footer class="modal-footer">
           <slot name="footer">
-            <button type="button" class="btn-green" aria-label="Close modal">
-              <img src="~/assets/add-calender.svg" />
-              Add to calender!
-            </button>
+            <a :href="workshop.url" target="_blank">
+              <button type="button" class="btn-green" aria-label="Close modal">
+                <img src="~/assets/youtube.svg" />
+                Session Link
+              </button>
+            </a>
           </slot>
         </footer>
       </div>
@@ -187,9 +189,17 @@ export default {
 
 button {
   float: right;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: -20px;
+  border: 0px;
+  color: #fff;
   padding: 12px 16px;
+  background-color: var(--color-accent-2);
   img {
-    width: 0.8rem;
+    width: 1rem;
+    position: relative;
+    top: 3px;
   }
   font-family: "Roboto Mono";
 }

@@ -18,7 +18,7 @@
 
         <div class="panel">
           <h4 class="title">Links</h4>
-          <a href="https://github.com">Code Of Conduct</a>
+          <a href="/coc">Code Of Conduct</a>
           <a href="https://github.com">Sponsorship Brochure</a>
           <a href="/team">Hackon 2.0 Team</a>
         </div>

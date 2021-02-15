@@ -62,6 +62,8 @@ export default {
             "Ever wanted pages to load quickly on mobile devices, but not sure about how to do that? AMP or Accelerated Mobile Pages is a Google-backed project that can help you do this! Interested in knowing more about it? Hear it from a Googler itself! ❤️",
           date: "11/04/2020",
           time: "7:00 PM",
+          url:
+            "https://www.youtube.com/watch?v=9cLqYHqzBQA&list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli&index=3",
           speaker: {
             name: "Saurabh Rajpal",
             designation: "Technical Solutions Consultant, Google",
@@ -75,6 +77,8 @@ export default {
             "Talk about the importance of communities, and how a group of like-minded people can bring about an essential change in our lives.",
           date: "10/04/2020",
           time: "9:00 PM",
+          url:
+            "https://www.youtube.com/watch?v=MPvGVAmaNNc&list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli&index=1",
           speaker: {
             name: "Paras Pundir",
             designation: "Program Manager, Reactor Bangalore, Microsoft",
@@ -90,6 +94,8 @@ export default {
             "Workshop: Building your Personal Brand by none other than the amazing personality Miri Rodriguez! She is probably the first person you would want to consult if you want your personal brand. So don't let go of this wonderful opportunity!💖",
           date: "15/04/2020",
           time: "10:00 PM",
+          url:
+            "https://www.youtube.com/watch?v=usTIEljqCHM&list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli&index=13",
           speaker: {
             name: "Miri Rodriguez",
             designation: "Head of Global Internship Program, Microsoft",
@@ -105,6 +111,8 @@ export default {
             "Talk about the importance of communities, and how a group of like-minded people can bring about an essential change in our lives.💖",
           date: "17/04/2020",
           time: "10:00 PM",
+          url:
+            "https://www.youtube.com/watch?v=0bfk8Q1E1Sk&list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli&index=18",
           speaker: {
             name: "Nikita Gandhi",
             designation: "Community Manager, Google",
@@ -120,6 +128,8 @@ export default {
             "Get ready to dive into single page applications, component based web, web component specifications and a lot more!",
           date: "18/04/2020",
           time: "6:00 PM",
+          url:
+            "https://www.youtube.com/watch?v=gpuMx8XOoQY&list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli&index=20",
           speaker: {
             name: "Nishu Goel",
             designation: "Google Developer Expert",
@@ -133,6 +143,8 @@ export default {
           name: "Getting Started with Angular",
           date: "12/04/2020",
           time: "7:00 PM",
+          url:
+            "https://www.youtube.com/watch?v=xYMcumMMuYk&list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli&index=6",
           speaker: {
             name: "Dhananjay Kumar",
             designation: "Most Valuable Professional, Microsoft",
@@ -146,6 +158,8 @@ export default {
             "Realise the power of Flutter and start making cross-platform applications with Flutter.",
           date: "16/04/2020",
           time: "10:00 PM",
+          url:
+            "https://www.youtube.com/watch?v=YMfk_4QpNoU&list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli&index=16",
           speaker: {
             name: "Pawan Kumar",
             designation: "Google Developer Expert",
@@ -161,6 +175,8 @@ export default {
             "Never participated in a hackathon? Don't worry. HackOn brings to you Hackathon 101 by Jatin Katyal, the absolute champion of hackathons!",
           date: "11/04/2020",
           time: "4:00 PM",
+          url:
+            "https://www.youtube.com/watch?v=W_0pbhk4kw4&list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli&index=2",
           speaker: {
             name: "Jatin Katyal",
             designation: "Software Engineer, Coding Blocks",
@@ -176,6 +192,8 @@ export default {
             "This is a hands-on workshop that will teach you how Git and GitHub have been revolutionizing teamwork, how to work remotely and how version control systems are useful. ✨",
           date: "11/04/2020",
           time: "10:00 PM",
+          url:
+            "https://www.youtube.com/watch?v=r7mjvBklS7I&list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli&index=4",
           speaker: {
             name: "Gunnika Batra",
             designation: "GitHub Campus Expert",
@@ -189,6 +207,8 @@ export default {
           name: "What is a Full Stack Developer and how to become One!",
           date: "14/04/2020",
           time: "10:00 PM",
+          url:
+            "https://www.youtube.com/watch?v=_GYOHG-pBDk&list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli&index=10",
           speaker: {
             name: "Arnav Gupta",
             designation: "Engineering Lead, Zomato",
@@ -202,6 +222,8 @@ export default {
           name: "Webscraping with Python - 101",
           date: "15/04/2020",
           time: "4:00 PM",
+          url:
+            "https://www.youtube.com/watch?v=QGOjLK4TRKw&list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli&index=11",
           about:
             "This is a hands-on workshop that will teach you what web scraping is, and how to perform web scraping using Python libraries like Beautiful Soup!",
           speaker: {
@@ -217,6 +239,8 @@ export default {
             "Building a web application to solve a business problem is easy in today's world. But this workshop will teach you how to create an experience that lets the user spend more time on your service.",
           date: "16/04/2020",
           time: "6:00 PM",
+          url:
+            "https://www.youtube.com/watch?v=0ok3Cw_XYX0&list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli&index=15",
           speaker: {
             name: "Aravind Putrevu",
             designation: "Senior Developer Advocate, Elastic",
