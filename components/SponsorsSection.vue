@@ -1,7 +1,7 @@
 <template>
   <Container id="sponsors">
     <section class="content-section">
-      <HashHeader title="Sponsors" />
+      <HashHeader title="Past Sponsors" />
       <div class="contents">
         <div class="cards-grid">
           <div v-for="(sponsor, index) in sponsors" :key="index" class="card">
