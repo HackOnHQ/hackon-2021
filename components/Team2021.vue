@@ -15,10 +15,10 @@
             <h4 class="title">{{ teamMember.name }}</h4>
             <p class="description">{{ teamMember.description }}</p>
             <div class="socialLinks">
-              <a :href="teamMember.linkedIn">
+              <a :href="teamMember.linkedIn" target="_blank">
                 <img src="~/assets/linkedin.svg" alt="LinkedInLink" />
               </a>
-              <a :href="teamMember.github">
+              <a :href="teamMember.github" target="_blank">
                 <img src="~/assets/github.svg" alt="GithubLink" />
               </a>
             </div>
@@ -74,7 +74,7 @@ export default {
             "Btech sophomore from MAIT | Full Stack Web Developer (MERN) | ML and AI enthusiast",
           picture:
             "https://avatars.githubusercontent.com/u/56197821?s=460&u=693be068482cf3a5b23a1bf708ee1e399487659a&v=4",
-          linkedIn: "https://www.linkedin.com/in/apoorv-dwivedi-84a42a174/",
+          linkedIn: "https://www.linkedin.com/in/apoorvdwi/",
           github: "https://github.com/apoorvdwi"
         },
         {
@@ -94,6 +94,15 @@ export default {
             "https://avatars.githubusercontent.com/u/71888339?s=460&u=2be63077304e5b88c626b1fa64bc4c3a23ba72a1&v=4",
           linkedIn: "https://www.linkedin.com/in/saishadlak/",
           github: "https://github.com/saish-lmx"
+        },
+        {
+          name: "Ojasvi Khuranna",
+          description:
+            "Incoming SDE Intern at Amazon | Intuit Augment Mentee | GitHub Campus Expert",
+          picture:
+            "https://user-images.githubusercontent.com/44267452/74556077-29ded180-4f83-11ea-8b5b-0dc0611fa3c2.jpeg",
+          linkedIn: "https://www.linkedin.com/in/ojasvikhurana/",
+          github: "https://github.com/ojasvik"
         }
       ]
     };
