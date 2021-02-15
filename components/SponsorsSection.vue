@@ -1,7 +1,7 @@
 <template>
   <Container id="sponsors">
     <section class="content-section">
-      <HashHeader title="Past Sponsors" />
+      <HashHeader title="Sponsors" />
       <div class="contents">
         <div class="cards-grid">
           <div v-for="(sponsor, index) in sponsors" :key="index" class="card">
@@ -30,60 +30,25 @@ export default {
     return {
       sponsors: [
         {
-          image:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/sponsors/d0266300b5234991b89cf25b247d56b3/436.png"
+          image: require("~/assets/Sponsors/Google.png")
         },
         {
-          image:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/sponsors/3ffea72da37e4944b22069e3070881f0/874.png"
+          image: require("~/assets/Sponsors/GitHub.png")
         },
         {
-          image:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/sponsors/8459f3c1a83b43ad87f614c8dae58d13/123.png"
+          image: require("~/assets/Sponsors/Gitkraken.png")
         },
         {
-          image:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/sponsors/63fe95182efe437185dcc86d2dda7a75/844.jpeg"
+          image: require("~/assets/Sponsors/Auth0.png")
         },
         {
-          image:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/sponsors/9ce7b85ce0f54c8bb9be74dff79ecec3/415.png"
+          image: require("~/assets/Sponsors/Dev.png")
         },
         {
-          image:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/sponsors/854baedb6d314f859e7dde4c1d0641c6/483.png"
+          image: require("~/assets/Sponsors/Elastic.png")
         },
         {
-          image:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/sponsors/482d208c56734886b8469a8d9edb1779/307.png"
-        },
-        {
-          image:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/sponsors/9ddaa4c18c964fde98022ff15472d4cd/795.png"
-        },
-        {
-          image:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/sponsors/aaef47c078f249dbbb8aa9fbdca8b21b/65.png"
-        },
-        {
-          image:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/sponsors/8c26aceefe8a4432afef3631f6e03bd7/816.png"
-        },
-        {
-          image:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/sponsors/e89e594b0e234259879c9744c543932f/706.png"
-        },
-        {
-          image:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/sponsors/7187f376166546988cbce332e6833dd3/877.png"
-        },
-        {
-          image:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/sponsors/eee25080b07f425292b9f4cb85a8b237/696.png"
-        },
-        {
-          image:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/sponsors/778a81db82d3491993549efff6a628bd/407.png"
+          image: require("~/assets/Sponsors/IBM.png")
         }
       ]
     };
