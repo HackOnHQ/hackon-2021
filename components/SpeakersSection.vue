@@ -40,10 +40,27 @@ export default {
             "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/9727f388b1354367aa6c1d24e81d9280/460.jpeg"
         },
         {
+          name: "Juan Pablo Flores",
+          description: "Program Manager at Github Education",
+          picture: "https://www.hackjaipur.com/images/speaker/juan.jpg"
+        },
+        {
           name: "Dhananjay Kumar",
           description: "Most Valuable Professional at Microsoft",
           picture:
             "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/519c888869584eefa120edf5e4971e22/652.jpeg"
+        },
+        {
+          name: "Saptarshi Prakash",
+          description: "Senior Design Manager at Swiggy",
+          picture:
+            "https://pbs.twimg.com/profile_images/1257372007781425152/tmcdvef7_400x400.jpg"
+        },
+        {
+          name: "Jason Etcovitch",
+          description: "Engineer at Github",
+          picture:
+            "https://pbs.twimg.com/profile_images/922510360153767936/_WjDCeqO_400x400.jpg"
         },
         {
           name: "Miguel de Andres-Clavera",
@@ -64,6 +81,12 @@ export default {
             "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/64dea866b8304c3fb5a885fb933944f0/594.jpeg"
         },
         {
+          name: "Madhav Bahl",
+          description: "Software Engineer at Microsoft",
+          picture:
+            "https://pbs.twimg.com/profile_images/952528304145293317/5ULYwLxb_400x400.jpg"
+        },
+        {
           name: "Harshit Dwivedi",
           description: "Google Developer Expert for Firebase at Google",
           picture:
@@ -74,6 +97,17 @@ export default {
           description: "Sr. Product Technology Manager at Google",
           picture:
             "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/4dd5af545d1346b38a505ca24072fd5e/584.png"
+        },
+        {
+          name: "Aman Sanduja",
+          description: "Co-Founder at Zubi.io",
+          picture:
+            "https://pbs.twimg.com/profile_images/1334941769117564929/6uAyGQ_h_400x400.jpg"
+        },
+        {
+          name: "Ben Dechrai",
+          description: "Developer Advocate at Auth0",
+          picture: "https://www.hackjaipur.com/images/speaker/ben.jpg"
         },
         {
           name: "Ashish Jha",
@@ -168,7 +202,7 @@ export default {
         },
         {
           name: "Karan Chaturvedi",
-          description: "Developer Advocater at IBM",
+          description: "Developer Advocate at IBM",
           picture:
             "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/7c6500b387a342deb0fbc96c588c2b75/144.jpeg"
         },
