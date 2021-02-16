@@ -20,7 +20,7 @@
             >Raahee</a
           >
         </h2>
-        <div class="date">11<sup>th</sup> to 19<sup>th</sup> April 2021</div>
+        <div class="date">10<sup>th</sup> to 18<sup>th</sup> April 2021</div>
         <button class="cta">
           <a href="https://hackon.hackerearth.com" target="_blank">
             <div class="contents">
@@ -29,7 +29,7 @@
           </a>
         </button>
         <p class="call-for-proposals">
-          Interested in giving a talk or workshop? <a href="">CFPs Open Now!</a>
+          Interested in giving a talk or workshop? <a href="">CFPs Coming Soon!</a>
         </p>
       </div>
     </Container>
