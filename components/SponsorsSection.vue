@@ -4,9 +4,11 @@
       <HashHeader title="Past Sponsors" />
       <div class="contents">
         <div class="cards-grid">
-          <div v-for="(sponsor, index) in sponsors" :key="index" class="card">
+          <div v-for="(sponsor, index) in sponsors" :key="index">
             <a :href="sponsor.url" target="_blank">
-              <img :src="sponsor.image" alt="sponsor" />
+              <div class="card">
+                <img :src="sponsor.image" alt="sponsor" />
+              </div>
             </a>
           </div>
         </div>
@@ -22,7 +24,7 @@ import HashHeader from "~/components/HashHeader";
 export default {
   components: {
     Container,
-    HashHeader
+    HashHeader,
   },
   data() {
     return {
@@ -30,35 +32,35 @@ export default {
         {
           image:
             "https://webstockreview.net/images/google-logo-white-png-4.png",
-          url: "https://google.com"
+          url: "https://google.com",
         },
         {
           image: require("~/assets/Sponsors/GitHub.png"),
-          url: "http://github.com"
+          url: "http://github.com",
         },
         {
           image: require("~/assets/Sponsors/Gitkraken.png"),
-          url: "https://www.gitkraken.com"
+          url: "https://www.gitkraken.com",
         },
         {
           image: require("~/assets/Sponsors/Auth0.png"),
-          url: "https://auth0.com"
+          url: "https://auth0.com",
         },
         {
           image: require("~/assets/Sponsors/Dev.png"),
-          url: "https://dev.to"
+          url: "https://dev.to",
         },
         {
           image: require("~/assets/Sponsors/Elastic.png"),
-          url: "https://www.elastic.co"
+          url: "https://www.elastic.co",
         },
         {
           image: require("~/assets/Sponsors/IBM.png"),
-          url: "https://www.ibm.com/in-en"
-        }
-      ]
+          url: "https://www.ibm.com/in-en",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
