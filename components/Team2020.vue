@@ -128,7 +128,7 @@ export default {
           name: "Shivang",
           url: "https://www.linkedin.com/in/shivang2k/",
           picture:
-            "https://raw.githubusercontent.com/HackOnHackathon/hackon-2020/master/assets/img/team/shivang.png"
+          "https://media-exp1.licdn.com/dms/image/C5103AQG6_aP5V6R5vA/profile-displayphoto-shrink_800_800/0/1582987573486?e=1619049600&v=beta&t=VRF1YUbRVlwwlxLjx6rsACKnkdOYB7pV5B1pk5o3VqY"
         },
         {
           name: "Shivay",
