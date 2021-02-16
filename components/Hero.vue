@@ -10,6 +10,9 @@
     >
       <div class="hero-img"></div>
       <div class="texts">
+        <a href="https://www.hackerearth.com">
+          <img src="http://engineering.hackerearth.com/images/logo.png" />
+        </a>
         <h2 class="hero-text">
           <a
             href="https://twitter.com/search?q=%23HackOn%20%40hackonhackathon&src=typed_query"
@@ -109,6 +112,11 @@ export default {
     display: flex;
     flex-direction: column;
     z-index: 10;
+
+    img {
+      width: 8rem;
+      margin-bottom: -8px;
+    }
 
     h1.hero-text {
       font-size: 2.4rem;
