@@ -35,17 +35,15 @@ export default {
 };
 </script>
 <template>
-  <div class="mailto">
-    <div class="tooltip">
-      <a
-        class="mail-link"
-        @click.prevent="copyToClipboard(email)"
-        v-bind:href="'mailto:' + email"
-        ref="email"
-        >{{ email }}</a
-      >
-      <span class="tooltiptext">{{ text }}</span>
-    </div>
+  <div class="tooltip">
+    <a
+      class="mail-link"
+      @click.prevent="copyToClipboard(email)"
+      v-bind:href="'mailto:' + email"
+      ref="email"
+      >{{ email }}</a
+    >
+    <span class="tooltiptext">{{ text }}</span>
   </div>
 </template>
 

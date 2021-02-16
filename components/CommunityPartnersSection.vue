@@ -10,8 +10,13 @@
         </div>
       </div>
       <div class="new-sponsor">
-        <p>Interested in becoming a sponsor? Email us at</p>
-        <p><MailTo email="contact@hackon.tech" /></p>
+        <p>Want to sponsor HackOn?</p>
+        <p>
+          Shoot us an E-mail at
+          <MailTo email="contact@hackon.tech" />
+        </p>
+        <br />
+        <p><a href="brochure">Download Brochure</a></p>
       </div>
     </section>
   </Container>
@@ -121,11 +126,17 @@ export default {
   }
 
   .new-sponsor {
+    font-size: 1.4rem;
+    font-weight: 600;
     margin: 20px 0 -10px;
     padding: 2em 0em;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.2);
+    background: var(--color-secondary-light);
     border-radius: 5px;
+
+    a {
+      text-decoration: underline;
+    }
   }
 }
 </style>

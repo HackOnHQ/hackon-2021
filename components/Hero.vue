@@ -5,7 +5,7 @@
         position: 'relative',
         height: '100%',
         display: 'flex',
-        alignItems: 'center'
+        alignItems: 'center',
       }"
     >
       <div class="hero-img"></div>
@@ -41,8 +41,8 @@ import ArrowRightIcon from "~/components/Icons/ArrowRight";
 export default {
   components: {
     Container,
-    ArrowRightIcon
-  }
+    ArrowRightIcon,
+  },
 };
 </script>
 
@@ -100,9 +100,10 @@ export default {
     .powered-by {
       margin-top: 15px;
       font-size: 1rem;
+      color: var(--colour-pink);
 
       a {
-        color: var(--font-color);
+        color: var(--colour-pink);
       }
     }
 
@@ -114,7 +115,7 @@ export default {
 
     .cta {
       align-self: flex-start;
-      margin-top: 50px;
+      margin: 20px 0px;
       background: var(--gradient-blue);
       border: 0;
       border-radius: 100px;
