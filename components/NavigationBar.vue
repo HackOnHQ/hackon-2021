@@ -10,7 +10,8 @@
                 class="brand-edition"
                 >2.0</span
               >
-            </h1></a>
+            </h1></a
+          >
         </div>
         <!-- Menu area -->
         <div class="menu-area">
@@ -45,8 +46,8 @@ import Container from "~/components/Container";
 
 export default {
   components: {
-    Container,
-  },
+    Container
+  }
 };
 </script>
 
@@ -82,7 +83,7 @@ export default {
       align-items: center;
       font-family: "Inter";
 
-      @include respond-below(md) {
+      @include respond-below(sm) {
         display: none;
       }
 
