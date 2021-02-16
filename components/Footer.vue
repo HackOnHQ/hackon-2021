@@ -5,9 +5,7 @@
         <div class="panel">
           <div class="branding">
             <h1 class="brand-text">HACKON<span>2.0</span></h1>
-            <p class="description">
-              Hackon &copy; 2020
-            </p>
+            <p class="description">Hackon &copy; 2020</p>
             <span>
               Hackon and it's trademarks are associated as a registered
               <i style="color: var(--colour-pink)">Non-Profit</i>
@@ -26,7 +24,7 @@
         <div class="panel">
           <div class="title">Contact Us</div>
           <p class="info">
-            <a href="mailto:contact@hackon.tech">contact@hackon.tech</a>
+            <MailTo email="contact@hackon.tech" />
           </p>
           <p class="info">+919876543210</p>
           <div class="socialLinks">
@@ -61,11 +59,13 @@
 
 <script>
 import Container from "~/components/Container";
+import MailTo from "~/components/MailTo";
 
 export default {
   components: {
-    Container
-  }
+    Container,
+    MailTo,
+  },
 };
 </script>
 

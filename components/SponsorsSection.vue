@@ -9,10 +9,6 @@
           </div>
         </div>
       </div>
-      <div class="new-sponsor">
-        <p>Interested in becoming a sponsor? Email us at</p>
-        <p><a href="mailto:contact@hackon.tech">contact@hackon.tech</a></p>
-      </div>
     </section>
   </Container>
 </template>
@@ -24,35 +20,36 @@ import HashHeader from "~/components/HashHeader";
 export default {
   components: {
     Container,
-    HashHeader
+    HashHeader,
   },
   data() {
     return {
       sponsors: [
         {
-          image: "https://webstockreview.net/images/google-logo-white-png-4.png"
+          image:
+            "https://webstockreview.net/images/google-logo-white-png-4.png",
         },
         {
-          image: require("~/assets/Sponsors/GitHub.png")
+          image: require("~/assets/Sponsors/GitHub.png"),
         },
         {
-          image: require("~/assets/Sponsors/Gitkraken.png")
+          image: require("~/assets/Sponsors/Gitkraken.png"),
         },
         {
-          image: require("~/assets/Sponsors/Auth0.png")
+          image: require("~/assets/Sponsors/Auth0.png"),
         },
         {
-          image: require("~/assets/Sponsors/Dev.png")
+          image: require("~/assets/Sponsors/Dev.png"),
         },
         {
-          image: require("~/assets/Sponsors/Elastic.png")
+          image: require("~/assets/Sponsors/Elastic.png"),
         },
         {
-          image: require("~/assets/Sponsors/IBM.png")
-        }
-      ]
+          image: require("~/assets/Sponsors/IBM.png"),
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
@@ -104,11 +101,6 @@ export default {
         }
       }
     }
-  }
-
-  .new-sponsor {
-    margin: 20px 0 -10px;
-    text-align: center;
   }
 }
 </style>

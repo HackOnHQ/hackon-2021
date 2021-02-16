@@ -4,23 +4,19 @@
       <div class="navigation-contents">
         <!-- Branding area -->
         <div class="branding">
-          <h1 class="brand-text">
-            HACK<span class="brand-char-o">O</span>N<span class="brand-edition"
-              >2.0</span
-            >
-          </h1>
+          <a href="/"
+            ><h1 class="brand-text">
+              HACK<span class="brand-char-o">O</span>N<span
+                class="brand-edition"
+                >2.0</span
+              >
+            </h1></a>
         </div>
         <!-- Menu area -->
         <div class="menu-area">
           <ul class="nav-links">
             <li>
-              <a href="/">Home</a>
-            </li>
-            <li>
               <a href="/team">Team</a>
-            </li>
-            <li>
-              <a href="/#about">About</a>
             </li>
             <li>
               <a href="/#speakers">Speakers</a>
@@ -36,9 +32,7 @@
             </li>
           </ul>
           <a href="https://hackon.hackerearth.com" target="_blank">
-            <button class="cta-button">
-              Register Now
-            </button>
+            <button class="cta-button">Register Now</button>
           </a>
         </div>
       </div>
@@ -51,8 +45,8 @@ import Container from "~/components/Container";
 
 export default {
   components: {
-    Container
-  }
+    Container,
+  },
 };
 </script>
 

@@ -15,7 +15,7 @@
               <img src="~/assets/faq-up-arrow.svg" />
             </div>
             <div class="answer">
-              <div>{{ faq.content }}</div>
+              <div v-html="faq.content">{{  }}</div>
             </div>
           </div>
         </div>
@@ -78,7 +78,7 @@ export default {
         {
           title: "Where can I find updates?",
           content:
-            "We have an active Discord for communication, along with a Telegram ",
+            "We have an active <a href='//google.com'>Discord</a> for communication, along with a <a href='//google.com'>Telegram</a> ",
         },
         {
           title: "How big can a team be?",
