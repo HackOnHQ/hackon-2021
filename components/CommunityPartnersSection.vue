@@ -9,6 +9,10 @@
           </div>
         </div>
       </div>
+      <div class="new-sponsor">
+        <p>Interested in becoming a sponsor? Email us at</p>
+        <p><MailTo email="contact@hackon.tech" /></p>
+      </div>
     </section>
   </Container>
 </template>
@@ -16,51 +20,53 @@
 <script>
 import Container from "~/components/Container";
 import HashHeader from "~/components/HashHeader";
+import MailTo from "~/components/MailTo";
 
 export default {
   components: {
     Container,
-    HashHeader
+    HashHeader,
+    MailTo,
   },
   data() {
     return {
       sponsors: [
         {
-          image: require("~/assets/Community/CodingBlocks.png")
+          image: require("~/assets/Community/CodingBlocks.png"),
         },
         {
-          image: require("~/assets/Community/AngelHack.png")
+          image: require("~/assets/Community/AngelHack.png"),
         },
         {
-          image: require("~/assets/Community/DCD.svg")
+          image: require("~/assets/Community/DCD.svg"),
         },
         {
-          image: require("~/assets/Community/JSLovers.png")
+          image: require("~/assets/Community/JSLovers.png"),
         },
         {
-          image: require("~/assets/Community/WWCD.jpeg")
+          image: require("~/assets/Community/WWCD.jpeg"),
         },
         {
-          image: require("~/assets/Community/GDG New Delhi.png")
+          image: require("~/assets/Community/GDG New Delhi.png"),
         },
         {
-          image: require("~/assets/Community/GDG Bangalore.png")
+          image: require("~/assets/Community/GDG Bangalore.png"),
         },
         {
-          image: require("~/assets/Community/GDG Jaipur.png")
+          image: require("~/assets/Community/GDG Jaipur.png"),
         },
         {
-          image: require("~/assets/Community/GDG Ahmedabad.png")
+          image: require("~/assets/Community/GDG Ahmedabad.png"),
         },
         {
-          image: require("~/assets/Community/GDG Jalandar.png")
+          image: require("~/assets/Community/GDG Jalandar.png"),
         },
         {
-          image: require("~/assets/Community/GDG Nagpur.png")
-        }
-      ]
+          image: require("~/assets/Community/GDG Nagpur.png"),
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
@@ -112,6 +118,14 @@ export default {
         }
       }
     }
+  }
+
+  .new-sponsor {
+    margin: 20px 0 -10px;
+    padding: 2em 0em;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
   }
 }
 </style>
