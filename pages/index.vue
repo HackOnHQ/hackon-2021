@@ -1,5 +1,6 @@
 <template>
   <div class="home-page">
+    <ScrollTopArrow />
     <Hero />
     <ContentSection />
     <TracksSection />
@@ -24,6 +25,7 @@ import SponsorsSection from "~/components/SponsorsSection";
 import FAQSection from "~/components/FAQSection";
 import SchedulesSection from "~/components/SchedulesSection";
 import CommunityPartnersSection from "~/components/CommunityPartnersSection";
+import ScrollTopArrow from "~/components/ScrollTopArrow";
 
 export default {
   components: {
@@ -37,8 +39,9 @@ export default {
     SchedulesSection,
     WorkshopsSection,
     PrizesSection,
-    FAQSection
-  }
+    FAQSection,
+    ScrollTopArrow,
+  },
 };
 </script>
 
