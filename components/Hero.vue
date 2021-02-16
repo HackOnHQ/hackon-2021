@@ -17,7 +17,7 @@
             ref="noopener noreferrer"
             >#HackOn</a
           >
-        </h1>
+        </h2>
         <VueTyper
           :text="text"
           :shuffle="true"
@@ -39,7 +39,8 @@
           </a>
         </button>
         <p class="call-for-proposals">
-          Interested in giving a talk or workshop? <a href="">CFPs Coming Soon!</a>
+          Interested in giving a talk or workshop?
+          <a href="">CFPs Coming Soon!</a>
         </p>
       </div>
     </Container>
