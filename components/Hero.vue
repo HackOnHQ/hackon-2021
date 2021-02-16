@@ -10,7 +10,7 @@
     >
       <div class="hero-img"></div>
       <div class="texts">
-        <h1 class="hero-text"><a href="https://twitter.com/search?q=%23HackOn%20%40hackonhackathon&src=typed_query" target="_blank" ref="noopener noreferrer"
+        <h2 class="hero-text"><a href="https://twitter.com/search?q=%23HackOn%20%40hackonhackathon&src=typed_query" target="_blank" ref="noopener noreferrer"
             >#HackOn</a</h1>
         <h1 class="hero-text">Ready? Set. Hack!</h1>
         <h1 class="hero-text">Hack For Change.</h1>
