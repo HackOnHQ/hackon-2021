@@ -29,7 +29,7 @@ export default {
         <header class="modal-header" id="modalTitle">
           {{ workshop.name }}
         </header>
-        <div class="hashtags">#workshop #hackon2</div>
+        <!-- <div class="hashtags">#workshop #hackon2</div> -->
         <div class="date">
           <img src="~/assets/calender.svg" />
           {{ workshop.date }} {{ workshop.time }} IST
@@ -124,12 +124,12 @@ export default {
     margin-left: 0.5rem;
   }
 
-  .hashtags {
-    color: #e58ab2;
-    font-size: 1rem;
-    margin: 0.4rem 0;
-    margin-left: 0.5rem;
-  }
+  // .hashtags {
+  //   color: #e58ab2;
+  //   font-size: 1rem;
+  //   margin: 0.4rem 0;
+  //   margin-left: 0.5rem;
+  // }
 
   .date {
     margin-left: 0.5rem;

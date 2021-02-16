@@ -5,15 +5,25 @@
         position: 'relative',
         height: '100%',
         display: 'flex',
-        alignItems: 'center',
+        alignItems: 'center'
       }"
     >
       <div class="hero-img"></div>
       <div class="texts">
-        <h2 class="hero-text"><a href="https://twitter.com/search?q=%23HackOn%20%40hackonhackathon&src=typed_query" target="_blank" ref="noopener noreferrer"
-            >#HackOn</a</h1>
-        <h1 class="hero-text">Ready? Set. Hack!</h1>
-        <h1 class="hero-text">Hack For Change.</h1>
+        <h1 class="hero-text">
+          <a
+            href="https://twitter.com/search?q=%23HackOn%20%40hackonhackathon&src=typed_query"
+            target="_blank"
+            ref="noopener noreferrer"
+            >#HackOn</a
+          >
+        </h1>
+        <VueTyper
+          :text="text"
+          :shuffle="true"
+          erase-style="backspace"
+          type-delay="150"
+        />
         <h2 class="powered-by">
           Powered by
           <a href="https://raahee.in" target="_blank" ref="noopener noreferrer"
@@ -39,16 +49,22 @@
 <script>
 import Container from "~/components/Container";
 import ArrowRightIcon from "~/components/Icons/ArrowRight";
+import { VueTyper } from "vue-typer";
 
 export default {
   components: {
     Container,
     ArrowRightIcon,
+    VueTyper
   },
+
+  data() {
+    return { text: ["Ready? Set. Hack!", "Hack For Change."] };
+  }
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .home-page-hero {
   height: 600px;
   max-height: 800px;
@@ -94,11 +110,24 @@ export default {
     z-index: 10;
 
     h1.hero-text {
-      font-size: 2.5rem;
+      font-size: 2.4rem;
       font-weight: bold;
       font-family: var(--title-font);
     }
 
+    .vue-typer {
+      font-size: 2.4rem;
+      font-weight: bold;
+      font-family: var(--title-font);
+
+      .custom.char {
+        color: #fff !important;
+      }
+
+      .custom.caret {
+        background-color: #fff;
+      }
+    }
     .powered-by {
       margin-top: 15px;
       font-size: 1rem;
