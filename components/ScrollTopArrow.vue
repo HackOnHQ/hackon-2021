@@ -1,8 +1,7 @@
 <template>
   <ScrollTopComponent>
-    <a class="btn btn-light">
-        <span>Top</span>
-      <!-- <font-awesome-icon :icon="['fas', 'angle-double-up']" size="3x" /> -->
+    <a class="btn">
+      <img src="~/assets/up-arrow-black.svg" />
     </a>
   </ScrollTopComponent>
 </template>
@@ -18,11 +17,26 @@ export default {
 
 <style>
 .btn {
-  border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.55);
+  /* border-radius: 8px; */
+  background-color: #c9c9c9;
+  padding: 1em;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  color: black;
+  cursor: pointer;
   /* padding-top: 27px; */
   /* padding-left: 10px; */
   /* padding-right: 10px; */
   /* padding-bottom: 5px; */
+}
+
+.btn:hover {
+  background-color: rgba(178, 178, 178, 1);
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 </style>

@@ -17,12 +17,10 @@ export default {
       this.element.scrollTop = 0;
     },
     scrollListener() {
-      console.log(this.element.scrollTop);
-      this.visible = this.element.scrollTop > 1500;
+      this.visible = this.element.scrollTop > this.element.scrollHeight * 0.75;
     },
   },
   mounted() {
-    console.log("ds");
     this.element = document.getElementById("__layout");
     this.element.addEventListener("scroll", this.scrollListener);
   },

@@ -6,10 +6,7 @@ export default {
     close() {
       this.$emit("close");
     },
-    handleModalClose(elem) {
-      console.log(elem);
-    }
-  }
+  },
 };
 </script>
 <template>
