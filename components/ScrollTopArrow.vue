@@ -17,7 +17,7 @@ export default {
 
 <style>
 .btn {
-  /* border-radius: 8px; */
+  border-radius: 50%;
   background-color: #c9c9c9;
   padding: 1em;
   transition: 0.5s;
