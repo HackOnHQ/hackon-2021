@@ -102,7 +102,7 @@ export default {
       font-size: 1rem;
 
       a {
-        color: var(--font-color);
+        color: var(--colour-pink);
       }
     }
 

@@ -5,7 +5,9 @@
       <div class="contents">
         <div class="cards-grid">
           <div v-for="(sponsor, index) in sponsors" :key="index" class="card">
-            <img :src="sponsor.image" alt="sponsor" />
+            <a :href="sponsor.url" target="_blank">
+              <img :src="sponsor.image" alt="sponsor" />
+            </a>
           </div>
         </div>
       </div>
@@ -20,7 +22,7 @@ import HashHeader from "~/components/HashHeader";
 export default {
   components: {
     Container,
-    HashHeader,
+    HashHeader
   },
   data() {
     return {
@@ -28,28 +30,35 @@ export default {
         {
           image:
             "https://webstockreview.net/images/google-logo-white-png-4.png",
+          url: "https://google.com"
         },
         {
           image: require("~/assets/Sponsors/GitHub.png"),
+          url: "http://github.com"
         },
         {
           image: require("~/assets/Sponsors/Gitkraken.png"),
+          url: "https://www.gitkraken.com"
         },
         {
           image: require("~/assets/Sponsors/Auth0.png"),
+          url: "https://auth0.com"
         },
         {
           image: require("~/assets/Sponsors/Dev.png"),
+          url: "https://dev.to"
         },
         {
           image: require("~/assets/Sponsors/Elastic.png"),
+          url: "https://www.elastic.co"
         },
         {
           image: require("~/assets/Sponsors/IBM.png"),
-        },
-      ],
+          url: "https://www.ibm.com/in-en"
+        }
+      ]
     };
-  },
+  }
 };
 </script>
 
