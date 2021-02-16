@@ -27,7 +27,8 @@ export default {
       },
       {
         name: "twitter:image",
-        content: "https://pbs.twimg.com/profile_banners/1244236299650740226/1585827778/1500x500"
+        content:
+          "https://pbs.twimg.com/profile_banners/1244236299650740226/1585827778/1500x500"
       }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
@@ -46,11 +47,15 @@ export default {
   buildModules: ["@nuxtjs/style-resources"],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: ["nuxt-webfontloader"],
+  modules: ["nuxt-webfontloader", "@nuxtjs/google-analytics"],
   webfontloader: {
     google: {
       families: ["Sen", "Roboto Mono", "Inter"] //Loads Lato font with weights 400 and 700
     }
+  },
+
+  googleAnalytics: {
+    id: "UA-162071861-1"
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
