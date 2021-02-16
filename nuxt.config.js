@@ -35,12 +35,12 @@ export default {
     script: [
       {
         src: "https://www.googletagmanager.com/gtag/js?id=UA-162071861-1",
-        async: true,
+        async: true
       },
       {
         src: "https://www.googletagmanager.com/gtag/js?id=G-YWT7D5FTDY",
-        async: true,
-      },
+        async: true
+      }
     ]
   },
 
@@ -57,15 +57,11 @@ export default {
   buildModules: ["@nuxtjs/style-resources"],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: ["nuxt-webfontloader", "@nuxtjs/google-analytics"],
+  modules: ["nuxt-webfontloader"],
   webfontloader: {
     google: {
       families: ["Sen", "Roboto Mono", "Inter"] //Loads Lato font with weights 400 and 700
     }
-  },
-
-  googleAnalytics: {
-    id: "UA-162071861-1"
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
