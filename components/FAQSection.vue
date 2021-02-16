@@ -49,7 +49,7 @@ export default {
         {
           title: "How long will it be on for?",
           content:
-            "The event will be running for about one week from 11th April to 19th April."
+            "The event will be running for about one week from 10th April to 18th April."
         },
         {
           title: "Who can participate?",
@@ -59,11 +59,11 @@ export default {
         {
           title: "How will project submissions work?",
           content:
-            'To participate, click on the "Apply with Devfolio" button. You will then be able to create your project once the hackathon starts. To be eligible for the judging process you\'ll have to submit the project before the hackathon ends.'
+            'To participate, register on <a href='//hackon.hackerearth.com' target= '_blank'>HackerEarth's platform</a>. You will then be able to create your project once the hackathon starts. To be eligible for the judging process you\'ll have to submit the project before the hackathon ends.'
         },
         {
           title: "How will judging work?",
-          content: "We'll be reviewing submissions on Devfolio!"
+          content: "We'll be reviewing submissions on HackerEarth, and it will be judged by our team and judges mentioned on the page."
         },
         {
           title: "Do I need to be a student?",
