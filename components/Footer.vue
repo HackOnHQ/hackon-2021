@@ -6,7 +6,11 @@
           <div class="branding">
             <h1 class="brand-text">HACKON FOUNDATION</h1>
             <span>
-              The goal of HackOn Foundation is to support <i style="color: var(--colour-pink)">hackers and the hackathon communities</i> around the globe.
+              The goal of HackOn Foundation is to support
+              <i style="color: var(--colour-pink)"
+                >hackers and the hackathon communities</i
+              >
+              around the globe.
             </span>
           </div>
         </div>
@@ -15,7 +19,7 @@
           <h4 class="title">About HackOn Foundation</h4>
           <a href="/coc">Code Of Conduct</a>
           <a href="https://hackon.tech/brochure">Sponsorship Brochure</a>
-          <a href="/team">Team Behind HackOn Hackathon</a>
+          <a href="/team">Team Behind HackOn</a>
         </div>
 
         <div class="panel">
@@ -70,8 +74,8 @@ import MailTo from "~/components/MailTo";
 export default {
   components: {
     Container,
-    MailTo,
-  },
+    MailTo
+  }
 };
 </script>
 
@@ -101,20 +105,20 @@ export default {
 
   .content-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 180px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 100px;
     row-gap: 30px;
 
     @include respond-between(md, lg) {
-      column-gap: 140px;
+      column-gap: 50px;
     }
 
     @include respond-below(md) {
-      column-gap: 140px;
+      column-gap: 50px;
     }
 
     @include respond-between(sm, md) {
-      column-gap: 90px;
+      column-gap: 30px;
     }
 
     @include respond-below(sm) {
