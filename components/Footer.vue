@@ -19,7 +19,7 @@
         </div>
 
         <div class="panel">
-          <h4 class="title">Hackathon Universe</h4>
+          <h4 class="title">HackOn Universe</h4>
           <a href="https://www.hackjaipur.com">HackJaipur</a>
           <a href="https://www.hackchennai.in">HackChennai</a>
           <a href="https://hacknagpur.tech">HackNagpur</a>
