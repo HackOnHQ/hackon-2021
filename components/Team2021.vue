@@ -1,7 +1,7 @@
 <template>
   <Container id="team2021">
     <section class="content-section">
-      <HashHeader title="Hackon Team 2021" />
+      <HashHeader title="HackOn Team 2021" />
       <div class="contents">
         <div class="team-grid">
           <div

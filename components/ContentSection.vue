@@ -5,25 +5,20 @@
       <div class="contents">
         <div class="about">
           <p>
-            HackOn is a fully-online, people-focused hackathon where young minds
-            possessing a passion for solving real-life problems come together to
-            build innovative solutions. Whether you are a beginner or an expert
-            coder, here is the perfect chance to hone your skills and witness
-            the competitive yet inclusive developer community around you!
+            HackOn is a week-long global digital hackathon that is organized by hackers for hackers 
+            to bring their ideas from the point of inception to reality. No matter how new or old you 
+            may be in the world of hackathons, HackOn has a place for everyone wanting 
+            to learn, build, share, and grow in their lives.
           </p>
           <p>
             Learn new technologies, enhance your team management and
             presentation skills, and get mentored by experts- all in one place!
           </p>
           <p>
-            We aim to use your skills to help battle against the issues being
-            faced due to the COVID-19 pandemic.
-          </p>
-          <p>
-            In light of the COVID-19 pandemic outbreak, your safety and
-            well-being are our primary concerns. Hence, all the activities
-            related to HackOn like workshops, talks, and presentations will also
-            be conducted online.
+            Our journey as one of the first leading virtual hackathon started in April 2020 
+            at the beginning of the COVID-19 pandemic, where we brought over 2500 hackers 
+            from all across India together to solve problems in healthcare, remote lifestyle, 
+            and other issues that came with the lockdown. 
           </p>
         </div>
         <div class="stats">
