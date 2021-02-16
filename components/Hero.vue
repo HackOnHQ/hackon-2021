@@ -10,8 +10,9 @@
     >
       <div class="hero-img"></div>
       <div class="texts">
-        <h1 class="hero-text">Let's Build Big!</h1>
-        <h1 class="hero-text">Pan-India Virtual Hackathon</h1>
+        <h1 class="hero-text">#HackOn</h1>
+        <h1 class="hero-text">Ready? Set. Hack!</h1>
+        <h1 class="hero-text">Hack For Change.</h1>
         <h2 class="powered-by">
           Powered by
           <a href="https://raahee.in" target="_blank" ref="noopener noreferrer"
