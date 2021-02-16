@@ -10,9 +10,9 @@
         </div>
       </div>
       <div class="new-sponsor">
-        <p>Want to sponsor HackOn?</p>
+        <p>Want to get involved?</p>
         <p>
-          Shoot us an E-mail at
+          Drop us an e-mail at
           <MailTo email="contact@hackon.tech" />
         </p>
         <br />
