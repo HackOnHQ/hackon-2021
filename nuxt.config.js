@@ -30,7 +30,17 @@ export default {
         content: "https://pbs.twimg.com/profile_banners/1244236299650740226/1585827778/1500x500"
       }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    script: [
+      {
+        src: "https://www.googletagmanager.com/gtag/js?id=UA-162071861-1",
+        async: true,
+      },
+      {
+        src: "https://www.googletagmanager.com/gtag/js?id=G-YWT7D5FTDY",
+        async: true,
+      },
+    ]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -43,13 +53,7 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
-  buildModules: [
-    "@nuxtjs/style-resources",
-    '@nuxtjs/google-analytics'
-  ],
-  googleAnalytics: {
-    id: 'UA-162071861-1', // Use as fallback if no runtime config is provided
-  },
+  buildModules: ["@nuxtjs/style-resources"],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: ["nuxt-webfontloader"],
