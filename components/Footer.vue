@@ -5,28 +5,34 @@
         <div class="panel">
           <div class="branding">
             <h1 class="brand-text">HACKON<span>2.0</span></h1>
-            <p class="description">Hackon &copy; 2020</p>
             <span>
-              Hackon and it's trademarks are associated as a registered
-              <i style="color: var(--colour-pink)">Non-Profit</i>
-              Company
+              The goal of HackOn is to support <i style="color: var(--colour-pink)">hackers and the hackathon communities</i> around the globe.
             </span>
           </div>
         </div>
 
         <div class="panel">
-          <h4 class="title">Links</h4>
+          <h4 class="title">About HackOn</h4>
           <a href="/coc">Code Of Conduct</a>
-          <a href="https://github.com">Sponsorship Brochure</a>
-          <a href="/team">Hackon 2.0 Team</a>
+          <a href="https://hackon.tech/brochure">Sponsorship Brochure</a>
+          <a href="/team">Team Behind HackOn</a>
         </div>
 
         <div class="panel">
-          <div class="title">Contact Us</div>
+          <h4 class="title">Hackathon Universe</h4>
+          <a href="https://www.hackjaipur.com">HackJaipur</a>
+          <a href="https://www.hackchennai.in">HackChennai</a>
+          <a href="https://hacknagpur.tech">HackNagpur</a>
+          <a href="https://www.amihacks.tech">AmiHacks</a>
+          <a href="http://decentral-hacks.hackerearth.com">DecentralHacks</a>
+        </div>
+
+        <div class="panel">
+          <div class="title">Connect With Us</div>
           <p class="info">
             <MailTo email="contact@hackon.tech" />
           </p>
-          <p class="info">+919876543210</p>
+          <p class="info">+919560678655</p>
           <div class="socialLinks">
             <a href="https://www.linkedin.com/company/hackonhackathon">
               <img src="~/assets/linkedin.svg" alt="LinkedInLink" />
