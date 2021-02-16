@@ -24,11 +24,11 @@
 
         <div class="panel">
           <h4 class="title">HackOn Universe</h4>
-          <a href="https://www.hackjaipur.com">HackJaipur</a>
-          <a href="https://www.hackchennai.in">HackChennai</a>
-          <a href="https://hacknagpur.tech">HackNagpur</a>
-          <a href="https://www.amihacks.tech">AmiHacks</a>
-          <a href="http://decentral-hacks.hackerearth.com">DecentralHacks</a>
+          <a target="_blank" href="https://www.hackjaipur.com">HackJaipur</a>
+          <a target="_blank" href="https://www.hackchennai.in">HackChennai</a>
+          <a target="_blank" href="https://hacknagpur.tech">HackNagpur</a>
+          <a target="_blank" href="https://www.amihacks.tech">AmiHacks</a>
+          <a target="_blank" href="http://decentral-hacks.hackerearth.com">DecentralHacks</a>
         </div>
 
         <div class="panel">
@@ -38,26 +38,26 @@
           </p>
           <p class="info">+919560678655</p>
           <div class="socialLinks">
-            <a href="https://www.linkedin.com/company/hackonhackathon">
+            <a target="_blank" href="https://www.linkedin.com/company/hackonhackathon">
               <img src="~/assets/linkedin.svg" alt="LinkedInLink" />
             </a>
-            <a href="https://discord.hackon.tech/">
+            <a target="_blank" href="https://discord.hackon.tech/">
               <img src="~/assets/discord.svg" alt="DiscordLink" />
             </a>
-            <a href="https://medium.com/hackonhackathon">
+            <a target="_blank" href="https://medium.com/hackonhackathon">
               <img src="~/assets/medium.svg" alt="MediumLink" />
             </a>
           </div>
           <div class="socialLinks">
-            <a href="https://twitter.com/hackonhackathon">
+            <a target="_blank" href="https://twitter.com/hackonhackathon">
               <img src="~/assets/twitter.svg" alt="FacebookLink" />
             </a>
-            <a
+            <a target="_blank"
               href="https://youtube.com/playlist?list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli"
             >
               <img src="~/assets/youtube.svg" alt="YoutubeLink" />
             </a>
-            <a href="https://telegram.hackon.tech/">
+            <a target="_blank" href="https://telegram.hackon.tech/">
               <img src="~/assets/telegram.svg" alt="TelegramLink" />
             </a>
           </div>
@@ -74,8 +74,8 @@ import MailTo from "~/components/MailTo";
 export default {
   components: {
     Container,
-    MailTo
-  }
+    MailTo,
+  },
 };
 </script>
 
