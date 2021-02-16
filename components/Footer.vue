@@ -4,18 +4,18 @@
       <div class="content-grid">
         <div class="panel">
           <div class="branding">
-            <h1 class="brand-text">HACKON<span>2.0</span></h1>
+            <h1 class="brand-text">HACKON FOUNDATION</h1>
             <span>
-              The goal of HackOn is to support <i style="color: var(--colour-pink)">hackers and the hackathon communities</i> around the globe.
+              The goal of HackOn Foundation is to support <i style="color: var(--colour-pink)">hackers and the hackathon communities</i> around the globe.
             </span>
           </div>
         </div>
 
         <div class="panel">
-          <h4 class="title">About HackOn</h4>
+          <h4 class="title">About HackOn Foundation</h4>
           <a href="/coc">Code Of Conduct</a>
           <a href="https://hackon.tech/brochure">Sponsorship Brochure</a>
-          <a href="/team">Team Behind HackOn</a>
+          <a href="/team">Team Behind HackOn Hackathon</a>
         </div>
 
         <div class="panel">
