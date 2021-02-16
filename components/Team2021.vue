@@ -69,7 +69,7 @@ export default {
           github: "https://github.com/adityaoberai"
         },
         {
-          name: "Apoorv dwivedi",
+          name: "Apoorv Dwivedi",
           description:
             "Btech sophomore from MAIT | Full Stack Web Developer (MERN) | ML and AI enthusiast",
           picture:
@@ -103,6 +103,15 @@ export default {
             "https://user-images.githubusercontent.com/44267452/74556077-29ded180-4f83-11ea-8b5b-0dc0611fa3c2.jpeg",
           linkedIn: "https://www.linkedin.com/in/ojasvikhurana/",
           github: "https://github.com/ojasvik"
+        },
+        {
+          name: "Siddharth Dayalwal",
+          description:
+            "Community Intern - @Progate | Helping Hackathon Communities | Google Crowdsource Influencer | @HackerEarth Ambassador",
+          picture:
+            "https://avatars.githubusercontent.com/u/41017419?s=460&u=ece0c309cba6ed5ecbe43a8845e2bd0e54fe210c&v=4",
+          linkedIn: "https://www.linkedin.com/in/siddharth-dayalwal/",
+          github: "https://github.com/siddharthdayalwal"
         }
       ]
     };

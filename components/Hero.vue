@@ -13,14 +13,7 @@
         <a href="https://www.hackerearth.com">
           <img src="http://engineering.hackerearth.com/images/logo.png" />
         </a>
-        <h2 class="hero-text">
-          <a
-            href="https://twitter.com/search?q=%23HackOn%20%40hackonhackathon&src=typed_query"
-            target="_blank"
-            ref="noopener noreferrer"
-            >#HackOn</a
-          >
-        </h2>
+        <h2 class="hero-text"></h2>
         <VueTyper
           :text="text"
           :shuffle="true"

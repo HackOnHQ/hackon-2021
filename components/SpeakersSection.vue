@@ -56,6 +56,13 @@ export default {
             "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/519c888869584eefa120edf5e4971e22/652.jpeg"
         },
         {
+          name: "Miri Rodriguez",
+          description: "Head of Global Internship Program, Microsoft",
+          url: "https://www.linkedin.com/in/mirirod/",
+          picture:
+            "https://media-exp1.licdn.com/dms/image/C5603AQGccVXExmWSeg/profile-displayphoto-shrink_800_800/0/1585676059716?e=1619049600&v=beta&t=zZLrL9VmQrHFFbV9vxOvF1NnPKtzZ0JU5BpkE58JVC4"
+        },
+        {
           name: "Saptarshi Prakash",
           description: "Senior Design Manager at Swiggy",
           url: "https://twitter.com/saptarshipr",
@@ -112,6 +119,13 @@ export default {
             "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/4dd5af545d1346b38a505ca24072fd5e/584.png"
         },
         {
+          name: "Paras Pundir",
+          description: "Program Manager, Reactor Bangalore, Microsoft",
+          url: "https://www.linkedin.com/in/iamparaspundir/",
+          picture:
+            "https://miro.medium.com/fit/c/1360/1360/2*1d2PU06qLbaY-3EqeQBUZQ.jpeg"
+        },
+        {
           name: "Aman Sanduja",
           description: "Co-Founder at Zubi.io",
           url: "https://twitter.com/AmanSanduja",
@@ -123,6 +137,20 @@ export default {
           description: "Developer Advocate at Auth0",
           url: "https://www.linkedin.com/in/bendechrai/",
           picture: "https://www.hackjaipur.com/images/speaker/ben.jpg"
+        },
+        {
+          name: "Ashish Jha",
+          description: "Alexa Community Evangelist at Amazon",
+          url: "https://www.linkedin.com/in/thedreamsaver/",
+          picture:
+            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/206bffde42a244fcbe7b4af44102671c/208.jpeg"
+        },
+        {
+          name: "Pawan Kumar",
+          description: "Google Developer Expert",
+          url: "https://www.linkedin.com/in/imthepk/",
+          picture:
+            "https://media-exp1.licdn.com/dms/image/C4E03AQFU_Pks7-2qbA/profile-displayphoto-shrink_200_200/0/1610945863156?e=1617840000&v=beta&t=_pkadk5xabdD-LyBnReydJnHuO5T76OYBQZfiBdxHfc"
         },
         {
           name: "Jatin Katyal",

@@ -24,11 +24,13 @@
 
         <div class="panel">
           <h4 class="title">HackOn Universe</h4>
-          <a href="https://www.hackjaipur.com">HackJaipur</a>
-          <a href="https://www.hackchennai.in">HackChennai</a>
-          <a href="https://hacknagpur.tech">HackNagpur</a>
-          <a href="https://www.amihacks.tech">AmiHacks</a>
-          <a href="http://decentral-hacks.hackerearth.com">DecentralHacks</a>
+          <a href="https://www.hackjaipur.com" target="_blank">HackJaipur</a>
+          <a href="https://www.hackchennai.in" target="_blank">HackChennai</a>
+          <a href="https://hacknagpur.tech" target="_blank">HackNagpur</a>
+          <a href="https://www.amihacks.tech" target="_blank">AmiHacks</a>
+          <a href="http://decentral-hacks.hackerearth.com" target="_blank"
+            >DecentralHacks</a
+          >
         </div>
 
         <div class="panel">
