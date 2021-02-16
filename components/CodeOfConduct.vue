@@ -6,7 +6,7 @@
         <div class="dataSection">
           <h3>Applicability</h3>
           <p>
-            This policy shall be applicable on all spaces related to Devfolio,
+            This policy shall be applicable on all spaces related to HackOn Foundation,
             including the following, as well as their online counterparts (if
             any):
           </p>
@@ -43,7 +43,7 @@
         </div>
         <div class="dataSection">
           <p>
-            Hackathons hosted on Devfolio are dedicated to providing a safe and
+            Hackathons hosted by HackOn Foundation are dedicated to providing a safe and
             comfortable environment and harassment-free experience for everyone.
             No discrimination, on the basis of the following, shall be
             tolerated:
@@ -135,10 +135,18 @@
               expel them from the hackathon with no refund (if applicable),
             </li>
             <li>
-              block their access to Devfolio resources including the website,
+              block their access to HackOn resources including the website,
             </li>
             <li>report their behaviour to local law enforcement.</li>
           </ul>
+        </div>
+<div class="dataSection">
+          <h3>Contact</h3>
+          <p>
+            If you have witnessed or experienced any transgressions of this Code of Conduct at a hackathon 
+            organised by HackOn Foundation, please report it to your hackathon organizer, 
+            or get in touch with Rishabh Bansal at rishabh@hackon.tech or +91-9560678655.
+          </p>
         </div>
       </div>
     </section>
