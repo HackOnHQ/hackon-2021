@@ -107,7 +107,7 @@ export default {
         {
           name: "Siddharth Dayalwal",
           description:
-            "Community Intern - @Progate | Helping Hackathon Communities | Google Crowdsource Influencer | @HackerEarth Ambassador",
+            "AngelHack Student Ambassador | Microsoft Learn Student Ambassador | Former Intern - @Progate",
           picture:
             "https://avatars.githubusercontent.com/u/41017419?s=460&u=ece0c309cba6ed5ecbe43a8845e2bd0e54fe210c&v=4",
           linkedIn: "https://www.linkedin.com/in/siddharth-dayalwal/",
