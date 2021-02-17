@@ -3,13 +3,18 @@
     <section class="content-section">
       <HashHeader title="Past Sponsors" />
       <div class="contents">
-        <div class="cards-grid">
-          <div v-for="(sponsor, index) in sponsors" :key="index">
-            <a :href="sponsor.url" target="_blank">
-              <div class="card">
-                <img :src="sponsor.image" alt="sponsor" />
-              </div>
-            </a>
+        <div v-for="(section, index) in sponsors" :key="index">
+          <div class="subheading">
+            <h2 class="section-title">{{ section.type }}</h2>
+          </div>
+          <div class="cards-grid">
+            <div v-for="(sponsor, index) in section.logos" :key="index">
+              <a :href="sponsor.url" target="_blank">
+                <div class="card">
+                  <img :src="sponsor.image" alt="sponsor" />
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -30,33 +35,48 @@ export default {
     return {
       sponsors: [
         {
-          image:
-            "https://webstockreview.net/images/google-logo-white-png-4.png",
-          url: "https://google.com",
+          type: "Gold Sponsors",
+          logos: [
+            {
+              image:
+                "https://webstockreview.net/images/google-logo-white-png-4.png",
+              url: "https://google.com",
+            },
+            {
+              image: require("~/assets/Sponsors/GitHub.png"),
+              url: "http://github.com",
+            },
+          ],
         },
         {
-          image: require("~/assets/Sponsors/GitHub.png"),
-          url: "http://github.com",
+          type: "Silver Sponsors",
+          logos: [
+            {
+              image: require("~/assets/Sponsors/Gitkraken.png"),
+              url: "https://www.gitkraken.com",
+            },
+            {
+              image: require("~/assets/Sponsors/Auth0.png"),
+              url: "https://auth0.com",
+            },
+            {
+              image: require("~/assets/Sponsors/Dev.png"),
+              url: "https://dev.to",
+            },
+          ],
         },
         {
-          image: require("~/assets/Sponsors/Gitkraken.png"),
-          url: "https://www.gitkraken.com",
-        },
-        {
-          image: require("~/assets/Sponsors/Auth0.png"),
-          url: "https://auth0.com",
-        },
-        {
-          image: require("~/assets/Sponsors/Dev.png"),
-          url: "https://dev.to",
-        },
-        {
-          image: require("~/assets/Sponsors/Elastic.png"),
-          url: "https://www.elastic.co",
-        },
-        {
-          image: require("~/assets/Sponsors/IBM.png"),
-          url: "https://www.ibm.com/in-en",
+          type: "Bronze Sponsors",
+          logos: [
+            {
+              image: require("~/assets/Sponsors/Elastic.png"),
+              url: "https://www.elastic.co",
+            },
+            {
+              image: require("~/assets/Sponsors/IBM.png"),
+              url: "https://www.ibm.com/in-en",
+            },
+          ],
         },
       ],
     };
@@ -70,8 +90,28 @@ export default {
   flex-direction: column;
   padding: 20px 0;
   .contents {
-    padding: 20px 0;
+    .subheading {
+      // padding: 20px 0px;
+      display: flex;
+      align-items: center;
 
+      &:first-child {
+        // padding-top: 0px;
+      }
+
+      h2.section-title {
+        font-family: "Sen";
+        font-size: 1.26rem;
+        font-weight: 600;
+        padding: 20px 10px 20px 0;
+
+        &:before {
+          content: "##";
+          color: var(--font-color-light);
+          padding-right: 5px;
+        }
+      }
+    }
     .cards-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
