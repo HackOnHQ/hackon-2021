@@ -5,7 +5,6 @@
       <div class="contents">
         <div class="about">
           <p>
-<<<<<<< HEAD
             It is that time of year again! One-week of limitless freedom to
             play, create, and test out ideas that may go nowhere – or that might
             just change the world. Following the spirit of Hackathons, this
@@ -16,15 +15,6 @@
             HackOn has a place for everyone who wants to learn, build, share,
             and grow in their lives.
           </p>
-=======
-            It is that time of year again! One-week of limitless freedom to play, create, and test out ideas 
-            that may go nowhere – or that might just change the world. Following the spirit of Hackathons,        
-            this year, we have adapted and evolved, and we bring you our second edition of HackOn Hackathon 
-            which will focus on ways to foster innovation while raising awareness on mental health and diversity. 
-            No matter how new or old you may be in the world of hackathons, HackOn has a place for everyone who wants to 
-            learn, build, share, and grow in your lives.
-           </p>
->>>>>>> 5abcc647bb24ea9392059b4851ca43b64ca3e740
         </div>
         <div class="stats">
           <div class="gridLayout">

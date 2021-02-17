@@ -151,7 +151,8 @@ export default {
     }
     .powered-by {
       margin-top: -10px;
-      font-size: 1rem;
+      margin-left: 2px;
+      font-size: 1.1rem;
       color: var(--font-color);
 
       @include respond-below(sm) {
@@ -159,7 +160,7 @@ export default {
       }
 
       img {
-        width: 15px;
+        width: 18px;
         margin: 5px 5px -2px;
       }
 
