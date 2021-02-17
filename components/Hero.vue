@@ -62,8 +62,19 @@ export default {
   },
 
   data() {
-    return { text: ["Change", "Inclusion", "Diversity", "Community"] };
+    return {
+      text: ["Change", "Inclusion", "Diversity", "Community"]
+      // count: 0
+    };
   }
+
+  // methods: {
+  //   updateColour () {
+  //     count+=1;
+
+  //   }
+
+  // }
 };
 </script>
 
@@ -141,11 +152,11 @@ export default {
         }
 
         .custom.char {
-          color: #fff !important;
+          color: var(--colour-pink) !important;
         }
 
         .custom.caret {
-          background-color: #fff;
+          background-color: var(--colour-pink);
         }
       }
     }
@@ -195,19 +206,19 @@ export default {
         }
 
         .contents {
-          padding: 10px 15px;
+          padding: 10px;
           background: var(--font-color);
           border-radius: 10px;
           color: var(--color-secondary);
-          font-size: 1.2rem;
+          font-size: 1.1rem;
           font-weight: bold;
           display: flex;
           align-items: center;
           opacity: 0.9;
           .icon {
             margin-right: 10px;
-            height: 2rem;
-            width: 2rem;
+            height: 1.9rem;
+            width: 1.9rem;
           }
         }
 
@@ -231,19 +242,19 @@ export default {
         }
 
         .contentsDiscord {
-          padding: 10px 15px;
+          padding: 10px;
           background: #313742;
           border-radius: 10px;
           color: var(--font-color);
-          font-size: 1.2rem;
+          font-size: 1.1rem;
           font-weight: 500;
           display: flex;
           align-items: center;
           opacity: 0.9;
           .icon {
             margin-right: 10px;
-            height: 2rem;
-            width: 2rem;
+            height: 1.9rem;
+            width: 1.9rem;
           }
         }
 
