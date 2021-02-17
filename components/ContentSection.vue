@@ -5,20 +5,15 @@
       <div class="contents">
         <div class="about">
           <p>
-            HackOn is a week-long global digital hackathon that is organized by hackers for hackers 
-            to bring their ideas from the point of inception to reality. No matter how new or old you 
-            may be in the world of hackathons, HackOn has a place for everyone wanting 
-            to learn, build, share, and grow in their lives.
-          </p>
-          <p>
-            Learn new technologies, enhance your team management and
-            presentation skills, and get mentored by experts- all in one place!
-          </p>
-          <p>
-            Our journey as one of the first leading virtual hackathon started in April 2020 
-            at the beginning of the COVID-19 pandemic, where we brought over 2500 hackers 
-            from all across India together to solve problems in healthcare, remote lifestyle, 
-            and other issues that came with the lockdown. 
+            It is that time of year again! One-week of limitless freedom to
+            play, create, and test out ideas that may go nowhere – or that might
+            just change the world. Following the spirit of Hackathons, this
+            year, we have adapted and evolved, and we bring you our second
+            edition of HackOn Hackathon which will focus on ways to foster
+            innovation while raising awareness on mental health and diversity.
+            No matter how new or old you may be in the world of hackathons,
+            HackOn has a place for everyone who wants to learn, build, share,
+            and grow in their lives.
           </p>
         </div>
         <div class="stats">
@@ -77,7 +72,12 @@ export default {
       padding: 10px 0;
 
       p {
-        padding-top: 20px;
+        padding-top: 60px;
+        font-size: 1.2rem;
+
+        @include respond-below(md) {
+          padding-top: 20px;
+        }
       }
     }
   }
