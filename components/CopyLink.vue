@@ -1,10 +1,10 @@
 <script>
 export default {
   name: "MailTo",
-  props: ["email"],
+  props: ["value", "link", "text"],
   data() {
     return {
-      text: "Copy email address",
+      tooltipText: `Copy ${this.text}`,
     };
   },
   methods: {
@@ -26,24 +26,26 @@ export default {
         document.getSelection().removeAllRanges();
         document.getSelection().addRange(selected);
       }
-      this.text = "Copied to clipboard!";
+      this.tooltipText = "Copied to clipboard!";
       setTimeout(() => {
-        this.text = "Copy email address";
+        this.tooltipText = `Copy ${this.text}`;
       }, 3000);
     },
   },
+  beforeMount() {
+    this.tooltipText
+  }
 };
 </script>
 <template>
   <div class="tooltip">
     <a
       class="mail-link"
-      @click.prevent="copyToClipboard(email)"
-      v-bind:href="'mailto:' + email"
-      ref="email"
-      >{{ email }}</a
+      @click.prevent="copyToClipboard(value)"
+      v-bind:href="link"
+      >{{ value }}</a
     >
-    <span class="tooltiptext">{{ text }}</span>
+    <span class="tooltiptext">{{ tooltipText }}</span>
   </div>
 </template>
 

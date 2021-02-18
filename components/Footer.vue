@@ -29,18 +29,27 @@
           <a href="https://hacknagpur.tech" target="_blank">HackNagpur</a>
           <a href="https://hackthisfall.tech" target="_blank">Hack This Fall</a>
           <a href="https://www.amihacks.tech" target="_blank">AmiHacks</a>
-          <a href="http://decentral-hacks.hackerearth.com" target="_blank">DecentralHacks</a>
+          <a href="http://decentral-hacks.hackerearth.com" target="_blank"
+            >DecentralHacks</a
+          >
           <a href="https://hackverse.nitk.ac.in" target="_blank">HackVerse</a>
         </div>
 
         <div class="panel">
           <div class="title">Connect With Us</div>
           <p class="info">
-            <MailTo email="contact@hackon.tech" />
+            <CopyLink
+              value="contact@hackon.tech"
+              link="mailto:contact@hackon.tech"
+              text="email address"
+            />
           </p>
           <p class="info">+919560678655</p>
           <div class="socialLinks">
-            <a target="_blank" href="https://www.linkedin.com/company/hackonhackathon">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/company/hackonhackathon"
+            >
               <img src="~/assets/linkedin.svg" alt="LinkedInLink" />
             </a>
             <a target="_blank" href="https://discord.hackon.tech/">
@@ -54,7 +63,8 @@
             <a target="_blank" href="https://twitter.com/hackonhackathon">
               <img src="~/assets/twitter.svg" alt="FacebookLink" />
             </a>
-            <a target="_blank"
+            <a
+              target="_blank"
               href="https://youtube.com/playlist?list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli"
             >
               <img src="~/assets/youtube.svg" alt="YoutubeLink" />
@@ -65,18 +75,32 @@
           </div>
         </div>
       </div>
+      <div class="attribution">
+        Powered by
+        <a
+          href="https://hackerearth.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          HackerEarth
+        </a>
+        and
+        <a href="https://raahee.in" target="_blank" rel="noopener noreferrer">
+          Raahee
+        </a>
+      </div>
     </Container>
   </div>
 </template>
 
 <script>
 import Container from "~/components/Container";
-import MailTo from "~/components/MailTo";
+import CopyLink from "~/components/CopyLink";
 
 export default {
   components: {
     Container,
-    MailTo,
+    CopyLink,
   },
 };
 </script>
@@ -179,6 +203,15 @@ export default {
 
     a {
       color: var(--colour-pink);
+    }
+  }
+
+  .attribution {
+    padding: 10px 0;
+    border-top: 1px solid var(--color-secondary);
+    margin-top: 20px;
+    a {
+      color: var(--color-accent);
     }
   }
 }

@@ -145,7 +145,7 @@
           <p>
             If you have witnessed or experienced any transgressions of this Code of Conduct at a hackathon 
             organised by HackOn Foundation, please report it to your hackathon organizer, 
-            or get in touch with Rishabh Bansal at rishabh@hackon.tech or +91-9560678655.
+            or get in touch with Rishabh Bansal at <CopyLink value="rishabh@hackon.tech" link="maito:rishabh@hackon.tech" text="email address" /> or <CopyLink value="+91-9560678655" link="tel:+919560678655" text="phone number" />.
           </p>
         </div>
       </div>
