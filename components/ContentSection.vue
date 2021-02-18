@@ -9,11 +9,11 @@
             play, create, and test out ideas that may go nowhere – or that might
             just change the world. Following the spirit of Hackathons, this
             year, we have adapted and evolved, and we bring you our second
-            edition of HackOn Hackathon which will focus on ways to foster
-            innovation while raising awareness on mental health and diversity.
-            No matter how new or old you may be in the world of hackathons,
-            HackOn has a place for everyone who wants to learn, build, share,
-            and grow in their lives.
+            edition of Hack<span>O</span>n Hackathon which will focus on ways to
+            foster innovation while raising awareness on mental health and
+            diversity. No matter how new or old you may be in the world of
+            hackathons, Hack<span>O</span>n has a place for everyone who wants
+            to learn, build, share, and grow in their lives.
           </p>
         </div>
         <div class="stats">
@@ -74,6 +74,10 @@ export default {
       p {
         padding-top: 60px;
         font-size: 1.2rem;
+
+        span {
+          color: var(--colour-pink);
+        }
 
         @include respond-below(md) {
           padding-top: 20px;
