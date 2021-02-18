@@ -47,17 +47,17 @@ export default {
           amount: "₹10,000"
         },
         {
-          name: "Best hack built on Blockchain",
+          name: "Best Hack Built On Blockchain",
           image: require("~/assets/blockchain.png"),
           amount: "₹5,000"
         },
         {
-          name: "Best hack built on Elastic",
+          name: "Best Hack Built On Elastic",
           image: require("~/assets/elastic.png"),
           amount: "₹5,000"
         },
         {
-          name: "Best hack built on voice",
+          name: "Best Hack Built On Voice",
           image: require("~/assets/voice.svg"),
           amount: "₹5,000"
         }
