@@ -42,6 +42,15 @@ export default {
     return {
       team: [
         {
+          name: "Rishabh Bansal",
+          description:
+            "Program Manager, HackerEarth",
+          picture:
+            "https://s3-ap-southeast-1.amazonaws.com/he-public-data/Screenshot%202021-02-19%20at%204.31.26%20AM46c6c48.png",
+          linkedIn: "https://www.linkedin.com/in/rishabhbansal97",
+          twitter: "https://twitter.com/rishabhbansal97"
+        },
+        {
           name: "Musthaq Ahamad",
           description:
             "Building @localeai. UX Engineer. I write, design and build things on the internet",
