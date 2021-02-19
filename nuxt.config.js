@@ -7,10 +7,17 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: "HackOn 2.0",
+    title: "HackOn 2.0 | Global Diversity Hackathon",
     meta: [
       { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1"
+      },
+      {
+        "http-equiv": "Content-Language",
+        content: "en"
+      },
       {
         hid: "description",
         name: "description",
@@ -18,9 +25,30 @@ export default {
           "HackOn is a global digital hackathon focused on fostering innovation while raising awareness on mental health and encouraging diversity and inclusion."
       },
       {
-        name: "og:description",
+        property: "apple-mobile-web-app-title",
+        content: "HackOn 2.0 | Global Diversity Hackathon"
+      },
+      {
+        property: "og:url",
+        content: "https://hackon.tech"
+      },
+      {
+        property: "og:type",
+        content: "website"
+      },
+      {
+        property: "og:title",
+        content: "HackOn 2.0 | Global Diversity Hackathon"
+      },
+      {
+        property: "og:description",
         content:
           "HackOn is a global digital hackathon focused on fostering innovation while raising awareness on mental health and encouraging diversity and inclusion."
+      },
+      {
+        property: "og:image",
+        content:
+          "https://hackon.tech/og-image.png"
       },
       {
         name: "twitter:site",
@@ -28,12 +56,12 @@ export default {
       },
       {
         name: "twitter:title",
-        content: "HackOn 2.0"
+        content: "HackOn 2.0 | Global Diversity Hackathon"
       },
       {
         name: "twitter:image",
         content:
-          "https://pbs.twimg.com/profile_banners/1244236299650740226/1585827778/1500x500"
+          "https://hackon.tech/og-image.png"
       }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
