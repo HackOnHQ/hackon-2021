@@ -15,7 +15,12 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "HackOn is a week-long global digital hackathon that is organized by hackers for hackers to bring their ideas from the point of inception to reality. No matter how new or old you may be in the world of hackathons, HackOn has a place for everyone wanting to learn, build, share, and grow in their lives."
+          "HackOn is a global digital hackathon focused on fostering innovation while raising awareness on mental health and encouraging diversity and inclusion."
+      },
+      {
+        name: "og:description",
+        content:
+          "HackOn is a global digital hackathon focused on fostering innovation while raising awareness on mental health and encouraging diversity and inclusion."
       },
       {
         name: "twitter:site",
