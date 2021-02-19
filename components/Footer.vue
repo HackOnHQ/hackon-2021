@@ -18,7 +18,7 @@
         <div class="panel">
           <h4 class="title">About HackOn Foundation</h4>
           <a href="/coc">Code Of Conduct</a>
-          <a href="https://hackon.tech/brochure">Sponsorship Brochure</a>
+          <a href="/brochure">Sponsorship Brochure</a>
           <a href="/team">Team Behind HackOn</a>
         </div>
 
@@ -29,7 +29,9 @@
           <a href="https://hacknagpur.tech" target="_blank">HackNagpur</a>
           <a href="https://hackthisfall.tech" target="_blank">Hack This Fall</a>
           <a href="https://www.amihacks.tech" target="_blank">AmiHacks</a>
-          <a href="http://decentral-hacks.hackerearth.com" target="_blank">DecentralHacks</a>
+          <a href="http://decentral-hacks.hackerearth.com" target="_blank"
+            >DecentralHacks</a
+          >
           <a href="https://hackverse.nitk.ac.in" target="_blank">HackVerse</a>
         </div>
 
@@ -40,7 +42,10 @@
           </p>
           <p class="info">+919560678655</p>
           <div class="socialLinks">
-            <a target="_blank" href="https://www.linkedin.com/company/hackonhackathon">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/company/hackonhackathon"
+            >
               <img src="~/assets/linkedin.svg" alt="LinkedInLink" />
             </a>
             <a target="_blank" href="https://discord.hackon.tech/">
@@ -54,7 +59,8 @@
             <a target="_blank" href="https://twitter.com/hackonhackathon">
               <img src="~/assets/twitter.svg" alt="FacebookLink" />
             </a>
-            <a target="_blank"
+            <a
+              target="_blank"
               href="https://youtube.com/playlist?list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli"
             >
               <img src="~/assets/youtube.svg" alt="YoutubeLink" />
@@ -76,8 +82,8 @@ import MailTo from "~/components/MailTo";
 export default {
   components: {
     Container,
-    MailTo,
-  },
+    MailTo
+  }
 };
 </script>
 

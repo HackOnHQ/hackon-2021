@@ -44,7 +44,7 @@
         </div>
         <p class="call-for-proposals">
           Interested in giving a talk or workshop?
-          <a href="">Submit a proposal</a>
+          <a href="/cfp">Submit a proposal</a>
         </p>
       </div>
     </Container>
