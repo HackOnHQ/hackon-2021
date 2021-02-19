@@ -160,7 +160,7 @@ export default {
         display: flex;
         flex-direction: column;
         background: var(--color-secondary-light);
-        min-height: 400px;
+        // min-height: 400px;
         border-radius: 20px;
         padding: 15px;
         justify-content: center;
