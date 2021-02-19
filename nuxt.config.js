@@ -51,6 +51,10 @@ export default {
           "https://hackon.tech/og-image.png"
       },
       {
+        name: 'twitter:card',
+        content: 'summary_large_image'
+      },
+      {
         name: "twitter:site",
         content: "@HackOnHackathon"
       },
