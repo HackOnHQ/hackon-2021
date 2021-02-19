@@ -13,7 +13,11 @@
         <p>Want to get involved?</p>
         <p>
           Drop us an e-mail at
-          <MailTo email="contact@hackon.tech" />
+          <CopyLink
+            value="contact@hackon.tech"
+            link="mailto:contact@hackon.tech"
+            text="email address"
+          />
         </p>
         <br />
         <p><a href="brochure">Download Brochure</a></p>
@@ -25,13 +29,13 @@
 <script>
 import Container from "~/components/Container";
 import HashHeader from "~/components/HashHeader";
-import MailTo from "~/components/MailTo";
+import CopyLink from "~/components/CopyLink";
 
 export default {
   components: {
     Container,
     HashHeader,
-    MailTo,
+    CopyLink,
   },
   data() {
     return {

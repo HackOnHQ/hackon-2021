@@ -38,7 +38,11 @@
         <div class="panel">
           <div class="title">Connect With Us</div>
           <p class="info">
-            <MailTo email="contact@hackon.tech" />
+            <CopyLink
+              value="contact@hackon.tech"
+              link="mailto:contact@hackon.tech"
+              text="email address"
+            />
           </p>
           <p class="info">+919560678655</p>
           <div class="socialLinks">
@@ -71,18 +75,32 @@
           </div>
         </div>
       </div>
+      <div class="attribution">
+        Powered by
+        <a
+          href="https://hackerearth.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          HackerEarth
+        </a>
+        and
+        <a href="https://raahee.in" target="_blank" rel="noopener noreferrer">
+          Raahee
+        </a>
+      </div>
     </Container>
   </div>
 </template>
 
 <script>
 import Container from "~/components/Container";
-import MailTo from "~/components/MailTo";
+import CopyLink from "~/components/CopyLink";
 
 export default {
   components: {
     Container,
-    MailTo
+    CopyLink
   }
 };
 </script>
@@ -185,6 +203,15 @@ export default {
 
     a {
       color: var(--colour-pink);
+    }
+  }
+
+  .attribution {
+    padding: 10px 0;
+    border-top: 1px solid var(--color-secondary);
+    margin-top: 20px;
+    a {
+      color: var(--color-accent);
     }
   }
 }
