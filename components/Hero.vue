@@ -25,7 +25,7 @@
             >Raahee</a
           ><img class="raaheeLogo" src="~/assets/raaheeLogo.svg" />
         </h2>
-        <div class="date">10<sup>th</sup> to 18<sup>th</sup> April 2021</div>
+        <div class="date">12<sup>th</sup> to 20<sup>th</sup> June 2021</div>
         <div class="buttonContainer">
           <button class="cta">
             <a href="https://hackon.hackerearth.com" target="_blank">
