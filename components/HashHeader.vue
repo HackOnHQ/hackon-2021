@@ -1,6 +1,6 @@
 <template>
   <div class="heading">
-    <h2 class="section-title">{{ title }}</h2>
+    <h2 class="section-title" v-html="title"></h2>
     <div class="line"></div>
   </div>
 </template>
