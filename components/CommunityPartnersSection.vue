@@ -19,8 +19,6 @@
             text="email address"
           />
         </p>
-        <br />
-        <p><a href="brochure">Download Brochure</a></p>
       </div>
     </section>
   </Container>
@@ -35,47 +33,47 @@ export default {
   components: {
     Container,
     HashHeader,
-    CopyLink,
+    CopyLink
   },
   data() {
     return {
       sponsors: [
         {
-          image: require("~/assets/Community/CodingBlocks.png"),
+          image: require("~/assets/Community/CodingBlocks.png")
         },
         {
-          image: require("~/assets/Community/AngelHack.png"),
+          image: require("~/assets/Community/AngelHack.png")
         },
         {
-          image: require("~/assets/Community/DCD.svg"),
+          image: require("~/assets/Community/DCD.svg")
         },
         {
-          image: require("~/assets/Community/JSLovers.png"),
+          image: require("~/assets/Community/JSLovers.png")
         },
         {
-          image: require("~/assets/Community/WWCD.jpeg"),
+          image: require("~/assets/Community/WWCD.jpeg")
         },
         {
-          image: require("~/assets/Community/GDG New Delhi.png"),
+          image: require("~/assets/Community/GDG New Delhi.png")
         },
         {
-          image: require("~/assets/Community/GDG Bangalore.png"),
+          image: require("~/assets/Community/GDG Bangalore.png")
         },
         {
-          image: require("~/assets/Community/GDG Jaipur.png"),
+          image: require("~/assets/Community/GDG Jaipur.png")
         },
         {
-          image: require("~/assets/Community/GDG Ahmedabad.png"),
+          image: require("~/assets/Community/GDG Ahmedabad.png")
         },
         {
-          image: require("~/assets/Community/GDG Jalandar.png"),
+          image: require("~/assets/Community/GDG Jalandar.png")
         },
         {
-          image: require("~/assets/Community/GDG Nagpur.png"),
-        },
-      ],
+          image: require("~/assets/Community/GDG Nagpur.png")
+        }
+      ]
     };
-  },
+  }
 };
 </script>
 
