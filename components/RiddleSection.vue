@@ -1,7 +1,7 @@
 <template>
   <Container id="riddle">
     <section class="content-section">
-      <HashHeader title="Can You Solve The Riddle ?" />
+      <HashHeader title="Can You Solve The <span style='display: inline-block'>Riddle ?</span>" />
       <div class="contents">
         <iframe
           src="https://www.youtube.com/embed/4kFC7669quE"
@@ -21,8 +21,8 @@ import HashHeader from "~/components/HashHeader";
 export default {
   components: {
     Container,
-    HashHeader
-  }
+    HashHeader,
+  },
 };
 </script>
 
