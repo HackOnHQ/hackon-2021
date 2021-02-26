@@ -89,7 +89,7 @@
             Raahee
           </a>
         </span>
-        <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://vercel.com/?utm_source=HackOnHackathon&utm_campaign=oss" target="_blank" rel="noopener noreferrer">
           <img class="vercel-logo" src="~/assets/powered-by-vercel.svg" />
         </a>
       </div>
@@ -226,6 +226,10 @@ export default {
       a {
         color: var(--color-accent);
       }
+    }
+
+    img {
+      height: 1.75em;
     }
   }
 }
