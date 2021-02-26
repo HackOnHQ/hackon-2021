@@ -76,17 +76,22 @@
         </div>
       </div>
       <div class="attribution">
-        Powered by
-        <a
-          href="https://hackerearth.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HackerEarth
-        </a>
-        and
-        <a href="https://raahee.in" target="_blank" rel="noopener noreferrer">
-          Raahee
+        <span>
+          Powered by
+          <a
+            href="https://hackerearth.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            HackerEarth
+          </a>
+          and
+          <a href="https://raahee.in" target="_blank" rel="noopener noreferrer">
+            Raahee
+          </a>
+        </span>
+        <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">
+          <img class="vercel-logo" src="~/assets/powered-by-vercel.svg" />
         </a>
       </div>
     </Container>
@@ -100,8 +105,8 @@ import CopyLink from "~/components/CopyLink";
 export default {
   components: {
     Container,
-    CopyLink
-  }
+    CopyLink,
+  },
 };
 </script>
 
@@ -210,8 +215,18 @@ export default {
     padding: 10px 0;
     border-top: 1px solid var(--color-secondary);
     margin-top: 20px;
-    a {
-      color: var(--color-accent);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    span {
+      @include respond-below(sm) {
+        margin-bottom: 1em;
+      }
+      a {
+        color: var(--color-accent);
+      }
     }
   }
 }
