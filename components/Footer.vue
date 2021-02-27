@@ -89,7 +89,11 @@
             Raahee
           </a>
         </span>
-        <a href="https://vercel.com/?utm_source=HackOnHackathon&utm_campaign=oss" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://vercel.com/?utm_source=HackOnHackathon&utm_campaign=oss"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img class="vercel-logo" src="~/assets/powered-by-vercel.svg" />
         </a>
       </div>
@@ -104,8 +108,8 @@ import CopyLink from "~/components/CopyLink";
 export default {
   components: {
     Container,
-    CopyLink,
-  },
+    CopyLink
+  }
 };
 </script>
 
@@ -220,6 +224,7 @@ export default {
     flex-wrap: wrap;
 
     span {
+      margin-top: -10px;
       @include respond-below(sm) {
         margin-bottom: 1em;
       }
