@@ -1,9 +1,9 @@
 {
-  "routes": [
-    { "src": "/cfp", "dest": "https://bit.ly/hackon-cfp" },
+  "redirects": [
+    { "source": "/cfp", "destination": "https://bit.ly/hackon-cfp" },
     {
-      "src": "/brochure",
-      "dest": "https://s3-ap-southeast-1.amazonaws.com/he-public-data/HackOn%20Sponsorship%20Brochure889d3c6.pdf"
+      "source": "/brochure",
+      "destination": "https://s3-ap-southeast-1.amazonaws.com/he-public-data/HackOn%20Sponsorship%20Brochure889d3c6.pdf"
     }
   ]
 }
