@@ -271,6 +271,13 @@ export default {
           url: "http://www.prateeknarang.com/",
           picture:
             "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/10f628f79bf2481e97cf48b48c473d0d/165.jpeg"
+        },
+        {
+          name: "Prakarsh Pathak",
+          description: "Community Manager at Skillenza",
+          url: "http://www.linkedin.com/in/prakarshpathak/",
+          picture:
+            "https://media-exp1.licdn.com/dms/image/C5103AQG4hQS84hppjQ/profile-displayphoto-shrink_200_200/0/1581511018163?e=1620259200&v=beta&t=u_otT0DavuHGp_jZga9X3U0xTf0E2juW0q7ByNhkuFU"
         }
       ]
     };
