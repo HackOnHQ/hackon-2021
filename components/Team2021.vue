@@ -43,8 +43,8 @@ export default {
       team: [
         {
           name: "Musthaq Ahamad",
-       //   description:
-       //     "Building @localeai. UX Engineer. I write, design and build things on the internet",
+          //   description:
+          //     "Building @localeai. UX Engineer. I write, design and build things on the internet",
           picture:
             "https://avatars.githubusercontent.com/u/53584487?s=460&u=958300368b2eae87277477bf1fcead4dfa2e31ec&v=4",
           linkedIn: "https://www.linkedin.com/in/haxzie/",
@@ -52,8 +52,8 @@ export default {
         },
         {
           name: "Shubhangi Gupta",
-      //    description:
-      //      "Gold Microsoft Learn Ambassador | President at TechnoLiterati | Gold #IamRemarkable Facilitator",
+          //    description:
+          //      "Gold Microsoft Learn Ambassador | President at TechnoLiterati | Gold #IamRemarkable Facilitator",
           picture:
             "https://avatars.githubusercontent.com/u/31511497?s=460&u=8834975fa238be878ffd74092143a6bc15d38607&v=4",
           linkedIn: "https://www.linkedin.com/in/knowshubhangi/",
@@ -61,8 +61,8 @@ export default {
         },
         {
           name: "Aditya Oberai",
-      //    description:
-      //      "MLH Coach | Gold Microsoft Learn Student Ambassador | Active Member at .NET Foundation",
+          //    description:
+          //      "MLH Coach | Gold Microsoft Learn Student Ambassador | Active Member at .NET Foundation",
           picture:
             "https://avatars.githubusercontent.com/u/31401437?s=460&u=1ad52dad34daf68e98fd7324c94c97c3b369d471&v=4",
           linkedIn: "https://www.linkedin.com/in/adityaoberai1/",
@@ -70,8 +70,8 @@ export default {
         },
         {
           name: "Apoorv Dwivedi",
-       //   description:
-       //     "Btech sophomore from MAIT | Full Stack Web Developer (MERN) | ML and AI enthusiast",
+          //   description:
+          //     "Btech sophomore from MAIT | Full Stack Web Developer (MERN) | ML and AI enthusiast",
           picture:
             "https://avatars.githubusercontent.com/u/56197821?s=460&u=693be068482cf3a5b23a1bf708ee1e399487659a&v=4",
           linkedIn: "https://www.linkedin.com/in/apoorvdwi/",
@@ -79,8 +79,8 @@ export default {
         },
         {
           name: "Paras Gupta",
-     //     description:
-      //      "Senior at IIIT Una | Open source @electron and @validatorjs | Full Stack Developer",
+          //     description:
+          //      "Senior at IIIT Una | Open source @electron and @validatorjs | Full Stack Developer",
           picture:
             "https://media-exp1.licdn.com/dms/image/C4E03AQGYjE3bfB8EUw/profile-displayphoto-shrink_200_200/0/1613322899040?e=1619049600&v=beta&t=8-RMxay57AIZZNMRwC6KzyH5xtkuEBw9_KfkgW5oR9E",
           linkedIn: "https://www.linkedin.com/in/parasg1999/",
@@ -88,8 +88,8 @@ export default {
         },
         {
           name: "Saish Adlak",
-       //   description:
-       //     "UI/UX Designer | Imagination and Implementation is what I do",
+          //   description:
+          //     "UI/UX Designer | Imagination and Implementation is what I do",
           picture:
             "https://avatars.githubusercontent.com/u/71888339?s=460&u=2be63077304e5b88c626b1fa64bc4c3a23ba72a1&v=4",
           linkedIn: "https://www.linkedin.com/in/saishadlak/",
@@ -97,8 +97,8 @@ export default {
         },
         {
           name: "Ojasvi Khuranna",
-       //   description:
-       //     "Incoming SDE Intern at Amazon | Intuit Augment Mentee | GitHub Campus Expert",
+          //   description:
+          //     "Incoming SDE Intern at Amazon | Intuit Augment Mentee | GitHub Campus Expert",
           picture:
             "https://user-images.githubusercontent.com/44267452/74556077-29ded180-4f83-11ea-8b5b-0dc0611fa3c2.jpeg",
           linkedIn: "https://www.linkedin.com/in/ojasvikhurana/",
@@ -106,23 +106,31 @@ export default {
         },
         {
           name: "Siddharth Dayalwal",
-         // description:
-         //   "AngelHack Student Ambassador | Microsoft Learn Student Ambassador | Former Intern - @Progate",
+          // description:
+          //   "AngelHack Student Ambassador | Microsoft Learn Student Ambassador | Former Intern - @Progate",
           picture:
             "https://avatars.githubusercontent.com/u/41017419?s=460&u=ece0c309cba6ed5ecbe43a8845e2bd0e54fe210c&v=4",
           linkedIn: "https://www.linkedin.com/in/siddharth-dayalwal/",
           github: "https://github.com/siddharthdayalwal"
         },
-        /** {
+        {
           name: "Rishabh Bansal",
-          description:
-            "Program Manager @HackerEarth. Conducting world-class Hackathons and Challenges to drive innovation and help companies hire developers.",
+          // description:
+          //   "Program Manager @HackerEarth. Conducting world-class Hackathons and Challenges to drive innovation and help companies hire developers.",
           picture:
             "https://s3-ap-southeast-1.amazonaws.com/he-public-data/Screenshot%202021-02-19%20at%204.31.26%20AMa431177.png",
           linkedIn: "https://www.linkedin.com/in/rishabhbansal97",
           github: "https://github.com/rishabh-bansal/"
+        },
+        {
+          name: "Nitin Mittal",
+          // description:
+          //   "Program Manager @HackerEarth. Conducting world-class Hackathons and Challenges to drive innovation and help companies hire developers.",
+          picture:
+            "https://lh3.googleusercontent.com/pw/ACtC-3cVFtG-Byo1TLAouOKrTQo3oSFOLOY5E1MJqrxX3eStlPQcAwVq5itgiB2y2yJ72rVuBuRqoyDauc2TdNfSOXWeHXdYWFpTE0df_lCVCuFHdNZVMQfHdr7doANJL32d3P_IBYXIXzbuBMe5tthdRTdkHA=w986-h657-no?authuser=0",
+          linkedIn: "https://www.linkedin.com/in/nitinmittal23/",
+          github: "https://github.com/nitinmittal23"
         }
-        */
       ]
     };
   }

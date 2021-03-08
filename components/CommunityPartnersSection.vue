@@ -70,6 +70,12 @@ export default {
         },
         {
           image: require("~/assets/Community/GDG Nagpur.png")
+        },
+        {
+          image: require("~/assets/Community/geek97.png")
+        },
+        {
+          image: require("~/assets/Community/sheroes.svg")
         }
       ]
     };
