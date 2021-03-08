@@ -22,9 +22,9 @@ export default {
           src="~/assets/close-modal.svg"
           v-on:click.self="close()"
         />
-        <header class="modal-header" id="modalTitle">
-          Matic Network Supports the EtherPunk Hackathon with $5k in Bounties!
-        </header>
+        <!-- <header class="modal-header" id="modalTitle"> -->
+        <!-- Matic Network Supports the EtherPunk Hackathon with $5k in Bounties! -->
+        <!-- </header> -->
         <section class="modal-body" id="modalDescription">
           <div class="logo">
             <img src="~/assets/polygon.svg" />
@@ -32,149 +32,34 @@ export default {
           <br />
           <!-- <div class="title">About the workshop</div> -->
           <div class="content">
-            The next installment of ETHIndia’s Online hackathon series
-            EtherPunk, is right around the corner. We’re proud to be
-            accelerating the Ethereum ecosystem’s growth by supporting the event
-            organized by our longstanding hackathon partner Devfolio.
+            HackOn Foundation is excited to announce Polygon (previously MATIC)
+            as our <span style="color: #f1c232">Bronze Sponsor</span>!
             <br />
             <br />
-            The month-long virtual hackathon is taking place entirely online
-            from Jan 22nd – Feb 21st and is bringing together developers from
-            across the globe to help build our decentralized future.
-            <br />
-            <br />
-
-            The Matic team will provide a range of bounty tracks with prizes
-            totaling up to $5000 (USDT) for hackers building innovative
-            solutions on Matic Network.
+            The Polygon team will provide a prize of 5000 INR for hackers
+            building innovative solutions on Polygon.
           </div>
-          <div class="title">Important Links</div>
+          <div class="subtitle">Polygon Bounty Track Details</div>
           <div class="content">
-            <ul>
-              <li>
-                <b> Getting started with Matic </b>
-                https://docs.matic.network/docs/develop/getting-started
-              </li>
-              <li>
-                <b> Matic Blockchain Explorer </b>
-                https://explorer-mainnet.maticvigil.com/
-              </li>
-              <li>
-                <b> Matic Testnet Faucet https://faucet.matic.network/ </b>
-              </li>
-              <li>
-                <b> Matic-Covalent Docs </b>
-                https://www.covalenthq.com/docs/networks/matic
-              </li>
-            </ul>
-            <br />
-            We also have a dedicated Discord channel for direct communication
-            with developers during hackathons. If you have any doubts regarding
-            any of the above information, please join our Discord channel to get
-            your queries answered. Discord Link
-            <a href="https://discord.gg/qGwh4Pek8N">here</a>.
-          </div>
-          <div class="title">Matic Network Bounty Track Details</div>
-          <div class="content">
-            We have ideated some impressive bounty tracks to inspire the
-            Etherpunk hackers to build innovative solutions on Matic Network.
+            Polygon team has ideated some impressive bounty tracks to inspire
+            the HackOn 2.0 hackers to build innovative solutions on Polygon.
             <br /><br />
-            <div class="subtitle">
-              1. One Million Wallets Campaign with Covalent
+            <div class="title">1. Decentralized Prediction Markets</div>
+            <div class="title">2. Gaming/NFT</div>
+            <div class="title">3. DeFi</div>
+            <div class="title">4. Open Track</div>
+            <br />
+            <div class="subtitle">Post-Hackathon Opportunities</div>
+            <div class="content">
+              We expect awesome projects with long-term potential to be built on
+              Polygon at HackOn Hackathon. Top Teams building on Polygon will be
+              eligible for Incubation and Marketing Support from Polygon.
+              <br /><br />
+              To learn more, visit
+              <a href="//hackon.tech/polygon">hackon.tech/polygon</a>
             </div>
-            Matic’s ecosystem partner Covalent will offer an additional $3,000
-            (USDT) in rewards for the One Million Wallets Campaign as part of
-            EtherPunk 2021. This campaign focuses on building custom-themed
-            wallets and showcasing the creativity and diversity of the developer
-            community. Throughout the campaign, Covalent will be guiding and
-            mentoring One Million Wallets projects through tutorial videos, live
-            coding sessions, and regular ‘office hours’.’ Developers can find
-            more details
-            <a
-              href="https://www.covalenthq.com/docs/quickstart/campaigns/one-million-wallets"
-              >here</a
-            >.
-            <br />
-            <br />
-            Furthermore, Covalent will be contributing to the prize pool of the
-            tracks outlined below so long as the winning bounty submission
-            incorporates the Covalent API into their work.
-            <br /><br />
-            <div class="subtitle">2. Decentralized Prediction Markets</div>
-            <b>Aim of the Project:</b> To build a decentralized information
-            markets platform, where you can bet on highly-debated topics like
-            political elections, the results of reality shows, results of
-            ESports tournaments, and earn for being right.<br />
-            Example:
-            <a href="http://polymarket.com/">polymarket.com</a>
-            <br /><br />
-            <div class="subtitle">3. Gaming/NFT</div>
-            <b>Aim of the Project:</b> To build a game/NFT based project that
-            utilizes Matic’s speed for a seamless gameplay experience.
-            <br /><br />
-            <div class="subtitle">4. DeFi</div>
-            Let your imagination run wild while building a Defi DApp that takes
-            advantage of Matic Network’s speed and Scalability. Some ideas:
-            <ul>
-              <li>Aave fork on Matic</li>
-              <li>Balancer fork on Matic</li>
-              <li>Prediction Market for Equities</li>
-              <li>Lossless Arbitrage</li>
-              <li>Personal Tokens</li>
-              <li>Staker Games</li>
-            </ul>
-            <br />
-            <div class="subtitle">5. Open Track</div>
-            <b>Aim of the project: </b>Use your imagination and feel free to
-            build any DApp that excites you! The sky’s the limit.
-          </div>
-          <div class="title">Post-EtherPunk Opportunities</div>
-          <div class="content">
-            We expect awesome projects with long-term potential to be built on
-            Matic Network at EtherPunk. Top Teams building on Matic will be
-            eligible for Incubation and Marketing Support from Matic.
-          </div>
-          <div class="title">Judging Criteria</div>
-          <div class="content">
-            <ol>
-              <li>
-                The importance of Matic Network’s infrastructure in the
-                application/originality of the idea.
-              </li>
-              <li>
-                User experience: intuitive, easy to use and interact with.
-              </li>
-              <li>
-                Technical complexity: going above and beyond the specification.
-                Code quality, bug-free, documentation quality.
-              </li>
-              <li>Polish: how refined the project is.</li>
-            </ol>
-            <b>Note:</b> The quality of the application determines the bounty
-            payout amount for each winning submission.
-          </div>
-          <div class="title">Let’s #BUIDL!</div>
-          <div class="content">
-            Now you have the background knowledge of building on Matic Network
-            and information regarding the bounties on offer; it’s over to you!
-            Let your ingenuity, creativity, and development talent guide you to
-            build an awesome hack to further the decentralized movement.<br />
-            Matic remains dedicated as ever to accelerating the decentralized
-            revolution. We are therefore excited to see what amazing hackers
-            from all over the world will create by building on Matic, and to see
-            how the world will benefit from the new ideas born at EtherPunk!
           </div>
         </section>
-        <footer class="modal-footer">
-          <slot name="footer">
-            <a href="" target="_blank">
-              <button type="button" class="btn-green" aria-label="Close modal">
-                <img src="~/assets/discord.svg" />
-                Discord Link
-              </button>
-            </a>
-          </slot>
-        </footer>
       </div>
     </div>
   </transition>
