@@ -126,8 +126,7 @@ export default {
           name: "Nitin Mittal",
           // description:
           //   "Program Manager @HackerEarth. Conducting world-class Hackathons and Challenges to drive innovation and help companies hire developers.",
-          picture:
-            "https://lh3.googleusercontent.com/pw/ACtC-3cVFtG-Byo1TLAouOKrTQo3oSFOLOY5E1MJqrxX3eStlPQcAwVq5itgiB2y2yJ72rVuBuRqoyDauc2TdNfSOXWeHXdYWFpTE0df_lCVCuFHdNZVMQfHdr7doANJL32d3P_IBYXIXzbuBMe5tthdRTdkHA=w986-h657-no?authuser=0",
+          picture: require("~/assets/nitin.jpg"),
           linkedIn: "https://www.linkedin.com/in/nitinmittal23/",
           github: "https://github.com/nitinmittal23"
         }
