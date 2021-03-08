@@ -47,8 +47,8 @@ export default {
           amount: "₹10,000"
         },
         {
-          name: "Best Hack Built On Blockchain",
-          image: require("~/assets/blockchain.png"),
+          name: "Best Hack Built On Polygon",
+          image: require("~/assets/polygon.svg"),
           amount: "₹5,000"
         },
         {
