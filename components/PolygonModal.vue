@@ -4,8 +4,8 @@ export default {
   methods: {
     close() {
       this.$emit("close");
-    },
-  },
+    }
+  }
 };
 </script>
 <template>
@@ -27,7 +27,7 @@ export default {
         <!-- </header> -->
         <section class="modal-body" id="modalDescription">
           <div class="logo">
-            <img src="~/assets/polygon.svg" />
+            <img src="~/assets/polygonWithName.svg" />
           </div>
           <br />
           <!-- <div class="title">About the workshop</div> -->
@@ -117,8 +117,11 @@ export default {
   }
 
   .logo {
-    width: 100%;
+    width: 95%;
+    background-color: white;
+    padding: 2rem 1rem;
     align-content: center;
+    margin: 0 auto;
     img {
       margin-left: auto;
       margin-right: auto;
