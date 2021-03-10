@@ -1,16 +1,26 @@
 <template>
   <Container id="prizes">
+    <PolygonModal
+      v-show="isModalVisible"
+      @close="closeModal()"
+    />
     <section class="content-section">
       <HashHeader title="Prizes" />
       <div class="contents">
         <div class="cards-grid">
-          <div v-for="(prize, index) in prizes" :key="index" class="card">
-            <div class="image">
-              <img :src="prize.image" :alt="prize.name" class="prizeImage" />
-            </div>
-            <div class="texts">
-              <p class="prizeName">{{ prize.name }}</p>
-              <h4 class="prizeAmount">{{ prize.amount }}</h4>
+          <div v-for="(prize, index) in prizes" :key="index">
+            <div
+              class="card"
+              v-bind:class="[prize.polygon ? 'clickable' : '']"
+              @click="showModal(prize.polygon)"
+            >
+              <div class="image">
+                <img :src="prize.image" :alt="prize.name" class="prizeImage" />
+              </div>
+              <div class="texts">
+                <p class="prizeName">{{ prize.name }}</p>
+                <h4 class="prizeAmount">{{ prize.amount }}</h4>
+              </div>
             </div>
           </div>
         </div>
@@ -22,48 +32,63 @@
 <script>
 import Container from "~/components/Container";
 import HashHeader from "~/components/HashHeader";
+import PolygonModal from "~/components/PolygonModal";
 
 export default {
   components: {
     Container,
-    HashHeader
+    HashHeader,
+    PolygonModal,
   },
   data() {
     return {
+      isModalVisible: false,
       prizes: [
         {
           name: "First Prize",
           image: require("~/assets/first.svg"),
-          amount: "₹25,000"
+          amount: "₹25,000",
         },
         {
           name: "Second Prize",
           image: require("~/assets/second.svg"),
-          amount: "₹15,000"
+          amount: "₹15,000",
         },
         {
           name: "Third Prize",
           image: require("~/assets/third.svg"),
-          amount: "₹10,000"
+          amount: "₹10,000",
         },
         {
           name: "Best Hack Built On Polygon",
           image: require("~/assets/polygon.svg"),
-          amount: "₹5,000"
+          amount: "₹5,000",
+          polygon: true,
         },
         {
           name: "Best Hack Built On Elastic",
           image: require("~/assets/elastic.png"),
-          amount: "₹5,000"
+          amount: "₹5,000",
         },
         {
           name: "Best Hack Built On Voice",
           image: require("~/assets/voice.svg"),
-          amount: "₹5,000"
-        }
-      ]
+          amount: "₹5,000",
+        },
+      ],
     };
-  }
+  },
+  methods: {
+    showModal(isPolygon) {
+      if(!isPolygon) return;
+      this.isModalVisible = true;
+      document.querySelector("body").style.overflow = "hidden";
+    },
+    closeModal() {
+      this.isModalVisible = false;
+      document.querySelector("body").style.overflow = "initial";
+    },
+  },
 };
 </script>
 
@@ -116,6 +141,10 @@ export default {
             padding-bottom: 10px;
           }
         }
+      }
+
+      .clickable {
+        cursor: pointer;
       }
     }
   }
