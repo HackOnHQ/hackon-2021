@@ -2,23 +2,30 @@
 <!--[if IE 9]><html class="lt-ie9 ie9" {{ HTML_ATTRS }}><![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!-->
 <html {{ HTML_ATTRS }}>
-<!--<![endif]-->
+  <!--<![endif]-->
 
-<head {{ HEAD_ATTRS }}>
+  <head {{ HEAD_ATTRS }}>
     {{ HEAD }}
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      console.log(
+        "%cThere is a hidden easter egg in the website. Find it and win free dev stickers !!",
+        "font-size: 25px ; display: inline-block ; background-color: #0C0D21 ; color: #fff ; font-weight: bold ; padding: 3px 7px 3px 7px ; border-radius: 3px 3px 3px 3px ;"
+      );
+      gtag("config", "G-YWT7D5FTDY");
+      gtag("config", "UA-162071861-1");
 
-        gtag('config', 'G-YWT7D5FTDY');
-        gtag('config', 'UA-162071861-1');
-
+      function getSchwags() {
+        window.location.href = "https://bit.ly/hackon-sticker";
+      }
     </script>
-</head>
+  </head>
 
-<body {{ BODY_ATTRS }}>
+  <body {{ BODY_ATTRS }}>
     {{ APP }}
-</body>
-
+  </body>
 </html>

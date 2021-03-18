@@ -16,7 +16,7 @@
             :text="text"
             :shuffle="true"
             erase-style="backspace"
-            type-delay="150"
+            :type-delay="delay"
           />
         </div>
         <h2 class="powered-by">
@@ -63,18 +63,10 @@ export default {
 
   data() {
     return {
-      text: ["Change", "Inclusion", "Diversity", "Community"]
-      // count: 0
+      text: ["Change", "Inclusion", "Diversity", "Community"],
+      delay: 150
     };
   }
-
-  // methods: {
-  //   updateColour () {
-  //     count+=1;
-
-  //   }
-
-  // }
 };
 </script>
 

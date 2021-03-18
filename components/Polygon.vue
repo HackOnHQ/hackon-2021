@@ -1,5 +1,5 @@
 <template>
-  <Container id="Polygon">
+  <Container id="PolygonPage">
     <section class="content-section">
       <div class="logo">
         <img src="~/assets/polygonWithName.svg" />
