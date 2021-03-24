@@ -49,7 +49,7 @@ export default {
         {
           title: "How long will it be on for?",
           content:
-            "The event will be running for about one week from 12th June to 20th June."
+            "The event will be running for about 48 hours from 28th May to 30th May."
         },
         {
           title: "Who can participate?",
