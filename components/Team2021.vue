@@ -113,15 +113,7 @@ export default {
           linkedIn: "https://www.linkedin.com/in/siddharth-dayalwal/",
           github: "https://github.com/siddharthdayalwal"
         },
-        {
-          name: "Rishabh Bansal",
-          // description:
-          //   "Program Manager @HackerEarth. Conducting world-class Hackathons and Challenges to drive innovation and help companies hire developers.",
-          picture:
-            "https://s3-ap-southeast-1.amazonaws.com/he-public-data/Screenshot%202021-02-19%20at%204.31.26%20AMa431177.png",
-          linkedIn: "https://www.linkedin.com/in/rishabhbansal97",
-          github: "https://github.com/rishabh-bansal/"
-        },
+
         {
           name: "Nitin Mittal",
           // description:
