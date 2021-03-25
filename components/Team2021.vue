@@ -129,6 +129,12 @@ export default {
           picture: require("~/assets/nitin.jpg"),
           linkedIn: "https://www.linkedin.com/in/nitinmittal23/",
           github: "https://github.com/nitinmittal23"
+        },
+        {
+          name: "Khushi Sharma",
+          picture: require("/assets/khushi.jpg"),
+          linkedIn: "https://www.linkedin.com/in/khushi-sharma-2201/",
+          github: "https://github.com/KhushiSharma22"
         }
       ]
     };
