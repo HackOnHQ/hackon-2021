@@ -150,7 +150,7 @@ export default {
           description: "Google Developer Expert",
           url: "https://www.linkedin.com/in/imthepk/",
           picture:
-            "https://media-exp1.licdn.com/dms/image/C4E03AQFU_Pks7-2qbA/profile-displayphoto-shrink_200_200/0/1610945863156?e=1617840000&v=beta&t=_pkadk5xabdD-LyBnReydJnHuO5T76OYBQZfiBdxHfc",
+            "https://media-exp1.licdn.com/dms/image/C4E03AQE6kxOLQK7n2g/profile-displayphoto-shrink_200_200/0/1617035942997?e=1622678400&v=beta&t=rpUbffu89RUpldTutfkkZ_sVPL-mkljr3MUdyyGv8ec",
         },
         {
           name: "Jatin Katyal",
