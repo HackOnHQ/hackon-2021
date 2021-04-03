@@ -6,6 +6,33 @@
 
   <head {{ HEAD_ATTRS }}>
     {{ HEAD }}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "HackOn Hackathon 2.0",
+        "startDate": "2021-05-28",
+        "endDate": "2021-05-30",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+        "location": {
+          "@type": "VirtualLocation",
+          "url": "https://hackon.tech"
+        },
+        "image": [
+          "https://hackon.tech/googleEvents/1.jpg",
+          "https://hackon.tech/googleEvents/2.jpg",
+          "https://hackon.tech/googleEvents/3.jpg",
+          "https://hackon.tech/googleEvents/4.jpg"
+        ],
+        "description": "HackOn 2.0 is a global digital hackathon focused on fostering innovation while raising awareness on mental health and encouraging diversity and inclusion.",
+        "organizer": {
+          "@type": "Organization",
+          "name": "HackOn Foundation",
+          "url": "https://hackon.tech"
+        }
+      }
+    </script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -36,7 +63,6 @@
           (a = t.getElementsByTagName(n)[0]),
           a.parentNode.insertBefore(u, a));
       })(window, document, "script");
-      // Insert Twitter Pixel ID and Standard Event data below
       twq("init", "o5qcw");
       twq("track", "PageView");
     </script>
