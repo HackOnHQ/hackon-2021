@@ -204,6 +204,7 @@ export default {
 
       .card {
         display: flex;
+        position: relative;
         flex-direction: column;
         padding: 20px 20px 20px 28px;
         background: var(--color-secondary-light);
@@ -223,6 +224,7 @@ export default {
 
               .logo {
                 max-height: 40px;
+                margin-bottom: -10px;
               }
             }
 
@@ -231,15 +233,19 @@ export default {
               text-align: justify;
               font-size: 1rem;
               color: rgba(255, 255, 255, 0.9);
+              margin-bottom: 3.7rem;
+              margin-top: 0.7rem;
             }
           }
 
           .description {
+            position: absolute;
             display: flex;
             align-items: flex-end;
             justify-content: space-between;
             font-size: 1rem;
             margin-top: 1rem;
+            bottom: 1rem;
 
             .organiser {
               display: flex;
