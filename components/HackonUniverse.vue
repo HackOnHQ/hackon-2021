@@ -52,9 +52,9 @@ export default {
             "HackJaipur is a community-focused virtual Hackathon, designed especially for the needs of the communities, with problem statements centered around the community itself. Whether you are a beginner or an expert, here is the perfect chance to hone and show your skills and witness the competitive yet inclusive developer community around you!",
           url: "https://www.hackjaipur.com/",
           organiser: {
-            name: "Rishabh Bansal",
+            name: "Mayank Goyal",
             picture:
-              "https://pbs.twimg.com/profile_images/1354017190253617153/HF1ZLv1c_400x400.jpg"
+              "https://media-exp1.licdn.com/dms/image/C4E03AQH-orTIbxY_YQ/profile-displayphoto-shrink_200_200/0/1601666357113?e=1623283200&v=beta&t=e5bduLLpKjd2FpqaNVRXm3GH2GbygFiOrn5Wi54WT84"
           }
         },
         {
@@ -136,9 +136,8 @@ export default {
             "Vihaan is an annual event organized by IEEE DTU Women in Engineering (WIE) Affinity Group, a university wide professional organization dedicated to encourage women to take up and continue their careers in STEM Fields. IEEE WIE believes in encouraging talent that is not bounded by gender inequalities and with Vihaan, IEEE DTU aims at carrying this thought forward. The event is a 24 hour Hackathon which provides a platform to budding programmers to come up with a solution to an existing problem using technology.",
           url: "https://vihaan.ieeedtu.in/",
           organiser: {
-            name: "Shubham Kumar",
-            picture:
-              "https://media-exp1.licdn.com/dms/image/C4D03AQFztAubY1ojgg/profile-displayphoto-shrink_200_200/0/1608037806450?e=1623283200&v=beta&t=E4_vc1ks1d43Shfiz7ZMhhaKVVjl-MhHM92AuII3YdI"
+            name: "Ritwik Ranjan",
+            picture: require("~/assets/HackonUniverse/ritwik.jpeg")
           }
         },
         {
@@ -148,9 +147,9 @@ export default {
             "Hack-A-Nova imparts you the platform to showcase your ideas and technical skills at a recognized level. Compete with the brightest minds in the country and establish yourself as the best among them. We warmly invite you all to forge out your creativity, embody the spirit of innovation and disrupt the current normal!",
           url: "https://hack-a-nova.web.app/",
           organiser: {
-            name: "Ishan Singh",
+            name: "Seemant Aggarwal",
             picture:
-              "https://media-exp1.licdn.com/dms/image/C5103AQGnzImnlpoZCw/profile-displayphoto-shrink_200_200/0/1541084798938?e=1623283200&v=beta&t=Ml5Bmnb_BzIsf3RcBF68LbBN43dBL41Xfh6xSlB44Hw"
+              "https://media-exp1.licdn.com/dms/image/C5603AQGiluhAHVv1Iw/profile-displayphoto-shrink_200_200/0/1587819081359?e=1623283200&v=beta&t=QmJk8ZqIAuZf1TKR2bwEiKtn8QdV3PnFTLl7aSSPXkA"
           }
         },
         {
