@@ -46,6 +46,30 @@ export default {
     return {
       universe: [
         {
+          name: "HackNagpur",
+          logo: require("~/assets/HackonUniverse/hacknagpur.png"),
+          about:
+            "HackNagpur, the very first Central India’s biggest community-driven Hackathon, a platform to unleash innovative developers worldwide and come together virtually to ideate, innovate and inspire one another and the community. HN is the very first initiative by the community members of GDG Nagpur, bringing in together 20+ other communities to host this hackathon, for Innovators to brainstorm and create a virtual but real prototype.",
+          url: "https://hacknagpur.tech/",
+          organiser: {
+            name: "Sohail Pathan",
+            picture:
+              "https://media-exp1.licdn.com/dms/image/C5103AQFUiHTuOwP-uw/profile-displayphoto-shrink_200_200/0/1574675509785?e=1623283200&v=beta&t=jj1fUKUQJyNnkMR_DUqwAZx-55HUWW4Z2KOsEmk6vVA"
+          }
+        },
+        {
+          name: "BU Hack",
+          logo: require("~/assets/HackonUniverse/buhacks.png"),
+          about:
+            "BU'hack, the very first initiative by students of Bennett University to host an inter-hackathon under Zenevia - the first techfest of Bennett University. The competition like this which aims at developing something awesome within a limited timeframe infuses work pressure among the participants, testing them beyond their limits.",
+          url: "https://bu-hack.tech/",
+          organiser: {
+            name: "Deep Patel",
+            picture:
+              "https://media-exp1.licdn.com/dms/image/C4E03AQHZZ4ykdwji8Q/profile-displayphoto-shrink_200_200/0/1593777967770?e=1623283200&v=beta&t=QWr76XeHeW4qm_1cfaqCvE1bTEpY27gunyJlnZ-gH-I"
+          }
+        },
+        {
           name: "HackJaipur",
           logo: require("~/assets/HackonUniverse/hackjaipur.png"),
           about:
@@ -69,18 +93,7 @@ export default {
               "https://media-exp1.licdn.com/dms/image/C5603AQH10Aaq7XorYA/profile-displayphoto-shrink_200_200/0/1602915695424?e=1623283200&v=beta&t=7WZBR7s7wO4OqbvywJQ6P5-GUiM52EmZjQi8muULka0"
           }
         },
-        {
-          name: "HackNagpur",
-          logo: require("~/assets/HackonUniverse/hacknagpur.png"),
-          about:
-            "HackNagpur, the very first Central India’s biggest community-driven Hackathon, a platform to unleash innovative developers worldwide and come together virtually to ideate, innovate and inspire one another and the community. HN is the very first initiative by the community members of GDG Nagpur, bringing in together 20+ other communities to host this hackathon, for Innovators to brainstorm and create a virtual but real prototype.",
-          url: "https://hacknagpur.tech/",
-          organiser: {
-            name: "Sohail Pathan",
-            picture:
-              "https://media-exp1.licdn.com/dms/image/C5103AQFUiHTuOwP-uw/profile-displayphoto-shrink_200_200/0/1574675509785?e=1623283200&v=beta&t=jj1fUKUQJyNnkMR_DUqwAZx-55HUWW4Z2KOsEmk6vVA"
-          }
-        },
+
         {
           name: "Hack This Fall",
           logo: require("~/assets/HackonUniverse/hackthisfall.png"),
@@ -150,18 +163,6 @@ export default {
             name: "Seemant Aggarwal",
             picture:
               "https://media-exp1.licdn.com/dms/image/C5603AQGiluhAHVv1Iw/profile-displayphoto-shrink_200_200/0/1587819081359?e=1623283200&v=beta&t=QmJk8ZqIAuZf1TKR2bwEiKtn8QdV3PnFTLl7aSSPXkA"
-          }
-        },
-        {
-          name: "BU Hack",
-          logo: require("~/assets/HackonUniverse/buhacks.png"),
-          about:
-            "BU'hack, the very first initiative by students of Bennett University to host an inter-hackathon under Zenevia - the first techfest of Bennett University. The competition like this which aims at developing something awesome within a limited timeframe infuses work pressure among the participants, testing them beyond their limits.",
-          url: "https://bu-hack.tech/",
-          organiser: {
-            name: "Deep Patel",
-            picture:
-              "https://media-exp1.licdn.com/dms/image/C4E03AQHZZ4ykdwji8Q/profile-displayphoto-shrink_200_200/0/1593777967770?e=1623283200&v=beta&t=QWr76XeHeW4qm_1cfaqCvE1bTEpY27gunyJlnZ-gH-I"
           }
         }
       ]
