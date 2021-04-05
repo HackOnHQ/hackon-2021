@@ -29,9 +29,7 @@
           <a href="https://hackthisfall.tech" target="_blank">Hack This Fall</a>
           <a href="https://www.amihacks.tech" target="_blank">AmiHacks</a>
           <a href="https://unblock.octaloop.com/" target="_blank">Unblock</a>
-          <a class="hackonUniverse" href="/hackonUniverse" target="_blank"
-            >More...</a
-          >
+          <a class="hackonUniverse" href="/universe" target="_blank">More...</a>
         </div>
 
         <div class="panel">
