@@ -4,6 +4,10 @@
     {
       "source": "/brochure",
       "destination": "https://s3-ap-southeast-1.amazonaws.com/he-public-data/HackOn%20Sponsorship%20Brochure889d3c6.pdf"
+    },
+    {
+      "source": "/mlhcoc",
+      "destination": "https://s3-ap-southeast-1.amazonaws.com/he-public-data/mlh-code-of-conduct1a0e0b1.pdf"
     }
   ]
 }
