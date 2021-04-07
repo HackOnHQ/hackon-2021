@@ -32,7 +32,11 @@
               <a href="/#faq">FAQ</a>
             </li>
           </ul>
-          <a href="https://hackon.hackerearth.com" target="_blank">
+          <a
+            href="https://hackon.hackerearth.com"
+            class="register-button"
+            target="_blank"
+          >
             <button class="cta-button">Register Now</button>
           </a>
         </div>
@@ -46,14 +50,15 @@ import Container from "~/components/Container";
 
 export default {
   components: {
-    Container
-  }
+    Container,
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .navigation-bar {
   z-index: 99;
+  margin-right: 8em;
   .navigation-contents {
     display: flex;
     flex-direction: row;
@@ -107,19 +112,24 @@ export default {
         }
       }
 
-      .cta-button {
-        padding: 15px 20px;
-        background: var(--font-color);
-        border: 0;
-        border-radius: 5px;
-        color: var(--color-secondary);
-        font-weight: bold;
-        box-shadow: 0px 10px 20px rgba(40, 129, 245, 0.164);
+      .register-button {
+        @include respond-below(md) {
+          display: none;
+        }
+        .cta-button {
+          padding: 15px 20px;
+          background: var(--font-color);
+          border: 0;
+          border-radius: 5px;
+          color: var(--color-secondary);
+          font-weight: bold;
+          box-shadow: 0px 10px 20px rgba(40, 129, 245, 0.164);
 
-        &:hover {
-          cursor: pointer;
-          background: transparent;
-          color: var(--font-color);
+          &:hover {
+            cursor: pointer;
+            background: transparent;
+            color: var(--font-color);
+          }
         }
       }
     }
