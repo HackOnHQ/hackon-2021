@@ -64,7 +64,7 @@ export default {
           image: require("~/assets/Sponsors/Types/gold.svg"),
           logos: [
             {
-              image: require("~/assets/Sponsors/wazirx.svg"),
+              image: require("~/assets/Sponsors/wazirx.png"),
               url: "https://wazirx.com",
             },
             {
@@ -103,11 +103,11 @@ export default {
             },
             {
               image: require("~/assets/Sponsors/netlify.svg"),
-              url: "https://polygon.technology",
+              url: "https://www.netlify.com",
             },
             {
               image: require("~/assets/Sponsors/vercel.svg"),
-              url: "https://polygon.technology",
+              url: "http://vercel.com",
             },
           ],
         },
