@@ -53,6 +53,10 @@ export default {
               image: require("~/assets/Sponsors/elastic.svg"),
               url: "https://www.elastic.co",
             },
+            {
+              image: require("~/assets/Sponsors/Auth0.png"),
+              url: "https://auth0.com",
+            },
           ],
         },
         {
