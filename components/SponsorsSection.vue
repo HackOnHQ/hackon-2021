@@ -107,7 +107,7 @@ export default {
             },
             {
               image: require("~/assets/Sponsors/vercel.svg"),
-              url: "http://vercel.com",
+              url: "https://vercel.com/?utm_source=HackOnHackathon&utm_campaign=oss",
             },
           ],
         },
