@@ -1,12 +1,12 @@
 <template>
   <Container id="sponsors">
     <section class="content-section">
-      <HashHeader title="Sponsors" />
+      <HashHeader title="Sponsors and Partners" />
       <div class="contents">
         <div v-for="(section, index) in sponsors" :key="index">
           <div class="subheading">
             <h2 class="section-title">{{ section.type }}</h2>
-            <img :src="section.image" :alt="section.type" />
+            <img v-if="section.image" :src="section.image" :alt="section.type" />
           </div>
           <div class="cards-grid">
             <div v-for="(sponsor, index) in section.logos" :key="index">
@@ -36,12 +36,29 @@ export default {
     return {
       sponsors: [
         {
+          type: "Hackathon Partners 🤝🏻",
+          logos: [
+            {
+              image: require("~/assets/Sponsors/mlh.svg"),
+              url: "https://mlh.io",
+            },
+            {
+              image: require("~/assets/Sponsors/hackerearth.png"),
+              url: "https://hackerearth.com",
+            },
+            {
+              image: require("~/assets/Sponsors/raahee.png"),
+              url: "https://raahee.in",
+            },
+          ],
+        },
+        {
           type: "Diamond Sponsors",
           image: require("~/assets/Sponsors/Types/diamond.svg"),
           logos: [
             {
               image: require("~/assets/Sponsors/google-cloud.svg"),
-              url: "https://cloud.google.com/",
+              url: "https://cloud.google.com",
             },
           ],
         },
