@@ -1,11 +1,12 @@
 <template>
   <Container id="sponsors">
     <section class="content-section">
-      <HashHeader title="Past Sponsors" />
+      <HashHeader title="Sponsors" />
       <div class="contents">
         <div v-for="(section, index) in sponsors" :key="index">
           <div class="subheading">
             <h2 class="section-title">{{ section.type }}</h2>
+            <img :src="section.image" :alt="section.type" />
           </div>
           <div class="cards-grid">
             <div v-for="(sponsor, index) in section.logos" :key="index">
@@ -35,46 +36,74 @@ export default {
     return {
       sponsors: [
         {
-          type: "Gold Sponsors",
+          type: "Diamond Sponsors",
+          image: require("~/assets/Sponsors/Types/diamond.svg"),
           logos: [
             {
-              image:
-                "https://webstockreview.net/images/google-logo-white-png-4.png",
-              url: "https://google.com",
-            },
-            {
-              image: require("~/assets/Sponsors/GitHub.png"),
-              url: "http://github.com",
+              image: require("~/assets/Sponsors/google-cloud.svg"),
+              url: "https://cloud.google.com/",
             },
           ],
         },
         {
-          type: "Silver Sponsors",
+          type: "Platinum Sponsors",
+          image: require("~/assets/Sponsors/Types/silver.svg"),
           logos: [
             {
-              image: require("~/assets/Sponsors/Gitkraken.png"),
-              url: "https://www.gitkraken.com",
+              image: require("~/assets/Sponsors/elastic.svg"),
+              url: "https://www.elastic.co",
+            },
+          ],
+        },
+        {
+          type: "Gold Sponsors",
+          image: require("~/assets/Sponsors/Types/gold.svg"),
+          logos: [
+            {
+              image: require("~/assets/Sponsors/wazirx.svg"),
+              url: "https://wazirx.com",
             },
             {
-              image: require("~/assets/Sponsors/Auth0.png"),
-              url: "https://auth0.com",
+              image: require("~/assets/Sponsors/github.svg"),
+              url: "https://github.com",
             },
             {
-              image: require("~/assets/Sponsors/Dev.png"),
-              url: "https://dev.to",
+              image: require("~/assets/Sponsors/digitalocean.svg"),
+              url: "https://digitalocean.com",
+            },
+            {
+              image: require("~/assets/Sponsors/stickermule.svg"),
+              url: "https://stickermule.com",
             },
           ],
         },
         {
           type: "Bronze Sponsors",
+          image: require("~/assets/Sponsors/Types/bronze.svg"),
           logos: [
             {
-              image: require("~/assets/Sponsors/Elastic.png"),
-              url: "https://www.elastic.co",
+              image: require("~/assets/Sponsors/dottech.svg"),
+              url: "https://get.tech",
             },
             {
-              image: require("~/assets/Sponsors/IBM.png"),
-              url: "https://www.ibm.com/in-en",
+              image: require("~/assets/Sponsors/linode.svg"),
+              url: "https://linode.com",
+            },
+            {
+              image: require("~/assets/Sponsors/sendgrid.svg"),
+              url: "https://sendgrid.com",
+            },
+            {
+              image: require("~/assets/Sponsors/polygon.svg"),
+              url: "https://polygon.technology",
+            },
+            {
+              image: require("~/assets/Sponsors/netlify.svg"),
+              url: "https://polygon.technology",
+            },
+            {
+              image: require("~/assets/Sponsors/vercel.svg"),
+              url: "https://polygon.technology",
             },
           ],
         },
@@ -133,10 +162,10 @@ export default {
         flex-direction: column;
         text-align: center;
         justify-content: center;
-        padding: 20px;
-        background: rgba(255, 255, 255, 0.2);
-        border-radius: 5px;
-        height: 200px;
+        // padding: 20px;
+        // background: rgba(255, 255, 255, 0.2);
+        // border-radius: 5px;
+        height: 150px;
 
         @include respond-below(sm) {
           height: 120px;
