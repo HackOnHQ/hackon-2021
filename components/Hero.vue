@@ -23,7 +23,7 @@
           Powered by
           <a href="https://raahee.in" target="_blank" ref="noopener noreferrer"
             >Raahee</a
-          ><img class="raaheeLogo" src="~/assets/raaheeLogo.svg" />
+          ><img class="raaheeLogo" src="~/assets/hero-raahee-logo.png" />
         </h2>
         <div class="date">28<sup>th</sup> to 30<sup>th</sup> May 2021</div>
         <div class="buttonContainer">

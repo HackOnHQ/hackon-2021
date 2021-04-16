@@ -1,15 +1,21 @@
 <template>
   <Container id="sponsors">
     <section class="content-section">
-      <HashHeader title="Past Sponsors" />
+      <HashHeader title="Sponsors and Partners" />
       <div class="contents">
-        <div class="cards-grid">
-          <div v-for="(sponsor, index) in sponsors" :key="index">
-            <a :href="sponsor.url" target="_blank">
-              <div class="card">
-                <img :src="sponsor.image" alt="sponsor" />
-              </div>
-            </a>
+        <div v-for="(section, index) in sponsors" :key="index">
+          <div class="subheading">
+            <h2 class="section-title">{{ section.type }}</h2>
+            <img v-if="section.image" :src="section.image" :alt="section.type" />
+          </div>
+          <div class="cards-grid">
+            <div v-for="(sponsor, index) in section.logos" :key="index">
+              <a :href="sponsor.url" target="_blank">
+                <div class="card">
+                  <img :src="sponsor.image" alt="sponsor" />
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -30,33 +36,97 @@ export default {
     return {
       sponsors: [
         {
-          image:
-            "https://webstockreview.net/images/google-logo-white-png-4.png",
-          url: "https://google.com",
+          type: "Hackathon Partners 🤝🏻",
+          logos: [
+            {
+              image: require("~/assets/Sponsors/mlh.svg"),
+              url: "https://mlh.io",
+            },
+            {
+              image: require("~/assets/Sponsors/hackerearth.png"),
+              url: "https://hackerearth.com",
+            },
+            {
+              image: require("~/assets/Sponsors/raahee.png"),
+              url: "https://raahee.in",
+            },
+          ],
         },
         {
-          image: require("~/assets/Sponsors/GitHub.png"),
-          url: "http://github.com",
+          type: "Diamond Sponsors",
+          image: require("~/assets/Sponsors/Types/diamond.svg"),
+          logos: [
+            {
+              image: require("~/assets/Sponsors/google-cloud.svg"),
+              url: "https://cloud.google.com",
+            },
+          ],
         },
         {
-          image: require("~/assets/Sponsors/Gitkraken.png"),
-          url: "https://www.gitkraken.com",
+          type: "Platinum Sponsors",
+          image: require("~/assets/Sponsors/Types/silver.svg"),
+          logos: [
+            {
+              image: require("~/assets/Sponsors/elastic.svg"),
+              url: "https://www.elastic.co",
+            },
+            {
+              image: require("~/assets/Sponsors/Auth0.png"),
+              url: "https://auth0.com",
+            },
+          ],
         },
         {
-          image: require("~/assets/Sponsors/Auth0.png"),
-          url: "https://auth0.com",
+          type: "Gold Sponsors",
+          image: require("~/assets/Sponsors/Types/gold.svg"),
+          logos: [
+            {
+              image: require("~/assets/Sponsors/wazirx.png"),
+              url: "https://wazirx.com",
+            },
+            {
+              image: require("~/assets/Sponsors/github.svg"),
+              url: "https://github.com",
+            },
+            {
+              image: require("~/assets/Sponsors/digitalocean.svg"),
+              url: "https://digitalocean.com",
+            },
+            {
+              image: require("~/assets/Sponsors/stickermule.svg"),
+              url: "https://stickermule.com",
+            },
+          ],
         },
         {
-          image: require("~/assets/Sponsors/Dev.png"),
-          url: "https://dev.to",
-        },
-        {
-          image: require("~/assets/Sponsors/Elastic.png"),
-          url: "https://www.elastic.co",
-        },
-        {
-          image: require("~/assets/Sponsors/IBM.png"),
-          url: "https://www.ibm.com/in-en",
+          type: "Bronze Sponsors",
+          image: require("~/assets/Sponsors/Types/bronze.svg"),
+          logos: [
+            {
+              image: require("~/assets/Sponsors/dottech.svg"),
+              url: "https://get.tech",
+            },
+            {
+              image: require("~/assets/Sponsors/linode.svg"),
+              url: "https://linode.com",
+            },
+            {
+              image: require("~/assets/Sponsors/sendgrid.svg"),
+              url: "https://sendgrid.com",
+            },
+            {
+              image: require("~/assets/Sponsors/polygon.svg"),
+              url: "https://polygon.technology",
+            },
+            {
+              image: require("~/assets/Sponsors/netlify.svg"),
+              url: "https://www.netlify.com",
+            },
+            {
+              image: require("~/assets/Sponsors/vercel.svg"),
+              url: "https://vercel.com/?utm_source=HackOnHackathon&utm_campaign=oss",
+            },
+          ],
         },
       ],
     };
@@ -70,8 +140,28 @@ export default {
   flex-direction: column;
   padding: 20px 0;
   .contents {
-    padding: 20px 0;
+    .subheading {
+      // padding: 20px 0px;
+      display: flex;
+      align-items: center;
 
+      &:first-child {
+        // padding-top: 0px;
+      }
+
+      h2.section-title {
+        font-family: "Sen";
+        font-size: 1.26rem;
+        font-weight: 600;
+        padding: 20px 10px 20px 0;
+
+        &:before {
+          content: "##";
+          color: var(--font-color-light);
+          padding-right: 5px;
+        }
+      }
+    }
     .cards-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -93,10 +183,10 @@ export default {
         flex-direction: column;
         text-align: center;
         justify-content: center;
-        padding: 20px;
-        background: rgba(255, 255, 255, 0.2);
-        border-radius: 5px;
-        height: 200px;
+        // padding: 20px;
+        // background: rgba(255, 255, 255, 0.2);
+        // border-radius: 5px;
+        height: 150px;
 
         @include respond-below(sm) {
           height: 120px;
