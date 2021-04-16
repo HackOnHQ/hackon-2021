@@ -17,8 +17,8 @@
 
         <div class="panel">
           <h4 class="title">About HackOn Foundation</h4>
-          <a href="/coc">Code Of Conduct</a>
-          <a href="https://hackon.tech/brochure">Sponsorship Brochure</a>
+          <a href="/coc">Event Code Of Conduct</a>
+          <a href="/mlhcoc">MLH Code Of Conduct</a>
           <a href="/team">Team Behind HackOn</a>
         </div>
 
@@ -29,18 +29,25 @@
           <a href="https://hacknagpur.tech" target="_blank">HackNagpur</a>
           <a href="https://hackthisfall.tech" target="_blank">Hack This Fall</a>
           <a href="https://www.amihacks.tech" target="_blank">AmiHacks</a>
-          <a href="http://decentral-hacks.hackerearth.com" target="_blank">DecentralHacks</a>
-          <a href="https://hackverse.nitk.ac.in" target="_blank">HackVerse</a>
+          <a href="https://unblock.octaloop.com/" target="_blank">Unblock</a>
+          <a class="hackonUniverse" href="/universe" target="_blank">More...</a>
         </div>
 
         <div class="panel">
           <div class="title">Connect With Us</div>
           <p class="info">
-            <MailTo email="contact@hackon.tech" />
+            <CopyLink
+              value="contact@hackon.tech"
+              link="mailto:contact@hackon.tech"
+              text="email address"
+            />
           </p>
           <p class="info">+919560678655</p>
           <div class="socialLinks">
-            <a target="_blank" href="https://www.linkedin.com/company/hackonhackathon">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/company/hackonhackathon"
+            >
               <img src="~/assets/linkedin.svg" alt="LinkedInLink" />
             </a>
             <a target="_blank" href="https://discord.hackon.tech/">
@@ -54,7 +61,8 @@
             <a target="_blank" href="https://twitter.com/hackonhackathon">
               <img src="~/assets/twitter.svg" alt="FacebookLink" />
             </a>
-            <a target="_blank"
+            <a
+              target="_blank"
               href="https://youtube.com/playlist?list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli"
             >
               <img src="~/assets/youtube.svg" alt="YoutubeLink" />
@@ -65,19 +73,42 @@
           </div>
         </div>
       </div>
+      <div class="attribution">
+        <span>
+          Powered by
+          <a
+            href="https://hackerearth.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            HackerEarth
+          </a>
+          and
+          <a href="https://raahee.in" target="_blank" rel="noopener noreferrer">
+            Raahee
+          </a>
+        </span>
+        <a
+          href="https://vercel.com/?utm_source=HackOnHackathon&utm_campaign=oss"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img class="vercel-logo" src="~/assets/powered-by-vercel.svg" />
+        </a>
+      </div>
     </Container>
   </div>
 </template>
 
 <script>
 import Container from "~/components/Container";
-import MailTo from "~/components/MailTo";
+import CopyLink from "~/components/CopyLink";
 
 export default {
   components: {
     Container,
-    MailTo,
-  },
+    CopyLink
+  }
 };
 </script>
 
@@ -145,6 +176,14 @@ export default {
       }
     }
 
+    .hackonUniverse {
+      color: white;
+
+      &:hover {
+        color: var(--colour-pink);
+      }
+    }
+
     .socialLinks {
       padding: 20px 0 10px;
       margin-left: -5px;
@@ -179,6 +218,30 @@ export default {
 
     a {
       color: var(--colour-pink);
+    }
+  }
+
+  .attribution {
+    padding: 10px 0;
+    border-top: 1px solid var(--color-secondary);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    span {
+      margin-top: -10px;
+      @include respond-below(sm) {
+        margin-bottom: 1em;
+      }
+      a {
+        color: var(--color-accent);
+      }
+    }
+
+    img {
+      height: 1.75em;
     }
   }
 }

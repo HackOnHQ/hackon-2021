@@ -10,33 +10,41 @@
     >
       <div class="hero-img"></div>
       <div class="texts">
-        <a href="https://www.hackerearth.com">
-          <img src="http://engineering.hackerearth.com/images/logo.png" />
-        </a>
-        <h2 class="hero-text"></h2>
-        <VueTyper
-          :text="text"
-          :shuffle="true"
-          erase-style="backspace"
-          type-delay="150"
-        />
+        <div class="heroTextContainer">
+          <h1 class="hero-text">Hack For&nbsp;</h1>
+          <VueTyper
+            :text="text"
+            :shuffle="true"
+            erase-style="backspace"
+            :type-delay="delay"
+          />
+        </div>
         <h2 class="powered-by">
           Powered by
           <a href="https://raahee.in" target="_blank" ref="noopener noreferrer"
             >Raahee</a
-          >
+          ><img class="raaheeLogo" src="~/assets/raaheeLogo.svg" />
         </h2>
-        <div class="date">10<sup>th</sup> to 18<sup>th</sup> April 2021</div>
-        <button class="cta">
-          <a href="https://hackon.hackerearth.com" target="_blank">
-            <div class="contents">
-              Register Now<ArrowRightIcon class="icon" />
-            </div>
-          </a>
-        </button>
+        <div class="date">28<sup>th</sup> to 30<sup>th</sup> May 2021</div>
+        <div class="buttonContainer">
+          <button class="cta">
+            <a href="https://hackon.hackerearth.com" target="_blank">
+              <div class="contents">
+                <img src="~/assets/hackerEarth.svg" class="icon" />Register Now
+              </div>
+            </a>
+          </button>
+          <button class="ctaDiscord">
+            <a href="https://discord.hackon.tech" target="_blank">
+              <div class="contentsDiscord">
+                <img src="~/assets/discord.svg" class="icon" />Join Discord
+              </div>
+            </a>
+          </button>
+        </div>
         <p class="call-for-proposals">
           Interested in giving a talk or workshop?
-          <a href="">CFPs Coming Soon!</a>
+          <a href="/cfp">Submit a proposal</a>
         </p>
       </div>
     </Container>
@@ -45,18 +53,19 @@
 
 <script>
 import Container from "~/components/Container";
-import ArrowRightIcon from "~/components/Icons/ArrowRight";
 import { VueTyper } from "vue-typer";
 
 export default {
   components: {
     Container,
-    ArrowRightIcon,
     VueTyper
   },
 
   data() {
-    return { text: ["Ready? Set. Hack!", "Hack For Change."] };
+    return {
+      text: ["Change", "Inclusion", "Diversity", "Community"],
+      delay: 150
+    };
   }
 };
 </script>
@@ -106,34 +115,57 @@ export default {
     flex-direction: column;
     z-index: 10;
 
-    img {
-      width: 8rem;
-      margin-bottom: -8px;
-    }
+    .heroTextContainer {
+      display: flex;
 
-    h1.hero-text {
-      font-size: 2.4rem;
-      font-weight: bold;
-      font-family: var(--title-font);
-    }
-
-    .vue-typer {
-      font-size: 2.4rem;
-      font-weight: bold;
-      font-family: var(--title-font);
-
-      .custom.char {
-        color: #fff !important;
+      @include respond-below(sm) {
+        display: inline-block;
       }
 
-      .custom.caret {
-        background-color: #fff;
+      h1.hero-text {
+        font-size: 2.9rem;
+        font-weight: bold;
+        font-family: var(--title-font);
+
+        @include respond-below(sm) {
+          font-size: 2.4rem;
+        }
+      }
+
+      .vue-typer {
+        font-size: 2.9rem;
+        font-weight: bold;
+        font-family: var(--title-font);
+        margin: 19px 0;
+        vertical-align: middle !important;
+
+        @include respond-below(sm) {
+          font-size: 2.4rem;
+        }
+
+        .custom.char {
+          color: var(--colour-pink) !important;
+        }
+
+        .custom.caret {
+          background-color: var(--colour-pink);
+        }
       }
     }
     .powered-by {
-      margin-top: 15px;
-      font-size: 1rem;
-      color: var(--colour-pink);
+      margin-top: -10px;
+      margin-left: 2px;
+      font-size: 1.1rem;
+      color: var(--font-color);
+
+      @include respond-below(sm) {
+        margin-top: 7px;
+      }
+
+      img {
+        width: 18px;
+        margin: 5px 5px -2px;
+      }
 
       a {
         color: var(--colour-pink);
@@ -141,38 +173,87 @@ export default {
     }
 
     .date {
-      font-size: 1.2rem;
-      margin: 15px 0;
+      font-size: 1.3rem;
+      margin: 50px 0 0;
       font-weight: bold;
+
+      @include respond-below(sm) {
+        margin: 50px 0 10px;
+        font-size: 1rem;
+      }
     }
 
-    .cta {
-      align-self: flex-start;
-      margin: 20px 0px;
-      background: var(--gradient-blue);
-      border: 0;
-      border-radius: 100px;
-      padding: 2px;
-      transition: 0.2s all ease-in-out;
+    .buttonContainer {
+      .cta {
+        align-self: flex-start;
+        margin: 20px 0px;
+        background: var(--font-color);
+        border: 0;
+        border-radius: 10px;
+        padding: 2px;
+        transition: 0.2s all ease-in-out;
 
-      .contents {
-        padding: 15px 20px;
-        background: var(--color-secondary);
-        border-radius: 100px;
-        color: var(--font-color);
-        font-size: 1.2rem;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-        opacity: 0.9;
-        .icon {
-          margin-left: 10px;
+        @include respond-below(sm) {
+          margin: 5px 0;
+        }
+
+        .contents {
+          padding: 10px;
+          background: var(--font-color);
+          border-radius: 10px;
+          color: var(--color-secondary);
+          font-size: 1.1rem;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          opacity: 0.9;
+          .icon {
+            margin-right: 10px;
+            height: 1.9rem;
+            width: 1.9rem;
+          }
+        }
+
+        &:hover {
+          box-shadow: 0px 5px 20px rgba(40, 129, 245, 0.164);
+          cursor: pointer;
         }
       }
 
-      &:hover {
-        box-shadow: 0px 10px 20px rgba(40, 129, 245, 0.164);
-        cursor: pointer;
+      .ctaDiscord {
+        align-self: flex-start;
+        margin: 20px 0px;
+        background: #313742;
+        border: 0;
+        border-radius: 10px;
+        padding: 2px;
+        transition: 0.2s all ease-in-out;
+
+        @include respond-below(sm) {
+          margin: 5px 0;
+        }
+
+        .contentsDiscord {
+          padding: 10px;
+          background: #313742;
+          border-radius: 10px;
+          color: var(--font-color);
+          font-size: 1.1rem;
+          font-weight: 500;
+          display: flex;
+          align-items: center;
+          opacity: 0.9;
+          .icon {
+            margin-right: 10px;
+            height: 1.9rem;
+            width: 1.9rem;
+          }
+        }
+
+        &:hover {
+          box-shadow: 0px 5px 20px rgba(40, 129, 245, 0.164);
+          cursor: pointer;
+        }
       }
     }
 
@@ -182,6 +263,10 @@ export default {
 
       a {
         color: var(--color-accent);
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }

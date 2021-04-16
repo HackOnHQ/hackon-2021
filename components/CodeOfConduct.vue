@@ -1,14 +1,14 @@
 <template>
-  <Container id="team2020">
+  <Container id="codeofconduct">
     <section class="content-section">
       <HashHeader title="Code Of Conduct" />
       <div class="contents">
         <div class="dataSection">
           <h3>Applicability</h3>
           <p>
-            This policy shall be applicable on all spaces related to HackOn Foundation,
-            including the following, as well as their online counterparts (if
-            any):
+            This policy shall be applicable on all spaces related to HackOn
+            Foundation, including the following, as well as their online
+            counterparts (if any):
           </p>
           <ul>
             <li>hackathons</li>
@@ -43,9 +43,9 @@
         </div>
         <div class="dataSection">
           <p>
-            Hackathons hosted by HackOn Foundation are dedicated to providing a safe and
-            comfortable environment and harassment-free experience for everyone.
-            No discrimination, on the basis of the following, shall be
+            Hackathons hosted by HackOn Foundation are dedicated to providing a
+            safe and comfortable environment and harassment-free experience for
+            everyone. No discrimination, on the basis of the following, shall be
             tolerated:
           </p>
           <ul>
@@ -140,12 +140,24 @@
             <li>report their behaviour to local law enforcement.</li>
           </ul>
         </div>
-<div class="dataSection">
+        <div class="dataSection">
           <h3>Contact</h3>
           <p>
-            If you have witnessed or experienced any transgressions of this Code of Conduct at a hackathon 
-            organised by HackOn Foundation, please report it to your hackathon organizer, 
-            or get in touch with Rishabh Bansal at rishabh@hackon.tech or +91-9560678655.
+            If you have witnessed or experienced any transgressions of this Code
+            of Conduct at a hackathon organised by HackOn Foundation, please
+            report it to your hackathon organizer, or get in touch with Rishabh
+            Bansal at
+            <CopyLink
+              value="rishabh@hackon.tech"
+              link="maito:rishabh@hackon.tech"
+              text="email address"
+            />
+            or
+            <CopyLink
+              value="+91-9560678655"
+              link="tel:+919560678655"
+              text="phone number"
+            />.
           </p>
         </div>
       </div>

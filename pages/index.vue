@@ -3,6 +3,7 @@
     <ScrollTopArrow />
     <Hero />
     <ContentSection />
+    <RiddleSection />
     <TracksSection />
     <PrizesSection />
     <SpeakersSection />
@@ -17,6 +18,7 @@
 import Container from "~/components/Container";
 import Hero from "~/components/Hero";
 import ContentSection from "~/components/ContentSection";
+import RiddleSection from "~/components/RiddleSection";
 import TracksSection from "~/components/TracksSection";
 import PrizesSection from "~/components/PrizesSection";
 import SpeakersSection from "~/components/SpeakersSection";
@@ -32,6 +34,7 @@ export default {
     Container,
     Hero,
     ContentSection,
+    RiddleSection,
     TracksSection,
     SpeakersSection,
     SponsorsSection,
@@ -40,8 +43,8 @@ export default {
     WorkshopsSection,
     PrizesSection,
     FAQSection,
-    ScrollTopArrow,
-  },
+    ScrollTopArrow
+  }
 };
 </script>
 

@@ -7,15 +7,52 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: "HackOn 2.0",
+    title: "HackOn 2.0 | Global Diversity Hackathon",
     meta: [
       { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1"
+      },
+      {
+        "http-equiv": "Content-Language",
+        content: "en"
+      },
       {
         hid: "description",
         name: "description",
         content:
-          "HackOn is a week-long global digital hackathon that is organized by hackers for hackers to bring their ideas from the point of inception to reality. No matter how new or old you may be in the world of hackathons, HackOn has a place for everyone wanting to learn, build, share, and grow in their lives."
+          "HackOn is a global digital hackathon focused on fostering innovation while raising awareness on mental health and encouraging diversity and inclusion."
+      },
+      {
+        property: "apple-mobile-web-app-title",
+        content: "HackOn 2.0 | Global Diversity Hackathon"
+      },
+      {
+        property: "og:url",
+        content: "https://hackon.tech"
+      },
+      {
+        property: "og:type",
+        content: "website"
+      },
+      {
+        property: "og:title",
+        content: "HackOn 2.0 | Global Diversity Hackathon"
+      },
+      {
+        property: "og:description",
+        content:
+          "HackOn is a global digital hackathon focused on fostering innovation while raising awareness on mental health and encouraging diversity and inclusion."
+      },
+      {
+        property: "og:image",
+        content:
+          "https://hackon.tech/og-image.png"
+      },
+      {
+        name: 'twitter:card',
+        content: 'summary_large_image'
       },
       {
         name: "twitter:site",
@@ -23,12 +60,12 @@ export default {
       },
       {
         name: "twitter:title",
-        content: "HackOn 2.0"
+        content: "HackOn 2.0 | Global Diversity Hackathon"
       },
       {
         name: "twitter:image",
         content:
-          "https://pbs.twimg.com/profile_banners/1244236299650740226/1585827778/1500x500"
+          "https://hackon.tech/og-image.png"
       }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],

@@ -5,20 +5,72 @@
 <!--<![endif]-->
 
 <head {{ HEAD_ATTRS }}>
-    {{ HEAD }}
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-YWT7D5FTDY');
-        gtag('config', 'UA-162071861-1');
-
+  {{ HEAD }}
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "HackOn Hackathon 2.0",
+        "startDate": "2021-05-28",
+        "endDate": "2021-05-30",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+        "location": {
+          "@type": "VirtualLocation",
+          "url": "https://hackon.tech"
+        },
+        "image": [
+          "https://hackon.tech/googleEvents/1.jpg",
+          "https://hackon.tech/googleEvents/2.jpg",
+          "https://hackon.tech/googleEvents/3.jpg",
+          "https://hackon.tech/googleEvents/4.jpg"
+        ],
+        "description": "HackOn 2.0 is a global digital hackathon focused on fostering innovation while raising awareness on mental health and encouraging diversity and inclusion.",
+        "organizer": {
+          "@type": "Organization",
+          "name": "HackOn Foundation",
+          "url": "https://hackon.tech"
+        }
+      }
     </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    console.log(
+      "%cThere is a hidden easter egg in the website. Find it and win free dev stickers !!",
+      "font-size: 25px ; display: inline-block ; background-color: #0C0D21 ; color: #fff ; font-weight: bold ; padding: 3px 7px 3px 7px ; border-radius: 3px 3px 3px 3px ;"
+    );
+    gtag("config", "G-YWT7D5FTDY");
+    gtag("config", "UA-162071861-1");
+
+    function getSchwags() {
+      window.location.href = "https://bit.ly/hackon-sticker";
+    }
+
+    !(function (e, t, n, s, u, a) {
+      e.twq ||
+        ((s = e.twq = function () {
+          s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+        }),
+          (s.version = "1.1"),
+          (s.queue = []),
+          (u = t.createElement(n)),
+          (u.async = !0),
+          (u.src = "//static.ads-twitter.com/uwt.js"),
+          (a = t.getElementsByTagName(n)[0]),
+          a.parentNode.insertBefore(u, a));
+    })(window, document, "script");
+    twq("init", "o5qcw");
+    twq("track", "PageView");
+  </script>
 </head>
 
 <body {{ BODY_ATTRS }}>
-    {{ APP }}
+  {{ APP }}
+  <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/2021/events?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg" alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a>
 </body>
 
 </html>

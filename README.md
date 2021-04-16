@@ -1,5 +1,7 @@
 # hackon2
 
+[<img src="https://raw.githubusercontent.com/HackOnHackathon/hackon-2021/4b5ba3957e2d503d034fec0d31e992ebe0dc215b/assets/powered-by-vercel.svg" height="30px">](https://vercel.com/?utm_source=HackOnHackathon&utm_campaign=oss)
+
 ## Build Setup
 
 ```bash
