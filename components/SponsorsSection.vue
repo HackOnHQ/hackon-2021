@@ -6,7 +6,11 @@
         <div v-for="(section, index) in sponsors" :key="index">
           <div class="subheading">
             <h2 class="section-title">{{ section.type }}</h2>
-            <img v-if="section.image" :src="section.image" :alt="section.type" />
+            <img
+              v-if="section.image"
+              :src="section.image"
+              :alt="section.type"
+            />
           </div>
           <div class="cards-grid">
             <div v-for="(sponsor, index) in section.logos" :key="index">
@@ -30,7 +34,7 @@ import HashHeader from "~/components/HashHeader";
 export default {
   components: {
     Container,
-    HashHeader,
+    HashHeader
   },
   data() {
     return {
@@ -40,17 +44,17 @@ export default {
           logos: [
             {
               image: require("~/assets/Sponsors/mlh.svg"),
-              url: "https://mlh.io",
+              url: "https://mlh.io"
             },
             {
               image: require("~/assets/Sponsors/hackerearth.png"),
-              url: "https://hackerearth.com",
+              url: "https://hackerearth.com"
             },
             {
               image: require("~/assets/Sponsors/raahee.png"),
-              url: "https://raahee.in",
-            },
-          ],
+              url: "https://raahee.in"
+            }
+          ]
         },
         {
           type: "Diamond Sponsors",
@@ -58,9 +62,9 @@ export default {
           logos: [
             {
               image: require("~/assets/Sponsors/google-cloud.svg"),
-              url: "https://cloud.google.com",
-            },
-          ],
+              url: "https://cloud.google.com"
+            }
+          ]
         },
         {
           type: "Platinum Sponsors",
@@ -68,13 +72,13 @@ export default {
           logos: [
             {
               image: require("~/assets/Sponsors/elastic.svg"),
-              url: "https://www.elastic.co",
+              url: "https://www.elastic.co"
             },
             {
               image: require("~/assets/Sponsors/Auth0.png"),
-              url: "https://auth0.com",
-            },
-          ],
+              url: "https://auth0.com"
+            }
+          ]
         },
         {
           type: "Gold Sponsors",
@@ -82,21 +86,21 @@ export default {
           logos: [
             {
               image: require("~/assets/Sponsors/wazirx.png"),
-              url: "https://wazirx.com",
+              url: "https://wazirx.com"
             },
             {
               image: require("~/assets/Sponsors/github.svg"),
-              url: "https://github.com",
+              url: "https://github.com"
             },
             {
               image: require("~/assets/Sponsors/digitalocean.svg"),
-              url: "https://digitalocean.com",
+              url: "https://digitalocean.com"
             },
             {
               image: require("~/assets/Sponsors/stickermule.svg"),
-              url: "https://stickermule.com",
-            },
-          ],
+              url: "https://stickermule.com"
+            }
+          ]
         },
         {
           type: "Bronze Sponsors",
@@ -104,33 +108,42 @@ export default {
           logos: [
             {
               image: require("~/assets/Sponsors/dottech.svg"),
-              url: "https://get.tech",
+              url: "https://get.tech"
             },
             {
               image: require("~/assets/Sponsors/linode.svg"),
-              url: "https://linode.com",
+              url: "https://linode.com"
             },
             {
               image: require("~/assets/Sponsors/sendgrid.svg"),
-              url: "https://sendgrid.com",
+              url: "https://sendgrid.com"
             },
             {
               image: require("~/assets/Sponsors/polygon.svg"),
-              url: "https://polygon.technology",
+              url: "https://polygon.technology"
             },
             {
               image: require("~/assets/Sponsors/netlify.svg"),
-              url: "https://www.netlify.com",
+              url: "https://www.netlify.com"
             },
             {
               image: require("~/assets/Sponsors/vercel.svg"),
-              url: "https://vercel.com/?utm_source=HackOnHackathon&utm_campaign=oss",
+              url:
+                "https://vercel.com/?utm_source=HackOnHackathon&utm_campaign=oss"
             },
-          ],
-        },
-      ],
+            {
+              image: require("~/assets/Sponsors/dev.to.png"),
+              url: "https://dev.to/"
+            },
+            {
+              image: require("~/assets/Sponsors/streamYard.png"),
+              url: "https://streamyard.com/"
+            }
+          ]
+        }
+      ]
     };
-  },
+  }
 };
 </script>
 
@@ -144,10 +157,6 @@ export default {
       // padding: 20px 0px;
       display: flex;
       align-items: center;
-
-      &:first-child {
-        // padding-top: 0px;
-      }
 
       h2.section-title {
         font-family: "Sen";
