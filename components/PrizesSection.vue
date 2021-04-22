@@ -46,33 +46,33 @@ export default {
       prizes: [
         {
           name: "First Prize",
-          image: require("~/assets/first.svg"),
+          image: require("~/assets/Prizes/first.svg"),
           amount: "₹25,000",
         },
         {
           name: "Second Prize",
-          image: require("~/assets/second.svg"),
+          image: require("~/assets/Prizes/second.svg"),
           amount: "₹15,000",
         },
         {
           name: "Third Prize",
-          image: require("~/assets/third.svg"),
+          image: require("~/assets/Prizes/third.svg"),
           amount: "₹10,000",
         },
         {
           name: "Best Hack Built On Polygon",
-          image: require("~/assets/polygon.svg"),
+          image: require("~/assets/Prizes/polygon.svg"),
           amount: "₹5,000",
           polygon: true,
         },
         {
           name: "Best Hack Built On Elastic",
-          image: require("~/assets/elastic.png"),
+          image: require("~/assets/Prizes/elastic.png"),
           amount: "₹5,000",
         },
         {
           name: "Best Hack Built On Voice",
-          image: require("~/assets/voice.svg"),
+          image: require("~/assets/Prizes/voice.svg"),
           amount: "₹5,000",
         },
       ],

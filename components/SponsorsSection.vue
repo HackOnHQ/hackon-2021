@@ -76,7 +76,7 @@ export default {
             },
             {
               image: require("~/assets/Sponsors/Auth0.png"),
-              url: "https://auth0.com"
+              url: "https://a0.to/Hackon"
             }
           ]
         },
