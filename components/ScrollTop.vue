@@ -1,5 +1,5 @@
 <template>
-  <a @click="scrollTop" v-show="visible" class="bottom-right">
+  <a href="#" @click="scrollTop" v-show="visible" class="bottom-right">
     <slot></slot>
   </a>
 </template>

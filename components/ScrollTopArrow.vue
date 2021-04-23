@@ -1,6 +1,6 @@
 <template>
   <ScrollTopComponent>
-    <a class="btn">
+    <a href="#" class="btn">
       <img src="~/assets/up-arrow-black.svg" />
     </a>
   </ScrollTopComponent>

@@ -1,9 +1,6 @@
 <template>
   <Container id="prizes">
-    <PolygonModal
-      v-show="isModalVisible"
-      @close="closeModal()"
-    />
+    <PolygonModal v-show="isModalVisible" @close="closeModal()" />
     <section class="content-section">
       <HashHeader title="Prizes" />
       <div class="contents">
@@ -80,7 +77,7 @@ export default {
   },
   methods: {
     showModal(isPolygon) {
-      if(!isPolygon) return;
+      if (!isPolygon) return;
       this.isModalVisible = true;
       document.querySelector("body").style.overflow = "hidden";
     },

@@ -5,7 +5,7 @@
         position: 'relative',
         height: '100%',
         display: 'flex',
-        alignItems: 'center'
+        alignItems: 'center',
       }"
     >
       <div class="hero-img"></div>
@@ -28,14 +28,22 @@
         <div class="date">28<sup>th</sup> to 30<sup>th</sup> May 2021</div>
         <div class="buttonContainer">
           <button class="cta">
-            <a href="https://hackon.hackerearth.com" target="_blank">
+            <a
+              rel="noopener noreferrer"
+              href="https://hackon.hackerearth.com"
+              target="_blank"
+            >
               <div class="contents">
                 <img src="~/assets/hackerEarth.svg" class="icon" />Register Now
               </div>
             </a>
           </button>
           <button class="ctaDiscord">
-            <a href="https://discord.hackon.tech" target="_blank">
+            <a
+              rel="noopener noreferrer"
+              href="https://discord.hackon.tech"
+              target="_blank"
+            >
               <div class="contentsDiscord">
                 <img src="~/assets/discord.svg" class="icon" />Join Discord
               </div>
@@ -58,15 +66,15 @@ import { VueTyper } from "vue-typer";
 export default {
   components: {
     Container,
-    VueTyper
+    VueTyper,
   },
 
   data() {
     return {
       text: ["Change", "Inclusion", "Diversity", "Community"],
-      delay: 150
+      delay: 150,
     };
-  }
+  },
 };
 </script>
 

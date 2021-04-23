@@ -56,7 +56,7 @@ export default {
         </section>
         <footer class="modal-footer">
           <slot name="footer">
-            <a :href="workshop.url" target="_blank">
+            <a :href="workshop.url" rel="noopener noreferrer" target="_blank">
               <button type="button" class="btn-green" aria-label="Close modal">
                 <img src="~/assets/youtube.svg" />
                 Session Link

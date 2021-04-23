@@ -33,8 +33,8 @@ export default {
     },
   },
   beforeMount() {
-    this.tooltipText
-  }
+    this.tooltipText;
+  },
 };
 </script>
 <template>

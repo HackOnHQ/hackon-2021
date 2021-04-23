@@ -4,8 +4,8 @@ export default {
   methods: {
     close() {
       this.$emit("close");
-    }
-  }
+    },
+  },
 };
 </script>
 <template>
@@ -56,7 +56,7 @@ export default {
               eligible for Incubation and Marketing Support from Polygon.
               <br /><br />
               To learn more, visit
-              <a href="//hackon.tech/polygon">hackon.tech/polygon</a>
+              <a href="/polygon">hackon.tech/polygon</a>
             </div>
           </div>
         </section>
