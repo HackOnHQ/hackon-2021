@@ -21,9 +21,9 @@
         </div>
         <h2 class="powered-by">
           Powered by
-          <a href="https://raahee.in" target="_blank" ref="noopener noreferrer"
+          <a ref="noopener noreferrer" href="https://raahee.in" target="_blank"
             >Raahee</a
-          ><img class="raaheeLogo" src="~/assets/hero-raahee-logo.png" />
+          ><img class="raaheeLogo" alt="raahee logo" src="~/assets/hero-raahee-logo.png" />
         </h2>
         <div class="date">28<sup>th</sup> to 30<sup>th</sup> May 2021</div>
         <div class="buttonContainer">
@@ -34,7 +34,7 @@
               target="_blank"
             >
               <div class="contents">
-                <img src="~/assets/hackerEarth.svg" class="icon" />Register Now
+                <img src="~/assets/hackerEarth.svg" alt="hackerearth logo" class="icon" />Register Now
               </div>
             </a>
           </button>
@@ -45,7 +45,7 @@
               target="_blank"
             >
               <div class="contentsDiscord">
-                <img src="~/assets/discord.svg" class="icon" />Join Discord
+                <img src="~/assets/discord.svg" alt="discord logo" class="icon" />Join Discord
               </div>
             </a>
           </button>

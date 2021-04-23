@@ -18,6 +18,7 @@ export default {
         aria-describedby="modalDescription"
       >
         <img
+          alt="close modal"
           class="close-modal"
           src="~/assets/close-modal.svg"
           v-on:click.self="close()"
@@ -27,7 +28,7 @@ export default {
         <!-- </header> -->
         <section class="modal-body" id="modalDescription">
           <div class="logo">
-            <img src="~/assets/polygonWithName.svg" />
+            <img src="~/assets/polygonWithName.svg" alt="polygon logo" />
           </div>
           <br />
           <!-- <div class="title">About the workshop</div> -->

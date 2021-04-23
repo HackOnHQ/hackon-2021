@@ -2,7 +2,7 @@
   <Container id="PolygonPage">
     <section class="content-section">
       <div class="logo">
-        <img src="~/assets/polygonWithName.svg" />
+        <img src="~/assets/polygonWithName.svg" alt="polygon logo" />
       </div>
       <br />
       <div class="contents">

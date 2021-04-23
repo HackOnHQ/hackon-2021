@@ -141,7 +141,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img class="vercel-logo" src="~/assets/powered-by-vercel.svg" />
+          <img class="vercel-logo" src="~/assets/powered-by-vercel.svg" alt="vercel logo" />
         </a>
       </div>
     </Container>

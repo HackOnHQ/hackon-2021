@@ -12,7 +12,7 @@
           >
             <div class="texts" @click="toggleFAQItem(index)">
               <h4 class="title">{{ index + 1 }}. {{ faq.title }}</h4>
-              <img src="~/assets/faq-up-arrow.svg" />
+              <img src="~/assets/faq-up-arrow.svg" alt="toggle FAQ" />
             </div>
             <div class="answer">
               <div v-html="faq.content">{{}}</div>

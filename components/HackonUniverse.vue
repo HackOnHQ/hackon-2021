@@ -10,14 +10,14 @@
             <a :href="hackathon.url" target="_blank" rel="noopener noreferrer">
               <div class="texts">
                 <h4 class="title">
-                  <img class="logo" :src="hackathon.logo" />
+                  <img class="logo" :src="hackathon.logo" alt="logo" />
                   {{ hackathon.name }}
                 </h4>
                 <p class="about">{{ hackathon.about }}</p>
               </div>
               <div class="description">
                 <div class="organiser">
-                  <img :src="hackathon.organiser.picture" class="avatar" />
+                  <img :src="hackathon.organiser.picture" class="avatar" alt="avatar" />
                   <div class="details">
                     <span class="name">
                       {{ hackathon.organiser.name }}

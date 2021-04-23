@@ -10,7 +10,11 @@
             class="team-card"
           >
             <div class="picture-wrapper">
-              <img :src="teamMember.picture" alt="" class="profile-pic" />
+              <img
+                :src="teamMember.picture"
+                alt="profile picture"
+                class="profile-pic"
+              />
             </div>
             <h4 class="title">{{ teamMember.name }}</h4>
             <p class="description">{{ teamMember.description }}</p>
