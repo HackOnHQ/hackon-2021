@@ -21,7 +21,7 @@
         </div>
         <h2 class="powered-by">
           Powered by
-          <a ref="noopener noreferrer" href="https://raahee.in" target="_blank"
+          <a rel="noopener noreferrer" href="https://raahee.in" target="_blank"
             >Raahee</a
           ><img class="raaheeLogo" alt="raahee logo" src="~/assets/hero-raahee-logo.png" />
         </h2>
