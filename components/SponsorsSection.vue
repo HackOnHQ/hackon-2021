@@ -98,7 +98,7 @@ export default {
             },
             {
               image: require("~/assets/Sponsors/stickermule.svg"),
-              url: "https://stickermule.com",
+              url: "http://hackp.ac/mlh-stickermule-hackathons",
             },
           ],
         },
