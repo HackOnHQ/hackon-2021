@@ -2,7 +2,7 @@
   <Container id="PolygonPage">
     <section class="content-section">
       <div class="logo">
-        <img src="~/assets/polygonWithName.svg" />
+        <img src="~/assets/polygonWithName.svg" alt="polygon logo" />
       </div>
       <br />
       <div class="contents">
@@ -23,6 +23,7 @@
             <li>
               Getting started with Matic
               <a
+                rel="noopener noreferrer"
                 href="https://docs.matic.network/docs/develop/getting-started"
                 target="_blank"
                 >Getting Started</a
@@ -30,13 +31,19 @@
             </li>
             <li>
               Matic Blockchain Explorer
-              <a href="https://explorer-mainnet.maticvigil.com/" target="_blank"
+              <a
+                rel="noopener noreferrer"
+                href="https://explorer-mainnet.maticvigil.com/"
+                target="_blank"
                 >Explorer Mainnet</a
               >
             </li>
             <li>
               Matic Testnet Faucet
-              <a href="https://faucet.matic.network/" target="_blank"
+              <a
+                rel="noopener noreferrer"
+                href="https://faucet.matic.network/"
+                target="_blank"
                 >Matic Testnet</a
               >
             </li>
@@ -47,7 +54,12 @@
             with developers during hackathons. If you have any doubts regarding
             any of the above information, please join our Discord channel to get
             your queries answered: Discord Link
-            <a href="https://discord.gg/qGwh4Pek8N" target="_blank">here</a>
+            <a
+              href="https://discord.gg/qGwh4Pek8N"
+              rel="noopener noreferrer"
+              target="_blank"
+              >here</a
+            >
             <br />
           </p>
         </div>
@@ -66,7 +78,10 @@
                 platform, where you can bet on highly-debated topics like
                 political elections, the results of reality shows, results of
                 ESports tournaments, and earn for being right. Example:
-                <a href="http://polymarket.com/" target="_blank"
+                <a
+                  rel="noopener noreferrer"
+                  href="http://polymarket.com/"
+                  target="_blank"
                   >Polymarket.com</a
                 >
               </p>
@@ -122,16 +137,12 @@
               The importance of Polygon’s infrastructure in the
               application/originality of the idea.
             </li>
-            <li>
-              User experience: intuitive, easy to use and interact with.
-            </li>
+            <li>User experience: intuitive, easy to use and interact with.</li>
             <li>
               Technical complexity: going above and beyond the specification.
               Code quality, bug-free, documentation quality.
             </li>
-            <li>
-              Polish: how refined the project is.
-            </li>
+            <li>Polish: how refined the project is.</li>
           </ol>
           <br />
           <p>
@@ -166,8 +177,8 @@ import Container from "~/components/Container";
 
 export default {
   components: {
-    Container
-  }
+    Container,
+  },
 };
 </script>
 

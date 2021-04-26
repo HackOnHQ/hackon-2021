@@ -19,6 +19,7 @@ export default {
         aria-describedby="modalDescription"
       >
         <img
+          alt="close modal"
           class="close-modal"
           src="~/assets/close-modal.svg"
           v-on:click.self="close()"
@@ -28,7 +29,7 @@ export default {
         </header>
         <!-- <div class="hashtags">#workshop #hackon2</div> -->
         <div class="date">
-          <img src="~/assets/calender.svg" />
+          <img src="~/assets/calender.svg" alt="calender" />
           {{ workshop.date }} {{ workshop.time }} IST
         </div>
         <section class="modal-body" id="modalDescription">
@@ -40,7 +41,7 @@ export default {
           </div>
           <div class="title">About the Speaker</div>
           <div class="speaker-details">
-            <img :src="workshop.speaker.picture" class="avatar" />
+            <img :src="workshop.speaker.picture" class="avatar" alt="avatar" />
             <div class="details">
               <span class="name">
                 {{ workshop.speaker.name }}
@@ -56,9 +57,9 @@ export default {
         </section>
         <footer class="modal-footer">
           <slot name="footer">
-            <a :href="workshop.url" target="_blank">
+            <a :href="workshop.url" rel="noopener noreferrer" target="_blank">
               <button type="button" class="btn-green" aria-label="Close modal">
-                <img src="~/assets/youtube.svg" />
+                <img src="~/assets/youtube.svg" alt="youtube" />
                 Session Link
               </button>
             </a>

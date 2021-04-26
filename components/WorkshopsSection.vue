@@ -21,7 +21,11 @@
             </div>
             <div class="description">
               <div class="speaker">
-                <img :src="workshop.speaker.picture" class="avatar" />
+                <img
+                  :src="workshop.speaker.picture"
+                  class="avatar"
+                  alt="avatar"
+                />
                 <div class="details">
                   <span class="name">
                     {{ workshop.speaker.name }}
@@ -51,7 +55,7 @@ export default {
   components: {
     Container,
     HashHeader,
-    Modal
+    Modal,
   },
   data() {
     return {
@@ -68,8 +72,8 @@ export default {
             name: "Saurabh Rajpal",
             designation: "Technical Solutions Consultant, Google",
             picture:
-              "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/4e828a778c604399913a1dd4e4d87e21/265.png"
-          }
+              "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/4e828a778c604399913a1dd4e4d87e21/265.png",
+          },
         },
         {
           name: "Community as a Cure",
@@ -85,8 +89,8 @@ export default {
             about:
               "Paras is the Program Manager at Microsoft Reactor, Bangalore, who is also the Community Professional of the Year 2020.",
             picture:
-              "https://miro.medium.com/fit/c/1360/1360/2*1d2PU06qLbaY-3EqeQBUZQ.jpeg"
-          }
+              "https://miro.medium.com/fit/c/1360/1360/2*1d2PU06qLbaY-3EqeQBUZQ.jpeg",
+          },
         },
         {
           name: "Brand Storytelling",
@@ -102,8 +106,8 @@ export default {
             about:
               "Miri is the Head of Global Internship Program at Microsoft and the author of Brand Storytelling.",
             picture:
-              "https://media-exp1.licdn.com/dms/image/C5603AQGccVXExmWSeg/profile-displayphoto-shrink_800_800/0/1585676059716?e=1617840000&v=beta&t=UV7D6RHqvHtQcVKCPfbyXxyXcXCM9setOzo4XI5NBlE"
-          }
+              "https://media-exp1.licdn.com/dms/image/C5603AQGccVXExmWSeg/profile-displayphoto-shrink_800_800/0/1585676059716?e=1617840000&v=beta&t=UV7D6RHqvHtQcVKCPfbyXxyXcXCM9setOzo4XI5NBlE",
+          },
         },
         {
           name: "Power of Communities",
@@ -119,8 +123,8 @@ export default {
             about:
               "Nikita is the Community Manager at Google Developers and was a Project Coordinator at Google.",
             picture:
-              "https://assets.devfolio.co/hackathons/be0de8e087c844d79199695d8997779f/judges/503be308d27942c6af30aa665c9e2940/430.png"
-          }
+              "https://assets.devfolio.co/hackathons/be0de8e087c844d79199695d8997779f/judges/503be308d27942c6af30aa665c9e2940/430.png",
+          },
         },
         {
           name: "The World of Web Components",
@@ -136,8 +140,8 @@ export default {
             about:
               "Nishu is a Google Developers Experts(GDE) for Angular and Web Technologies and a Developer at UI Garage, IBM.",
             picture:
-              "https://assets.devfolio.co/hackathons/be0de8e087c844d79199695d8997779f/judges/976dbbca2b7346d781894b11d4bca2f5/350.jpeg"
-          }
+              "https://assets.devfolio.co/hackathons/be0de8e087c844d79199695d8997779f/judges/976dbbca2b7346d781894b11d4bca2f5/350.jpeg",
+          },
         },
         {
           name: "Getting Started with Angular",
@@ -149,8 +153,8 @@ export default {
             name: "Dhananjay Kumar",
             designation: "Most Valuable Professional, Microsoft",
             picture:
-              "https://assets.devfolio.co/hackathons/be0de8e087c844d79199695d8997779f/judges/519c888869584eefa120edf5e4971e22/652.jpeg"
-          }
+              "https://assets.devfolio.co/hackathons/be0de8e087c844d79199695d8997779f/judges/519c888869584eefa120edf5e4971e22/652.jpeg",
+          },
         },
         {
           name: "Taking flight with Flutter",
@@ -166,8 +170,8 @@ export default {
             about:
               "Pawan is the Founder of MTechViral, and a Google Developers Experts (GDE) for Flutter by Google, Firebase, Dart and Web Tech.",
             picture:
-              "https://media-exp1.licdn.com/dms/image/C4E03AQFU_Pks7-2qbA/profile-displayphoto-shrink_200_200/0/1610945863156?e=1617840000&v=beta&t=_pkadk5xabdD-LyBnReydJnHuO5T76OYBQZfiBdxHfc"
-          }
+              "https://media-exp1.licdn.com/dms/image/C4E03AQFU_Pks7-2qbA/profile-displayphoto-shrink_200_200/0/1610945863156?e=1617840000&v=beta&t=_pkadk5xabdD-LyBnReydJnHuO5T76OYBQZfiBdxHfc",
+          },
         },
         {
           name: "Hackathon 101",
@@ -183,8 +187,8 @@ export default {
             about:
               "Jatin is a full-stack web developer, who has won numerous hackathons, and is extremely passionate about them.",
             picture:
-              "https://assets.devfolio.co/hackathons/be0de8e087c844d79199695d8997779f/judges/bea23fa33ba74fa589fa2d56b958741a/309.jpeg"
-          }
+              "https://assets.devfolio.co/hackathons/be0de8e087c844d79199695d8997779f/judges/bea23fa33ba74fa589fa2d56b958741a/309.jpeg",
+          },
         },
         {
           name: "Intro to Git/GitHub",
@@ -200,8 +204,8 @@ export default {
             about:
               "Gunnika is a GitHub Campus Expert and Google Code-in '19 mentor for TensorFlow.",
             picture:
-              "https://he-s3.s3.amazonaws.com/media/avatars/b.gunnika/resized/180/aaue7mbcptlsehn0xoe6ddpcxas8dthvswnxzds8y6eynlq"
-          }
+              "https://he-s3.s3.amazonaws.com/media/avatars/b.gunnika/resized/180/aaue7mbcptlsehn0xoe6ddpcxas8dthvswnxzds8y6eynlq",
+          },
         },
         {
           name: "What is a Full Stack Developer and how to become One!",
@@ -215,8 +219,8 @@ export default {
             about:
               " Arnav is a Co-Founder at Coding Blocks and was an Android Lead at Zomato.",
             picture:
-              "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/de2017b2f5cd44da90dc782b28469487/703.jpeg"
-          }
+              "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/de2017b2f5cd44da90dc782b28469487/703.jpeg",
+          },
         },
         {
           name: "Webscraping with Python - 101",
@@ -230,8 +234,8 @@ export default {
             name: "Saketha Ramanujam",
             designation: "GitHub Campus Expert",
             picture:
-              "https://res.cloudinary.com/stuartlittle/image/upload/v1587120916/me/ID.jpg"
-          }
+              "https://res.cloudinary.com/stuartlittle/image/upload/v1587120916/me/ID.jpg",
+          },
         },
         {
           name: "Elastic App Search Demo",
@@ -247,12 +251,12 @@ export default {
             about:
               "Aravind is a Senior Developer Advocate at Elastic, a tech evangelist and a FOSS enthusiast.",
             picture:
-              "https://assets.devfolio.co/hackathons/be0de8e087c844d79199695d8997779f/judges/9162cfc964dd43babff57c68122d6906/460.jpeg"
-          }
-        }
+              "https://assets.devfolio.co/hackathons/be0de8e087c844d79199695d8997779f/judges/9162cfc964dd43babff57c68122d6906/460.jpeg",
+          },
+        },
       ],
       isModalVisible: false,
-      modalData: 0
+      modalData: 0,
     };
   },
   methods: {
@@ -266,8 +270,8 @@ export default {
       this.isModalVisible = false;
       document.querySelector("body").style.overflow = "initial";
       // document.querySelector(".workshops").classList.remove = "modalOpen";
-    }
-  }
+    },
+  },
 };
 </script>
 

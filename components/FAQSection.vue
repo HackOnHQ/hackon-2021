@@ -12,7 +12,7 @@
           >
             <div class="texts" @click="toggleFAQItem(index)">
               <h4 class="title">{{ index + 1 }}. {{ faq.title }}</h4>
-              <img src="~/assets/faq-up-arrow.svg" />
+              <img src="~/assets/faq-up-arrow.svg" alt="toggle FAQ" />
             </div>
             <div class="answer">
               <div v-html="faq.content">{{}}</div>
@@ -31,7 +31,7 @@ import HashHeader from "~/components/HashHeader";
 export default {
   components: {
     Container,
-    HashHeader
+    HashHeader,
   },
   data() {
     return {
@@ -39,54 +39,54 @@ export default {
         {
           title: "What is a hackathon?",
           content:
-            "A hackathon is an invention marathon where you can work with people around the globe to build a project related to technology! It isn't about hacking into a system, it's instead about hacking something together and learning a great deal in the process."
+            "A hackathon is an invention marathon where you can work with people around the globe to build a project related to technology! It isn't about hacking into a system, it's instead about hacking something together and learning a great deal in the process.",
         },
         {
           title: "What is an online hackathon?",
           content:
-            "It's an invention marathon like the traditional in-person hackathon, but held remotely!"
+            "It's an invention marathon like the traditional in-person hackathon, but held remotely!",
         },
         {
           title: "How long will it be on for?",
           content:
-            "The event will be running for about 48 hours from 28th May to 30th May."
+            "The event will be running for about 48 hours from 28th May to 30th May.",
         },
         {
           title: "Who can participate?",
           content:
-            "Everyone is welcome to participate, be it, students, professionals or aliens from different Planet!"
+            "Everyone is welcome to participate, be it, students, professionals or aliens from different Planet!",
         },
         {
           title: "How will project submissions work?",
           content:
-            "To participate, register on <a href='//hackon.hackerearth.com' target= '_blank'>HackerEarth's platform</a>. You will then be able to create your project once the hackathon starts. To be eligible for the judging process you'll have to submit the project before the hackathon ends."
+            "To participate, register on <a rel='noopener noreferrer' href='//hackon.hackerearth.com' target= '_blank'>HackerEarth's platform</a>. You will then be able to create your project once the hackathon starts. To be eligible for the judging process you'll have to submit the project before the hackathon ends.",
         },
         {
           title: "How will judging work?",
           content:
-            "We'll be reviewing submissions on HackerEarth, and it will be judged by our team and judges mentioned on the page."
+            "We'll be reviewing submissions on HackerEarth, and it will be judged by our team and judges mentioned on the page.",
         },
         {
           title: "Do I need to be a student?",
           content:
-            "Absolutely not! The team behind HackOn is mostly made up of students, however, anyone age 13 and above can give it a go!"
+            "Absolutely not! The team behind HackOn is mostly made up of students, however, anyone age 13 and above can give it a go!",
         },
         {
           title: "How much does it cost?",
           content:
-            "Zero. Zip. Zilch. Nada. Nothing. Admission to HackOn is completely free, thanks to our sponsors!"
+            "Zero. Zip. Zilch. Nada. Nothing. Admission to HackOn is completely free, thanks to our sponsors!",
         },
         {
           title: "Where can I find updates?",
           content:
-            "We have an active <a href='//discord.hackon.tech' target= '_blank'>Discord</a> for communication, along with a <a href='//telegram.hackon.tech' target= '_blank'>Telegram</a> "
+            "We have an active <a rel='noopener noreferrer' href='//discord.hackon.tech' target= '_blank'>Discord</a> for communication, along with a <a rel='noopener noreferrer' href='//telegram.hackon.tech' target= '_blank'>Telegram</a> ",
         },
         {
           title: "How big can a team be?",
           content:
-            "You can form teams of 2 to 4 people. Most teams aim to have a mix of people with both design and developer skills. Remember we won't accept project submissions from individual applicants."
-        }
-      ]
+            "You can form teams of 2 to 4 people. Most teams aim to have a mix of people with both design and developer skills. Remember we won't accept project submissions from individual applicants.",
+        },
+      ],
     };
   },
   methods: {
@@ -100,8 +100,8 @@ export default {
       } else {
         characterInfoElement.classList.add("hidden");
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

@@ -4,6 +4,7 @@
       <HashHeader title="Can You Solve The <span style='display: inline-block'>Riddle ?</span>" />
       <div class="contents">
         <iframe
+          title="international womens day"
           src="https://www.youtube.com/embed/4kFC7669quE"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

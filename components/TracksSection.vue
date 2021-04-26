@@ -6,7 +6,7 @@
         <div class="grid">
           <div class="panel text box-one">
             <div class="track-box healthcare">
-              <img src="~/assets/track-healthcare.png" />
+              <img src="~/assets/track-healthcare.png" alt="Track Healthcare" />
             </div>
             <div class="texts">
               <h3 class="title">Diversity and Inclusion</h3>
@@ -19,7 +19,10 @@
           </div>
           <div class="panel text box-two">
             <div class="track-box mental-health">
-              <img src="~/assets/track-mental-health.png" />
+              <img
+                src="~/assets/track-mental-health.png"
+                alt="Track Mental Health"
+              />
             </div>
             <div class="texts">
               <h3 class="title">Mental Health and Awareness</h3>

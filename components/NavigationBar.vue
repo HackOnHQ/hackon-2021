@@ -33,6 +33,7 @@
             </li>
           </ul>
           <a
+            rel="noopener noreferrer"
             href="https://hackon.hackerearth.com"
             class="register-button"
             target="_blank"

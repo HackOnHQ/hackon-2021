@@ -9,9 +9,13 @@
             :key="index"
             class="speakers-card"
           >
-            <a :href="speaker.url" target="_blank">
+            <a :href="speaker.url" target="_blank" rel="noopener noreferrer">
               <div class="picture-wrapper">
-                <img :src="speaker.picture" alt="" class="profile-pic" />
+                <img
+                  :src="speaker.picture"
+                  alt="profile picture"
+                  class="profile-pic"
+                />
               </div>
             </a>
             <h4 class="title">{{ speaker.name }}</h4>

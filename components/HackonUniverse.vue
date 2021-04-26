@@ -7,17 +7,17 @@
       <div class="contents universe">
         <div class="cards-grid">
           <div v-for="(hackathon, index) in universe" :key="index" class="card">
-            <a :href="hackathon.url" target="_blank">
+            <a :href="hackathon.url" target="_blank" rel="noopener noreferrer">
               <div class="texts">
                 <h4 class="title">
-                  <img class="logo" :src="hackathon.logo" />
+                  <img class="logo" :src="hackathon.logo" alt="logo" />
                   {{ hackathon.name }}
                 </h4>
                 <p class="about">{{ hackathon.about }}</p>
               </div>
               <div class="description">
                 <div class="organiser">
-                  <img :src="hackathon.organiser.picture" class="avatar" />
+                  <img :src="hackathon.organiser.picture" class="avatar" alt="avatar" />
                   <div class="details">
                     <span class="name">
                       {{ hackathon.organiser.name }}
@@ -40,7 +40,7 @@ import HashHeader from "~/components/HashHeader";
 export default {
   components: {
     Container,
-    HashHeader
+    HashHeader,
   },
   data() {
     return {
@@ -54,8 +54,8 @@ export default {
           organiser: {
             name: "Sohail Pathan",
             picture:
-              "https://media-exp1.licdn.com/dms/image/C5103AQFUiHTuOwP-uw/profile-displayphoto-shrink_200_200/0/1574675509785?e=1623283200&v=beta&t=jj1fUKUQJyNnkMR_DUqwAZx-55HUWW4Z2KOsEmk6vVA"
-          }
+              "https://media-exp1.licdn.com/dms/image/C5103AQFUiHTuOwP-uw/profile-displayphoto-shrink_200_200/0/1574675509785?e=1623283200&v=beta&t=jj1fUKUQJyNnkMR_DUqwAZx-55HUWW4Z2KOsEmk6vVA",
+          },
         },
         {
           name: "BU Hack",
@@ -66,8 +66,8 @@ export default {
           organiser: {
             name: "Deep Patel",
             picture:
-              "https://media-exp1.licdn.com/dms/image/C4E03AQHZZ4ykdwji8Q/profile-displayphoto-shrink_200_200/0/1593777967770?e=1623283200&v=beta&t=QWr76XeHeW4qm_1cfaqCvE1bTEpY27gunyJlnZ-gH-I"
-          }
+              "https://media-exp1.licdn.com/dms/image/C4E03AQHZZ4ykdwji8Q/profile-displayphoto-shrink_200_200/0/1593777967770?e=1623283200&v=beta&t=QWr76XeHeW4qm_1cfaqCvE1bTEpY27gunyJlnZ-gH-I",
+          },
         },
         {
           name: "HackJaipur",
@@ -78,8 +78,8 @@ export default {
           organiser: {
             name: "Mayank Goyal",
             picture:
-              "https://media-exp1.licdn.com/dms/image/C4E03AQH-orTIbxY_YQ/profile-displayphoto-shrink_200_200/0/1601666357113?e=1623283200&v=beta&t=e5bduLLpKjd2FpqaNVRXm3GH2GbygFiOrn5Wi54WT84"
-          }
+              "https://media-exp1.licdn.com/dms/image/C4E03AQH-orTIbxY_YQ/profile-displayphoto-shrink_200_200/0/1601666357113?e=1623283200&v=beta&t=e5bduLLpKjd2FpqaNVRXm3GH2GbygFiOrn5Wi54WT84",
+          },
         },
         {
           name: "HackChennai",
@@ -90,8 +90,8 @@ export default {
           organiser: {
             name: "Aaishika S Bhattacharya",
             picture:
-              "https://media-exp1.licdn.com/dms/image/C5603AQH10Aaq7XorYA/profile-displayphoto-shrink_200_200/0/1602915695424?e=1623283200&v=beta&t=7WZBR7s7wO4OqbvywJQ6P5-GUiM52EmZjQi8muULka0"
-          }
+              "https://media-exp1.licdn.com/dms/image/C5603AQH10Aaq7XorYA/profile-displayphoto-shrink_200_200/0/1602915695424?e=1623283200&v=beta&t=7WZBR7s7wO4OqbvywJQ6P5-GUiM52EmZjQi8muULka0",
+          },
         },
 
         {
@@ -103,8 +103,8 @@ export default {
           organiser: {
             name: "Siddharth Dayalwal",
             picture:
-              "https://media-exp1.licdn.com/dms/image/C4D03AQG3Ijm4ORcasQ/profile-displayphoto-shrink_200_200/0/1612435094711?e=1623283200&v=beta&t=zpPrJ6VHNhZ_f0rzOlO4_C7jXttZDjA7AgeqeGbQZSg"
-          }
+              "https://media-exp1.licdn.com/dms/image/C4D03AQG3Ijm4ORcasQ/profile-displayphoto-shrink_200_200/0/1612435094711?e=1623283200&v=beta&t=zpPrJ6VHNhZ_f0rzOlO4_C7jXttZDjA7AgeqeGbQZSg",
+          },
         },
         {
           name: "AmiHacks",
@@ -115,8 +115,8 @@ export default {
           organiser: {
             name: "Arshad Khan",
             picture:
-              "https://media-exp1.licdn.com/dms/image/C4E03AQFAxdsfFWHWUw/profile-displayphoto-shrink_200_200/0/1611300787974?e=1623283200&v=beta&t=zNRji0xP-uUh5jueshZJCChOtQFqDPutI5eWm8Fqtqw"
-          }
+              "https://media-exp1.licdn.com/dms/image/C4E03AQFAxdsfFWHWUw/profile-displayphoto-shrink_200_200/0/1611300787974?e=1623283200&v=beta&t=zNRji0xP-uUh5jueshZJCChOtQFqDPutI5eWm8Fqtqw",
+          },
         },
         {
           name: "Unblock",
@@ -127,8 +127,8 @@ export default {
           organiser: {
             name: "Anupam Varshney",
             picture:
-              "https://media-exp1.licdn.com/dms/image/C4E03AQHzdKFE_ymwlA/profile-displayphoto-shrink_200_200/0/1531452867828?e=1623283200&v=beta&t=NS7GHfMWZvhRJR20opRbFJo36YtejO6CWlOJ-kkPTHw"
-          }
+              "https://media-exp1.licdn.com/dms/image/C4E03AQHzdKFE_ymwlA/profile-displayphoto-shrink_200_200/0/1531452867828?e=1623283200&v=beta&t=NS7GHfMWZvhRJR20opRbFJo36YtejO6CWlOJ-kkPTHw",
+          },
         },
         {
           name: "Hackverse",
@@ -139,8 +139,8 @@ export default {
           organiser: {
             name: "Aastha Chowdhary",
             picture:
-              "https://media-exp1.licdn.com/dms/image/C4D03AQFh8xqfHflwsQ/profile-displayphoto-shrink_200_200/0/1617365190244?e=1623283200&v=beta&t=KK_Pppfwgjd82Ortl1QsqkK5bGm-D0-g6b7bXXvLpBs"
-          }
+              "https://media-exp1.licdn.com/dms/image/C4D03AQFh8xqfHflwsQ/profile-displayphoto-shrink_200_200/0/1617365190244?e=1623283200&v=beta&t=KK_Pppfwgjd82Ortl1QsqkK5bGm-D0-g6b7bXXvLpBs",
+          },
         },
         {
           name: "Vihaan",
@@ -150,8 +150,8 @@ export default {
           url: "https://vihaan.ieeedtu.in/",
           organiser: {
             name: "Ritwik Ranjan",
-            picture: require("~/assets/HackonUniverse/ritwik.jpeg")
-          }
+            picture: require("~/assets/HackonUniverse/ritwik.jpeg"),
+          },
         },
         {
           name: "Hack A Nova",
@@ -162,12 +162,12 @@ export default {
           organiser: {
             name: "Seemant Aggarwal",
             picture:
-              "https://media-exp1.licdn.com/dms/image/C5603AQGiluhAHVv1Iw/profile-displayphoto-shrink_200_200/0/1587819081359?e=1623283200&v=beta&t=QmJk8ZqIAuZf1TKR2bwEiKtn8QdV3PnFTLl7aSSPXkA"
-          }
-        }
-      ]
+              "https://media-exp1.licdn.com/dms/image/C5603AQGiluhAHVv1Iw/profile-displayphoto-shrink_200_200/0/1587819081359?e=1623283200&v=beta&t=QmJk8ZqIAuZf1TKR2bwEiKtn8QdV3PnFTLl7aSSPXkA",
+          },
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 

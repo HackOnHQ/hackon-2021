@@ -4,8 +4,8 @@ export default {
   methods: {
     close() {
       this.$emit("close");
-    }
-  }
+    },
+  },
 };
 </script>
 <template>
@@ -18,6 +18,7 @@ export default {
         aria-describedby="modalDescription"
       >
         <img
+          alt="close modal"
           class="close-modal"
           src="~/assets/close-modal.svg"
           v-on:click.self="close()"
@@ -27,7 +28,7 @@ export default {
         <!-- </header> -->
         <section class="modal-body" id="modalDescription">
           <div class="logo">
-            <img src="~/assets/polygonWithName.svg" />
+            <img src="~/assets/polygonWithName.svg" alt="polygon logo" />
           </div>
           <br />
           <!-- <div class="title">About the workshop</div> -->
@@ -56,7 +57,7 @@ export default {
               eligible for Incubation and Marketing Support from Polygon.
               <br /><br />
               To learn more, visit
-              <a href="//hackon.tech/polygon">hackon.tech/polygon</a>
+              <a href="/polygon">hackon.tech/polygon</a>
             </div>
           </div>
         </section>

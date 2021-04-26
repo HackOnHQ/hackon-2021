@@ -48,8 +48,8 @@ import HashHeader from "~/components/HashHeader";
 export default {
   components: {
     Container,
-    HashHeader
-  }
+    HashHeader,
+  },
 };
 </script>
 

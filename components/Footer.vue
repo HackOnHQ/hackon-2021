@@ -24,12 +24,42 @@
 
         <div class="panel">
           <h4 class="title">HackOn Universe</h4>
-          <a href="https://www.hackjaipur.com" target="_blank">HackJaipur</a>
-          <a href="https://www.hackchennai.in" target="_blank">HackChennai</a>
-          <a href="https://hacknagpur.tech" target="_blank">HackNagpur</a>
-          <a href="https://hackthisfall.tech" target="_blank">Hack This Fall</a>
-          <a href="https://www.amihacks.tech" target="_blank">AmiHacks</a>
-          <a href="https://unblock.octaloop.com/" target="_blank">Unblock</a>
+          <a
+            rel="noopener noreferrer"
+            href="https://www.hackchennai.in"
+            target="_blank"
+            >HackChennai</a
+          >
+          <a
+            rel="noopener noreferrer"
+            href="https://www.hackjaipur.com"
+            target="_blank"
+            >HackJaipur</a
+          >
+          <a
+            rel="noopener noreferrer"
+            href="https://hacknagpur.tech"
+            target="_blank"
+            >HackNagpur</a
+          >
+          <a
+            rel="noopener noreferrer"
+            href="https://hackthisfall.tech"
+            target="_blank"
+            >Hack This Fall</a
+          >
+          <a
+            rel="noopener noreferrer"
+            href="https://www.amihacks.tech"
+            target="_blank"
+            >AmiHacks</a
+          >
+          <a
+            rel="noopener noreferrer"
+            href="https://unblock.octaloop.com/"
+            target="_blank"
+            >Unblock</a
+          >
           <a class="hackonUniverse" href="/universe" target="_blank">More...</a>
         </div>
 
@@ -45,29 +75,47 @@
           <p class="info">+919560678655</p>
           <div class="socialLinks">
             <a
+              rel="noopener noreferrer"
               target="_blank"
               href="https://www.linkedin.com/company/hackonhackathon"
             >
               <img src="~/assets/linkedin.svg" alt="LinkedInLink" />
             </a>
-            <a target="_blank" href="https://discord.hackon.tech/">
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://discord.hackon.tech/"
+            >
               <img src="~/assets/discord.svg" alt="DiscordLink" />
             </a>
-            <a target="_blank" href="https://medium.com/hackonhackathon">
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://medium.com/hackonhackathon"
+            >
               <img src="~/assets/medium.svg" alt="MediumLink" />
             </a>
           </div>
           <div class="socialLinks">
-            <a target="_blank" href="https://twitter.com/hackonhackathon">
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://twitter.com/hackonhackathon"
+            >
               <img src="~/assets/twitter.svg" alt="FacebookLink" />
             </a>
             <a
+              rel="noopener noreferrer"
               target="_blank"
               href="https://youtube.com/playlist?list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli"
             >
               <img src="~/assets/youtube.svg" alt="YoutubeLink" />
             </a>
-            <a target="_blank" href="https://telegram.hackon.tech/">
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://telegram.hackon.tech/"
+            >
               <img src="~/assets/telegram.svg" alt="TelegramLink" />
             </a>
           </div>
@@ -93,7 +141,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img class="vercel-logo" src="~/assets/powered-by-vercel.svg" />
+          <img class="vercel-logo" src="~/assets/powered-by-vercel.svg" alt="vercel logo" />
         </a>
       </div>
     </Container>
@@ -107,8 +155,8 @@ import CopyLink from "~/components/CopyLink";
 export default {
   components: {
     Container,
-    CopyLink
-  }
+    CopyLink,
+  },
 };
 </script>
 
