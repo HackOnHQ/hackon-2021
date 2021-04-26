@@ -1,7 +1,7 @@
 <template>
   <Container id="CommunityPartners">
     <section class="content-section">
-      <HashHeader title="Past Community Partners" />
+      <HashHeader title="Community Partners" />
       <div class="contents">
         <div class="cards-grid">
           <div v-for="(sponsor, index) in sponsors" :key="index" class="card">
@@ -39,43 +39,61 @@ export default {
     return {
       sponsors: [
         {
-          image: require("~/assets/Community/CodingBlocks.png")
+          image: require("~/assets/Community/CodeFlow.png")
         },
         {
           image: require("~/assets/Community/AngelHack.png")
         },
         {
-          image: require("~/assets/Community/DCD.svg")
+          image: require("~/assets/Community/CodXCrypt.jpg")
         },
         {
-          image: require("~/assets/Community/JSLovers.png")
+          image: require("~/assets/Community/CodeChef-VIT.jpeg")
         },
         {
-          image: require("~/assets/Community/WWCD.jpeg")
+          image: require("~/assets/Community/DSC.png")
         },
         {
-          image: require("~/assets/Community/GDG New Delhi.png")
+          image: require("~/assets/Community/DevScript.png")
         },
         {
-          image: require("~/assets/Community/GDG Bangalore.png")
+          image: require("~/assets/Community/DSC Amity.png")
         },
         {
-          image: require("~/assets/Community/GDG Jaipur.png")
+          image: require("~/assets/Community/DSC Chitkara.png")
         },
         {
-          image: require("~/assets/Community/GDG Ahmedabad.png")
+          image: require("~/assets/Community/EddieHub.png")
         },
         {
-          image: require("~/assets/Community/GDG Jalandar.png")
+          image: require("~/assets/Community/EquiCode.png")
         },
         {
-          image: require("~/assets/Community/GDG Nagpur.png")
+          image: require("~/assets/Community/GDG Cloud Pune.png")
         },
         {
-          image: require("~/assets/Community/geek97.png")
+          image: require("~/assets/Community/GDG Gwalior.png")
         },
         {
-          image: require("~/assets/Community/sheroes.svg")
+          image: require("~/assets/Community/GDG Ranchi.png")
+        },
+        {
+          image: require("~/assets/Community/Hack Club VIT.jpeg")
+        },
+        {
+          image: require("~/assets/Community/Hack This Fall.png")
+        },
+        {
+          image: require("~/assets/Community/Julia.png")
+        },
+        {
+          image: require("~/assets/Community/MergeIntern.png")
+        },
+        {
+          image: require("~/assets/Community/MSAC-KIIT.png")
+        },
+        {
+          image: require("~/assets/Community/Programmers Universal.jpg")
         }
       ]
     };
