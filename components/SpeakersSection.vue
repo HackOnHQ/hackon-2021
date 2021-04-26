@@ -1,7 +1,7 @@
 <template>
   <Container id="speakers">
     <section class="content-section">
-      <HashHeader title="Past Speakers" />
+      <HashHeader title="Speakers" />
       <div class="contents">
         <div class="speakers-grid">
           <div
