@@ -39,16 +39,13 @@ export default {
     return {
       sponsors: [
         {
-          image: require("~/assets/Community/CodeFlow.png")
+          image: require("~/assets/Community/EddieHub.png")
         },
         {
-          image: require("~/assets/Community/AngelHack.png")
+          image: require("~/assets/Community/Julia.png")
         },
         {
-          image: require("~/assets/Community/CodXCrypt.jpg")
-        },
-        {
-          image: require("~/assets/Community/CodeChef-VIT.jpeg")
+          image: require("~/assets/Community/EquiCode.png")
         },
         {
           image: require("~/assets/Community/DSC.png")
@@ -57,16 +54,13 @@ export default {
           image: require("~/assets/Community/DevScript.png")
         },
         {
-          image: require("~/assets/Community/DSC Amity.png")
+          image: require("~/assets/Community/MergeIntern.png")
         },
         {
-          image: require("~/assets/Community/DSC Chitkara.png")
+          image: require("~/assets/Community/Hack This Fall.png")
         },
         {
-          image: require("~/assets/Community/EddieHub.png")
-        },
-        {
-          image: require("~/assets/Community/EquiCode.png")
+          image: require("~/assets/Community/GDG Ranchi.png")
         },
         {
           image: require("~/assets/Community/GDG Cloud Pune.png")
@@ -75,25 +69,31 @@ export default {
           image: require("~/assets/Community/GDG Gwalior.png")
         },
         {
-          image: require("~/assets/Community/GDG Ranchi.png")
+          image: require("~/assets/Community/DSC Amity.png")
+        },
+        {
+          image: require("~/assets/Community/AngelHack.png")
         },
         {
           image: require("~/assets/Community/Hack Club VIT.jpeg")
         },
         {
-          image: require("~/assets/Community/Hack This Fall.png")
+          image: require("~/assets/Community/CodXCrypt.jpg")
         },
         {
-          image: require("~/assets/Community/Julia.png")
+          image: require("~/assets/Community/CodeFlow.png")
         },
         {
-          image: require("~/assets/Community/MergeIntern.png")
+          image: require("~/assets/Community/Programmers Universal.jpg")
         },
         {
           image: require("~/assets/Community/MSAC-KIIT.png")
         },
         {
-          image: require("~/assets/Community/Programmers Universal.jpg")
+          image: require("~/assets/Community/DSC Chitkara.png")
+        },
+        {
+          image: require("~/assets/Community/CodeChef-VIT.jpeg")
         }
       ]
     };
@@ -130,17 +130,17 @@ export default {
         flex-direction: column;
         text-align: center;
         justify-content: center;
-        padding: 20px;
-        background: rgba(255, 255, 255, 0.2);
-        border-radius: 5px;
-        height: 200px;
+        // padding: 20px;
+        // background: rgba(255, 255, 255, 0.2);
+        // border-radius: 5px;
+        height: 210px;
 
         @include respond-below(sm) {
           height: 120px;
         }
 
         img {
-          width: 200px;
+          width: 210px;
           margin: auto;
 
           @include respond-below(sm) {

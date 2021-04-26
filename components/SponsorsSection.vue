@@ -89,6 +89,10 @@ export default {
               url: "https://wazirx.com"
             },
             {
+              image: require("~/assets/Sponsors/quickNode.png"),
+              url: "https://www.quiknode.io/"
+            },
+            {
               image: require("~/assets/Sponsors/github.svg"),
               url: "https://github.com"
             },
