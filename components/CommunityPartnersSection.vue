@@ -39,6 +39,9 @@ export default {
     return {
       sponsors: [
         {
+          image: require("~/assets/Community/codingBlocks.png")
+        },
+        {
           image: require("~/assets/Community/EddieHub.png")
         },
         {
@@ -75,7 +78,7 @@ export default {
           image: require("~/assets/Community/AngelHack.png")
         },
         {
-          image: require("~/assets/Community/Hack Club VIT.jpeg")
+          image: require("~/assets/Community/Hack Club VIT.png")
         },
         {
           image: require("~/assets/Community/CodXCrypt.jpg")
@@ -93,7 +96,7 @@ export default {
           image: require("~/assets/Community/DSC Chitkara.png")
         },
         {
-          image: require("~/assets/Community/CodeChef-VIT.jpeg")
+          image: require("~/assets/Community/CodeChef-VIT.png")
         }
       ]
     };
