@@ -90,7 +90,7 @@ export default {
             },
             {
               image: require("~/assets/Sponsors/quickNode.png"),
-              url: "https://www.quiknode.com/"
+              url: "https://www.quicknode.com/"
             },
             {
               image: require("~/assets/Sponsors/github.svg"),
