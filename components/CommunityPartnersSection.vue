@@ -4,12 +4,16 @@
       <HashHeader title="Community Partners" />
       <div class="contents">
         <div class="cards-grid">
-          <div v-for="(sponsor, index) in sponsors" :key="index" class="card">
-            <img :src="sponsor.image" alt="sponsor" />
+          <div v-for="(community, index) in communities" :key="index">
+            <a :href="community.url" rel="noopener noreferrer" target="_blank">
+              <div class="card">
+                <img :src="community.image" alt="community" />
+              </div>
+            </a>
           </div>
         </div>
       </div>
-      <div class="new-sponsor">
+      <div class="new-community">
         <p>Want to get involved?</p>
         <p>
           Drop us an e-mail at
@@ -37,66 +41,88 @@ export default {
   },
   data() {
     return {
-      sponsors: [
+      communities: [
         {
-          image: require("~/assets/Community/codingBlocks.png")
+          image: require("~/assets/Community/codingBlocks.png"),
+          url: "https://codingblocks.com"
         },
         {
-          image: require("~/assets/Community/EddieHub.png")
+          image: require("~/assets/Community/EddieHub.png"),
+          url: "https://eddiehubcommunity.github.io"
         },
         {
-          image: require("~/assets/Community/Julia.png")
+          image: require("~/assets/Community/Julia.png"),
+          url: "https://julialang.org"
         },
         {
-          image: require("~/assets/Community/EquiCode.png")
+          image: require("~/assets/Community/EquiCode.png"),
+          url: "https://linktr.ee/Equicode"
         },
         {
-          image: require("~/assets/Community/DSC.png")
+          image: require("~/assets/Community/DSC.png"),
+          url: "https://developerstudentcommunity.co"
         },
         {
-          image: require("~/assets/Community/DevScript.png")
+          image: require("~/assets/Community/DevScript.png"),
+          url: "https://devscript.tech"
         },
         {
-          image: require("~/assets/Community/MergeIntern.png")
+          image: require("~/assets/Community/MergeIntern.png"),
+          url: "https://www.mergeintern.com"
         },
         {
-          image: require("~/assets/Community/Hack This Fall.png")
+          image: require("~/assets/Community/Hack This Fall.png"),
+          url: "https://hackthisfall.tech"
         },
         {
-          image: require("~/assets/Community/GDG Ranchi.png")
+          image: require("~/assets/Community/GDG Ranchi.png"),
+          url: "https://gdgranchi.in"
         },
         {
-          image: require("~/assets/Community/GDG Cloud Pune.png")
+          image: require("~/assets/Community/GDG Cloud Pune.png"),
+          url: "https://gdg.community.dev/gdg-cloud-pune/"
         },
         {
-          image: require("~/assets/Community/GDG Gwalior.png")
+          image: require("~/assets/Community/GDG Gwalior.png"),
+          url: "https://gdg.community.dev/gdg-gwalior"
         },
         {
-          image: require("~/assets/Community/DSC Amity.png")
+          image: require("~/assets/Community/DSC Amity.png"),
+          url: "https://discord.gg/BSng5bRgwa"
         },
         {
-          image: require("~/assets/Community/AngelHack.png")
+          image: require("~/assets/Community/AngelHack.png"),
+          url: "https://angelhack.com/"
         },
         {
-          image: require("~/assets/Community/Hack Club VIT.png")
+          image: require("~/assets/Community/Hack Club VIT.png"),
+          url:
+            "https://www.linkedin.com/company/hackclubvit/?originalSubdomain=in"
         },
         {
-          image: require("~/assets/Community/CodXCrypt.jpg")
+          image: require("~/assets/Community/CodXCrypt.jpg"),
+          url: "https://www.linkedin.com/in/codxcrypt/?originalSubdomain=in"
         },
         {
-          image: require("~/assets/Community/CodeFlow.png")
+          image: require("~/assets/Community/CodeFlow.png"),
+          url:
+            "https://www.linkedin.com/company/codefloworg/?originalSubdomain=in"
         },
         {
-          image: require("~/assets/Community/Programmers Universal.jpg")
+          image: require("~/assets/Community/Programmers Universal.jpg"),
+          url: "https://discord.gg/8V3KzhgngQ"
         },
         {
-          image: require("~/assets/Community/MSAC-KIIT.png")
+          image: require("~/assets/Community/MSAC-KIIT.png"),
+          url: "https://msackiit.tech/"
         },
         {
-          image: require("~/assets/Community/DSC Chitkara.png")
+          image: require("~/assets/Community/DSC Chitkara.png"),
+          url: "https://dsc.community.dev/chitkara-university-punjab/"
         },
         {
-          image: require("~/assets/Community/CodeChef-VIT.png")
+          image: require("~/assets/Community/CodeChef-VIT.png"),
+          url: "https://twitter.com/codechefvit"
         }
       ]
     };
@@ -154,7 +180,7 @@ export default {
     }
   }
 
-  .new-sponsor {
+  .new-community {
     font-size: 1.4rem;
     font-weight: 600;
     margin: 20px 0 -10px;
