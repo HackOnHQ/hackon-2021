@@ -6,7 +6,7 @@
       :workshop="workshops[modalData]"
     />
     <section class="content-section">
-      <HashHeader title="Past Workshops" />
+      <HashHeader title="Workshops" />
       <div class="contents workshops">
         <div class="cards-grid">
           <div
@@ -61,197 +61,94 @@ export default {
     return {
       workshops: [
         {
-          name: "Let's Be Faster than COVID with AMP",
-          about:
-            "Ever wanted pages to load quickly on mobile devices, but not sure about how to do that? AMP or Accelerated Mobile Pages is a Google-backed project that can help you do this! Interested in knowing more about it? Hear it from a Googler itself! ❤️",
-          date: "11/04/2020",
-          time: "7:00 PM",
-          url:
-            "https://www.youtube.com/watch?v=9cLqYHqzBQA&list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli&index=3",
+          name: "Building Tech Careers though the Open Source Julia Project",
+          about: "",
+          date: "23/04/2021",
+          time: "8:30 PM",
+          url: "",
           speaker: {
-            name: "Saurabh Rajpal",
-            designation: "Technical Solutions Consultant, Google",
-            picture:
-              "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/4e828a778c604399913a1dd4e4d87e21/265.png",
+            name: "Logan Kilpatrick",
+            designation: "Community Manager, The Julia Language",
+            about: "",
+            picture: require("~/assets/Speakers/Logan.jpeg"),
           },
         },
         {
-          name: "Community as a Cure",
-          about:
-            "Talk about the importance of communities, and how a group of like-minded people can bring about an essential change in our lives.",
-          date: "10/04/2020",
-          time: "9:00 PM",
-          url:
-            "https://www.youtube.com/watch?v=MPvGVAmaNNc&list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli&index=1",
+          name: "API Development 101",
+          about: "",
+          date: "01/05/2021",
+          time: "8:00 PM",
+          url: "",
           speaker: {
-            name: "Paras Pundir",
-            designation: "Program Manager, Reactor Bangalore, Microsoft",
-            about:
-              "Paras is the Program Manager at Microsoft Reactor, Bangalore, who is also the Community Professional of the Year 2020.",
-            picture:
-              "https://miro.medium.com/fit/c/1360/1360/2*1d2PU06qLbaY-3EqeQBUZQ.jpeg",
+            name: "Ali Mustufa Shaikh",
+            designation: "Student Community Manager, Postman",
+            about: "",
+            picture: require("~/assets/Speakers/Ali.jpg"),
           },
         },
         {
-          name: "Brand Storytelling",
-          about:
-            "Workshop: Building your Personal Brand by none other than the amazing personality Miri Rodriguez! She is probably the first person you would want to consult if you want your personal brand. So don't let go of this wonderful opportunity!💖",
-          date: "15/04/2020",
-          time: "10:00 PM",
-          url:
-            "https://www.youtube.com/watch?v=usTIEljqCHM&list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli&index=13",
+          name: "Low Code Development with Power Platform",
+          about: "",
+          date: "09/05/2021",
+          time: "8:00 PM",
+          url: "",
           speaker: {
-            name: "Miri Rodriguez",
-            designation: "Head of Global Internship Program, Microsoft",
-            about:
-              "Miri is the Head of Global Internship Program at Microsoft and the author of Brand Storytelling.",
-            picture:
-              "https://media-exp1.licdn.com/dms/image/C5603AQGccVXExmWSeg/profile-displayphoto-shrink_800_800/0/1585676059716?e=1617840000&v=beta&t=UV7D6RHqvHtQcVKCPfbyXxyXcXCM9setOzo4XI5NBlE",
+            name: "Haimantika Mitra",
+            designation: "Support Engineer Intern at Microsoft",
+            about: "",
+            picture: require("~/assets/Speakers/Haimantika.jpg"),
           },
         },
         {
-          name: "Power of Communities",
-          about:
-            "Talk about the importance of communities, and how a group of like-minded people can bring about an essential change in our lives.💖",
-          date: "17/04/2020",
-          time: "10:00 PM",
-          url:
-            "https://www.youtube.com/watch?v=0bfk8Q1E1Sk&list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli&index=18",
+          name: "Fundamentals of Kubernetes",
+          about: "",
+          date: "15/05/2021",
+          time: "8:00 PM",
+          url: "",
           speaker: {
-            name: "Nikita Gandhi",
-            designation: "Community Manager, Google",
-            about:
-              "Nikita is the Community Manager at Google Developers and was a Project Coordinator at Google.",
-            picture:
-              "https://assets.devfolio.co/hackathons/be0de8e087c844d79199695d8997779f/judges/503be308d27942c6af30aa665c9e2940/430.png",
+            name: "Kunal Kushwaha",
+            designation: "MLH Coach",
+            about: "",
+            picture: require("~/assets/Speakers/Kunal.jpg"),
           },
         },
         {
-          name: "The World of Web Components",
-          about:
-            "Get ready to dive into single page applications, component based web, web component specifications and a lot more!",
-          date: "18/04/2020",
-          time: "6:00 PM",
-          url:
-            "https://www.youtube.com/watch?v=gpuMx8XOoQY&list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli&index=20",
+          name: "AMA",
+          about: "",
+          date: "22/05/2021",
+          time: "8:30 PM",
+          url: "",
           speaker: {
-            name: "Nishu Goel",
-            designation: "Google Developer Expert",
-            about:
-              "Nishu is a Google Developers Experts(GDE) for Angular and Web Technologies and a Developer at UI Garage, IBM.",
-            picture:
-              "https://assets.devfolio.co/hackathons/be0de8e087c844d79199695d8997779f/judges/976dbbca2b7346d781894b11d4bca2f5/350.jpeg",
+            name: "Juan Pablo Flores Cortés",
+            designation: "Program Manager, GitHub",
+            about: "",
+            picture: require("~/assets/Speakers/Juan-Pablo.png"),
           },
         },
         {
-          name: "Getting Started with Angular",
-          date: "12/04/2020",
-          time: "7:00 PM",
-          url:
-            "https://www.youtube.com/watch?v=xYMcumMMuYk&list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli&index=6",
+          name: "Who's who in Azure AI",
+          about: "",
+          date: "25/05/2021",
+          time: "8:00 PM",
+          url: "",
           speaker: {
-            name: "Dhananjay Kumar",
-            designation: "Most Valuable Professional, Microsoft",
-            picture:
-              "https://assets.devfolio.co/hackathons/be0de8e087c844d79199695d8997779f/judges/519c888869584eefa120edf5e4971e22/652.jpeg",
+            name: "Stephen Simon",
+            designation: "Regional Community Director, C# Corner",
+            about: "",
+            picture: require("~/assets/Speakers/Stephen-Simon.jpg"),
           },
         },
         {
-          name: "Taking flight with Flutter",
-          about:
-            "Realise the power of Flutter and start making cross-platform applications with Flutter.",
-          date: "16/04/2020",
-          time: "10:00 PM",
-          url:
-            "https://www.youtube.com/watch?v=YMfk_4QpNoU&list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli&index=16",
+          name: "Let's Make Magic!",
+          about: "",
+          date: "27/05/2021",
+          time: "8:00 PM",
+          url: "",
           speaker: {
-            name: "Pawan Kumar",
-            designation: "Google Developer Expert",
-            about:
-              "Pawan is the Founder of MTechViral, and a Google Developers Experts (GDE) for Flutter by Google, Firebase, Dart and Web Tech.",
-            picture:
-              "https://media-exp1.licdn.com/dms/image/C4E03AQFU_Pks7-2qbA/profile-displayphoto-shrink_200_200/0/1610945863156?e=1617840000&v=beta&t=_pkadk5xabdD-LyBnReydJnHuO5T76OYBQZfiBdxHfc",
-          },
-        },
-        {
-          name: "Hackathon 101",
-          about:
-            "Never participated in a hackathon? Don't worry. HackOn brings to you Hackathon 101 by Jatin Katyal, the absolute champion of hackathons!",
-          date: "11/04/2020",
-          time: "4:00 PM",
-          url:
-            "https://www.youtube.com/watch?v=W_0pbhk4kw4&list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli&index=2",
-          speaker: {
-            name: "Jatin Katyal",
-            designation: "Software Engineer, Coding Blocks",
-            about:
-              "Jatin is a full-stack web developer, who has won numerous hackathons, and is extremely passionate about them.",
-            picture:
-              "https://assets.devfolio.co/hackathons/be0de8e087c844d79199695d8997779f/judges/bea23fa33ba74fa589fa2d56b958741a/309.jpeg",
-          },
-        },
-        {
-          name: "Intro to Git/GitHub",
-          about:
-            "This is a hands-on workshop that will teach you how Git and GitHub have been revolutionizing teamwork, how to work remotely and how version control systems are useful. ✨",
-          date: "11/04/2020",
-          time: "10:00 PM",
-          url:
-            "https://www.youtube.com/watch?v=r7mjvBklS7I&list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli&index=4",
-          speaker: {
-            name: "Gunnika Batra",
-            designation: "GitHub Campus Expert",
-            about:
-              "Gunnika is a GitHub Campus Expert and Google Code-in '19 mentor for TensorFlow.",
-            picture:
-              "https://he-s3.s3.amazonaws.com/media/avatars/b.gunnika/resized/180/aaue7mbcptlsehn0xoe6ddpcxas8dthvswnxzds8y6eynlq",
-          },
-        },
-        {
-          name: "What is a Full Stack Developer and how to become One!",
-          date: "14/04/2020",
-          time: "10:00 PM",
-          url:
-            "https://www.youtube.com/watch?v=_GYOHG-pBDk&list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli&index=10",
-          speaker: {
-            name: "Arnav Gupta",
-            designation: "Engineering Lead, Zomato",
-            about:
-              " Arnav is a Co-Founder at Coding Blocks and was an Android Lead at Zomato.",
-            picture:
-              "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/de2017b2f5cd44da90dc782b28469487/703.jpeg",
-          },
-        },
-        {
-          name: "Webscraping with Python - 101",
-          date: "15/04/2020",
-          time: "4:00 PM",
-          url:
-            "https://www.youtube.com/watch?v=QGOjLK4TRKw&list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli&index=11",
-          about:
-            "This is a hands-on workshop that will teach you what web scraping is, and how to perform web scraping using Python libraries like Beautiful Soup!",
-          speaker: {
-            name: "Saketha Ramanujam",
-            designation: "GitHub Campus Expert",
-            picture:
-              "https://res.cloudinary.com/stuartlittle/image/upload/v1587120916/me/ID.jpg",
-          },
-        },
-        {
-          name: "Elastic App Search Demo",
-          about:
-            "Building a web application to solve a business problem is easy in today's world. But this workshop will teach you how to create an experience that lets the user spend more time on your service.",
-          date: "16/04/2020",
-          time: "6:00 PM",
-          url:
-            "https://www.youtube.com/watch?v=0ok3Cw_XYX0&list=PLl4Y2XuUavmuPZrFczbT6xk8zwJv0Irli&index=15",
-          speaker: {
-            name: "Aravind Putrevu",
-            designation: "Senior Developer Advocate, Elastic",
-            about:
-              "Aravind is a Senior Developer Advocate at Elastic, a tech evangelist and a FOSS enthusiast.",
-            picture:
-              "https://assets.devfolio.co/hackathons/be0de8e087c844d79199695d8997779f/judges/9162cfc964dd43babff57c68122d6906/460.jpeg",
+            name: "Mohammad Shahbaz Alam",
+            designation: "Developer Advocate, Magic Labs",
+            about: "",
+            picture: require("~/assets/Speakers/Mohammad-Shahbaz-Alam.png"),
           },
         },
       ],

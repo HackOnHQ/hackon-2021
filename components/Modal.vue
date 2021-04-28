@@ -33,10 +33,10 @@ export default {
           {{ workshop.date }} {{ workshop.time }} IST
         </div>
         <section class="modal-body" id="modalDescription">
-          <div v-if="workshop.about !== undefined" class="title">
+          <div v-if="workshop.about !== undefined && workshop.about !== ''" class="title">
             About the workshop
-          </div>
           <div class="content">
+          </div>
             {{ workshop.about }}
           </div>
           <div class="title">About the Speaker</div>
@@ -55,7 +55,7 @@ export default {
             {{ workshop.speaker.about }}
           </div>
         </section>
-        <footer class="modal-footer">
+        <!-- <footer class="modal-footer">
           <slot name="footer">
             <a :href="workshop.url" rel="noopener noreferrer" target="_blank">
               <button type="button" class="btn-green" aria-label="Close modal">
@@ -64,7 +64,7 @@ export default {
               </button>
             </a>
           </slot>
-        </footer>
+        </footer> -->
       </div>
     </div>
   </transition>
