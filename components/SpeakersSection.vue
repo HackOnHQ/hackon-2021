@@ -53,13 +53,13 @@ export default {
         },
         {
           name: "Haimantika Mitra",
-          description: "Power Platform Evangelist, Support Engineer Intern at Microsoft",
+          description: "Support Engineer Intern at Microsoft",
           url: "https://twitter.com/HaimantikaM",
           picture: require("~/assets/Speakers/Haimantika.jpg"),
         },
         {
           name: "Kunal Kushwaha",
-          description: "Co-founder, Code For Cause | MLH Coach | GSoC Mentor | Gold MLSA | Former CNCF Intern",
+          description: "MLH Coach",
           url: "https://twitter.com/kunalstwt",
           picture: require("~/assets/Speakers/Kunal.jpg"),
         },
