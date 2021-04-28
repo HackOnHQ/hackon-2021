@@ -222,6 +222,7 @@ export default {
           justify-content: space-between;
           font-size: 0.8rem;
           margin-top: 1rem;
+          line-height: 1rem;
 
           .speaker {
             display: flex;
@@ -238,11 +239,13 @@ export default {
               justify-content: center;
 
               .designation {
-                margin-top: -1rem;
                 color: rgba(255, 255, 255, 0.5);
-                // line-height: 1rem;
               }
             }
+          }
+
+          .date {
+            text-align: right;
           }
         }
       }
