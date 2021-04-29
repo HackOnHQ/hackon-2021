@@ -21,6 +21,23 @@
             </div>
           </div>
         </div>
+        <div class="cards-grid">
+          <div v-for="(prize, index) in specialPrizes" :key="index">
+            <div
+              class="card"
+              v-bind:class="[prize.polygon ? 'clickable' : '']"
+              @click="showModal(prize.polygon)"
+            >
+              <div class="image">
+                <img :src="prize.image" :alt="prize.name" class="prizeImage" />
+              </div>
+              <div class="texts">
+                <p class="prizeName">{{ prize.name }}</p>
+                <h4 class="prizeAmount">{{ prize.amount }}</h4>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </Container>
@@ -56,6 +73,8 @@ export default {
           image: require("~/assets/Prizes/third.svg"),
           amount: "₹10,000",
         },
+      ],
+      specialPrizes: [
         {
           name: "Best Hack Built On Polygon",
           image: require("~/assets/Prizes/polygon.svg"),
@@ -96,20 +115,33 @@ export default {
   padding: 20px 0;
 
   .contents {
-    padding: 20px 0;
-
     .cards-grid {
+      padding: 20px 0;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       column-gap: 30px;
       row-gap: 30px;
+      align-content: center;
+
+      &:nth-child(2) {
+        grid-template-columns: repeat(5, 1fr);
+        padding-top: 0px;
+      }
 
       @include respond-below(md) {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+
+        &:nth-child(2) {
+          grid-template-columns: repeat(3, 1fr);
+        }
       }
 
       @include respond-below(sm) {
         grid-template-columns: repeat(1, 1fr);
+
+        &:nth-child(2) {
+          grid-template-columns: repeat(1, 1fr);
+        }
       }
 
       .card {
