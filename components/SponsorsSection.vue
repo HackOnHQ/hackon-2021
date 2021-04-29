@@ -103,6 +103,10 @@ export default {
             {
               image: require("~/assets/Sponsors/stickermule.svg"),
               url: "http://hackp.ac/mlh-stickermule-hackathons"
+            },
+            {
+              image: require("~/assets/Sponsors/sawolabs.png"),
+              url: "https://sawolabs.com/"
             }
           ]
         },
