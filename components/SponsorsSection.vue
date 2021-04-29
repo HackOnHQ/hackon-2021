@@ -106,7 +106,7 @@ export default {
             },
             {
               image: require("~/assets/Sponsors/sawolabs.png"),
-              url: "https://sawolabs.com/"
+              url: "https://sawolabs.com/?utm_source=hacakthon&utm_medium=hackon&utm_campaign=HackPartner"
             }
           ]
         },
