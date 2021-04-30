@@ -59,22 +59,37 @@ export default {
       isModalVisible: false,
       prizes: [
         {
-          name: "First Prize",
+          name: "Winner (1st Prize)",
           image: require("~/assets/Prizes/first.svg"),
           amount: "₹25,000",
         },
         {
-          name: "Second Prize",
+          name: "First Runner-Up (2nd Prize)",
           image: require("~/assets/Prizes/second.svg"),
           amount: "₹15,000",
         },
         {
-          name: "Third Prize",
+          name: "2nd Runner-Up (3rd Prize)",
           image: require("~/assets/Prizes/third.svg"),
           amount: "₹10,000",
         },
       ],
       specialPrizes: [
+        {
+          name: "Best of HackOn",
+          image: require("~/assets/Prizes/best-of-hackon.svg"),
+          amount: "₹5,000",
+        },
+        {
+          name: "Best Voice Hack",
+          image: require("~/assets/Prizes/voice.svg"),
+          amount: "Amazon Alexa Echo Dot (3rd Gen)",
+        },
+        {
+          name: "Best Beginners Hack",
+          image: require("~/assets/Prizes/best-beginner.svg"),
+          amount: "Sony Headphones (Model TBD)",
+        },
         {
           name: "Best Hack Built On Polygon",
           image: require("~/assets/Prizes/polygon.svg"),
@@ -87,9 +102,45 @@ export default {
           amount: "₹5,000",
         },
         {
-          name: "Best Hack Built On Voice",
-          image: require("~/assets/Prizes/voice.svg"),
-          amount: "₹5,000",
+          name: "Best GraphQL Project",
+          image: require("~/assets/Prizes/graphql.svg"),
+          amount: "Amazon voucher worth ₹5,000",
+        },
+        {
+          name: "Best use of GraphCMS",
+          image: require("~/assets/Prizes/graphcms.png"),
+          amount: "Amazon voucher worth ₹7,500",
+        },
+        {
+          name: "Build With Magic: Winner",
+          image: require("~/assets/Prizes/gold-medal.svg"),
+          amount: "Apple HomePod Mini",
+        },
+        {
+          name: "Build With Magic: First Runners-Up",
+          image: require("~/assets/Prizes/silver-medal.svg"),
+          amount: "Yubikey 5 NFC",
+        },
+        {
+          name: "Build With Magic: Second Runners-Up",
+          image: require("~/assets/Prizes/bronze-medal.svg"),
+          amount: "Security Key NFC by Yubico",
+        },
+        {
+          name: "Best Hardware Hack Sponsored by Digi-Key",
+          image: require("~/assets/Prizes/digi-key.svg"),
+          amount: "Grove Beginner Kit",
+        },
+        {
+          name: "Best Use of Linode",
+          image: require("~/assets/Prizes/linode.svg"),
+          amount: "Raspberry Pi 4 Starter Kit ",
+        },
+        {
+          name: "Best Domain Name from GoDaddy Registry",
+          image: require("~/assets/Prizes/godaddy.svg"),
+          amount:
+            "Hack from Home Kit: Wireless Earbuds, Blue Light Glasses, Selfie Ring Light, Pouch for easy transport.",
         },
       ],
     };
@@ -126,6 +177,14 @@ export default {
       &:nth-child(2) {
         grid-template-columns: repeat(5, 1fr);
         padding-top: 0px;
+        .card {
+          height: 95%;
+          .texts {
+            .prizeAmount {
+              font-size: 1rem;
+            }
+          }
+        }
       }
 
       @include respond-below(md) {
@@ -148,8 +207,7 @@ export default {
         display: flex;
         flex-direction: column;
         text-align: center;
-        justify-content: center;
-        padding: 15px;
+        padding: 10px;
         background: var(--color-secondary-light);
         border-radius: 5px;
         min-height: 275px;
@@ -165,9 +223,9 @@ export default {
         .texts {
           text-align: center;
           .prizeAmount {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             font-weight: bold;
-            padding-bottom: 10px;
+            margin-top: 10px;
           }
         }
       }
