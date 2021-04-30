@@ -3,7 +3,7 @@
     <section class="content-section">
       <HashHeader title="Tracks" />
       <div class="grid">
-        <div class="panel text box-one">
+        <div class="panel text">
           <div class="track-box healthcare">
             <img src="~/assets/Tracks/healthcare.png" alt="Track Healthcare" />
           </div>
@@ -12,11 +12,13 @@
             <p class="description">
               Generate awareness and/or develop empathetic spaces that people
               coming from any and every walk of life to meet and connect,
-              regardless of their background.
+              regardless of their background. Build solutions that address
+              today's biggest problems related to bias, diversity, and
+              inclusion.
             </p>
           </div>
         </div>
-        <div class="panel text box-two">
+        <div class="panel text">
           <div class="track-box mental-health">
             <img
               src="~/assets/Tracks/mental-health.png"
@@ -32,30 +34,29 @@
             </p>
           </div>
         </div>
-        <div class="panel text box-three">
+        <div class="panel text">
+          <div class="track-box virus">
+            <img src="~/assets/Tracks/virus.svg" alt="Track Healthcare" />
+          </div>
+          <div class="texts">
+            <h3 class="title">COVID-19 Impact</h3>
+            <p class="description">
+              Develop solutions to help Indian society cope with the drastic
+              impact that the resurgence of COVID-19 has had on all our lives
+              over the last few months.
+            </p>
+          </div>
+        </div>
+        <div class="panel text">
           <div class="track-box innovation">
             <img src="~/assets/Tracks/light-bulb.svg" alt="Track Healthcare" />
           </div>
           <div class="texts">
-            <h3 class="title">Open Innovation
-            </h3>
+            <h3 class="title">Open Innovation</h3>
             <p class="description">
-              Generate awareness and/or develop empathetic spaces that people
-              coming from any and every walk of life to meet and connect,
-              regardless of their background.
-            </p>
-          </div>
-        </div>
-        <div class="panel text box-four">
-          <div class="track-box covid">
-            <img src="~/assets/Tracks/virus.svg" alt="Track Healthcare" />
-          </div>
-          <div class="texts">
-            <h3 class="title">COVID</h3>
-            <p class="description">
-              Generate awareness and/or develop empathetic spaces that people
-              coming from any and every walk of life to meet and connect,
-              regardless of their background.
+              Even if you have an idea that does not fit in our primary themes,
+              we do not want to restrict your creativity. Create solutions that
+              have a social good impact on society in any manner.
             </p>
           </div>
         </div>
@@ -100,12 +101,12 @@ export default {
     border: 3px solid #7fc1c8;
   }
 
-  .covid {
-    border: 3px solid #e58ab2;
+  .virus {
+    border: 3px solid #7fc1c8;
   }
 
   .innovation {
-    border: 3px solid #7fc1c8;
+    border: 3px solid #e58ab2;
   }
 
   img {
