@@ -68,7 +68,7 @@ export default {
         },
         {
           type: "Platinum Sponsors",
-          image: require("~/assets/Sponsors/Types/silver.svg"),
+          image: require("~/assets/Sponsors/Types/platinum.svg"),
           logos: [
             {
               image: require("~/assets/Sponsors/elastic.svg"),
@@ -77,6 +77,10 @@ export default {
             {
               image: require("~/assets/Sponsors/Auth0.png"),
               url: "https://a0.to/Hackon"
+            },
+            {
+              image: require("~/assets/Sponsors/magicLabs.png"),
+              url: "https://magiclabs.lk/"
             }
           ]
         },
@@ -106,7 +110,18 @@ export default {
             },
             {
               image: require("~/assets/Sponsors/sawolabs.png"),
-              url: "https://sawolabs.com/?utm_source=hacakthon&utm_medium=hackon&utm_campaign=HackPartner"
+              url:
+                "https://sawolabs.com/?utm_source=hacakthon&utm_medium=hackon&utm_campaign=HackPartner"
+            }
+          ]
+        },
+        {
+          type: "Silver Sponsors",
+          image: require("~/assets/Sponsors/Types/silver.svg"),
+          logos: [
+            {
+              image: require("~/assets/Sponsors/graphCMS.svg"),
+              url: "https://graphcms.com/"
             }
           ]
         },
