@@ -1,37 +1,6 @@
 <template>
   <Container id="team2021">
     <section class="content-section">
-      <HashHeader title="Founder" />
-      <div class="contents">
-        <div class="team-grid">
-          <div class="team-card">
-            <div class="picture-wrapper">
-              <img
-                src="https://media-exp1.licdn.com/dms/image/C4E03AQGN9WF9aic8Aw/profile-displayphoto-shrink_200_200/0/1608998142556?e=1625702400&v=beta&t=w4s3tmsCcollSmJvlvazPiqQ6rcB7WBfq92ru4Il74I"
-                alt="profile picture"
-                class="profile-pic"
-              />
-            </div>
-            <h4 class="title">Rishabh Bansal</h4>
-            <div class="socialLinks">
-              <a
-                href="https://www.linkedin.com/in/rishabhbansal97/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src="~/assets/linkedin.svg" alt="LinkedInLink" />
-              </a>
-              <a
-                href="https://github.com/rishabh-bansal"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src="~/assets/github.svg" alt="GithubLink" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
       <HashHeader title="HackOn Team 2021" />
       <div class="contents">
         <div class="team-grid">
@@ -59,6 +28,37 @@
               </a>
               <a
                 :href="teamMember.github"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="~/assets/github.svg" alt="GithubLink" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <HashHeader title="Founder" />
+      <div class="contents">
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="picture-wrapper">
+              <img
+                src="https://media-exp1.licdn.com/dms/image/C4E03AQGN9WF9aic8Aw/profile-displayphoto-shrink_200_200/0/1608998142556?e=1625702400&v=beta&t=w4s3tmsCcollSmJvlvazPiqQ6rcB7WBfq92ru4Il74I"
+                alt="profile picture"
+                class="profile-pic"
+              />
+            </div>
+            <h4 class="title">Rishabh Bansal</h4>
+            <div class="socialLinks">
+              <a
+                href="https://www.linkedin.com/in/rishabhbansal97/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="~/assets/linkedin.svg" alt="LinkedInLink" />
+              </a>
+              <a
+                href="https://github.com/rishabh-bansal"
                 target="_blank"
                 rel="noopener noreferrer"
               >
