@@ -79,8 +79,8 @@ export default {
               url: "https://a0.to/Hackon"
             },
             {
-              image: require("~/assets/Sponsors/magicLabs.png"),
-              url: "https://magiclabs.lk/"
+              image: require("~/assets/Sponsors/Magic.png"),
+              url: "https://magic.link/"
             }
           ]
         },
@@ -120,7 +120,7 @@ export default {
           image: require("~/assets/Sponsors/Types/silver.svg"),
           logos: [
             {
-              image: require("~/assets/Sponsors/graphCMS.svg"),
+              image: require("~/assets/Sponsors/GraphCMS.png"),
               url: "https://graphcms.com/"
             }
           ]
