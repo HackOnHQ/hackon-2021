@@ -10,6 +10,10 @@
     >
       <div class="hero-img"></div>
       <div class="texts">
+        <div class="hero-sponsors">
+          <img src="~/assets/Sponsors/elastic.svg" />
+          <img src="~/assets/Sponsors/Auth0.png" />
+        </div>
         <div class="heroTextContainer">
           <h1 class="hero-text">Hack For&nbsp;</h1>
           <VueTyper
@@ -23,7 +27,11 @@
           Powered by
           <a rel="noopener noreferrer" href="https://raahee.in" target="_blank"
             >Raahee</a
-          ><img class="raaheeLogo" alt="raahee logo" src="~/assets/hero-raahee-logo.png" />
+          ><img
+            class="raaheeLogo"
+            alt="raahee logo"
+            src="~/assets/hero-raahee-logo.png"
+          />
         </h2>
         <div class="date">28<sup>th</sup> to 30<sup>th</sup> May 2021</div>
         <div class="buttonContainer">
@@ -34,7 +42,11 @@
               target="_blank"
             >
               <div class="contents">
-                <img src="~/assets/hackerEarth.svg" alt="hackerearth logo" class="icon" />Register Now
+                <img
+                  src="~/assets/hackerEarth.svg"
+                  alt="hackerearth logo"
+                  class="icon"
+                />Register Now
               </div>
             </a>
           </button>
@@ -45,7 +57,11 @@
               target="_blank"
             >
               <div class="contentsDiscord">
-                <img src="~/assets/discord.svg" alt="discord logo" class="icon" />Join Discord
+                <img
+                  src="~/assets/discord.svg"
+                  alt="discord logo"
+                  class="icon"
+                />Join Discord
               </div>
             </a>
           </button>
@@ -122,6 +138,20 @@ export default {
     display: flex;
     flex-direction: column;
     z-index: 10;
+
+    .hero-sponsors {
+      img {
+        height: 30px;
+
+        &:nth-child(2) {
+          margin-left: 1em;
+
+          @media (max-width: 400px) {
+            margin-left: unset;
+          }
+        }
+      }
+    }
 
     .heroTextContainer {
       display: flex;
