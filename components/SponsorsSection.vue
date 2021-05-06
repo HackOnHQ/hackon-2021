@@ -62,9 +62,13 @@ export default {
           logos: [
             {
               image: require("~/assets/Sponsors/google-cloud.svg"),
-              url: "https://cloud.google.com"
-            }
-          ]
+              url: "https://cloud.google.com",
+            },
+            {
+              image: require("~/assets/Sponsors/amagi.svg"),
+              url: "https://www.amagi.com",
+            },
+          ],
         },
         {
           type: "Platinum Sponsors",
