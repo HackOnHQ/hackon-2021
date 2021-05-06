@@ -147,15 +147,15 @@ export default {
           linkedIn: "https://www.linkedin.com/in/ojasvikhurana/",
           github: "https://github.com/ojasvik"
         },
-        // {
-        //   name: "Siddharth Dayalwal",
-        //   // description:
-        //   //   "AngelHack Student Ambassador | Microsoft Learn Student Ambassador | Former Intern - @Progate",
-        //   picture:
-        //     "https://avatars.githubusercontent.com/u/41017419?s=460&u=ece0c309cba6ed5ecbe43a8845e2bd0e54fe210c&v=4",
-        //   linkedIn: "https://www.linkedin.com/in/siddharth-dayalwal/",
-        //   github: "https://github.com/siddharthdayalwal",
-        // },
+        {
+          name: "Siddharth Dayalwal",
+          // description:
+          //   "AngelHack Student Ambassador | Microsoft Learn Student Ambassador | Former Intern - @Progate",
+          picture:
+            "https://avatars.githubusercontent.com/u/41017419?s=460&u=ece0c309cba6ed5ecbe43a8845e2bd0e54fe210c&v=4",
+          linkedIn: "https://www.linkedin.com/in/siddharth-dayalwal/",
+          github: "https://github.com/siddharthdayalwal",
+        },
         {
           name: "Khushi Sharma",
           picture: require("/assets/khushi.jpg"),
