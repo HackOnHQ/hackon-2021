@@ -13,6 +13,7 @@
         <div class="hero-sponsors">
           <img src="~/assets/Sponsors/elastic.svg" />
           <img src="~/assets/Sponsors/Auth0.png" />
+          <img src="~/assets/Sponsors/amagi.svg" />
         </div>
         <div class="heroTextContainer">
           <h1 class="hero-text">Hack For&nbsp;</h1>
@@ -145,8 +146,15 @@ export default {
 
         &:nth-child(2) {
           margin-left: 1em;
+        }
 
-          @media (max-width: 400px) {
+        &:nth-child(3) {
+          margin-left: 1.5em;
+          position: absolute;
+          margin-top: 0.2em;
+
+          @media (max-width: 350px) {
+            position: unset;
             margin-left: unset;
           }
         }
