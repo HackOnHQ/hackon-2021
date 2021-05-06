@@ -11,9 +11,13 @@
       <div class="hero-img"></div>
       <div class="texts">
         <div class="hero-sponsors">
-          <img src="~/assets/Sponsors/elastic.svg" />
-          <img src="~/assets/Sponsors/Auth0.png" />
-          <img src="~/assets/Sponsors/amagi.svg" />
+          <a
+            rel="noopener noreferrer"
+            href="https://www.amagi.com/?utm_campaign=HackOnHackathon&utm_medium=Website&utm_source=Brandings"
+            target="_blank"
+          >
+            <img src="~/assets/Sponsors/amagi.svg" />
+          </a>
         </div>
         <div class="heroTextContainer">
           <h1 class="hero-text">Hack For&nbsp;</h1>
@@ -26,13 +30,22 @@
         </div>
         <h2 class="powered-by">
           Powered by
-          <a rel="noopener noreferrer" href="https://raahee.in" target="_blank"
-            >Raahee</a
-          ><img
-            class="raaheeLogo"
-            alt="raahee logo"
-            src="~/assets/hero-raahee-logo.png"
-          />
+          <span>
+            <a
+              rel="noopener noreferrer"
+              href="https://www.elastic.co"
+              target="_blank"
+            >
+              <img src="~/assets/Sponsors/elastic.svg" />
+            </a>
+            <a
+              rel="noopener noreferrer"
+              href="https://a0.to/Hackon"
+              target="_blank"
+            >
+              <img src="~/assets/Sponsors/Auth0.png" />
+            </a>
+          </span>
         </h2>
         <div class="date">28<sup>th</sup> to 30<sup>th</sup> May 2021</div>
         <div class="buttonContainer">
@@ -143,25 +156,6 @@ export default {
     .hero-sponsors {
       img {
         height: 30px;
-
-        &:nth-child(2) {
-          margin-left: 1em;
-
-          @media (max-width: 250px) {
-            margin-left: unset;
-          }
-        }
-
-        &:nth-child(3) {
-          margin-left: 1.5em;
-          position: absolute;
-          margin-top: 0.2em;
-
-          @media (max-width: 350px) {
-            position: unset;
-            margin-left: unset;
-          }
-        }
       }
     }
 
@@ -212,13 +206,24 @@ export default {
         margin-top: 7px;
       }
 
-      img {
-        width: 18px;
-        margin: 5px 5px -2px;
-      }
+      span {
+        a {
+          position: absolute;
+          margin-top: 0.2em;
+          margin-left: 0.4em;
 
-      a {
-        color: var(--colour-pink);
+          &:nth-child(2) {
+            margin-left: 4.5em;
+
+            @media (max-width: 250px) {
+              margin-left: unset;
+            }
+          }
+
+          img {
+            height: 20px;
+          }
+        }
       }
     }
 

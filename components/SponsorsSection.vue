@@ -61,12 +61,12 @@ export default {
           image: require("~/assets/Sponsors/Types/diamond.svg"),
           logos: [
             {
-              image: require("~/assets/Sponsors/google-cloud.svg"),
-              url: "https://cloud.google.com",
+              image: require("~/assets/Sponsors/amagi.svg"),
+              url: "https://www.amagi.com/?utm_campaign=HackOnHackathon&utm_medium=Website&utm_source=Brandings",
             },
             {
-              image: require("~/assets/Sponsors/amagi.svg"),
-              url: "https://www.amagi.com",
+              image: require("~/assets/Sponsors/google-cloud.svg"),
+              url: "https://cloud.google.com",
             },
           ],
         },
