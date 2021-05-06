@@ -11,8 +11,6 @@
       <div class="hero-img"></div>
       <div class="texts">
         <div class="hero-sponsors">
-          <img src="~/assets/Sponsors/elastic.svg" />
-          <img src="~/assets/Sponsors/Auth0.png" />
           <img src="~/assets/Sponsors/amagi.svg" />
         </div>
         <div class="heroTextContainer">
@@ -26,13 +24,17 @@
         </div>
         <h2 class="powered-by">
           Powered by
-          <a rel="noopener noreferrer" href="https://raahee.in" target="_blank"
+          <span>
+            <img src="~/assets/Sponsors/elastic.svg" />
+            <img src="~/assets/Sponsors/Auth0.png" />
+          </span>
+          <!-- <a rel="noopener noreferrer" href="https://raahee.in" target="_blank"
             >Raahee</a
           ><img
             class="raaheeLogo"
             alt="raahee logo"
             src="~/assets/hero-raahee-logo.png"
-          />
+          /> -->
         </h2>
         <div class="date">28<sup>th</sup> to 30<sup>th</sup> May 2021</div>
         <div class="buttonContainer">
@@ -143,25 +145,6 @@ export default {
     .hero-sponsors {
       img {
         height: 30px;
-
-        &:nth-child(2) {
-          margin-left: 1em;
-
-          @media (max-width: 250px) {
-            margin-left: unset;
-          }
-        }
-
-        &:nth-child(3) {
-          margin-left: 1.5em;
-          position: absolute;
-          margin-top: 0.2em;
-
-          @media (max-width: 350px) {
-            position: unset;
-            margin-left: unset;
-          }
-        }
       }
     }
 
@@ -212,14 +195,31 @@ export default {
         margin-top: 7px;
       }
 
-      img {
-        width: 18px;
-        margin: 5px 5px -2px;
+      span {
+        img {
+          position: absolute;
+          margin-top: 0.2em;
+          height: 20px;
+          margin-left: 0.4em;
+
+          &:nth-child(2) {
+            margin-left: 4.5em;
+
+            @media (max-width: 250px) {
+              margin-left: unset;
+            }
+          }
+        }
       }
 
-      a {
-        color: var(--colour-pink);
-      }
+      // img {
+      //   width: 18px;
+      //   margin: 5px 5px -2px;
+      // }
+
+      // a {
+      //   color: var(--colour-pink);
+      // }
     }
 
     .date {
