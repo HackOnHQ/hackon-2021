@@ -11,7 +11,13 @@
       <div class="hero-img"></div>
       <div class="texts">
         <div class="hero-sponsors">
-          <img src="~/assets/Sponsors/amagi.svg" />
+          <a
+            rel="noopener noreferrer"
+            href="https://www.amagi.com/?utm_campaign=HackOnHackathon&utm_medium=Website&utm_source=Brandings"
+            target="_blank"
+          >
+            <img src="~/assets/Sponsors/amagi.svg" />
+          </a>
         </div>
         <div class="heroTextContainer">
           <h1 class="hero-text">Hack For&nbsp;</h1>
@@ -25,16 +31,21 @@
         <h2 class="powered-by">
           Powered by
           <span>
-            <img src="~/assets/Sponsors/elastic.svg" />
-            <img src="~/assets/Sponsors/Auth0.png" />
+            <a
+              rel="noopener noreferrer"
+              href="https://www.elastic.co"
+              target="_blank"
+            >
+              <img src="~/assets/Sponsors/elastic.svg" />
+            </a>
+            <a
+              rel="noopener noreferrer"
+              href="https://a0.to/Hackon"
+              target="_blank"
+            >
+              <img src="~/assets/Sponsors/Auth0.png" />
+            </a>
           </span>
-          <!-- <a rel="noopener noreferrer" href="https://raahee.in" target="_blank"
-            >Raahee</a
-          ><img
-            class="raaheeLogo"
-            alt="raahee logo"
-            src="~/assets/hero-raahee-logo.png"
-          /> -->
         </h2>
         <div class="date">28<sup>th</sup> to 30<sup>th</sup> May 2021</div>
         <div class="buttonContainer">
@@ -196,10 +207,9 @@ export default {
       }
 
       span {
-        img {
+        a {
           position: absolute;
           margin-top: 0.2em;
-          height: 20px;
           margin-left: 0.4em;
 
           &:nth-child(2) {
@@ -209,17 +219,12 @@ export default {
               margin-left: unset;
             }
           }
+
+          img {
+            height: 20px;
+          }
         }
       }
-
-      // img {
-      //   width: 18px;
-      //   margin: 5px 5px -2px;
-      // }
-
-      // a {
-      //   color: var(--colour-pink);
-      // }
     }
 
     .date {
