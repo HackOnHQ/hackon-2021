@@ -37,6 +37,37 @@
           </div>
         </div>
       </div>
+      <HashHeader title="Founder" />
+      <div class="contents">
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="picture-wrapper">
+              <img
+                src="https://media-exp1.licdn.com/dms/image/C4E03AQGN9WF9aic8Aw/profile-displayphoto-shrink_200_200/0/1608998142556?e=1625702400&v=beta&t=w4s3tmsCcollSmJvlvazPiqQ6rcB7WBfq92ru4Il74I"
+                alt="profile picture"
+                class="profile-pic"
+              />
+            </div>
+            <h4 class="title">Rishabh Bansal</h4>
+            <div class="socialLinks">
+              <a
+                href="https://www.linkedin.com/in/rishabhbansal97/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="~/assets/linkedin.svg" alt="LinkedInLink" />
+              </a>
+              <a
+                href="https://github.com/rishabh-bansal"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="~/assets/github.svg" alt="GithubLink" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </Container>
 </template>
@@ -48,7 +79,7 @@ import HashHeader from "~/components/HashHeader";
 export default {
   components: {
     Container,
-    HashHeader,
+    HashHeader
   },
   data() {
     return {
@@ -60,7 +91,7 @@ export default {
           picture:
             "https://avatars.githubusercontent.com/u/53584487?s=460&u=958300368b2eae87277477bf1fcead4dfa2e31ec&v=4",
           linkedIn: "https://www.linkedin.com/in/haxzie/",
-          github: "https://github.com/haxzie",
+          github: "https://github.com/haxzie"
         },
         {
           name: "Shubhangi Gupta",
@@ -69,7 +100,7 @@ export default {
           picture:
             "https://avatars.githubusercontent.com/u/31511497?s=460&u=8834975fa238be878ffd74092143a6bc15d38607&v=4",
           linkedIn: "https://www.linkedin.com/in/knowshubhangi/",
-          github: "https://github.com/Shubhangi0304",
+          github: "https://github.com/Shubhangi0304"
         },
         {
           name: "Aditya Oberai",
@@ -78,7 +109,7 @@ export default {
           picture:
             "https://avatars.githubusercontent.com/u/31401437?s=460&u=1ad52dad34daf68e98fd7324c94c97c3b369d471&v=4",
           linkedIn: "https://www.linkedin.com/in/adityaoberai1/",
-          github: "https://github.com/adityaoberai",
+          github: "https://github.com/adityaoberai"
         },
         {
           name: "Apoorv Dwivedi",
@@ -87,16 +118,16 @@ export default {
           picture:
             "https://avatars.githubusercontent.com/u/56197821?s=460&u=693be068482cf3a5b23a1bf708ee1e399487659a&v=4",
           linkedIn: "https://www.linkedin.com/in/apoorvdwi/",
-          github: "https://github.com/apoorvdwi",
+          github: "https://github.com/apoorvdwi"
         },
         {
           name: "Paras Gupta",
           //     description:
           //      "Senior at IIIT Una | Open source @electron and @validatorjs | Full Stack Developer",
           picture:
-            "https://media-exp1.licdn.com/dms/image/C4E03AQGYjE3bfB8EUw/profile-displayphoto-shrink_200_200/0/1613322899040?e=1619049600&v=beta&t=8-RMxay57AIZZNMRwC6KzyH5xtkuEBw9_KfkgW5oR9E",
+            "https://media-exp1.licdn.com/dms/image/C4E03AQGYjE3bfB8EUw/profile-displayphoto-shrink_200_200/0/1613322899040?e=1625702400&v=beta&t=vZPuUtz3KlckRhRS4s9FqBtP0BE_PLFXaF6vpuDbGFc",
           linkedIn: "https://www.linkedin.com/in/parasg1999/",
-          github: "https://github.com/parasg1999",
+          github: "https://github.com/parasg1999"
         },
         {
           name: "Saish Adlak",
@@ -105,7 +136,7 @@ export default {
           picture:
             "https://avatars.githubusercontent.com/u/71888339?s=460&u=2be63077304e5b88c626b1fa64bc4c3a23ba72a1&v=4",
           linkedIn: "https://www.linkedin.com/in/saishadlak/",
-          github: "https://github.com/saish-lmx",
+          github: "https://github.com/saish-lmx"
         },
         {
           name: "Ojasvi Khuranna",
@@ -114,35 +145,35 @@ export default {
           picture:
             "https://user-images.githubusercontent.com/44267452/74556077-29ded180-4f83-11ea-8b5b-0dc0611fa3c2.jpeg",
           linkedIn: "https://www.linkedin.com/in/ojasvikhurana/",
-          github: "https://github.com/ojasvik",
+          github: "https://github.com/ojasvik"
         },
-        {
-          name: "Siddharth Dayalwal",
-          // description:
-          //   "AngelHack Student Ambassador | Microsoft Learn Student Ambassador | Former Intern - @Progate",
-          picture:
-            "https://avatars.githubusercontent.com/u/41017419?s=460&u=ece0c309cba6ed5ecbe43a8845e2bd0e54fe210c&v=4",
-          linkedIn: "https://www.linkedin.com/in/siddharth-dayalwal/",
-          github: "https://github.com/siddharthdayalwal",
-        },
-
-        {
-          name: "Nitin Mittal",
-          // description:
-          //   "Program Manager @HackerEarth. Conducting world-class Hackathons and Challenges to drive innovation and help companies hire developers.",
-          picture: require("~/assets/nitin.jpg"),
-          linkedIn: "https://www.linkedin.com/in/nitinmittal23/",
-          github: "https://github.com/nitinmittal23",
-        },
+        // {
+        //   name: "Siddharth Dayalwal",
+        //   // description:
+        //   //   "AngelHack Student Ambassador | Microsoft Learn Student Ambassador | Former Intern - @Progate",
+        //   picture:
+        //     "https://avatars.githubusercontent.com/u/41017419?s=460&u=ece0c309cba6ed5ecbe43a8845e2bd0e54fe210c&v=4",
+        //   linkedIn: "https://www.linkedin.com/in/siddharth-dayalwal/",
+        //   github: "https://github.com/siddharthdayalwal",
+        // },
         {
           name: "Khushi Sharma",
           picture: require("/assets/khushi.jpg"),
           linkedIn: "https://www.linkedin.com/in/khushi-sharma-2201/",
-          github: "https://github.com/KhushiSharma22",
-        },
-      ],
+          github: "https://github.com/KhushiSharma22"
+        }
+        // {
+        //   name: "Rishabh Bansal",
+        //   // description:
+        //   //   "Program Manager @HackerEarth. Conducting world-class Hackathons and Challenges to drive innovation and help companies hire developers.",
+        //   picture:
+        //     "https://media-exp1.licdn.com/dms/image/C4E03AQGN9WF9aic8Aw/profile-displayphoto-shrink_200_200/0/1608998142556?e=1625702400&v=beta&t=w4s3tmsCcollSmJvlvazPiqQ6rcB7WBfq92ru4Il74I",
+        //   linkedIn: "https://www.linkedin.com/in/rishabhbansal97/",
+        //   github: "https://github.com/rishabh-bansal"
+        // }
+      ]
     };
-  },
+  }
 };
 </script>
 
