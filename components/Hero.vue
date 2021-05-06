@@ -146,6 +146,10 @@ export default {
 
         &:nth-child(2) {
           margin-left: 1em;
+
+          @media (max-width: 250px) {
+            margin-left: unset;
+          }
         }
 
         &:nth-child(3) {
