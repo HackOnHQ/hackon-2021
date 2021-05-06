@@ -23,6 +23,7 @@
             <img
               v-if="speaker.companyLogo"
               :src="speaker.companyLogo"
+              :title="speaker.company"
               alt="company logo"
               class="company-logo"
             />
@@ -51,6 +52,7 @@ export default {
           url: "https://twitter.com/OfficialLoganK",
           picture: require("~/assets/Speakers/Logan.jpeg"),
           companyLogo: require("~/assets/julia.svg"),
+          company: "The Julia Language",
         },
         {
           name: "Ali Mustufa Shaikh",
@@ -58,6 +60,7 @@ export default {
           url: "https://twitter.com/ialimustufa",
           picture: require("~/assets/Speakers/Ali.jpg"),
           companyLogo: require("~/assets/postman.png"),
+          company: "Postman",
         },
         {
           name: "Haimantika Mitra",
@@ -65,20 +68,23 @@ export default {
           url: "https://twitter.com/HaimantikaM",
           picture: require("~/assets/Speakers/Haimantika.jpg"),
           companyLogo: require("~/assets/microsoft.svg"),
+          company: "Microsoft",
         },
         {
           name: "Kunal Kushwaha",
-          description: "Coach",
+          description: "MLH Coach",
           url: "https://twitter.com/kunalstwt",
           picture: require("~/assets/Speakers/Kunal.jpg"),
           companyLogo: require("~/assets/Sponsors/mlh.svg"),
+          company: "MLH",
         },
         {
           name: "Stephen Simon",
-          description: "Regional Community Director, C# Corner",
+          description: "Regional Community Director",
           url: "https://twitter.com/codewithsimon",
           picture: require("~/assets/Speakers/Stephen-Simon.jpg"),
-          companyLogo: require("~/assets/a.png"),
+          companyLogo: require("~/assets/c-sharp-corner.png"),
+          company: "C# Corner",
         },
         {
           name: "Juan Pablo Flores Cortés",
@@ -86,13 +92,15 @@ export default {
           url: "https://twitter.com/juanpflores_",
           picture: require("~/assets/Speakers/Juan-Pablo.png"),
           companyLogo: require("~/assets/Sponsors/github.svg"),
+          company: "GitHub",
         },
         {
           name: "Mohammad Shahbaz Alam",
           description: "Developer Advocate",
           url: "https://twitter.com/mdsbzalam",
           picture: require("~/assets/Speakers/Mohammad-Shahbaz-Alam.png"),
-          companyLogo: require('~/assets/magic.svg')
+          companyLogo: require("~/assets/magic.svg"),
+          company: "Magic Labs",
         },
       ],
     };
