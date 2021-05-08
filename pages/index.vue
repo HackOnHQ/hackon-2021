@@ -5,7 +5,7 @@
     <ContentSection />
     <RiddleSection />
     <TracksSection />
-    <PrizesSection />
+    <!-- <PrizesSection /> -->
     <SpeakersSection />
     <WorkshopsSection />
     <SponsorsSection />
