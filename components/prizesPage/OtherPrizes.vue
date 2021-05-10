@@ -102,17 +102,17 @@ export default {
       }
 
       .card {
-        min-height: 400px;
+        min-height: 350px;
         display: flex;
         flex-direction: column;
         text-align: center;
-        justify-content: center;
+        justify-content: space-evenly;
         padding: 15px;
         background: var(--color-secondary-light);
         border-radius: 5px;
 
         @include respond-between(md, lg) {
-          min-height: 450px;
+          min-height: 430px;
         }
 
         .image {

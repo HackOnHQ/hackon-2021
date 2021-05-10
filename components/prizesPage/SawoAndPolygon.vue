@@ -1,11 +1,14 @@
 <template>
-  <Container id="amagiAndElastic">
+  <Container id="sawoAndPolygon">
     <div class="contents">
-      <SubHashHeader title="Sponsored Prizes" />
       <div class="sponsoredPrizes">
         <div class="cardGrid">
           <div v-for="(prize, index) in sponsoredPrizes" :key="index">
-            <div class="card">
+            <div
+              class="card"
+              v-bind:class="[prize.polygon ? 'clickable' : '']"
+              @click="showModal(prize.polygon)"
+            >
               <img
                 :class="['background', prize.name]"
                 :src="prize.background"
@@ -29,43 +32,60 @@
         </div>
       </div>
     </div>
+    <PolygonModal v-show="isModalVisible" @close="closeModal()" />
   </Container>
 </template>
 
 <script>
 import Container from "~/components/Container";
 import SubHashHeader from "~/components/SubHashHeader";
+import PolygonModal from "~/components/PolygonModal";
 
 export default {
   components: {
     Container,
     SubHashHeader,
+    PolygonModal,
   },
   data() {
     return {
+      isModalVisible: false,
       sponsoredPrizes: [
         {
-          name: "Amagi",
-          background: require("~/assets/Prizes/amagiTransparent.png"),
-          logo: require("~/assets/Prizes/amagiLogo.svg"),
-          heading: "Best Women and LGBTQIA+ Team",
+          name: "SAWO Labs",
+          background: require("~/assets/Prizes/sawoTransparent.png"),
+          logo: require("~/assets/Prizes/sawo.png"),
+          heading: "Best use of SAWO",
           description: [
-            "The best team consisting of women and/or LGBTQIA+ members only will be eligible for a prize of ₹5000",
-            "The top teams (up to 50 participants total) of this track shall be connected with Amagi for a chance to earn future work opportunities.",
+            "● $100 Prize to winning team",
+            "● SAWO funds 100% of the Play Store / App Store subscription fee for the best mobile apps.",
+            "And.. many more",
           ],
         },
         {
-          name: "Elastic",
+          name: "Polygon",
           detailImage: require("~/assets/Prizes/5000.svg"),
-          background: require("~/assets/Prizes/elasticTransparent.png"),
-          logo: require("~/assets/Prizes/elasticLogo.svg"),
-          heading: "Best Hack Built On Elastic",
+          background: require("~/assets/Prizes/polygonTransparent.png"),
+          logo: require("~/assets/Prizes/polygon.png"),
+          heading: "Best Hack Built On Polygon",
           description: [
-            "The best hack that implements Elastic shall be eligible for a prize of ₹5000",
+            "The best hack built using Polygon Technology (previously Matic Network)",
           ],
+          polygon: true,
         },
       ],
     };
+  },
+  methods: {
+    showModal(isPolygon) {
+      if (!isPolygon) return;
+      this.isModalVisible = true;
+      document.querySelector("body").style.overflow = "hidden";
+    },
+    closeModal() {
+      this.isModalVisible = false;
+      document.querySelector("body").style.overflow = "initial";
+    },
   },
 };
 </script>
@@ -99,7 +119,6 @@ export default {
       @include respond-below(md) {
         grid-template-columns: repeat(1, 1fr);
       }
-
       .card {
         background-color: var(--color-secondary-light) !important;
         position: relative;
@@ -119,8 +138,8 @@ export default {
           top: 50%;
           transform: translateY(-50%);
 
-          &.Elastic {
-            height: 70%;
+          &.SAWO, &.Polygon {
+            height: 80%;
           }
 
           @include respond-below(xs) {

@@ -1,20 +1,21 @@
 <template>
-  <Container id="magicLabs">
+  <Container id="graphCMS">
     <div class="contents">
       <div class="cards-grid">
         <img
           class="background"
-          src="~/assets/Prizes/magicTransparent.png"
+          src="~/assets/Prizes/graphCMSTransparent.png"
           alt="background"
         />
         <div class="company">
-          <img src="~/assets/Prizes/magicLogo.svg" alt="magic logo" />
-          <h1>Magic Labs</h1>
+          <img src="~/assets/Prizes/graphCMS.png" alt="magic logo" />
+          <h1>Graph CMS</h1>
         </div>
         <div v-for="(prize, index) in magicLabPrizes" :key="index">
           <div class="card">
             <div class="image">
-              <img :src="prize.image" :alt="prize.name" class="prizeImage" />
+              <img :src="prize.image1" :alt="prize.name" class="prizeImage1" />
+              <img :src="prize.image2" alt="amazon logo" class="prizeImage2" />
             </div>
             <div class="texts">
               <h4 class="prizeName">{{ prize.name }}</h4>
@@ -32,29 +33,26 @@ import Container from "~/components/Container";
 
 export default {
   components: {
-    Container
+    Container,
   },
   data() {
     return {
       magicLabPrizes: [
         {
-          name: "Build With Magic: Winner",
-          image: require("~/assets/Prizes/HomepodMini.png"),
-          description: "The best hack built using Magic"
+          name: "Best GraphCMS Project",
+          image1: require("~/assets/Prizes/7500-amazon.svg"),
+          image2: require("~/assets/Prizes/amazon.png"),
+          description: "The best hack built using GraphCMS",
         },
         {
-          name: "Build With Magic: First Runners-Up",
-          image: require("~/assets/Prizes/Yubikey5NFC.png"),
-          description: "The 2nd best hack built using Magic"
+          name: "Best GraphQL Project",
+          image1: require("~/assets/Prizes/5000-amazon.svg"),
+          image2: require("~/assets/Prizes/amazon.png"),
+          description: "The best hack that implements GraphQL ",
         },
-        {
-          name: "Build With Magic: Second Runners-Up",
-          image: require("~/assets/Prizes/SecurityKeyNFC.png"),
-          description: "The 3rd best hack built using Magic"
-        }
-      ]
+      ],
     };
-  }
+  },
 };
 </script>
 
@@ -65,7 +63,7 @@ export default {
   .cards-grid {
     display: grid;
     position: relative;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1.5fr 1.5fr;
     background-color: var(--color-secondary-light);
     padding: 30px;
     border-radius: 10px;
@@ -90,17 +88,24 @@ export default {
     .background {
       position: absolute;
       height: 100%;
-      left: 2px;
+      left: 6rem;
+
+      @include respond-below(lg) {
+        left: 2rem;
+      }
 
       @include respond-below(md) {
         display: unset;
-        height: 40%;
-        top: 5.5%;
-        left: 1%;
+        height: 90%;
+        top: 5%;
+        left: 2rem;
       }
 
       @include respond-below(sm) {
         display: unset;
+        height: 40%;
+        top: 5%;
+        left: 4rem;
       }
 
       @include respond-below(xs) {
@@ -124,7 +129,6 @@ export default {
     }
 
     .card {
-      position: relative;
       min-height: 300px;
       display: flex;
       flex-direction: column;
@@ -147,10 +151,19 @@ export default {
       }
 
       .image {
+        display: flex;
+        flex-direction: column;
         align-content: center;
-        img {
+        margin-left: auto;
+        margin-right: auto;
+
+        .prizeImage1 {
           width: 130px;
-          margin: 10px;
+        }
+
+        .prizeImage2 {
+          margin-top: -0.5rem;
+          width: 130px;
         }
       }
 
