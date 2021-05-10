@@ -19,13 +19,25 @@
                 <h4>{{ prize.name }}</h4>
               </div>
               <div class="details">
-                <img v-if="prize.detailImage" :src="prize.detailImage" />
-                <h4>
-                  {{ prize.heading }}
-                </h4>
-                <p v-for="(para, index) in prize.description" :key="index">
-                  {{ para }}
-                </p>
+                <div class="inner">
+                  <div class="card-side front">
+                    <h4>
+                      {{ prize.heading }}
+                    </h4>
+                    <p>
+                      <span v-html="prize.details">{{}}</span>
+                    </p>
+                  </div>
+                  <div class="card-side back">
+                    <img v-if="prize.detailImage" :src="prize.detailImage" />
+                    <span
+                      v-for="(para, index) in prize.description"
+                      :key="index"
+                    >
+                      <span v-html="para">{{}}</span>
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -56,10 +68,12 @@ export default {
           background: require("~/assets/Prizes/sawoTransparent.png"),
           logo: require("~/assets/Prizes/sawo.png"),
           heading: "Best use of SAWO",
+          details:
+            "The best hack built using the SAWO Labs API <br/> <br/> ● $100 Prize to winning team <br/> ● Feature in our Blogs & Articles<br/>● 1-month Free Inaugurate Tier access<br/>And much more...",
           description: [
-            "● $100 Prize to winning team",
             "● SAWO funds 100% of the Play Store / App Store subscription fee for the best mobile apps.",
-            "And.. many more",
+            "● SAWO funds 100% of the hosting fee for the best web-apps",
+            "● For extra special products - Special opportunity to pitch your hack to VCs and Investors in SAWO’s Pitch Day Hack",
           ],
         },
         {
@@ -68,9 +82,9 @@ export default {
           background: require("~/assets/Prizes/polygonTransparent.png"),
           logo: require("~/assets/Prizes/polygon.png"),
           heading: "Best Hack Built On Polygon",
-          description: [
+          details:
             "The best hack built using Polygon Technology (previously Matic Network)",
-          ],
+          description: ["₹5000 Prize to winning team"],
           polygon: true,
         },
       ],
@@ -124,7 +138,7 @@ export default {
         position: relative;
         border-radius: 10px;
         display: flex;
-        min-height: 400px;
+        min-height: 350px;
         padding: 20px;
         overflow: hidden;
 
@@ -133,12 +147,17 @@ export default {
           text-align: center;
         }
 
+        &.clickable {
+          cursor: pointer;
+        }
+
         .background {
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
 
-          &.SAWO, &.Polygon {
+          &.SAWO,
+          &.Polygon {
             height: 80%;
           }
 
@@ -178,27 +197,52 @@ export default {
 
         .details {
           position: absolute;
-          background-color: #0c0d21e7;
-          padding: 20px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
           min-height: calc(100% - 80px);
           text-align: center;
           border-radius: 10px;
           right: 30px;
-          width: 50%;
+          width: 56%;
+
+          .inner {
+            position: relative;
+            min-height: 350px;
+            @media (max-width: 580px) {
+              width: 96%;
+            }
+            .card-side {
+              width: 100%;
+              border-radius: 15px;
+              transition: all 0.8s ease;
+              backface-visibility: hidden;
+              position: absolute;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              padding: 0.5rem;
+              min-height: 95%;
+              color: white;
+              background-color: var(--color-secondary);
+            }
+            .card-side.back {
+              transform: rotateY(-180deg);
+            }
+            &:hover .card-side.front {
+              transform: rotateY(180deg);
+            }
+            &:hover .card-side.back {
+              transform: rotateY(0deg);
+            }
+          }
 
           @include respond-below(xs) {
             position: unset;
             width: unset;
             right: unset;
-            background-color: #0c0d21;
           }
 
           img {
             width: 70%;
-            margin: 30px auto 50px auto;
+            margin: 16px auto;
           }
 
           h4 {

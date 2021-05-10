@@ -13,13 +13,24 @@
         </div>
         <div v-for="(prize, index) in magicLabPrizes" :key="index">
           <div class="card">
-            <div class="image">
+            <div class="card-side front">
+              <div class="texts">
+                <h4 class="prizeName">{{ prize.name }}</h4>
+                <p class="prizeDescription">{{ prize.details }}</p>
+              </div>
+            </div>
+            <div class="card-side back">
               <img :src="prize.image" :alt="prize.name" class="prizeImage" />
+              <p v-for="(para, index) in prize.description" :key="index">
+                <span v-html="para">{{}}</span>
+              </p>
+            </div>
+            <!-- <div class="image">
             </div>
             <div class="texts">
               <h4 class="prizeName">{{ prize.name }}</h4>
               <p class="prizeDescription">{{ prize.description }}</p>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -32,7 +43,7 @@ import Container from "~/components/Container";
 
 export default {
   components: {
-    Container
+    Container,
   },
   data() {
     return {
@@ -40,21 +51,33 @@ export default {
         {
           name: "Build With Magic: Winner",
           image: require("~/assets/Prizes/HomepodMini.png"),
-          description: "The best hack built using Magic"
+          details: "The best hack built using Magic",
+          description: [
+            "Apple HomePod mini",
+            "(Prizes are subject to review by Magic Labs)",
+          ],
         },
         {
           name: "Build With Magic: First Runners-Up",
           image: require("~/assets/Prizes/Yubikey5NFC.png"),
-          description: "The 2nd best hack built using Magic"
+          details: "The 2nd best hack built using Magic",
+          description: [
+            "Yubikey 5 NFC",
+            "(Prizes are subject to review by Magic Labs)",
+          ],
         },
         {
           name: "Build With Magic: Second Runners-Up",
           image: require("~/assets/Prizes/SecurityKeyNFC.png"),
-          description: "The 3rd best hack built using Magic"
-        }
-      ]
+          details: "The 3rd best hack built using Magic",
+          description: [
+            "Security Key NFC by Yubico",
+            "(Prizes are subject to review by Magic Labs)",
+          ],
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
@@ -90,13 +113,13 @@ export default {
     .background {
       position: absolute;
       height: 100%;
-      left: 2px;
+      left: 1em;
 
       @include respond-below(md) {
         display: unset;
         height: 40%;
         top: 5.5%;
-        left: 1%;
+        left: 2em;
       }
 
       @include respond-below(sm) {
@@ -126,13 +149,40 @@ export default {
     .card {
       position: relative;
       min-height: 300px;
-      display: flex;
-      flex-direction: column;
       text-align: center;
-      justify-content: center;
-      padding: 15px;
-      background: var(--color-secondary);
       border-radius: 5px;
+
+      @media (max-width: 1000px) {
+        width: 96%;
+      }
+
+      .card-side {
+        width: 100%;
+        border-radius: 15px;
+        transition: all 0.8s ease;
+        backface-visibility: hidden;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0.5rem;
+        min-height: 95%;
+        color: white;
+        background-color: var(--color-secondary);
+      }
+      .card-side.back {
+        transform: rotateY(-180deg);
+        img {
+          margin: 16px auto;
+          width: 50%;
+        }
+      }
+      &:hover .card-side.front {
+        transform: rotateY(180deg);
+      }
+      &:hover .card-side.back {
+        transform: rotateY(0deg);
+      }
 
       @include respond-between(md, lg) {
         min-height: 350px;
@@ -144,14 +194,6 @@ export default {
 
       @include respond-below(sm) {
         min-height: 400px;
-      }
-
-      .image {
-        align-content: center;
-        img {
-          width: 130px;
-          margin: 10px;
-        }
       }
 
       .texts {
