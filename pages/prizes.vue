@@ -1,11 +1,16 @@
 <template>
-  <Container id="prizes">
+  <Container id="prizesPage">
+    <PolygonModal v-show="isModalVisible" @close="closeModal()" />
     <section class="content-section">
       <HashHeader title="Prizes" />
       <div class="contents">
         <div class="cards-grid">
           <div v-for="(prize, index) in prizes" :key="index">
-            <div class="card">
+            <div
+              class="card"
+              v-bind:class="[prize.polygon ? 'clickable' : '']"
+              @click="showModal(prize.polygon)"
+            >
               <div class="image">
                 <img :src="prize.image" :alt="prize.name" class="prizeImage" />
               </div>
@@ -16,6 +21,9 @@
             </div>
           </div>
         </div>
+        <OtherPrizes />
+        <AmagiAndElastic />
+        <MagicLabs />
       </div>
     </section>
   </Container>
@@ -25,14 +33,24 @@
 import Container from "~/components/Container";
 import HashHeader from "~/components/HashHeader";
 import PolygonModal from "~/components/PolygonModal";
+import SubHashHeader from "~/components/SubHashHeader";
+import OtherPrizes from "~/components/prizesPage/OtherPrizes.vue";
+import AmagiAndElastic from "~/components/prizesPage/AmagiAndElastic.vue";
+import MagicLabs from "~/components/prizesPage/magicLabs.vue";
 
 export default {
   components: {
     Container,
-    HashHeader
+    HashHeader,
+    PolygonModal,
+    SubHashHeader,
+    OtherPrizes,
+    AmagiAndElastic,
+    MagicLabs
   },
   data() {
     return {
+      isModalVisible: false,
       prizes: [
         {
           name: "First Prize",
@@ -49,9 +67,36 @@ export default {
           image: require("~/assets/Prizes/third.svg"),
           amount: "₹10,000"
         }
+        // {
+        //   name: "Best Hack Built On Polygon",
+        //   image: require("~/assets/Prizes/polygon.svg"),
+        //   amount: "₹5,000",
+        //   polygon: true
+        // },
+        // {
+        //   name: "Best Hack Built On Elastic",
+        //   image: require("~/assets/Prizes/elastic.png"),
+        //   amount: "₹5,000"
+        // },
+        // {
+        //   name: "Best Hack Built On Voice",
+        //   image: require("~/assets/Prizes/voice.svg"),
+        //   amount: "₹5,000"
+        // }
       ]
     };
   }
+  // methods: {
+  //   showModal(isPolygon) {
+  //     if (!isPolygon) return;
+  //     this.isModalVisible = true;
+  //     document.querySelector("body").style.overflow = "hidden";
+  //   },
+  //   closeModal() {
+  //     this.isModalVisible = false;
+  //     document.querySelector("body").style.overflow = "initial";
+  //   }
+  // }
 };
 </script>
 
@@ -89,8 +134,8 @@ export default {
         min-height: 275px;
 
         .image {
+          align-content: center;
           img {
-            height: 150px;
             width: 150px;
             margin: 10px;
           }
@@ -104,6 +149,10 @@ export default {
             padding-bottom: 10px;
           }
         }
+      }
+
+      .clickable {
+        cursor: pointer;
       }
     }
   }
