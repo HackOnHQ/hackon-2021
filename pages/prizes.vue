@@ -1,11 +1,13 @@
 <template>
-  <Container id="prizes">
+  <Container id="prizesPage">
     <section class="content-section">
       <HashHeader title="Prizes" />
       <div class="contents">
         <div class="cards-grid">
           <div v-for="(prize, index) in prizes" :key="index">
-            <div class="card">
+            <div
+              class="card"
+            >
               <div class="image">
                 <img :src="prize.image" :alt="prize.name" class="prizeImage" />
               </div>
@@ -16,9 +18,12 @@
             </div>
           </div>
         </div>
-        <a class="view-more" href="/prizes"
-          >View more <img src="~/assets/faq-up-arrow.svg"
-        /></a>
+        <OtherPrizes />
+        <AmagiAndElastic />
+        <MagicLabs />
+        <GraphCMS />
+        <MLH />
+        <SawoAndPolygon />
       </div>
     </section>
   </Container>
@@ -27,11 +32,25 @@
 <script>
 import Container from "~/components/Container";
 import HashHeader from "~/components/HashHeader";
+import SubHashHeader from "~/components/SubHashHeader";
+import OtherPrizes from "~/components/prizesPage/OtherPrizes.vue";
+import AmagiAndElastic from "~/components/prizesPage/AmagiAndElastic.vue";
+import MagicLabs from "~/components/prizesPage/magicLabs.vue";
+import SawoAndPolygon from "~/components/prizesPage/SawoAndPolygon.vue";
+import GraphCMS from "~/components/prizesPage/graphCMS.vue";
+import MLH from "~/components/prizesPage/MLH.vue";
 
 export default {
   components: {
     Container,
     HashHeader,
+    SubHashHeader,
+    OtherPrizes,
+    AmagiAndElastic,
+    MagicLabs,
+    SawoAndPolygon,
+    GraphCMS,
+    MLH,
   },
   data() {
     return {
@@ -65,14 +84,12 @@ export default {
 
   .contents {
     padding: 20px 0;
-    text-align: center;
 
     .cards-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       column-gap: 30px;
       row-gap: 30px;
-      margin-bottom: 2rem;
 
       @include respond-below(md) {
         grid-template-columns: repeat(2, 1fr);
@@ -93,8 +110,8 @@ export default {
         min-height: 275px;
 
         .image {
+          align-content: center;
           img {
-            height: 150px;
             width: 150px;
             margin: 10px;
           }
@@ -109,14 +126,9 @@ export default {
           }
         }
       }
-    }
 
-    .view-more {
-      cursor: pointer;
-      color: var(--colour-pink);
-
-      img {
-        transform: rotate(90deg);
+      .clickable {
+        cursor: pointer;
       }
     }
   }
