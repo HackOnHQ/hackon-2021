@@ -16,6 +16,9 @@
             </div>
           </div>
         </div>
+        <a class="view-more" href="/prizes"
+          >View more <img src="~/assets/up-arrow-pink.svg"
+        /></a>
       </div>
     </section>
   </Container>
@@ -24,12 +27,11 @@
 <script>
 import Container from "~/components/Container";
 import HashHeader from "~/components/HashHeader";
-import PolygonModal from "~/components/PolygonModal";
 
 export default {
   components: {
     Container,
-    HashHeader
+    HashHeader,
   },
   data() {
     return {
@@ -37,21 +39,21 @@ export default {
         {
           name: "First Prize",
           image: require("~/assets/Prizes/first.svg"),
-          amount: "₹25,000"
+          amount: "₹25,000",
         },
         {
           name: "Second Prize",
           image: require("~/assets/Prizes/second.svg"),
-          amount: "₹15,000"
+          amount: "₹15,000",
         },
         {
           name: "Third Prize",
           image: require("~/assets/Prizes/third.svg"),
-          amount: "₹10,000"
-        }
-      ]
+          amount: "₹10,000",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
@@ -63,12 +65,14 @@ export default {
 
   .contents {
     padding: 20px 0;
+    text-align: center;
 
     .cards-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       column-gap: 30px;
       row-gap: 30px;
+      margin-bottom: 2rem;
 
       @include respond-below(md) {
         grid-template-columns: repeat(2, 1fr);
@@ -104,6 +108,15 @@ export default {
             padding-bottom: 10px;
           }
         }
+      }
+    }
+
+    .view-more {
+      cursor: pointer;
+      color: var(--colour-pink);
+
+      img {
+        transform: rotate(90deg);
       }
     }
   }
