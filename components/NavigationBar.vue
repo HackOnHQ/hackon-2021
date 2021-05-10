@@ -23,6 +23,9 @@
               <a href="/#speakers">Speakers</a>
             </li>
             <li>
+              <a href="/prizes">Prizes</a>
+            </li>
+            <li>
               <a href="/#workshops">Workshops</a>
             </li>
             <li>
