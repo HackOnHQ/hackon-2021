@@ -17,7 +17,7 @@
           </div>
         </div>
         <a class="view-more" href="/prizes"
-          >View more <img src="~/assets/up-arrow-pink.svg"
+          >View more <img src="~/assets/faq-up-arrow.svg"
         /></a>
       </div>
     </section>
