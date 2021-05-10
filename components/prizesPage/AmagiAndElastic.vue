@@ -180,19 +180,22 @@ export default {
             position: relative;
             min-height: 350px;
             .card-side {
+              width: 100%;
               border-radius: 15px;
               transition: all 0.8s ease;
               backface-visibility: hidden;
               position: absolute;
-              top: 0;
-              left: 0;
               display: flex;
               flex-direction: column;
               justify-content: center;
-              padding: 2rem;
-              min-height: 80%;
+              padding: 0.5rem;
+              min-height: 95%;
               color: white;
               background-color: var(--color-secondary);
+
+              @media (max-width: 570px) {
+                width: 90%;
+              }
             }
 
             .card-side.back {
