@@ -179,6 +179,9 @@ export default {
           .inner {
             position: relative;
             min-height: 350px;
+            @media (max-width: 580px) {
+              width: 96%;
+            }
             .card-side {
               width: 100%;
               border-radius: 15px;
@@ -192,10 +195,6 @@ export default {
               min-height: 95%;
               color: white;
               background-color: var(--color-secondary);
-
-              @media (max-width: 570px) {
-                width: 90%;
-              }
             }
 
             .card-side.back {
