@@ -5,7 +5,7 @@
       <div class="otherPrizes">
         <div class="cards-grid">
           <div class="company">
-            <img src="~/assets/Prizes/hackon.svg" alt="hackon logo" />
+            <img src="~/assets/Prizes/Logo.svg" alt="hackon logo" />
             <h1>HackOn Foundation</h1>
           </div>
           <div v-for="(prize, index) in otherPrizes" :key="index">
