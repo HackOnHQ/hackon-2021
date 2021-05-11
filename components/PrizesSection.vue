@@ -1,16 +1,11 @@
 <template>
   <Container id="prizes">
-    <PolygonModal v-show="isModalVisible" @close="closeModal()" />
     <section class="content-section">
       <HashHeader title="Prizes" />
       <div class="contents">
         <div class="cards-grid">
           <div v-for="(prize, index) in prizes" :key="index">
-            <div
-              class="card"
-              v-bind:class="[prize.polygon ? 'clickable' : '']"
-              @click="showModal(prize.polygon)"
-            >
+            <div class="card">
               <div class="image">
                 <img :src="prize.image" :alt="prize.name" class="prizeImage" />
               </div>
@@ -21,6 +16,9 @@
             </div>
           </div>
         </div>
+        <a class="view-more" href="/prizes"
+          >View more <img src="~/assets/faq-up-arrow.svg"
+        /></a>
       </div>
     </section>
   </Container>
@@ -29,17 +27,14 @@
 <script>
 import Container from "~/components/Container";
 import HashHeader from "~/components/HashHeader";
-import PolygonModal from "~/components/PolygonModal";
 
 export default {
   components: {
     Container,
     HashHeader,
-    PolygonModal,
   },
   data() {
     return {
-      isModalVisible: false,
       prizes: [
         {
           name: "First Prize",
@@ -56,35 +51,8 @@ export default {
           image: require("~/assets/Prizes/third.svg"),
           amount: "₹10,000",
         },
-        {
-          name: "Best Hack Built On Polygon",
-          image: require("~/assets/Prizes/polygon.svg"),
-          amount: "₹5,000",
-          polygon: true,
-        },
-        {
-          name: "Best Hack Built On Elastic",
-          image: require("~/assets/Prizes/elastic.png"),
-          amount: "₹5,000",
-        },
-        {
-          name: "Best Hack Built On Voice",
-          image: require("~/assets/Prizes/voice.svg"),
-          amount: "₹5,000",
-        },
       ],
     };
-  },
-  methods: {
-    showModal(isPolygon) {
-      if (!isPolygon) return;
-      this.isModalVisible = true;
-      document.querySelector("body").style.overflow = "hidden";
-    },
-    closeModal() {
-      this.isModalVisible = false;
-      document.querySelector("body").style.overflow = "initial";
-    },
   },
 };
 </script>
@@ -97,12 +65,14 @@ export default {
 
   .contents {
     padding: 20px 0;
+    text-align: center;
 
     .cards-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       column-gap: 30px;
       row-gap: 30px;
+      margin-bottom: 2rem;
 
       @include respond-below(md) {
         grid-template-columns: repeat(2, 1fr);
@@ -139,9 +109,14 @@ export default {
           }
         }
       }
+    }
 
-      .clickable {
-        cursor: pointer;
+    .view-more {
+      cursor: pointer;
+      color: var(--colour-pink);
+
+      img {
+        transform: rotate(90deg);
       }
     }
   }
