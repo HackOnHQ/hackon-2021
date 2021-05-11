@@ -10,12 +10,15 @@
           </div>
           <div v-for="(prize, index) in otherPrizes" :key="index">
             <div class="card">
-              <div class="image">
+              <div class="card-side front">
                 <img :src="prize.image" :alt="prize.name" class="prizeImage" />
+                <h4 class="prizeName" v-html="prize.name">{{}}</h4>
               </div>
-              <div class="texts">
-                <h4 class="prizeName">{{ prize.name }}</h4>
-                <p class="prizeDescription">{{ prize.description }}</p>
+              <div class="card-side back">
+                <p class="prizeDescription" v-html="prize.details">{{}}</p>
+                <p v-for="(para, index) in prize.description" :key="index">
+                  <span v-html="para">{{}}</span>
+                </p>
               </div>
             </div>
           </div>
@@ -32,31 +35,36 @@ import SubHashHeader from "~/components/SubHashHeader";
 export default {
   components: {
     Container,
-    SubHashHeader
+    SubHashHeader,
   },
   data() {
     return {
       otherPrizes: [
         {
-          name: "Best of Hackon x 7",
+          name:
+            'Best of Hack<span style="color: #E58AB2">O</span>n <span style="color: #00FFA4">x</span> 7',
           image: require("~/assets/Prizes/5000.svg"),
-          description: "The teams ranked 4th-10th overall at HackOn 2.0"
+          details:
+            '<b>₹5000</b> Prize to all the teams ranked 4th-10th overall at Hack<span style="color: #E58AB2">O</span>n 2.0',
+          description: [""],
         },
         {
           name: "Best Voice Hack",
           image: require("~/assets/Prizes/alexaDot.png"),
-          description:
-            "The best hack built using voice technologies such as Amazon Alexa Skills, Google Assistant Actions, etc."
+          details:
+            "The best hack built using voice technologies such as Amazon Alexa Skills, Google Assistant Actions, etc. will win an <b>Amazon Alexa Echo Dot (3rd Gen)</b>",
+          description: [""],
         },
         {
           name: "Best Beginner Hack",
           image: require("~/assets/Prizes/sonyHeadphones.png"),
-          description:
-            "The best hack built by a team of new hackers (At least ≥50% members should be hacking for the first time)"
-        }
-      ]
+          details:
+            "The best hack built by a team of new hackers (At least ≥50% members should be hacking for the first time) will win <b>Sony Headphones (Model MDR - XB450AP)</b> for every team member",
+          description: [""],
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
@@ -102,34 +110,52 @@ export default {
       }
 
       .card {
-        min-height: 350px;
-        display: flex;
-        flex-direction: column;
+        position: relative;
+        min-height: 300px;
         text-align: center;
-        justify-content: space-evenly;
-        padding: 15px;
-        background: var(--color-secondary-light);
-        border-radius: 5px;
 
-        @include respond-between(md, lg) {
-          min-height: 430px;
+        @media (max-width: 1000px) {
+          width: 96%;
         }
 
-        .image {
-          align-content: center;
+        .card-side {
+          width: 100%;
+          border-radius: 15px;
+          transition: all 0.8s ease;
+          backface-visibility: hidden;
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          padding: 0.5rem;
+          min-height: 95%;
+          color: white;
+          background-color: var(--color-secondary-light);
+        }
+        .card-side.front {
+          justify-content: space-between;
           img {
-            width: 130px;
-            margin: 10px;
+            width: 60%;
+            margin: auto;
           }
-        }
-
-        .texts {
-          text-align: center;
           .prizeName {
             font-size: 1.2rem;
             font-weight: bold;
             padding-bottom: 10px;
           }
+        }
+        .card-side.back {
+          justify-content: center;
+          transform: rotateY(-180deg);
+        }
+        &:hover .card-side.front {
+          transform: rotateY(180deg);
+        }
+        &:hover .card-side.back {
+          transform: rotateY(0deg);
+        }
+
+        @include respond-between(md, lg) {
+          min-height: 430px;
         }
       }
     }

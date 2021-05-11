@@ -114,7 +114,7 @@ export default {
           url: "https://twitter.com/mdsbzalam",
           picture: require("~/assets/Speakers/Mohammad-Shahbaz-Alam.png"),
           companyLogo: require("~/assets/magic.svg"),
-          company: "Magic Labs",
+          company: "Magic",
         },
         {
           name: "Santosh Yadav",

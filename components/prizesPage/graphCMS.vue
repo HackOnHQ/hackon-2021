@@ -13,13 +13,25 @@
         </div>
         <div v-for="(prize, index) in magicLabPrizes" :key="index">
           <div class="card">
-            <div class="image">
-              <img :src="prize.image1" :alt="prize.name" class="prizeImage1" />
-              <img :src="prize.image2" alt="amazon logo" class="prizeImage2" />
+            <div class="card-side back">
+              <p class="prizeDescription" v-html="prize.details">{{}}</p>
             </div>
-            <div class="texts">
-              <h4 class="prizeName">{{ prize.name }}</h4>
-              <p class="prizeDescription">{{ prize.description }}</p>
+            <div class="card-side front">
+              <div class="image">
+                <img
+                  :src="prize.image1"
+                  :alt="prize.name"
+                  class="prizeImage1"
+                />
+                <img
+                  :src="prize.image2"
+                  alt="amazon logo"
+                  class="prizeImage2"
+                />
+              </div>
+              <div class="texts">
+                <h4 class="prizeName">{{ prize.name }}</h4>
+              </div>
             </div>
           </div>
         </div>
@@ -42,13 +54,15 @@ export default {
           name: "Best GraphCMS Project",
           image1: require("~/assets/Prizes/7500-amazon.svg"),
           image2: require("~/assets/Prizes/amazon.png"),
-          description: "The best hack built using GraphCMS",
+          details:
+            "The best hack built using GraphCMS will win an <b>Amazon Voucher worth ₹7500</b>",
         },
         {
           name: "Best GraphQL Project",
           image1: require("~/assets/Prizes/5000-amazon.svg"),
           image2: require("~/assets/Prizes/amazon.png"),
-          description: "The best hack that implements GraphQL ",
+          details:
+            "The best hack that implements GraphQL will win an <b>Amazon Voucher worth ₹7500</b>",
         },
       ],
     };
@@ -119,6 +133,7 @@ export default {
 
       img {
         width: 110px;
+        border-radius: 10px;
       }
 
       h1 {
@@ -130,13 +145,37 @@ export default {
 
     .card {
       min-height: 300px;
-      display: flex;
-      flex-direction: column;
+      position: relative;
       text-align: center;
-      justify-content: center;
-      padding: 15px;
-      background: var(--color-secondary);
       border-radius: 5px;
+
+      @media (max-width: 1000px) {
+        width: 96%;
+      }
+
+      .card-side {
+        width: 100%;
+        border-radius: 15px;
+        transition: all 0.8s ease;
+        backface-visibility: hidden;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0.5rem;
+        min-height: 95%;
+        color: white;
+        background-color: var(--color-secondary);
+      }
+      .card-side.back {
+        transform: rotateY(-180deg);
+      }
+      &:hover .card-side.front {
+        transform: rotateY(180deg);
+      }
+      &:hover .card-side.back {
+        transform: rotateY(0deg);
+      }
 
       @include respond-between(md, lg) {
         min-height: 350px;

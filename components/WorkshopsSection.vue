@@ -173,7 +173,7 @@ export default {
           url: "",
           speaker: {
             name: "Mohammad Shahbaz Alam",
-            designation: "Developer Advocate, Magic Labs",
+            designation: "Developer Advocate, Magic",
             about: "",
             picture: require("~/assets/Speakers/Mohammad-Shahbaz-Alam.png"),
           },
