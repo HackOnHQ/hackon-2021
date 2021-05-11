@@ -116,7 +116,7 @@ export default {
           name: "AMA",
           about: "",
           date: "22/05/2021",
-          time: "8:30 PM",
+          time: "8:00 PM",
           url: "",
           speaker: {
             name: "Juan Pablo Flores Cortés",
@@ -126,9 +126,36 @@ export default {
           },
         },
         {
-          name: "Who's who in Azure AI",
+          name: "Progressive Web Apps - A Revolution into Mobile landscape",
+          about: "",
+          date: "24/05/2021",
+          time: "4:30 PM",
+          url: "",
+          speaker: {
+            name: "Ranjoy Sen",
+            designation: "Staff Software Developer, Collins Aerospace",
+            about: "",
+            picture: require("~/assets/Speakers/Ranjoy.png"),
+          },
+        },
+        {
+          name: "How to make your Open Source Project a Success?",
           about: "",
           date: "25/05/2021",
+          time: "8:30 PM",
+          url: "",
+          speaker: {
+            name: "Eddie Jaoude",
+            designation: "GitHub Star of the Year",
+            about: "",
+            picture: require("~/assets/Speakers/Eddie.jpg"),
+          },
+        },
+        
+        {
+          name: "Who's who in Azure AI",
+          about: "",
+          date: "26/05/2021",
           time: "8:00 PM",
           url: "",
           speaker: {
