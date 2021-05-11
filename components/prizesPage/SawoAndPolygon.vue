@@ -4,11 +4,7 @@
       <div class="sponsoredPrizes">
         <div class="cardGrid">
           <div v-for="(prize, index) in sponsoredPrizes" :key="index">
-            <div
-              class="card"
-              v-bind:class="[prize.polygon ? 'clickable' : '']"
-              @click="showModal(prize.polygon)"
-            >
+            <div class="card">
               <img
                 :class="['background', prize.name]"
                 :src="prize.background"
@@ -36,6 +32,9 @@
                     >
                       <span v-html="para">{{}}</span>
                     </span>
+                    <span class="learn-more" @click="showModal(prize.name)">
+                      Learn More
+                    </span>
                   </div>
                 </div>
               </div>
@@ -44,7 +43,8 @@
         </div>
       </div>
     </div>
-    <PolygonModal v-show="isModalVisible" @close="closeModal()" />
+    <PolygonModal v-show="isPolygonModalVisible" @close="closeModal()" />
+    <SAWOModal v-show="isSAWOModalVisible" @close="closeModal()" />
   </Container>
 </template>
 
@@ -52,29 +52,29 @@
 import Container from "~/components/Container";
 import SubHashHeader from "~/components/SubHashHeader";
 import PolygonModal from "~/components/PolygonModal";
+import SAWOModal from "~/components/SAWOModal";
 
 export default {
   components: {
     Container,
     SubHashHeader,
     PolygonModal,
+    SAWOModal,
   },
   data() {
     return {
-      isModalVisible: false,
+      isPolygonModalVisible: false,
+      isSAWOModalVisible: false,
       sponsoredPrizes: [
         {
           name: "SAWO Labs",
+          detailImage: require("~/assets/Prizes/100-usd.svg"),
           background: require("~/assets/Prizes/sawoTransparent.png"),
           logo: require("~/assets/Prizes/sawo.png"),
           heading: "Best use of SAWO",
           details:
-            "The best hack built using the SAWO Labs API <br/> <br/> ● $100 Prize to winning team <br/> ● Feature in our Blogs & Articles<br/>● 1-month Free Inaugurate Tier access<br/>And much more...",
-          description: [
-            "● SAWO funds 100% of the Play / App Store subscription fee for the best mobile apps.",
-            "● SAWO funds 100% of the hosting fee for the best web-apps",
-            "● For extra special products - Special opportunity to pitch your hack to VCs and Investors in SAWO’s Pitch Day Hack",
-          ],
+            "The best hack built using the SAWO Labs API",
+          description: ["$100 Prize to winning team"],
         },
         {
           name: "Polygon",
@@ -91,13 +91,18 @@ export default {
     };
   },
   methods: {
-    showModal(isPolygon) {
-      if (!isPolygon) return;
-      this.isModalVisible = true;
-      document.querySelector("body").style.overflow = "hidden";
+    showModal(prizeName) {
+      if (prizeName === "Polygon") {
+        this.isPolygonModalVisible = true;
+        document.querySelector("body").style.overflow = "hidden";
+      } else if (prizeName === "SAWO Labs") {
+        this.isSAWOModalVisible = true;
+        document.querySelector("body").style.overflow = "hidden";
+      }
     },
     closeModal() {
-      this.isModalVisible = false;
+      this.isPolygonModalVisible = false;
+      this.isSAWOModalVisible = false;
       document.querySelector("body").style.overflow = "initial";
     },
   },
@@ -147,10 +152,6 @@ export default {
           text-align: center;
         }
 
-        &.clickable {
-          cursor: pointer;
-        }
-
         .background {
           position: absolute;
           top: 50%;
@@ -186,6 +187,7 @@ export default {
 
           img {
             width: 120px;
+            border-radius: 10px;
           }
 
           h4 {
@@ -225,6 +227,10 @@ export default {
             }
             .card-side.back {
               transform: rotateY(-180deg);
+              .learn-more {
+                cursor: pointer;
+                color: #00ffa4;
+              }
             }
             &:hover .card-side.front {
               transform: rotateY(180deg);

@@ -16,19 +16,18 @@
           :key="index"
           :class="['card', prize.specialClass]"
         >
-          <div class="card-side front">
+          <div class="card-side back">
             <div class="texts">
-              <h4 class="prizeName" v-html="prize.name">{{}}</h4>
-              <p class="prizeDescription">{{ prize.details }}</p>
+              <p class="prizeDescription" v-html="prize.details">{{}}</p>
             </div>
           </div>
-          <div class="card-side back">
+          <div class="card-side front">
             <div class="image">
               <img :src="prize.image" :alt="prize.name" class="prizeImage1" />
             </div>
-            <p>
-              <span v-html="prize.description">{{}}</span>
-            </p>
+            <div class="texts">
+              <h4 class="prizeName" v-html="prize.name">{{}}</h4>
+            </div>
           </div>
         </div>
       </div>
@@ -53,14 +52,14 @@ export default {
           description:
             "Grove Beginner Kit, with an embedded Arduino compatible board",
           details:
-            "Using your preferred hardware or hardware emulator, build a hack for your chance to win a Grove Beginner Kit, with an embedded Arduino compatible board. 1 prize for each winning team member with 2 winning teams per event!",
+            "Using your preferred hardware or hardware emulator, build a hack for your chance to win a <b>Grove Beginner Kit, with an embedded Arduino compatible board</b>. 1 prize for each winning team member with 2 winning teams per event!",
         },
         {
-          name: "Best Use of Linode",
-          image: require("~/assets/Sponsors/mlh.svg"),
-          description: "Raspberry Pi 4 Starter Kit",
+          name: "Best Use of Jina",
+          image: require("~/assets/Prizes/arduino-ml-kit.png"),
+          description: "Arduino Tiny Machine Learning Kits",
           details:
-            "Use any one of Linode's wide array of cloud products and take your hack to the next level! Whether you're looking for data storage, compute power or hosting, Linode has what you need and the complimentary credits to get you started. Sign up and start hacking for your chance to win a Raspberry Pi 4 Starter Kit.",
+            "Jina is an open-source search framework that makes building AI-powered search applications even easier for hackers. Create search functionality that matches all kinds of data, including text, images, video & more! Hack with Jina for a chance to win <b>Arduino Tiny Machine Learning Kits</b> for you and your team!",
         },
         {
           name: "",
@@ -68,19 +67,19 @@ export default {
           specialClass: "hidden",
         },
         {
+          name: "Best Use of Linode",
+          image: require("~/assets/Sponsors/mlh.svg"),
+          description: "Raspberry Pi 4 Starter Kit",
+          details:
+            "Use any one of Linode's wide array of cloud products and take your hack to the next level! Whether you're looking for data storage, compute power or hosting, Linode has what you need and the complimentary credits to get you started. Sign up and start hacking for your chance to win a <b>Raspberry Pi 4 Starter Kit</b>.",
+        },
+        {
           name: "Best Domain Name from GoDaddy Registry",
           image: require("~/assets/Sponsors/mlh.svg"),
           description:
             "Hack from Home Kit: Wireless Earbuds, Blue Light Glasses, Selfie Ring Light, Pouch for easy transport.",
           details:
-            "GoDaddy Registry is giving you everything you need to be the best hacker no matter where you are. Register your domain name with GoDaddy Registry for a chance to win a Hack from Home Kit! Each Kit contains wireless earbuds, blue light glasses, selfie ring light and a pouch for easy transport.",
-        },
-        {
-          name: "Best Use of Jina",
-          image: require("~/assets/Prizes/arduino-ml-kit.png"),
-          description: "Arduino Tiny Machine Learning Kits",
-          details:
-            "Jina is an open-source search framework that makes building AI-powered search applications even easier for hackers. Create search functionality that matches all kinds of data, including text, images, video & more! Hack with Jina for a chance to win Arduino Tiny Machine Learning Kits for you and your team!",
+            "GoDaddy Registry is giving you everything you need to be the best hacker no matter where you are. Register your domain name with GoDaddy Registry for a chance to win a <b>Hack from Home Kit!</b> Each Kit contains wireless earbuds, blue light glasses, selfie ring light and a pouch for easy transport.",
         },
       ],
     };
@@ -147,6 +146,7 @@ export default {
 
       img {
         width: 110px;
+        border-radius: 10px;
       }
 
       h1 {

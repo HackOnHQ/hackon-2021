@@ -13,13 +13,10 @@
         </div>
         <div v-for="(prize, index) in magicLabPrizes" :key="index">
           <div class="card">
-            <div class="card-side front">
-              <div class="texts">
-                <h4 class="prizeName">{{ prize.name }}</h4>
-                <p class="prizeDescription">{{ prize.details }}</p>
-              </div>
-            </div>
             <div class="card-side back">
+              <p class="prizeDescription" v-html="prize.details">{{}}</p>
+            </div>
+            <div class="card-side front">
               <div class="image">
                 <img
                   :src="prize.image1"
@@ -32,9 +29,9 @@
                   class="prizeImage2"
                 />
               </div>
-              <p v-for="(para, index) in prize.description" :key="index">
-                <span v-html="para">{{}}</span>
-              </p>
+              <div class="texts">
+                <h4 class="prizeName">{{ prize.name }}</h4>
+              </div>
             </div>
           </div>
         </div>
@@ -57,15 +54,15 @@ export default {
           name: "Best GraphCMS Project",
           image1: require("~/assets/Prizes/7500-amazon.svg"),
           image2: require("~/assets/Prizes/amazon.png"),
-          details: "The best hack built using GraphCMS",
-          description: ["Amazon Voucher worth ₹7500"],
+          details:
+            "The best hack built using GraphCMS will win an <b>Amazon Voucher worth ₹7500</b>",
         },
         {
           name: "Best GraphQL Project",
           image1: require("~/assets/Prizes/5000-amazon.svg"),
           image2: require("~/assets/Prizes/amazon.png"),
-          details: "The best hack that implements GraphQL",
-          description: ["Amazon Voucher worth ₹5000"],
+          details:
+            "The best hack that implements GraphQL will win an <b>Amazon Voucher worth ₹7500</b>",
         },
       ],
     };
@@ -136,6 +133,7 @@ export default {
 
       img {
         width: 110px;
+        border-radius: 10px;
       }
 
       h1 {

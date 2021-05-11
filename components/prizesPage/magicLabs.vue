@@ -15,15 +15,12 @@
           <div class="card">
             <div class="card-side front">
               <div class="texts">
+                <img :src="prize.image" :alt="prize.name" class="prizeImage" />
                 <h4 class="prizeName">{{ prize.name }}</h4>
-                <p class="prizeDescription">{{ prize.details }}</p>
               </div>
             </div>
             <div class="card-side back">
-              <img :src="prize.image" :alt="prize.name" class="prizeImage" />
-              <p v-for="(para, index) in prize.description" :key="index">
-                <span v-html="para">{{}}</span>
-              </p>
+              <p class="prizeDescription" v-html="prize.details">{{}}</p>
             </div>
           </div>
         </div>
@@ -45,29 +42,20 @@ export default {
         {
           name: "Build With Magic: Winner",
           image: require("~/assets/Prizes/HomepodMini.png"),
-          details: "The best hack built using Magic",
-          description: [
-            "Apple HomePod mini",
-            "(Prizes are subject to review by Magic)",
-          ],
+          details:
+            "The best hack built using Magic will win <b>Apple HomePod Mini</b><br/><br/>(Prizes are subject to review by Magic)",
         },
         {
           name: "Build With Magic: First Runners-Up",
           image: require("~/assets/Prizes/Yubikey5NFC.png"),
-          details: "The 2nd best hack built using Magic",
-          description: [
-            "Yubikey 5 NFC",
-            "(Prizes are subject to review by Magic)",
-          ],
+          details:
+            "The 2nd best hack built using Magic will win <b>Yubikey 5 NFC</b><br/><br/>(Prizes are subject to review by Magic)",
         },
         {
           name: "Build With Magic: Second Runners-Up",
           image: require("~/assets/Prizes/SecurityKeyNFC.png"),
-          details: "The 3rd best hack built using Magic",
-          description: [
-            "Security Key NFC by Yubico",
-            "(Prizes are subject to review by Magic)",
-          ],
+          details:
+            "The 3rd best hack built using Magic will win <b>Security Key NFC by Yubico</b><br/><br/>(Prizes are subject to review by Magic)",
         },
       ],
     };
@@ -164,12 +152,14 @@ export default {
         color: white;
         background-color: var(--color-secondary);
       }
-      .card-side.back {
-        transform: rotateY(-180deg);
+      .card-side.front {
         img {
           margin: 16px auto;
           width: 50%;
         }
+      }
+      .card-side.back {
+        transform: rotateY(-180deg);
       }
       &:hover .card-side.front {
         transform: rotateY(180deg);
