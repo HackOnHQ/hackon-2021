@@ -71,7 +71,7 @@ export default {
           details:
             "The best hack built using the SAWO Labs API <br/> <br/> ● $100 Prize to winning team <br/> ● Feature in our Blogs & Articles<br/>● 1-month Free Inaugurate Tier access<br/>And much more...",
           description: [
-            "● SAWO funds 100% of the Play Store / App Store subscription fee for the best mobile apps.",
+            "● SAWO funds 100% of the Play / App Store subscription fee for the best mobile apps.",
             "● SAWO funds 100% of the hosting fee for the best web-apps",
             "● For extra special products - Special opportunity to pitch your hack to VCs and Investors in SAWO’s Pitch Day Hack",
           ],

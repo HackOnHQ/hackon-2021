@@ -25,12 +25,6 @@
                 <span v-html="para">{{}}</span>
               </p>
             </div>
-            <!-- <div class="image">
-            </div>
-            <div class="texts">
-              <h4 class="prizeName">{{ prize.name }}</h4>
-              <p class="prizeDescription">{{ prize.description }}</p>
-            </div> -->
           </div>
         </div>
       </div>
