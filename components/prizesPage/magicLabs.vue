@@ -48,7 +48,7 @@ export default {
           details: "The best hack built using Magic",
           description: [
             "Apple HomePod mini",
-            "(Prizes are subject to review by Magic Labs)",
+            "(Prizes are subject to review by Magic)",
           ],
         },
         {
@@ -57,7 +57,7 @@ export default {
           details: "The 2nd best hack built using Magic",
           description: [
             "Yubikey 5 NFC",
-            "(Prizes are subject to review by Magic Labs)",
+            "(Prizes are subject to review by Magic)",
           ],
         },
         {
@@ -66,7 +66,7 @@ export default {
           details: "The 3rd best hack built using Magic",
           description: [
             "Security Key NFC by Yubico",
-            "(Prizes are subject to review by Magic Labs)",
+            "(Prizes are subject to review by Magic)",
           ],
         },
       ],
