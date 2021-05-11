@@ -108,11 +108,12 @@ export default {
   }
 
   .logo {
-    width: 95%;
-    padding: 2rem 1rem;
+    width: 50%;
+    padding: 1rem 1rem;
     align-content: center;
     margin: 0 auto;
     img {
+    border-radius: 10%;
       margin-left: auto;
       margin-right: auto;
       display: block;
