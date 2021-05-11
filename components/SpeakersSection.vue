@@ -100,31 +100,13 @@ export default {
           url: "https://twitter.com/mdsbzalam",
           picture: require("~/assets/Speakers/Mohammad-Shahbaz-Alam.png"),
           companyLogo: require("~/assets/magic.svg"),
-          company: "Magic Labs"
+          company: "Magic",
         },
         {
-          name: "Praveen Kumar",
-          description: "Judge and MERN Stack Mentor",
-          url: "https://www.linkedin.com/in/praveentech/",
-          picture: require("~/assets/Judges/praveen.png")
-        },
-        {
-          name: "Jai Dewani",
-          description: "Judge and FullStack Development Mentor",
-          url: "https://twitter.com/jai_dewani",
-          picture: require("~/assets/Judges/jai.jpg")
-        },
-        {
-          name: "Anush Krishna",
-          description: "Judge and Quantum Computing Mentor",
-          url: "https://twitter.com/Anush_krishna_v",
-          picture: require("~/assets/Judges/anush.png")
-        },
-        {
-          name: "Vedant Khairnar",
-          description: "Judge and ML/AI Mentor",
-          url: "https://twitter.com/VedantKhairnar3",
-          picture: require("~/assets/Judges/vedant.jpg")
+          name: "Santosh Yadav",
+          description: "Judge",
+          url: "https://twitter.com/SantoshYadavDev",
+          picture: require("~/assets/Judges/santosh.png")
         },
         {
           name: "Seema Saharan",
@@ -139,16 +121,34 @@ export default {
           picture: require("~/assets/Judges/aanchal.jpg")
         },
         {
-          name: "Santosh Yadav",
-          description: "Judge",
-          url: "https://twitter.com/SantoshYadavDev",
-          picture: require("~/assets/Judges/santosh.png")
-        },
-        {
           name: "Rishit Dagli",
           description: "Judge",
           url: "https://twitter.com/rishit_dagli",
           picture: require("~/assets/Judges/rishit.png")
+        },
+        {
+          name: "Praveen Kumar",
+          description: "Judge and MERN Stack Mentor",
+          url: "https://www.linkedin.com/in/praveentech/",
+          picture: require("~/assets/Judges/praveen.png")
+        },
+        {
+          name: "Anush Krishna",
+          description: "Judge and Quantum Computing Mentor",
+          url: "https://twitter.com/Anush_krishna_v",
+          picture: require("~/assets/Judges/anush.png")
+        },
+        {
+          name: "Vedant Khairnar",
+          description: "Judge and ML/AI Mentor",
+          url: "https://twitter.com/VedantKhairnar3",
+          picture: require("~/assets/Judges/vedant.jpg")
+        },
+        {
+          name: "Jai Dewani",
+          description: "Judge and FullStack Development Mentor",
+          url: "https://twitter.com/jai_dewani",
+          picture: require("~/assets/Judges/jai.jpg")
         },
         {
           name: "Vitalii Honcharuk",

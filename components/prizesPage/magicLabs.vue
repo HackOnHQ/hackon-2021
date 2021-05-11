@@ -9,7 +9,7 @@
         />
         <div class="company">
           <img src="~/assets/Prizes/magicLogo.svg" alt="magic logo" />
-          <h1>Magic Labs</h1>
+          <h1>Magic</h1>
         </div>
         <div v-for="(prize, index) in magicLabPrizes" :key="index">
           <div class="card">
