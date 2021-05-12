@@ -123,6 +123,22 @@ export default {
         {
           image: require("~/assets/Community/CodeChef-VIT.png"),
           url: "https://twitter.com/codechefvit"
+        },
+        {
+          image: require("~/assets/Community/DSC LPU.png"),
+          url: "https://dsc.community.dev/lovely-professional-university/"
+        },
+        {
+          image: require("~/assets/Community/ISTE SRM.png"),
+          url: "https://www.linkedin.com/in/istesrmncr/"
+        },
+        {
+          image: require("~/assets/Community/FrostHack.png"),
+          url: "http://www.frosthack.com/"
+        },
+        {
+          image: require("~/assets/Community/Dphi.png"),
+          url: "https://dphi.tech/"
         }
       ]
     };
