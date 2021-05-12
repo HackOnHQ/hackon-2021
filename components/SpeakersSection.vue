@@ -79,20 +79,20 @@ export default {
           company: "MLH",
         },
         {
-          name: "Mara Hart",
-          description: "Returning Software Engineer Intern",
-          url: "https://linkedin.com/in/maralihart",
-          picture: require("~/assets/Speakers/Mara.jpg"),
-          companyLogo: require("~/assets/microsoft.svg"),
-          company: "Microsoft",
-        },
-        {
           name: "Juan Pablo Flores Cortés",
           description: "Program Manager",
           url: "https://twitter.com/juanpflores_",
           picture: require("~/assets/Speakers/Juan-Pablo.png"),
           companyLogo: require("~/assets/Sponsors/github.svg"),
           company: "GitHub",
+        },
+        {
+          name: "Mara Hart",
+          description: "Returning Software Engineer Intern",
+          url: "https://linkedin.com/in/maralihart",
+          picture: require("~/assets/Speakers/Mara.jpg"),
+          companyLogo: require("~/assets/microsoft.svg"),
+          company: "Microsoft",
         },
         {
           name: "Shivay Lamba",
