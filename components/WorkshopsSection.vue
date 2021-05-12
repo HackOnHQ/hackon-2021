@@ -113,22 +113,9 @@ export default {
           },
         },
         {
-          name: "How to Create a Discord Bot and Host It 24/7 for Free!",
-          about: "",
-          date: "21/05/2021",
-          time: "8:00 PM",
-          url: "",
-          speaker: {
-            name: "Mara Hart",
-            designation: "Returning Software Engineer Intern, Microsoft",
-            about: "",
-            picture: require("~/assets/Speakers/Mara.jpg"),
-          },
-        },
-        {
           name: "AMA",
           about: "",
-          date: "22/05/2021",
+          date: "21/05/2021",
           time: "8:00 PM",
           url: "",
           speaker: {
@@ -136,6 +123,19 @@ export default {
             designation: "Program Manager, GitHub",
             about: "",
             picture: require("~/assets/Speakers/Juan-Pablo.png"),
+          },
+        },
+        {
+          name: "How to Create a Discord Bot and Host It 24/7 for Free!",
+          about: "",
+          date: "22/05/2021",
+          time: "8:00 PM",
+          url: "",
+          speaker: {
+            name: "Mara Hart",
+            designation: "Returning Software Engineer Intern, Microsoft",
+            about: "",
+            picture: require("~/assets/Speakers/Mara.jpg"),
           },
         },
         {
