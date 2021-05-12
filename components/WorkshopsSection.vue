@@ -113,6 +113,19 @@ export default {
           },
         },
         {
+          name: "How to Create a Discord Bot and Host It 24/7 for Free!",
+          about: "",
+          date: "21/05/2021",
+          time: "8:00 PM",
+          url: "",
+          speaker: {
+            name: "Mara Hart",
+            designation: "Returning Software Engineer Intern, Microsoft",
+            about: "",
+            picture: require("~/assets/Speakers/Mara.jpg"),
+          },
+        },
+        {
           name: "AMA",
           about: "",
           date: "22/05/2021",
@@ -123,6 +136,19 @@ export default {
             designation: "Program Manager, GitHub",
             about: "",
             picture: require("~/assets/Speakers/Juan-Pablo.png"),
+          },
+        },
+        {
+          name: "Introduction to Tensorflow and Tensorflow.js",
+          about: "",
+          date: "23/05/2021",
+          time: "8:00 PM",
+          url: "",
+          speaker: {
+            name: "Shivay Lamba",
+            designation: "Google Summer of Code Mentor @ Tensorflow",
+            about: "",
+            picture: require("~/assets/Speakers/Shivay.jpg"),
           },
         },
         {
@@ -151,7 +177,6 @@ export default {
             picture: require("~/assets/Speakers/Eddie.jpg"),
           },
         },
-        
         {
           name: "Who's who in Azure AI",
           about: "",
@@ -173,7 +198,7 @@ export default {
           url: "",
           speaker: {
             name: "Mohammad Shahbaz Alam",
-            designation: "Developer Advocate, Magic Labs",
+            designation: "Developer Advocate, Magic",
             about: "",
             picture: require("~/assets/Speakers/Mohammad-Shahbaz-Alam.png"),
           },

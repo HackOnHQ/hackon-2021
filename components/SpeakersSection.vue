@@ -79,12 +79,28 @@ export default {
           company: "MLH",
         },
         {
+          name: "Mara Hart",
+          description: "Returning Software Engineer Intern",
+          url: "https://linkedin.com/in/maralihart",
+          picture: require("~/assets/Speakers/Mara.jpg"),
+          companyLogo: require("~/assets/microsoft.svg"),
+          company: "Microsoft",
+        },
+        {
           name: "Juan Pablo Flores Cortés",
           description: "Program Manager",
           url: "https://twitter.com/juanpflores_",
           picture: require("~/assets/Speakers/Juan-Pablo.png"),
           companyLogo: require("~/assets/Sponsors/github.svg"),
           company: "GitHub",
+        },
+        {
+          name: "Shivay Lamba",
+          description: "Google Summer of Code Mentor",
+          url: "https://www.linkedin.com/in/shivaylamba/",
+          picture: require("~/assets/Speakers/Shivay.jpg"),
+          companyLogo: require("~/assets/tensorflow.svg"),
+          company: "Tensorflow",
         },
         {
           name: "Ranjoy Sen",
@@ -114,7 +130,7 @@ export default {
           url: "https://twitter.com/mdsbzalam",
           picture: require("~/assets/Speakers/Mohammad-Shahbaz-Alam.png"),
           companyLogo: require("~/assets/magic.svg"),
-          company: "Magic Labs",
+          company: "Magic",
         },
         {
           name: "Santosh Yadav",
