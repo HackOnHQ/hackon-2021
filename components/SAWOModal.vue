@@ -30,7 +30,7 @@ export default {
           <br />
           <div class="content">
             HackOn Foundation is excited to announce SAWO Labs as our
-            <span style="color: #f1c232">Gold Sponsor</span>!
+            <span style="color: #B9BBC1">Silver Sponsor</span>!
             <br />
             <br />
             SAWO Labs will provide the following prizes for the best hack built
