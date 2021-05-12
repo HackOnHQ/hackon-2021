@@ -4,11 +4,7 @@
       <div class="sponsoredPrizes">
         <div class="cardGrid">
           <div v-for="(prize, index) in sponsoredPrizes" :key="index">
-            <div
-              class="card"
-              v-bind:class="[prize.polygon ? 'clickable' : '']"
-              @click="showModal(prize.polygon)"
-            >
+            <div class="card">
               <img
                 :class="['background', prize.name]"
                 :src="prize.background"
@@ -19,20 +15,36 @@
                 <h4>{{ prize.name }}</h4>
               </div>
               <div class="details">
-                <img v-if="prize.detailImage" :src="prize.detailImage" />
-                <h4>
-                  {{ prize.heading }}
-                </h4>
-                <p v-for="(para, index) in prize.description" :key="index">
-                  {{ para }}
-                </p>
+                <div class="inner">
+                  <div class="card-side front">
+                    <h4>
+                      {{ prize.heading }}
+                    </h4>
+                    <p>
+                      <span v-html="prize.details">{{}}</span>
+                    </p>
+                  </div>
+                  <div class="card-side back">
+                    <img v-if="prize.detailImage" :src="prize.detailImage" />
+                    <span
+                      v-for="(para, index) in prize.description"
+                      :key="index"
+                    >
+                      <span v-html="para">{{}}</span>
+                    </span>
+                    <span class="learn-more" @click="showModal(prize.name)">
+                      Learn More
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <PolygonModal v-show="isModalVisible" @close="closeModal()" />
+    <PolygonModal v-show="isPolygonModalVisible" @close="closeModal()" />
+    <SAWOModal v-show="isSAWOModalVisible" @close="closeModal()" />
   </Container>
 </template>
 
@@ -40,27 +52,29 @@
 import Container from "~/components/Container";
 import SubHashHeader from "~/components/SubHashHeader";
 import PolygonModal from "~/components/PolygonModal";
+import SAWOModal from "~/components/SAWOModal";
 
 export default {
   components: {
     Container,
     SubHashHeader,
     PolygonModal,
+    SAWOModal,
   },
   data() {
     return {
-      isModalVisible: false,
+      isPolygonModalVisible: false,
+      isSAWOModalVisible: false,
       sponsoredPrizes: [
         {
           name: "SAWO Labs",
+          detailImage: require("~/assets/Prizes/100-usd.svg"),
           background: require("~/assets/Prizes/sawoTransparent.png"),
           logo: require("~/assets/Prizes/sawo.png"),
           heading: "Best use of SAWO",
-          description: [
-            "● $100 Prize to winning team",
-            "● SAWO funds 100% of the Play Store / App Store subscription fee for the best mobile apps.",
-            "And.. many more",
-          ],
+          details:
+            "The best hack built using the SAWO Labs API",
+          description: ["$100 Prize to winning team"],
         },
         {
           name: "Polygon",
@@ -68,22 +82,27 @@ export default {
           background: require("~/assets/Prizes/polygonTransparent.png"),
           logo: require("~/assets/Prizes/polygon.png"),
           heading: "Best Hack Built On Polygon",
-          description: [
+          details:
             "The best hack built using Polygon Technology (previously Matic Network)",
-          ],
+          description: ["₹5000 Prize to winning team"],
           polygon: true,
         },
       ],
     };
   },
   methods: {
-    showModal(isPolygon) {
-      if (!isPolygon) return;
-      this.isModalVisible = true;
-      document.querySelector("body").style.overflow = "hidden";
+    showModal(prizeName) {
+      if (prizeName === "Polygon") {
+        this.isPolygonModalVisible = true;
+        document.querySelector("body").style.overflow = "hidden";
+      } else if (prizeName === "SAWO Labs") {
+        this.isSAWOModalVisible = true;
+        document.querySelector("body").style.overflow = "hidden";
+      }
     },
     closeModal() {
-      this.isModalVisible = false;
+      this.isPolygonModalVisible = false;
+      this.isSAWOModalVisible = false;
       document.querySelector("body").style.overflow = "initial";
     },
   },
@@ -124,7 +143,7 @@ export default {
         position: relative;
         border-radius: 10px;
         display: flex;
-        min-height: 400px;
+        min-height: 350px;
         padding: 20px;
         overflow: hidden;
 
@@ -138,7 +157,8 @@ export default {
           top: 50%;
           transform: translateY(-50%);
 
-          &.SAWO, &.Polygon {
+          &.SAWO,
+          &.Polygon {
             height: 80%;
           }
 
@@ -167,6 +187,7 @@ export default {
 
           img {
             width: 120px;
+            border-radius: 10px;
           }
 
           h4 {
@@ -178,27 +199,56 @@ export default {
 
         .details {
           position: absolute;
-          background-color: #0c0d21e7;
-          padding: 20px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
           min-height: calc(100% - 80px);
           text-align: center;
           border-radius: 10px;
           right: 30px;
-          width: 50%;
+          width: 56%;
+
+          .inner {
+            position: relative;
+            min-height: 350px;
+            @media (max-width: 580px) {
+              width: 96%;
+            }
+            .card-side {
+              width: 100%;
+              border-radius: 15px;
+              transition: all 0.8s ease;
+              backface-visibility: hidden;
+              position: absolute;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              padding: 0.5rem;
+              min-height: 95%;
+              color: white;
+              background-color: var(--color-secondary);
+            }
+            .card-side.back {
+              transform: rotateY(-180deg);
+              .learn-more {
+                cursor: pointer;
+                color: #00ffa4;
+              }
+            }
+            &:hover .card-side.front {
+              transform: rotateY(180deg);
+            }
+            &:hover .card-side.back {
+              transform: rotateY(0deg);
+            }
+          }
 
           @include respond-below(xs) {
             position: unset;
             width: unset;
             right: unset;
-            background-color: #0c0d21;
           }
 
           img {
             width: 70%;
-            margin: 30px auto 50px auto;
+            margin: 16px auto;
           }
 
           h4 {
