@@ -65,7 +65,7 @@ export default {
           about: "",
           date: "23/04/2021",
           time: "8:30 PM",
-          url: "",
+          url: "https://www.youtube.com/watch?v=dAF59I5nLvw",
           speaker: {
             name: "Logan Kilpatrick",
             designation: "Community Manager, The Julia Language",
@@ -78,7 +78,7 @@ export default {
           about: "",
           date: "01/05/2021",
           time: "8:00 PM",
-          url: "",
+          url: "https://www.youtube.com/watch?v=Y3AzcxLsqyQ",
           speaker: {
             name: "Ali Mustufa Shaikh",
             designation: "Student Community Manager, Postman",
@@ -91,7 +91,7 @@ export default {
           about: "",
           date: "09/05/2021",
           time: "8:00 PM",
-          url: "",
+          url: "https://www.youtube.com/watch?v=LkxPhTdSvX0",
           speaker: {
             name: "Haimantika Mitra",
             designation: "Support Engineer Intern at Microsoft",

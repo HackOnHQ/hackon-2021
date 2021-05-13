@@ -55,7 +55,7 @@ export default {
             {{ workshop.speaker.about }}
           </div>
         </section>
-        <!-- <footer class="modal-footer">
+        <footer v-if="workshop.url" class="modal-footer">
           <slot name="footer">
             <a :href="workshop.url" rel="noopener noreferrer" target="_blank">
               <button type="button" class="btn-green" aria-label="Close modal">
@@ -64,7 +64,7 @@ export default {
               </button>
             </a>
           </slot>
-        </footer> -->
+        </footer>
       </div>
     </div>
   </transition>
