@@ -133,6 +133,12 @@ export default {
           company: "Magic",
         },
         {
+          name: "Kathita",
+          description: "Judge",
+          url: "https://www.linkedin.com/in/kathita",
+          picture: require("~/assets/Judges/Kathita.jpeg"),
+        },
+        {
           name: "Santosh Yadav",
           description: "Judge",
           url: "https://twitter.com/SantoshYadavDev",
@@ -209,6 +215,12 @@ export default {
           description: "Judge",
           url: "https://www.linkedin.com/in/reshuldani/",
           picture: require("~/assets/Judges/reshul.jpeg"),
+        },
+        {
+          name: "Gaurav Rawal",
+          description: "Judge",
+          url: "https://www.twitter.com/iamgrawal",
+          picture: require("~/assets/Judges/Gaurav.jpeg"),
         },
         {
           name: "Kartikey Rawat",
