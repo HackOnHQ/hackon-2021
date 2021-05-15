@@ -120,7 +120,7 @@ export default {
           url: "",
           speaker: {
             name: "Wilson Wang",
-            designation: "",
+            designation: "Engineer Intern, OpenText",
             about: "",
             picture: require("~/assets/Speakers/Wilson-Wang.jpeg"),
           },

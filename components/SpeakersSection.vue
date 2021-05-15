@@ -80,9 +80,11 @@ export default {
         },
         {
           name: "Wilson Wang",
-          description: "",
+          description: "Engineer Intern",
           url: "https://www.linkedin.com/in/fengchi-w-b30a65132/",
           picture: require("~/assets/Speakers/Wilson-Wang.jpeg"),
+          companyLogo: require("~/assets/opentext.svg"),
+          company: "OpenText",
         },
         {
           name: "Bowen Sun",
