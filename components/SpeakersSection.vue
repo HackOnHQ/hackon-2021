@@ -87,7 +87,7 @@ export default {
         {
           name: "Bowen Sun",
           description: "",
-          url: "linkedin.com/in/bowen-s/",
+          url: "https://www.linkedin.com/in/bowen-s/",
           picture: require("~/assets/Speakers/Bowen-Sun.jpg"),
         },
         {
