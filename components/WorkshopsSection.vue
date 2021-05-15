@@ -132,7 +132,7 @@ export default {
           time: "8:00 PM",
           url: "",
           speaker: {
-          name: "Bowen Sun",
+            name: "Bowen Sun",
             designation: "",
             about: "",
             picture: require("~/assets/Speakers/Bowen-Sun.jpg"),
