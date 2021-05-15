@@ -79,6 +79,18 @@ export default {
           company: "MLH",
         },
         {
+          name: "Wilson Wang",
+          description: "",
+          url: "https://www.linkedin.com/in/fengchi-w-b30a65132/",
+          picture: require("~/assets/Speakers/Wilson-Wang.jpeg"),
+        },
+        {
+          name: "Bowen Sun",
+          description: "",
+          url: "linkedin.com/in/bowen-s/",
+          picture: require("~/assets/Speakers/Bowen-Sun.jpg"),
+        },
+        {
           name: "Juan Pablo Flores Cortés",
           description: "Program Manager",
           url: "https://twitter.com/juanpflores_",

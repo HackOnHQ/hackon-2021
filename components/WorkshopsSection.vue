@@ -113,6 +113,32 @@ export default {
           },
         },
         {
+          name: "Intro to Full Stack Web Development",
+          about: "",
+          date: "16/05/2021",
+          time: "8:00 PM",
+          url: "",
+          speaker: {
+            name: "Wilson Wang",
+            designation: "",
+            about: "",
+            picture: require("~/assets/Speakers/Wilson-Wang.jpeg"),
+          },
+        },
+        {
+          name: "Intro to Full Stack Web Development",
+          about: "",
+          date: "16/05/2021",
+          time: "8:00 PM",
+          url: "",
+          speaker: {
+          name: "Bowen Sun",
+            designation: "",
+            about: "",
+            picture: require("~/assets/Speakers/Bowen-Sun.jpg"),
+          },
+        },
+        {
           name: "AMA",
           about: "",
           date: "21/05/2021",
