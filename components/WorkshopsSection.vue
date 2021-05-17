@@ -139,6 +139,32 @@ export default {
           },
         },
         {
+          name: "Entreprenuerial Assets (Twitter Spaces)",
+          about: "",
+          date: "18/05/2021",
+          time: "8:00 PM",
+          url: "",
+          speaker: {
+            name: "Galicia Gordon",
+            designation: "Founder, Leading Learners",
+            about: "",
+            picture: require("~/assets/Speakers/Galicia-Gordon.jpg"),
+          },
+        },
+        {
+          name: "Social Media for Devs (Twitter Spaces)",
+          about: "",
+          date: "19/05/2021",
+          time: "8:00 PM",
+          url: "",
+          speaker: {
+            name: "Priyanka Yadav",
+            designation: "Software Engineer Intern, Commvault",
+            about: "",
+            picture: require("~/assets/Speakers/Priyanka.jpg"),
+          },
+        },
+        {
           name: "AMA",
           about: "",
           date: "21/05/2021",

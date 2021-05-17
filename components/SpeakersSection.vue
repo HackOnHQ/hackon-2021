@@ -93,6 +93,21 @@ export default {
           picture: require("~/assets/Speakers/Bowen-Sun.jpg"),
         },
         {
+          name: "Galicia Gordon",
+          description: "Founder, Leading Learners",
+          url: "https://www.linkedin.com/in/galicia-gordon",
+          picture: require("~/assets/Speakers/Galicia-Gordon.jpg"),
+          company: "",
+        },
+        {
+          name: "Priyanka Yadav",
+          description: "Software Engineer Intern",
+          url: "https://twitter.com/Priyanka__488",
+          picture: require("~/assets/Speakers/Priyanka.jpg"),
+          companyLogo: require("~/assets/commvault.svg"),
+          company: "Commvault",
+        },
+        {
           name: "Juan Pablo Flores Cortés",
           description: "Program Manager",
           url: "https://twitter.com/juanpflores_",
