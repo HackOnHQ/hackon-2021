@@ -32,6 +32,7 @@
         <GraphCMS />
         <MLH />
         <SawoAndPolygon />
+        <Symbl />
       </div>
     </section>
   </Container>
@@ -47,6 +48,7 @@ import MagicLabs from "~/components/prizesPage/magicLabs.vue";
 import SawoAndPolygon from "~/components/prizesPage/SawoAndPolygon.vue";
 import GraphCMS from "~/components/prizesPage/graphCMS.vue";
 import MLH from "~/components/prizesPage/MLH.vue";
+import Symbl from "~/components/prizesPage/Symbl.vue";
 
 export default {
   components: {
@@ -59,6 +61,7 @@ export default {
     SawoAndPolygon,
     GraphCMS,
     MLH,
+    Symbl
   },
   data() {
     return {
@@ -68,28 +71,31 @@ export default {
           image: require("~/assets/Prizes/first.svg"),
           prizeImage: require("~/assets/Prizes/25000.svg"),
           amount: "₹25,000",
-          details: "The team ranked 1st overall at Hack<span style=\"color: #E58AB2\">O</span>n 2.0",
-          description: "₹25000 Prize to winning team",
+          details:
+            'The team ranked 1st overall at Hack<span style="color: #E58AB2">O</span>n 2.0',
+          description: "₹25000 Prize to winning team"
         },
         {
           name: "First Runner-Up (2nd Prize)",
           image: require("~/assets/Prizes/second.svg"),
           prizeImage: require("~/assets/Prizes/15000.svg"),
           amount: "₹15,000",
-          details: "The team ranked 2nd overall at Hack<span style=\"color: #E58AB2\">O</span>n 2.0",
-          description: "₹15000 Prize to winning team",
+          details:
+            'The team ranked 2nd overall at Hack<span style="color: #E58AB2">O</span>n 2.0',
+          description: "₹15000 Prize to winning team"
         },
         {
           name: "2nd Runner-Up (3rd Prize)",
           image: require("~/assets/Prizes/third.svg"),
           prizeImage: require("~/assets/Prizes/10000.svg"),
           amount: "₹10,000",
-          details: "The team ranked 3rd overall at Hack<span style=\"color: #E58AB2\">O</span>n 2.0",
-          description: "₹10000 Prize to winning team",
-        },
-      ],
+          details:
+            'The team ranked 3rd overall at Hack<span style="color: #E58AB2">O</span>n 2.0',
+          description: "₹10000 Prize to winning team"
+        }
+      ]
     };
-  },
+  }
 };
 </script>
 
