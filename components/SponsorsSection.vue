@@ -34,7 +34,7 @@ import HashHeader from "~/components/HashHeader";
 export default {
   components: {
     Container,
-    HashHeader,
+    HashHeader
   },
   data() {
     return {
@@ -44,17 +44,17 @@ export default {
           logos: [
             {
               image: require("~/assets/Sponsors/mlh.svg"),
-              url: "https://mlh.io",
+              url: "https://mlh.io"
             },
             {
               image: require("~/assets/Sponsors/hackerearth.png"),
-              url: "https://hackerearth.com",
+              url: "https://hackerearth.com"
             },
             {
               image: require("~/assets/Sponsors/raahee.png"),
-              url: "https://raahee.in",
-            },
-          ],
+              url: "https://raahee.in"
+            }
+          ]
         },
         {
           type: "Diamond Sponsors",
@@ -63,13 +63,13 @@ export default {
             {
               image: require("~/assets/Sponsors/amagi.svg"),
               url:
-                "https://www.amagi.com/?utm_campaign=HackOnHackathon&utm_medium=Website&utm_source=Brandings",
+                "https://www.amagi.com/?utm_campaign=HackOnHackathon&utm_medium=Website&utm_source=Brandings"
             },
             {
               image: require("~/assets/Sponsors/google-cloud.svg"),
-              url: "https://cloud.google.com",
-            },
-          ],
+              url: "https://cloud.google.com"
+            }
+          ]
         },
         {
           type: "Platinum Sponsors",
@@ -77,17 +77,17 @@ export default {
           logos: [
             {
               image: require("~/assets/Sponsors/elastic.svg"),
-              url: "https://www.elastic.co",
+              url: "https://www.elastic.co"
             },
             {
               image: require("~/assets/Sponsors/Auth0.png"),
-              url: "https://a0.to/Hackon",
+              url: "https://a0.to/Hackon"
             },
             {
               image: require("~/assets/Sponsors/Magic.png"),
-              url: "https://magic.link/",
-            },
-          ],
+              url: "https://magic.link/"
+            }
+          ]
         },
         {
           type: "Gold Sponsors",
@@ -95,25 +95,25 @@ export default {
           logos: [
             {
               image: require("~/assets/Sponsors/wazirx.png"),
-              url: "https://wazirx.com",
+              url: "https://wazirx.com"
             },
             {
               image: require("~/assets/Sponsors/quickNode.png"),
-              url: "https://www.quiknode.io/",
+              url: "https://www.quiknode.io/"
             },
             {
               image: require("~/assets/Sponsors/github.svg"),
-              url: "https://github.com",
+              url: "https://github.com"
             },
             {
               image: require("~/assets/Sponsors/digitalocean.svg"),
-              url: "https://digitalocean.com",
+              url: "https://digitalocean.com"
             },
             {
               image: require("~/assets/Sponsors/stickermule.svg"),
-              url: "http://hackp.ac/mlh-stickermule-hackathons",
-            },
-          ],
+              url: "http://hackp.ac/mlh-stickermule-hackathons"
+            }
+          ]
         },
         {
           type: "Silver Sponsors",
@@ -121,12 +121,12 @@ export default {
           logos: [
             {
               image: require("~/assets/Sponsors/GraphCMS.png"),
-              url: "https://graphcms.com/",
+              url: "https://graphcms.com/"
             },
             {
               image: require("~/assets/Sponsors/sawolabs.png"),
               url:
-                "https://sawolabs.com/?utm_source=hacakthon&utm_medium=hackon&utm_campaign=HackPartner",
+                "https://sawolabs.com/?utm_source=hacakthon&utm_medium=hackon&utm_campaign=HackPartner"
             },
             {
               image: require("~/assets/Sponsors/outsystems.svg"),
@@ -141,42 +141,46 @@ export default {
           logos: [
             {
               image: require("~/assets/Sponsors/dottech.svg"),
-              url: "https://get.tech",
+              url: "https://get.tech"
             },
             {
               image: require("~/assets/Sponsors/linode.svg"),
-              url: "https://linode.com",
+              url: "https://linode.com"
             },
             {
               image: require("~/assets/Sponsors/sendgrid.svg"),
-              url: "https://sendgrid.com",
+              url: "https://sendgrid.com"
             },
             {
               image: require("~/assets/Sponsors/polygon.svg"),
-              url: "https://polygon.technology",
+              url: "https://polygon.technology"
             },
             {
               image: require("~/assets/Sponsors/netlify.svg"),
-              url: "https://www.netlify.com",
+              url: "https://www.netlify.com"
             },
             {
               image: require("~/assets/Sponsors/vercel.svg"),
               url:
-                "https://vercel.com/?utm_source=HackOnHackathon&utm_campaign=oss",
+                "https://vercel.com/?utm_source=HackOnHackathon&utm_campaign=oss"
             },
             {
               image: require("~/assets/Sponsors/dev.to.png"),
-              url: "https://dev.to/",
+              url: "https://dev.to/"
             },
             {
               image: require("~/assets/Sponsors/streamYard.png"),
-              url: "https://streamyard.com/",
+              url: "https://streamyard.com/"
             },
-          ],
-        },
-      ],
+            {
+              image: require("~/assets/Sponsors/symbl.png"),
+              url: "https://symbl.ai/"
+            }
+          ]
+        }
+      ]
     };
-  },
+  }
 };
 </script>
 
