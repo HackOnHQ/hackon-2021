@@ -128,6 +128,11 @@ export default {
               url:
                 "https://sawolabs.com/?utm_source=hacakthon&utm_medium=hackon&utm_campaign=HackPartner",
             },
+            {
+              image: require("~/assets/Sponsors/outsystems.svg"),
+              url:
+                "https://www.outsystems.com/",
+            },
           ],
         },
         {

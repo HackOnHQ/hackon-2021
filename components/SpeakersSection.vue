@@ -108,6 +108,14 @@ export default {
           company: "Commvault",
         },
         {
+          name: "Sahil Sen",
+          description: "Developer Advocate",
+          url: "https://twitter.com/sensahil",
+          picture: require("~/assets/Speakers/Sahil-Sen.png"),
+          companyLogo: require("~/assets/quiknode.png"),
+          company: "QuikNode",
+        },
+        {
           name: "Juan Pablo Flores Cortés",
           description: "Program Manager",
           url: "https://twitter.com/juanpflores_",
@@ -152,6 +160,14 @@ export default {
           picture: require("~/assets/Speakers/Stephen-Simon.jpg"),
           companyLogo: require("~/assets/c-sharp-corner.png"),
           company: "C# Corner",
+        },
+        {
+          name: "Yashraj Nayak",
+          description: "Community Growth Manager (APAC)",
+          url: "https://twitter.com/yashrajnayak",
+          picture: require("~/assets/Speakers/Yashraj.jpeg"),
+          companyLogo: require("~/assets/Sponsors/outsystems.svg"),
+          company: "OutSystems",
         },
         {
           name: "Mohammad Shahbaz Alam",

@@ -165,6 +165,19 @@ export default {
           },
         },
         {
+          name: "Web3 Is A Cake With QuikNode",
+          about: "",
+          date: "20/05/2021",
+          time: "6:00 PM",
+          url: "",
+          speaker: {
+            name: "Sahil Sen",
+            designation: "Developer Advocate, QuikNode",
+            about: "",
+            picture: require("~/assets/Speakers/Sahil-Sen.png"),
+          },
+        },
+        {
           name: "AMA",
           about: "",
           date: "21/05/2021",
@@ -240,6 +253,19 @@ export default {
             designation: "Regional Community Director, C# Corner",
             about: "",
             picture: require("~/assets/Speakers/Stephen-Simon.jpg"),
+          },
+        },
+        {
+          name: "How to build apps fast, right, and for the future",
+          about: "",
+          date: "27/05/2021",
+          time: "5:00 PM",
+          url: "",
+          speaker: {
+            name: "Yashraj Nayak",
+            designation: "Community Growth Manager (APAC), OutSystems",
+            about: "",
+            picture: require("~/assets/Speakers/Yashraj.jpeg"),
           },
         },
         {
