@@ -1,5 +1,5 @@
 <template>
-  <div class="home-page">
+  <div class="team-page">
     <Team2021 />
     <Team2020 />
   </div>
@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.home-page {
+.team-page {
   display: flex;
   flex-direction: column;
   min-height: 100%;

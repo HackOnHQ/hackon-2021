@@ -4,26 +4,26 @@
       <div class="navigation-contents">
         <!-- Branding area -->
         <div class="branding">
-          <h1 class="brand-text">
-            HACK<span class="brand-char-o">O</span>N<span class="brand-edition"
-              >2.0</span
-            >
-          </h1>
+          <a href="/"
+            ><h1 class="brand-text">
+              HACK<span class="brand-char-o">O</span>N<span
+                class="brand-edition"
+                >2.0</span
+              >
+            </h1></a
+          >
         </div>
         <!-- Menu area -->
         <div class="menu-area">
           <ul class="nav-links">
             <li>
-              <a href="/">Home</a>
-            </li>
-            <li>
               <a href="/team">Team</a>
             </li>
             <li>
-              <a href="/#about">About</a>
+              <a href="/#speakers">Speakers</a>
             </li>
             <li>
-              <a href="/#speakers">Speakers</a>
+              <a href="/prizes">Prizes</a>
             </li>
             <li>
               <a href="/#workshops">Workshops</a>
@@ -35,10 +35,13 @@
               <a href="/#faq">FAQ</a>
             </li>
           </ul>
-          <a href="https://hackon.hackerearth.com" target="_blank">
-            <button class="cta-button">
-              Register Now
-            </button>
+          <a
+            rel="noopener noreferrer"
+            href="https://hackon.hackerearth.com"
+            class="register-button"
+            target="_blank"
+          >
+            <button class="cta-button">Register Now</button>
           </a>
         </div>
       </div>
@@ -51,14 +54,15 @@ import Container from "~/components/Container";
 
 export default {
   components: {
-    Container
-  }
+    Container,
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .navigation-bar {
   z-index: 99;
+  margin-right: 8em;
   .navigation-contents {
     display: flex;
     flex-direction: row;
@@ -88,7 +92,7 @@ export default {
       align-items: center;
       font-family: "Inter";
 
-      @include respond-below(md) {
+      @include respond-below(sm) {
         display: none;
       }
 
@@ -112,19 +116,24 @@ export default {
         }
       }
 
-      .cta-button {
-        padding: 15px 20px;
-        background: var(--font-color);
-        border: 0;
-        border-radius: 5px;
-        color: var(--color-secondary);
-        font-weight: bold;
-        box-shadow: 0px 10px 20px rgba(40, 129, 245, 0.164);
+      .register-button {
+        @include respond-below(md) {
+          display: none;
+        }
+        .cta-button {
+          padding: 15px 20px;
+          background: var(--font-color);
+          border: 0;
+          border-radius: 5px;
+          color: var(--color-secondary);
+          font-weight: bold;
+          box-shadow: 0px 10px 20px rgba(40, 129, 245, 0.164);
 
-        &:hover {
-          cursor: pointer;
-          background: transparent;
-          color: var(--font-color);
+          &:hover {
+            cursor: pointer;
+            background: transparent;
+            color: var(--font-color);
+          }
         }
       }
     }

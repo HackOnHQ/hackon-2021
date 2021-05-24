@@ -11,8 +11,9 @@
   "dependencies": {
     "@nuxtjs/style-resources": "^1.0.0",
     "core-js": "^3.6.5",
-    "nuxt": "^2.14.6",
-    "nuxt-webfontloader": "^1.1.0"
+    "nuxt": "^2.15.3",
+    "nuxt-webfontloader": "^1.1.0",
+    "vue-typer": "^1.2.0"
   },
   "devDependencies": {
     "node-sass": "^5.0.0",

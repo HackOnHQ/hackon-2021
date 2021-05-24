@@ -1,7 +1,7 @@
 <template>
   <Container id="team2020">
     <section class="content-section">
-      <HashHeader title="Hackon Team 2020" />
+      <HashHeader title="HackOn Team 2020" />
       <div class="contents">
         <div class="team-grid">
           <div
@@ -9,14 +9,18 @@
             :key="index"
             class="team-card"
           >
-          <a :href="teamMember.url" target="_blank">
-            <div class="picture-wrapper">
-              <img :src="teamMember.picture" alt="" class="profile-pic" />
-            </div>
+            <a :href="teamMember.url" target="_blank" rel="noopener noreferrer">
+              <div class="picture-wrapper">
+                <img
+                  :src="teamMember.picture"
+                  alt="profile picture"
+                  class="profile-pic"
+                />
+              </div>
             </a>
             <h4 class="title">{{ teamMember.name }}</h4>
+          </div>
         </div>
-      </div>
       </div>
     </section>
   </Container>
@@ -54,7 +58,7 @@ export default {
         },
         {
           name: "Bhumika",
-          url: "https://twitter.com/bhumika_0311", 
+          url: "https://twitter.com/bhumika_0311",
           picture:
             "https://raw.githubusercontent.com/HackOnHackathon/hackon-2020/master/assets/img/team/bhumika.png"
         },
@@ -128,7 +132,7 @@ export default {
           name: "Shivang",
           url: "https://www.linkedin.com/in/shivang2k/",
           picture:
-            "https://raw.githubusercontent.com/HackOnHackathon/hackon-2020/master/assets/img/team/shivang.png"
+            "https://media-exp1.licdn.com/dms/image/C5103AQG6_aP5V6R5vA/profile-displayphoto-shrink_200_200/0/1582987573486?e=1625702400&v=beta&t=VbJYYN-A7rkjy73iS93n4lFath-TqWA5JGuszD2xKeg"
         },
         {
           name: "Shivay",

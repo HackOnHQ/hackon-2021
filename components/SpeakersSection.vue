@@ -1,7 +1,7 @@
 <template>
   <Container id="speakers">
     <section class="content-section">
-      <HashHeader title="Past Speakers" />
+      <HashHeader title="Speakers, Judges and Mentors" />
       <div class="contents">
         <div class="speakers-grid">
           <div
@@ -9,13 +9,24 @@
             :key="index"
             class="speakers-card"
           >
-            <a :href="speaker.url" target="_blank">
+            <a :href="speaker.url" target="_blank" rel="noopener noreferrer">
               <div class="picture-wrapper">
-                <img :src="speaker.picture" alt="" class="profile-pic" />
+                <img
+                  :src="speaker.picture"
+                  alt="profile picture"
+                  class="profile-pic"
+                />
               </div>
             </a>
             <h4 class="title">{{ speaker.name }}</h4>
             <p class="description">{{ speaker.description }}</p>
+            <img
+              v-if="speaker.companyLogo"
+              :src="speaker.companyLogo"
+              :title="speaker.company"
+              alt="company logo"
+              class="company-logo"
+            />
           </div>
         </div>
       </div>
@@ -36,220 +47,404 @@ export default {
     return {
       speakers: [
         {
-          name: "Saurabh Jain",
-          description: "Vice President at Paytm",
-          url: "https://www.linkedin.com/in/saurabhskj",
-          picture:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/9727f388b1354367aa6c1d24e81d9280/460.jpeg"
+          name: "Logan Kilpatrick",
+          description: "Community Manager",
+          url: "https://twitter.com/OfficialLoganK",
+          picture: require("~/assets/Speakers/Logan.jpeg"),
+          companyLogo: require("~/assets/julia.svg"),
+          company: "The Julia Language"
         },
         {
-          name: "Juan Pablo Flores",
-          description: "Program Manager at Github Education",
+          name: "Ali Mustufa Shaikh",
+          description: "Student Community Manager",
+          url: "https://twitter.com/ialimustufa",
+          picture: require("~/assets/Speakers/Ali.jpg"),
+          companyLogo: require("~/assets/postman.png"),
+          company: "Postman"
+        },
+        {
+          name: "Haimantika Mitra",
+          description: "Support Engineer Intern",
+          url: "https://twitter.com/HaimantikaM",
+          picture: require("~/assets/Speakers/Haimantika.jpg"),
+          companyLogo: require("~/assets/microsoft.svg"),
+          company: "Microsoft"
+        },
+        {
+          name: "Kunal Kushwaha",
+          description: "MLH Coach",
+          url: "https://twitter.com/kunalstwt",
+          picture: require("~/assets/Speakers/Kunal.jpg"),
+          companyLogo: require("~/assets/Sponsors/mlh.svg"),
+          company: "MLH"
+        },
+        {
+          name: "Wilson Wang",
+          description: "Engineer Intern",
+          url: "https://www.linkedin.com/in/fengchi-w-b30a65132/",
+          picture: require("~/assets/Speakers/Wilson-Wang.jpeg"),
+          companyLogo: require("~/assets/opentext.svg"),
+          company: "OpenText"
+        },
+        {
+          name: "Bowen Sun",
+          description: "",
+          url: "https://www.linkedin.com/in/bowen-s/",
+          picture: require("~/assets/Speakers/Bowen-Sun.jpg")
+        },
+        {
+          name: "Galicia Gordon",
+          description: "Founder, Leading Learners",
+          url: "https://www.linkedin.com/in/galicia-gordon",
+          picture: require("~/assets/Speakers/Galicia-Gordon.jpg"),
+          company: ""
+        },
+        {
+          name: "Priyanka Yadav",
+          description: "Software Engineer Intern",
+          url: "https://twitter.com/Priyanka__488",
+          picture: require("~/assets/Speakers/Priyanka.jpg"),
+          companyLogo: require("~/assets/commvault.svg"),
+          company: "Commvault"
+        },
+        {
+          name: "Sahil Sen",
+          description: "Developer Advocate",
+          url: "https://twitter.com/sensahil",
+          picture: require("~/assets/Speakers/Sahil-Sen.png"),
+          companyLogo: require("~/assets/quiknode.png"),
+          company: "QuikNode",
+        },
+        {
+          name: "Juan Pablo Flores Cortés",
+          description: "Program Manager",
           url: "https://twitter.com/juanpflores_",
-          picture: "https://www.hackjaipur.com/images/speaker/juan.jpg"
+          picture: require("~/assets/Speakers/Juan-Pablo.png"),
+          companyLogo: require("~/assets/Sponsors/github.svg"),
+          company: "GitHub"
         },
         {
-          name: "Dhananjay Kumar",
-          description: "Most Valuable Professional at Microsoft",
-          url: "https://www.linkedin.com/in/dhananjaykumar07",
-          picture:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/519c888869584eefa120edf5e4971e22/652.jpeg"
+          name: "Mara Hart",
+          description: "Returning Software Engineer Intern",
+          url: "https://linkedin.com/in/maralihart",
+          picture: require("~/assets/Speakers/Mara.jpg"),
+          companyLogo: require("~/assets/microsoft.svg"),
+          company: "Microsoft"
         },
         {
-          name: "Saptarshi Prakash",
-          description: "Senior Design Manager at Swiggy",
-          url: "https://twitter.com/saptarshipr",
-          picture:
-            "https://pbs.twimg.com/profile_images/1257372007781425152/tmcdvef7_400x400.jpg"
+          name: "Shivay Lamba",
+          description: "Google Summer of Code Mentor",
+          url: "https://www.linkedin.com/in/shivaylamba/",
+          picture: require("~/assets/Speakers/Shivay.jpg"),
+          companyLogo: require("~/assets/tensorflow.svg"),
+          company: "Tensorflow"
         },
         {
-          name: "Jason Etcovitch",
-          description: "Engineer at Github",
-          url: "https://twitter.com/JasonEtco",
-          picture:
-            "https://pbs.twimg.com/profile_images/922510360153767936/_WjDCeqO_400x400.jpg"
+          name: "Ranjoy Sen",
+          description: "Staff Software Developer",
+          url: "https://www.linkedin.com/in/ranjoysen/",
+          picture: require("~/assets/Speakers/Ranjoy.png"),
+          companyLogo: require("~/assets/collins.png"),
+          company: "Collins Aerospace"
         },
         {
-          name: "Miguel de Andres-Clavera",
-          description: "Senior Product Manager at Google",
-          url: "https://www.linkedin.com/in/deandresclavera",
-          picture:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/dc8b2492ab4e460e88084b84a0ae8ea9/194.jpeg"
+          name: "Eddie Jaoude",
+          description: "GitHub Star of the Year",
+          url: "https://twitter.com/eddiejaoude",
+          picture: require("~/assets/Speakers/Eddie.jpg")
         },
         {
-          name: "Nikita Gandhi",
-          description: "Community Manager at Google",
-          url: "https://twitter.com/Nikkitagandhi",
-          picture:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/503be308d27942c6af30aa665c9e2940/430.png"
-        },
-        {
-          name: "Aviral Aggarwal",
-          description: "Software Development Engineer at Microsoft",
-          url: "https://www.linkedin.com/in/aviral190694",
-          picture:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/64dea866b8304c3fb5a885fb933944f0/594.jpeg"
-        },
-        {
-          name: "Madhav Bahl",
-          description: "Software Engineer at Microsoft",
-          url: "https://twitter.com/MadhavBahlMD",
-          picture:
-            "https://pbs.twimg.com/profile_images/952528304145293317/5ULYwLxb_400x400.jpg"
-        },
-        {
-          name: "Harshit Dwivedi",
-          description: "Google Developer Expert for Firebase at Google",
-          url: "https://www.linkedin.com/in/harshithdwivedi/",
-          picture:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/b4f252c9276743d9a4d8ab5c94b15bff/296.jpeg"
-        },
-        {
-          name: "Kathita Goel",
-          description: "Sr. Product Technology Manager at Google",
-          url: "https://www.linkedin.com/in/kathita/",
-          picture:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/4dd5af545d1346b38a505ca24072fd5e/584.png"
-        },
-        {
-          name: "Aman Sanduja",
-          description: "Co-Founder at Zubi.io",
-          url: "https://twitter.com/AmanSanduja",
-          picture:
-            "https://pbs.twimg.com/profile_images/1334941769117564929/6uAyGQ_h_400x400.jpg"
-        },
-        {
-          name: "Ben Dechrai",
-          description: "Developer Advocate at Auth0",
-          url: "https://www.linkedin.com/in/bendechrai/",
-          picture: "https://www.hackjaipur.com/images/speaker/ben.jpg"
-        },
-        {
-          name: "Ashish Jha",
-          description: "Alexa Community Evangelist at Amazon",
-          url: "https://www.linkedin.com/in/thedreamsaver/",
-          picture:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/206bffde42a244fcbe7b4af44102671c/208.jpeg"
-        },
-        {
-          name: "Jatin Katyal",
-          description: "Product Engineer and Instructor at Coding Blocks",
-          url: "https://www.linkedin.com/in/jatin-katyal-5683bb137/",
-          picture:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/bea23fa33ba74fa589fa2d56b958741a/309.jpeg"
+          name: "Stephen Simon",
+          description: "Regional Community Director",
+          url: "https://twitter.com/codewithsimon",
+          picture: require("~/assets/Speakers/Stephen-Simon.jpg"),
+          companyLogo: require("~/assets/c-sharp-corner.png"),
+          company: "C# Corner"
         },
         {
           name: "Yashraj Nayak",
-          description: "India Community Manager at Progate",
-          url: "https://www.linkedin.com/in/yashrajnayak/",
-          picture:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/7abfc583c97b45acb935881595d95eaf/20.jpeg"
+          description: "Community Growth Manager (APAC)",
+          url: "https://twitter.com/yashrajnayak",
+          picture: require("~/assets/Speakers/Yashraj.jpeg"),
+          companyLogo: require("~/assets/Sponsors/outsystems.svg"),
+          company: "OutSystems",
         },
         {
-          name: "Paige Bailey",
-          description: "Product Manager at Tensorflow",
-          url: "https://www.linkedin.com/in/dynamicwebpaige",
-          picture:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/b2a187edf9fe4a478923ef77c0073e4b/562.jpeg"
+          name: "Mohammad Shahbaz Alam",
+          description: "Developer Advocate",
+          url: "https://twitter.com/mdsbzalam",
+          picture: require("~/assets/Speakers/Mohammad-Shahbaz-Alam.png"),
+          companyLogo: require("~/assets/magic.svg"),
+          company: "Magic"
         },
         {
-          name: "Arnav Gupta",
-          description: "Engineering Lead at Zomato",
-          url: "https://www.linkedin.com/in/arnavgupta",
-          picture:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/de2017b2f5cd44da90dc782b28469487/703.jpeg"
+          name: "Kathita",
+          description: "Judge",
+          url: "https://www.linkedin.com/in/kathita",
+          picture: require("~/assets/Judges/Kathita.jpeg")
         },
         {
-          name: "Arkodyuti Saha",
-          description: "Developer Relations Program Manager at Microsoft",
-          url: "https://www.linkedin.com/in/arkodyutisaha",
-          picture:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/c688634a276f4e7db93de8833a1f5806/482.jpeg"
+          name: "Santosh Yadav",
+          description: "Judge",
+          url: "https://twitter.com/SantoshYadavDev",
+          picture: require("~/assets/Judges/santosh.png")
         },
         {
-          name: "Saurabh Rajpal",
-          description: "Technical Solutions Consultant at Google",
-          url: "https://www.linkedin.com/in/imsaurabhrajpal/",
-          picture:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/4e828a778c604399913a1dd4e4d87e21/265.png"
+          name: "Seema Saharan",
+          description: "Judge",
+          url: "https://twitter.com/SeemaSaharan5",
+          picture: require("~/assets/Judges/seema.png")
         },
         {
-          name: "Sachit Mishra",
-          description: "Developer Relations Engineer at Google",
-          url: "https://www.linkedin.com/in/sachit-mishra-a95301180/",
-          picture:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/ecc04e202290473f891c17d73f96a6f7/900.jpeg"
+          name: "Aanchal Mishra",
+          description: "Judge",
+          url: "https://twitter.com/Aanchalmishra__",
+          picture: require("~/assets/Judges/aanchal.jpg")
         },
         {
-          name: "Siddhant Aggarwal",
-          description:
-            "Program Coordinator, Developer Relations Team at Google",
-          url: "https://www.linkedin.com/in/sidagarwal04",
-          picture:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/f76a9093b9c946ab98bf78f0ebf35dc5/284.jpeg"
+          name: "Rishit Dagli",
+          description: "Judge",
+          url: "https://twitter.com/rishit_dagli",
+          picture: require("~/assets/Judges/rishit.png")
         },
         {
-          name: "Harish Kotra",
-          description: "Regional Manager, India at AngelHack",
-          url: "https://www.linkedin.com/in/harishkotra",
-          picture:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/3eb9475ed60746c1be18d9c27fb971f2/744.jpeg"
+          name: "Praveen Kumar",
+          description: "Judge and MERN Stack Mentor",
+          url: "https://www.linkedin.com/in/praveentech/",
+          picture: require("~/assets/Judges/praveen.png")
         },
         {
-          name: "Pulkit Aggarwal",
-          description: "Software Engineer at Coding Blocks",
-          url: "https://www.linkedin.com/in/aggarwalpulkit596/",
-          picture:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/ce355e72c43c46c29d0272bc1ed37552/60.jpeg"
+          name: "Anush Krishna",
+          description: "Judge and Quantum Computing Mentor",
+          url: "https://twitter.com/Anush_krishna_v",
+          picture: require("~/assets/Judges/anush.png")
         },
         {
-          name: "Aravind Putrevu",
-          description: "Senior Developer Advocate at Elastic",
-          url: "https://www.linkedin.com/in/aravindputrevu",
-          picture:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/9162cfc964dd43babff57c68122d6906/460.jpeg"
+          name: "Vedant Khairnar",
+          description: "Judge and ML/AI Mentor",
+          url: "https://twitter.com/VedantKhairnar3",
+          picture: require("~/assets/Judges/vedant.jpg")
         },
         {
-          name: "Mritunjay Vishwakarma",
-          description: "Community Leader - Developer Ecosystem at IBM",
-          url: "https://www.linkedin.com/in/mritunjay-vishwakarma-801b7824",
-          picture:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/aefd8106846f42dc84720fb7c0a0dcdd/167.jpeg"
+          name: "Jai Dewani",
+          description: "Judge and FullStack Development Mentor",
+          url: "https://twitter.com/jai_dewani",
+          picture: require("~/assets/Judges/jai.jpg")
         },
         {
-          name: "Akash Shukla",
-          description: "Ecosystem Initiatives at Rapido Labs",
-          url: "https://www.linkedin.com/in/akashshkl/",
-          picture:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/0146b31617f8482cb99c475254ff5d65/959.jpeg"
+          name: "Vitalii Honcharuk",
+          description: "Judge",
+          url: "http://linkedin.com/in/vitalii-honcharuk",
+          picture: require("~/assets/Judges/vitalii.jpg")
         },
         {
-          name: "Neha Sharma",
-          description: "Community Founder at JSLovers",
-          url: "https://twitter.com/hellonehha",
-          picture:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/c8e3c5550b104a91b06caa675612331c/424.jpeg"
+          name: "Nikita Starichenko",
+          description: "Judge",
+          url: "https://www.linkedin.com/in/nikita-starichenko/",
+          picture: require("~/assets/Judges/nikita.jpg")
         },
         {
-          name: "Karan Chaturvedi",
-          description: "Developer Advocate at IBM",
-          url: "https://www.linkedin.com/in/karan-chaturvedi-0098a99/",
-          picture:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/7c6500b387a342deb0fbc96c588c2b75/144.jpeg"
+          name: "Zhen Ruming",
+          description: "Judge",
+          url: "https://www.linkedin.com/in/zhenruming/",
+          picture: require("~/assets/Judges/zhen.jpeg")
         },
         {
-          name: "Nishu Goel",
-          description: "Developer, UI Garage at IBM",
-          url: "https://www.linkedin.com/in/nishu-goel-ab557041/",
-          picture:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/976dbbca2b7346d781894b11d4bca2f5/350.jpeg"
+          name: "George Andronchik",
+          description: "Judge",
+          url: "http://linkedin.com/in/george-andronchik-a75749a1",
+          picture: require("~/assets/Judges/george.png")
         },
         {
-          name: "Prateek Narang",
-          description: "Co-founder at Coding Blocks",
-          url: "http://www.prateeknarang.com/",
-          picture:
-            "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/10f628f79bf2481e97cf48b48c473d0d/165.jpeg"
+          name: "Reshul Dani",
+          description: "Judge",
+          url: "https://www.linkedin.com/in/reshuldani/",
+          picture: require("~/assets/Judges/reshul.jpeg")
+        },
+        {
+          name: "Gaurav Rawal",
+          description: "Judge",
+          url: "https://www.twitter.com/iamgrawal",
+          picture: require("~/assets/Judges/Gaurav.jpeg")
+        },
+        {
+          name: "Sreekaran",
+          url: "https://twitter.com/sk4rn",
+          description: "Judge",
+          picture: require("~/assets/Judges/sreekaran.png")
+        },
+        {
+          name: "Haimantika Mitra",
+          description: "Judge",
+          picture: require("~/assets/Judges/Haimantika.jpg")
+        },
+        {
+          name: "Abir Pal",
+          description: "Judge",
+          url: "https://linkedin.com/in/imabp",
+          picture: require("~/assets/Judges/abir.jpeg")
+        },
+        {
+          name: "Avinash Koshal",
+          description: "Judge",
+          url: "",
+          picture: require("~/assets/Judges/avinash.jpg")
+        },
+        {
+          name: "Arsh Goyal",
+          description: "Judge",
+          url: "",
+          picture: require("~/assets/Judges/Arsh.jpg")
+        },
+        {
+          name: "Bhargav Patel",
+          description: "Judge",
+          url: "",
+          picture: require("~/assets/Judges/Bhargav.jpg")
+        },
+        {
+          name: "Shivam Goyal",
+          description: "Judge",
+          url: "",
+          picture: require("~/assets/Judges/shivamGoyal.png")
+        },
+        {
+          name: "Vedant Bahel",
+          description: "Judge",
+          url: "",
+          picture: require("~/assets/Judges/vedantBahel.png")
+        },
+        {
+          name: "Ishan Sharma",
+          description: "Judge",
+          url: "https://linkedin.com/in/ishandeveloper",
+          picture: require("~/assets/Judges/ishanSharma.png")
+        },
+        {
+          name: "Akanksha Tanwar",
+          description: "Judge",
+          url: "",
+          picture: require("~/assets/Judges/akanshaTanwar.jpg")
+        },
+        {
+          name: "Madhav Bahl",
+          description: "Judge",
+          url: "",
+          picture: require("~/assets/Judges/madhav.jpeg")
+        },
+        {
+          name: "Srashti Jain",
+          description: "Judge",
+          url: "",
+          picture: require("~/assets/Judges/srashti.jpg")
+        },
+        {
+          name: "Aanshul Sadaria",
+          description: "Judge",
+          url: "",
+          picture: require("~/assets/Judges/Aanshul.jpg")
+        },
+        {
+          name: "Viktor Vikhrov",
+          description: "Judge",
+          url: "",
+          picture: require("~/assets/Judges/viktor.jpg")
+        },
+        {
+          name: "Kartikey Rawat",
+          description: "Machine Learning Mentor",
+          url: "https://twitter.com/carrycooldude",
+          picture: require("~/assets/Mentors/kartikey.png")
+        },
+        {
+          name: "Shubham Patel",
+          description: "IOT Mentor",
+          url: "https://twitter.com/shubham_patel21",
+          picture: require("~/assets/Mentors/shubham.jpeg")
+        },
+        {
+          name: "Hargun Kaur",
+          description: "MERN and Selenium Mentor",
+          url: "https://www.linkedin.com/in/hargun-k-0b7815194/",
+          picture: require("~/assets/Mentors/hargun.png")
+        },
+        {
+          name: "Vaibhav Arora",
+          description: "Python, ML/DL Mentor",
+          url: "https://www.linkedin.com/in/vaibhav-arora-3005a818a/",
+          picture: require("~/assets/Mentors/vaibhav.jpg")
+        },
+        {
+          name: "Kuldeep Patel",
+          description: "React and Firebase Mentor",
+          url: "https://www.linkedin.com/in/patelkuldeep/",
+          picture: require("~/assets/Mentors/kuldeep.jpg")
+        },
+        {
+          name: "Aditya Teltia",
+          description: "Web Development Mentor",
+          url: "https://www.linkedin.com/in/aditya-teltia-a9a7731b4/",
+          picture: require("~/assets/Mentors/aditya.jpeg")
+        },
+        {
+          name: "Smaranjit Ghose",
+          description: "Artificial Intelligence Mentor",
+          url: "https://www.linkedin.com/in/smaranjitghose/",
+          picture: require("~/assets/Mentors/smaranjit.jpeg")
+        },
+        {
+          name: "Anshumaan Kumar Prasad",
+          description: "Backend and API Development Mentor",
+          url: "",
+          picture: require("~/assets/Mentors/anshumaan.jpg")
+        },
+        {
+          name: "Poornakashi",
+          description: "Web Development and Python Mentor",
+          url: "",
+          picture: require("~/assets/Mentors/poornakashi.jpg")
+        },
+        {
+          name: "Raghav Awasthi",
+          description: "Android Development Mentor",
+          url: "",
+          picture: require("~/assets/Mentors/raghav.jpg")
+        },
+        {
+          name: "Vanshika Garg",
+          description: "Web and Android Development Mentor",
+          url: "",
+          picture: require("~/assets/Mentors/vanshika.jpg")
+        },
+        {
+          name: "Avnish Singh",
+          description: "Web Development Mentor",
+          url: "",
+          picture: require("~/assets/Mentors/avnish.jpg")
+        },
+        {
+          name: "Vanshita Singh",
+          description: "UI/UX Design Mentor",
+          url: "",
+          picture: require("~/assets/Mentors/vanshita.jpg")
+        },
+        {
+          name: "Harsh Jain",
+          description: "FrontEnd Development Mentor",
+          url: "",
+          picture: require("~/assets/Mentors/harsh.jpeg")
+        },
+        {
+          name: "Sri Manikanta Palakollu",
+          description: "Blockchain Development and ML Mentor",
+          url: "",
+          picture: require("~/assets/Mentors/manikanta.jpg")
+        },
+        {
+          name: "Anush Bhatia",
+          description: "FullStack Development and Cloud Computing Mentor",
+          url: "",
+          picture: require("~/assets/Mentors/anushBhatia.jpg")
         }
       ]
     };
@@ -339,8 +534,14 @@ export default {
 
         .description {
           font-size: 0.8rem;
-          opacity: 0.7;
+          color: rgba(255, 255, 255, 0.7);
           text-align: center;
+        }
+
+        .company-logo {
+          font-size: 0.8rem;
+          margin-top: 5px;
+          height: 20px;
         }
       }
     }

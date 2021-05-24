@@ -1,0 +1,13 @@
+{
+  "redirects": [
+    { "source": "/cfp", "destination": "https://bit.ly/hackon-cfp" },
+    {
+      "source": "/brochure",
+      "destination": "https://s3-ap-southeast-1.amazonaws.com/he-public-data/HackOn%20Sponsorship%20Brochure889d3c6.pdf"
+    },
+    {
+      "source": "/mlhcoc",
+      "destination": "https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+    }
+  ]
+}

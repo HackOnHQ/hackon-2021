@@ -5,25 +5,15 @@
       <div class="contents">
         <div class="about">
           <p>
-            HackOn is a fully-online, people-focused hackathon where young minds
-            possessing a passion for solving real-life problems come together to
-            build innovative solutions. Whether you are a beginner or an expert
-            coder, here is the perfect chance to hone your skills and witness
-            the competitive yet inclusive developer community around you!
-          </p>
-          <p>
-            Learn new technologies, enhance your team management and
-            presentation skills, and get mentored by experts- all in one place!
-          </p>
-          <p>
-            We aim to use your skills to help battle against the issues being
-            faced due to the COVID-19 pandemic.
-          </p>
-          <p>
-            In light of the COVID-19 pandemic outbreak, your safety and
-            well-being are our primary concerns. Hence, all the activities
-            related to HackOn like workshops, talks, and presentations will also
-            be conducted online.
+            It is that time of year again! One-week of limitless freedom to
+            play, create, and test out ideas that may go nowhere – or that might
+            just change the world. Following the spirit of Hackathons, this
+            year, we have adapted and evolved, and we bring you our second
+            edition of Hack<span>O</span>n Hackathon which will focus on ways to
+            foster innovation while raising awareness on mental health and
+            diversity. No matter how new or old you may be in the world of
+            hackathons, Hack<span>O</span>n has a place for everyone who wants
+            to learn, build, share, and grow in their lives.
           </p>
         </div>
         <div class="stats">
@@ -58,8 +48,8 @@ import HashHeader from "~/components/HashHeader";
 export default {
   components: {
     Container,
-    HashHeader
-  }
+    HashHeader,
+  },
 };
 </script>
 
@@ -82,7 +72,16 @@ export default {
       padding: 10px 0;
 
       p {
-        padding-top: 20px;
+        padding-top: 60px;
+        font-size: 1.2rem;
+
+        span {
+          color: var(--colour-pink);
+        }
+
+        @include respond-below(md) {
+          padding-top: 20px;
+        }
       }
     }
   }

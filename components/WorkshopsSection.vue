@@ -6,7 +6,7 @@
       :workshop="workshops[modalData]"
     />
     <section class="content-section">
-      <HashHeader title="Past Workshops" />
+      <HashHeader title="Workshops" />
       <div class="contents workshops">
         <div class="cards-grid">
           <div
@@ -21,7 +21,11 @@
             </div>
             <div class="description">
               <div class="speaker">
-                <img :src="workshop.speaker.picture" class="avatar" />
+                <img
+                  :src="workshop.speaker.picture"
+                  class="avatar"
+                  alt="avatar"
+                />
                 <div class="details">
                   <span class="name">
                     {{ workshop.speaker.name }}
@@ -51,184 +55,235 @@ export default {
   components: {
     Container,
     HashHeader,
-    Modal
+    Modal,
   },
   data() {
     return {
       workshops: [
         {
-          name: "Let's Be Faster than COVID with AMP",
-          about:
-            "Ever wanted pages to load quickly on mobile devices, but not sure about how to do that? AMP or Accelerated Mobile Pages is a Google-backed project that can help you do this! Interested in knowing more about it? Hear it from a Googler itself! ❤️",
-          date: "11/04/2020",
-          time: "7:00 PM",
+          name: "Building Tech Careers though the Open Source Julia Project",
+          about: "",
+          date: "23/04/2021",
+          time: "8:30 PM",
+          url: "https://www.youtube.com/watch?v=dAF59I5nLvw",
           speaker: {
-            name: "Saurabh Rajpal",
-            designation: "Technical Solutions Consultant, Google",
-            picture:
-              "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/4e828a778c604399913a1dd4e4d87e21/265.png"
-          }
+            name: "Logan Kilpatrick",
+            designation: "Community Manager, The Julia Language",
+            about: "",
+            picture: require("~/assets/Speakers/Logan.jpeg"),
+          },
         },
         {
-          name: "Community as a Cure",
-          about:
-            "Talk about the importance of communities, and how a group of like-minded people can bring about an essential change in our lives.",
-          date: "10/04/2020",
-          time: "9:00 PM",
+          name: "API Development 101",
+          about: "",
+          date: "01/05/2021",
+          time: "8:00 PM",
+          url: "https://www.youtube.com/watch?v=Y3AzcxLsqyQ",
           speaker: {
-            name: "Paras Pundir",
-            designation: "Program Manager, Reactor Bangalore, Microsoft",
-            about:
-              "Paras is the Program Manager at Microsoft Reactor, Bangalore, who is also the Community Professional of the Year 2020.",
-            picture:
-              "https://miro.medium.com/fit/c/1360/1360/2*1d2PU06qLbaY-3EqeQBUZQ.jpeg"
-          }
+            name: "Ali Mustufa Shaikh",
+            designation: "Student Community Manager, Postman",
+            about: "",
+            picture: require("~/assets/Speakers/Ali.jpg"),
+          },
         },
         {
-          name: "Brand Storytelling",
-          about:
-            "Workshop: Building your Personal Brand by none other than the amazing personality Miri Rodriguez! She is probably the first person you would want to consult if you want your personal brand. So don't let go of this wonderful opportunity!💖",
-          date: "15/04/2020",
-          time: "10:00 PM",
+          name: "Low Code Development with Power Platform",
+          about: "",
+          date: "09/05/2021",
+          time: "8:00 PM",
+          url: "https://www.youtube.com/watch?v=LkxPhTdSvX0",
           speaker: {
-            name: "Miri Rodriguez",
-            designation: "Head of Global Internship Program, Microsoft",
-            about:
-              "Miri is the Head of Global Internship Program at Microsoft and the author of Brand Storytelling.",
-            picture:
-              "https://media-exp1.licdn.com/dms/image/C5603AQGccVXExmWSeg/profile-displayphoto-shrink_800_800/0/1585676059716?e=1617840000&v=beta&t=UV7D6RHqvHtQcVKCPfbyXxyXcXCM9setOzo4XI5NBlE"
-          }
+            name: "Haimantika Mitra",
+            designation: "Support Engineer Intern at Microsoft",
+            about: "",
+            picture: require("~/assets/Speakers/Haimantika.jpg"),
+          },
         },
         {
-          name: "Power of Communities",
-          about:
-            "Talk about the importance of communities, and how a group of like-minded people can bring about an essential change in our lives.💖",
-          date: "17/04/2020",
-          time: "10:00 PM",
+          name: "Fundamentals of Kubernetes",
+          about: "",
+          date: "15/05/2021",
+          time: "8:00 PM",
+          url: "",
           speaker: {
-            name: "Nikita Gandhi",
-            designation: "Community Manager, Google",
-            about:
-              "Nikita is the Community Manager at Google Developers and was a Project Coordinator at Google.",
-            picture:
-              "https://assets.devfolio.co/hackathons/be0de8e087c844d79199695d8997779f/judges/503be308d27942c6af30aa665c9e2940/430.png"
-          }
+            name: "Kunal Kushwaha",
+            designation: "MLH Coach",
+            about: "",
+            picture: require("~/assets/Speakers/Kunal.jpg"),
+          },
         },
         {
-          name: "The World of Web Components",
-          about:
-            "Get ready to dive into single page applications, component based web, web component specifications and a lot more!",
-          date: "18/04/2020",
+          name: "Intro to Full Stack Web Development",
+          about: "",
+          date: "16/05/2021",
+          time: "8:00 PM",
+          url: "",
+          speaker: {
+            name: "Wilson Wang",
+            designation: "Engineer Intern, OpenText",
+            about: "",
+            picture: require("~/assets/Speakers/Wilson-Wang.jpeg"),
+          },
+        },
+        {
+          name: "Intro to Full Stack Web Development",
+          about: "",
+          date: "16/05/2021",
+          time: "8:00 PM",
+          url: "",
+          speaker: {
+            name: "Bowen Sun",
+            designation: "",
+            about: "",
+            picture: require("~/assets/Speakers/Bowen-Sun.jpg"),
+          },
+        },
+        {
+          name: "Entreprenuerial Assets (Twitter Spaces)",
+          about: "",
+          date: "18/05/2021",
+          time: "8:00 PM",
+          url: "",
+          speaker: {
+            name: "Galicia Gordon",
+            designation: "Founder, Leading Learners",
+            about: "",
+            picture: require("~/assets/Speakers/Galicia-Gordon.jpg"),
+          },
+        },
+        {
+          name: "Social Media for Devs (Twitter Spaces)",
+          about: "",
+          date: "19/05/2021",
+          time: "8:00 PM",
+          url: "",
+          speaker: {
+            name: "Priyanka Yadav",
+            designation: "Software Engineer Intern, Commvault",
+            about: "",
+            picture: require("~/assets/Speakers/Priyanka.jpg"),
+          },
+        },
+        {
+          name: "Web3 Is A Cake With QuikNode",
+          about: "",
+          date: "20/05/2021",
           time: "6:00 PM",
+          url: "",
           speaker: {
-            name: "Nishu Goel",
-            designation: "Google Developer Expert",
-            about:
-              "Nishu is a Google Developers Experts(GDE) for Angular and Web Technologies and a Developer at UI Garage, IBM.",
-            picture:
-              "https://assets.devfolio.co/hackathons/be0de8e087c844d79199695d8997779f/judges/976dbbca2b7346d781894b11d4bca2f5/350.jpeg"
-          }
+            name: "Sahil Sen",
+            designation: "Developer Advocate, QuikNode",
+            about: "",
+            picture: require("~/assets/Speakers/Sahil-Sen.png"),
+          },
         },
         {
-          name: "Getting Started with Angular",
-          date: "12/04/2020",
-          time: "7:00 PM",
+          name: "AMA",
+          about: "",
+          date: "21/05/2021",
+          time: "8:00 PM",
+          url: "",
           speaker: {
-            name: "Dhananjay Kumar",
-            designation: "Most Valuable Professional, Microsoft",
-            picture:
-              "https://assets.devfolio.co/hackathons/be0de8e087c844d79199695d8997779f/judges/519c888869584eefa120edf5e4971e22/652.jpeg"
-          }
+            name: "Juan Pablo Flores Cortés",
+            designation: "Program Manager, GitHub",
+            about: "",
+            picture: require("~/assets/Speakers/Juan-Pablo.png"),
+          },
         },
         {
-          name: "Taking flight with Flutter",
-          about:
-            "Realise the power of Flutter and start making cross-platform applications with Flutter.",
-          date: "16/04/2020",
-          time: "10:00 PM",
+          name: "How to Create a Discord Bot and Host It 24/7 for Free!",
+          about: "",
+          date: "22/05/2021",
+          time: "8:00 PM",
+          url: "",
           speaker: {
-            name: "Pawan Kumar",
-            designation: "Google Developer Expert",
-            about:
-              "Pawan is the Founder of MTechViral, and a Google Developers Experts (GDE) for Flutter by Google, Firebase, Dart and Web Tech.",
-            picture:
-              "https://media-exp1.licdn.com/dms/image/C4E03AQFU_Pks7-2qbA/profile-displayphoto-shrink_200_200/0/1610945863156?e=1617840000&v=beta&t=_pkadk5xabdD-LyBnReydJnHuO5T76OYBQZfiBdxHfc"
-          }
+            name: "Mara Hart",
+            designation: "Returning Software Engineer Intern, Microsoft",
+            about: "",
+            picture: require("~/assets/Speakers/Mara.jpg"),
+          },
         },
         {
-          name: "Hackathon 101",
-          about:
-            "Never participated in a hackathon? Don't worry. HackOn brings to you Hackathon 101 by Jatin Katyal, the absolute champion of hackathons!",
-          date: "11/04/2020",
-          time: "4:00 PM",
+          name: "Introduction to Tensorflow and Tensorflow.js",
+          about: "",
+          date: "23/05/2021",
+          time: "8:00 PM",
+          url: "",
           speaker: {
-            name: "Jatin Katyal",
-            designation: "Software Engineer, Coding Blocks",
-            about:
-              "Jatin is a full-stack web developer, who has won numerous hackathons, and is extremely passionate about them.",
-            picture:
-              "https://assets.devfolio.co/hackathons/be0de8e087c844d79199695d8997779f/judges/bea23fa33ba74fa589fa2d56b958741a/309.jpeg"
-          }
+            name: "Shivay Lamba",
+            designation: "Google Summer of Code Mentor @ Tensorflow",
+            about: "",
+            picture: require("~/assets/Speakers/Shivay.jpg"),
+          },
         },
         {
-          name: "Intro to Git/GitHub",
-          about:
-            "This is a hands-on workshop that will teach you how Git and GitHub have been revolutionizing teamwork, how to work remotely and how version control systems are useful. ✨",
-          date: "11/04/2020",
-          time: "10:00 PM",
+          name: "Progressive Web Apps - A Revolution into Mobile landscape",
+          about: "",
+          date: "24/05/2021",
+          time: "4:30 PM",
+          url: "",
           speaker: {
-            name: "Gunnika Batra",
-            designation: "GitHub Campus Expert",
-            about:
-              "Gunnika is a GitHub Campus Expert and Google Code-in '19 mentor for TensorFlow.",
-            picture:
-              "https://he-s3.s3.amazonaws.com/media/avatars/b.gunnika/resized/180/aaue7mbcptlsehn0xoe6ddpcxas8dthvswnxzds8y6eynlq"
-          }
+            name: "Ranjoy Sen",
+            designation: "Staff Software Developer, Collins Aerospace",
+            about: "",
+            picture: require("~/assets/Speakers/Ranjoy.png"),
+          },
         },
         {
-          name: "What is a Full Stack Developer and how to become One!",
-          date: "14/04/2020",
-          time: "10:00 PM",
+          name: "How to make your Open Source Project a Success?",
+          about: "",
+          date: "25/05/2021",
+          time: "8:30 PM",
+          url: "",
           speaker: {
-            name: "Arnav Gupta",
-            designation: "Engineering Lead, Zomato",
-            about:
-              " Arnav is a Co-Founder at Coding Blocks and was an Android Lead at Zomato.",
-            picture:
-              "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/de2017b2f5cd44da90dc782b28469487/703.jpeg"
-          }
+            name: "Eddie Jaoude",
+            designation: "GitHub Star of the Year",
+            about: "",
+            picture: require("~/assets/Speakers/Eddie.jpg"),
+          },
         },
         {
-          name: "Webscraping with Python - 101",
-          date: "15/04/2020",
-          time: "4:00 PM",
-          about:
-            "This is a hands-on workshop that will teach you what web scraping is, and how to perform web scraping using Python libraries like Beautiful Soup!",
+          name: "Who's who in Azure AI",
+          about: "",
+          date: "26/05/2021",
+          time: "8:00 PM",
+          url: "",
           speaker: {
-            name: "Saketha Ramanujam",
-            designation: "GitHub Campus Expert",
-            picture:
-              "https://res.cloudinary.com/stuartlittle/image/upload/v1587120916/me/ID.jpg"
-          }
+            name: "Stephen Simon",
+            designation: "Regional Community Director, C# Corner",
+            about: "",
+            picture: require("~/assets/Speakers/Stephen-Simon.jpg"),
+          },
         },
         {
-          name: "Elastic App Search Demo",
-          about:
-            "Building a web application to solve a business problem is easy in today's world. But this workshop will teach you how to create an experience that lets the user spend more time on your service.",
-          date: "16/04/2020",
-          time: "6:00 PM",
+          name: "How to build apps fast, right, and for the future",
+          about: "",
+          date: "27/05/2021",
+          time: "5:00 PM",
+          url: "",
           speaker: {
-            name: "Aravind Putrevu",
-            designation: "Senior Developer Advocate, Elastic",
-            about:
-              "Aravind is a Senior Developer Advocate at Elastic, a tech evangelist and a FOSS enthusiast.",
-            picture:
-              "https://assets.devfolio.co/hackathons/be0de8e087c844d79199695d8997779f/judges/9162cfc964dd43babff57c68122d6906/460.jpeg"
-          }
-        }
+            name: "Yashraj Nayak",
+            designation: "Community Growth Manager (APAC), OutSystems",
+            about: "",
+            picture: require("~/assets/Speakers/Yashraj.jpeg"),
+          },
+        },
+        {
+          name: "Let's Make Magic!",
+          about: "",
+          date: "27/05/2021",
+          time: "8:00 PM",
+          url: "",
+          speaker: {
+            name: "Mohammad Shahbaz Alam",
+            designation: "Developer Advocate, Magic",
+            about: "",
+            picture: require("~/assets/Speakers/Mohammad-Shahbaz-Alam.png"),
+          },
+        },
       ],
       isModalVisible: false,
-      modalData: 0
+      modalData: 0,
     };
   },
   methods: {
@@ -236,14 +291,14 @@ export default {
       this.isModalVisible = true;
       this.modalData = index;
       document.querySelector("body").style.overflow = "hidden";
-      document.querySelector(".workshops").classList.add = "modalOpen";
+      // document.querySelector(".workshops").classList.add = "modalOpen";
     },
     closeModal() {
       this.isModalVisible = false;
       document.querySelector("body").style.overflow = "initial";
-      document.querySelector(".workshops").classList.remove = "modalOpen";
-    }
-  }
+      // document.querySelector(".workshops").classList.remove = "modalOpen";
+    },
+  },
 };
 </script>
 
@@ -297,6 +352,7 @@ export default {
           justify-content: space-between;
           font-size: 0.8rem;
           margin-top: 1rem;
+          line-height: 1rem;
 
           .speaker {
             display: flex;
@@ -313,11 +369,13 @@ export default {
               justify-content: center;
 
               .designation {
-                margin-top: -1rem;
                 color: rgba(255, 255, 255, 0.5);
-                // line-height: 1rem;
               }
             }
+          }
+
+          .date {
+            text-align: right;
           }
         }
       }

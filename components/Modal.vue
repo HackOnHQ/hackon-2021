@@ -6,9 +6,6 @@ export default {
     close() {
       this.$emit("close");
     },
-    handleModalClose(elem) {
-      console.log(elem);
-    },
   },
 };
 </script>
@@ -22,6 +19,7 @@ export default {
         aria-describedby="modalDescription"
       >
         <img
+          alt="close modal"
           class="close-modal"
           src="~/assets/close-modal.svg"
           v-on:click.self="close()"
@@ -29,21 +27,21 @@ export default {
         <header class="modal-header" id="modalTitle">
           {{ workshop.name }}
         </header>
-        <div class="hashtags">#workshop #hackon2</div>
+        <!-- <div class="hashtags">#workshop #hackon2</div> -->
         <div class="date">
-          <img src="~/assets/calender.svg" />
+          <img src="~/assets/calender.svg" alt="calender" />
           {{ workshop.date }} {{ workshop.time }} IST
         </div>
         <section class="modal-body" id="modalDescription">
-          <div v-if="workshop.about !== undefined" class="title">
+          <div v-if="workshop.about !== undefined && workshop.about !== ''" class="title">
             About the workshop
-          </div>
           <div class="content">
+          </div>
             {{ workshop.about }}
           </div>
           <div class="title">About the Speaker</div>
           <div class="speaker-details">
-            <img :src="workshop.speaker.picture" class="avatar" />
+            <img :src="workshop.speaker.picture" class="avatar" alt="avatar" />
             <div class="details">
               <span class="name">
                 {{ workshop.speaker.name }}
@@ -57,12 +55,14 @@ export default {
             {{ workshop.speaker.about }}
           </div>
         </section>
-        <footer class="modal-footer">
+        <footer v-if="workshop.url" class="modal-footer">
           <slot name="footer">
-            <button type="button" class="btn-green" aria-label="Close modal">
-              <img src="~/assets/add-calender.svg" />
-              Add to calender!
-            </button>
+            <a :href="workshop.url" rel="noopener noreferrer" target="_blank">
+              <button type="button" class="btn-green" aria-label="Close modal">
+                <img src="~/assets/youtube.svg" alt="youtube" />
+                Session Link
+              </button>
+            </a>
           </slot>
         </footer>
       </div>
@@ -122,12 +122,12 @@ export default {
     margin-left: 0.5rem;
   }
 
-  .hashtags {
-    color: #e58ab2;
-    font-size: 1rem;
-    margin: 0.4rem 0;
-    margin-left: 0.5rem;
-  }
+  // .hashtags {
+  //   color: #e58ab2;
+  //   font-size: 1rem;
+  //   margin: 0.4rem 0;
+  //   margin-left: 0.5rem;
+  // }
 
   .date {
     margin-left: 0.5rem;
@@ -187,9 +187,17 @@ export default {
 
 button {
   float: right;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: -10px;
+  border: 0px;
+  color: #fff;
   padding: 12px 16px;
+  background-color: var(--color-accent-2);
   img {
-    width: 0.8rem;
+    width: 1rem;
+    position: relative;
+    top: 3px;
   }
   font-family: "Roboto Mono";
 }

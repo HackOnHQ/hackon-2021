@@ -2,33 +2,62 @@
   <Container>
     <section class="content-section">
       <HashHeader title="Tracks" />
-      <div class="contents">
-        <div class="grid">
-          <div class="panel text box-one">
-            <div class="track-box healthcare">
-              <img src="~/assets/track-healthcare.png" />
-            </div>
-            <div class="texts">
-              <h3 class="title">Diversity and Inclusion</h3>
-              <p class="description">
-                Generate awareness and/or develop empathetic spaces that people
-                coming from any and every walk of life to meet and connect,
-                regardless of their background.
-              </p>
-            </div>
+      <div class="grid">
+        <div class="panel text">
+          <div class="track-box healthcare">
+            <img src="~/assets/Tracks/healthcare.png" alt="Track Healthcare" />
           </div>
-          <div class="panel text box-two">
-            <div class="track-box mental-health">
-              <img src="~/assets/track-mental-health.png" />
-            </div>
-            <div class="texts">
-              <h3 class="title">Mental Health and Awareness</h3>
-              <p class="description">
-                Help people learn more about their mental health and take better
-                care of their well-being in these challenging times that have
-                significantly impacted our day-to-day lives.
-              </p>
-            </div>
+          <div class="texts">
+            <h3 class="title">Diversity and Inclusion</h3>
+            <p class="description">
+              Generate awareness and/or develop empathetic spaces that people
+              coming from any and every walk of life to meet and connect,
+              regardless of their background. Build solutions that address
+              today's biggest problems related to bias, diversity, and
+              inclusion.
+            </p>
+          </div>
+        </div>
+        <div class="panel text">
+          <div class="track-box mental-health">
+            <img
+              src="~/assets/Tracks/mental-health.png"
+              alt="Track Mental Health"
+            />
+          </div>
+          <div class="texts">
+            <h3 class="title">Mental Health and Awareness</h3>
+            <p class="description">
+              Help people learn more about their mental health and take better
+              care of their well-being in these challenging times that have
+              significantly impacted our day-to-day lives.
+            </p>
+          </div>
+        </div>
+        <div class="panel text">
+          <div class="track-box virus">
+            <img src="~/assets/Tracks/virus.svg" alt="Track Healthcare" />
+          </div>
+          <div class="texts">
+            <h3 class="title">COVID-19 Impact</h3>
+            <p class="description">
+              Develop solutions to help Indian society cope with the drastic
+              impact that the resurgence of COVID-19 has had on all our lives
+              over the last few months.
+            </p>
+          </div>
+        </div>
+        <div class="panel text">
+          <div class="track-box innovation">
+            <img src="~/assets/Tracks/light-bulb.svg" alt="Track Healthcare" />
+          </div>
+          <div class="texts">
+            <h3 class="title">Open Innovation</h3>
+            <p class="description">
+              Even if you have an idea that does not fit in our primary themes,
+              we do not want to restrict your creativity. Create solutions that
+              have a social good impact on society in any manner.
+            </p>
           </div>
         </div>
       </div>
@@ -72,66 +101,59 @@ export default {
     border: 3px solid #7fc1c8;
   }
 
+  .virus {
+    border: 3px solid #7fc1c8;
+  }
+
+  .innovation {
+    border: 3px solid #e58ab2;
+  }
+
   img {
     float: left;
     width: 3rem;
     align-content: center;
   }
 
-  .contents {
+  .grid {
     padding: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 4rem;
+    row-gap: 1em;
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-column-gap: 4rem;
-
-      .panel {
-        display: flex;
-        flex-direction: row;
+    .panel {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      &.text {
         justify-content: space-between;
-        &.text {
-          justify-content: space-between;
-        }
-
-        .texts {
-          margin-left: 1em;
-          display: flex;
-          flex-direction: column;
-          padding: 10px;
-
-          .title {
-            font-family: "Roboto Mono";
-            font-weight: 400;
-            font-size: 1.5rem;
-          }
-
-          .description {
-            margin-top: 1em;
-            opacity: 0.7;
-          }
-        }
       }
 
-      @include respond-below(sm) {
-        .box-one {
-          grid-column-start: 1;
-          grid-column-end: 3;
-          grid-row-start: 1;
+      .texts {
+        margin-left: 1em;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+        .title {
+          font-family: "Roboto Mono";
+          font-weight: 400;
+          font-size: 1.5rem;
         }
 
-        .box-two {
-          grid-column-start: 1;
-          grid-column-end: 3;
-          grid-row-start: 2;
+        .description {
+          margin-top: 0.5em;
+          opacity: 0.7;
         }
+      }
+    }
 
-        .grid {
-          .texts {
-            margin-top: 20px;
-            padding: 10px 0;
-          }
-        }
+    @include respond-below(sm) {
+      grid-template-columns: repeat(1, 1fr);
+
+      .texts {
+        padding: 10px 0;
       }
     }
   }

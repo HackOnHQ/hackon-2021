@@ -1,7 +1,9 @@
 <template>
   <div class="home-page">
+    <ScrollTopArrow />
     <Hero />
     <ContentSection />
+    <RiddleSection />
     <TracksSection />
     <PrizesSection />
     <SpeakersSection />
@@ -17,6 +19,7 @@
 import Container from "~/components/Container";
 import Hero from "~/components/Hero";
 import ContentSection from "~/components/ContentSection";
+import RiddleSection from "~/components/RiddleSection";
 import TracksSection from "~/components/TracksSection";
 import PrizesSection from "~/components/PrizesSection";
 import SpeakersSection from "~/components/SpeakersSection";
@@ -25,12 +28,14 @@ import WorkshopsSection from "~/components/WorkshopsSection";
 import SponsorsSection from "~/components/SponsorsSection";
 import FAQSection from "~/components/FAQSection";
 import CommunityPartnersSection from "~/components/CommunityPartnersSection";
+import ScrollTopArrow from "~/components/ScrollTopArrow";
 
 export default {
   components: {
     Container,
     Hero,
     ContentSection,
+    RiddleSection,
     TracksSection,
     SpeakersSection,
     SponsorsSection,
@@ -38,7 +43,8 @@ export default {
     ScheduleSection,
     WorkshopsSection,
     PrizesSection,
-    FAQSection
+    FAQSection,
+    ScrollTopArrow
   }
 };
 </script>

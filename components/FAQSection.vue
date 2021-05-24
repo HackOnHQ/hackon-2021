@@ -12,10 +12,10 @@
           >
             <div class="texts" @click="toggleFAQItem(index)">
               <h4 class="title">{{ index + 1 }}. {{ faq.title }}</h4>
-              <img src="~/assets/faq-up-arrow.svg" />
+              <img src="~/assets/faq-up-arrow.svg" alt="toggle FAQ" />
             </div>
             <div class="answer">
-              <div>{{ faq.content }}</div>
+              <div v-html="faq.content">{{}}</div>
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@ export default {
         {
           title: "How long will it be on for?",
           content:
-            "The event will be running for about one week from 11th April to 19th April.",
+            "The event will be running for about 48 hours from 28th May to 30th May.",
         },
         {
           title: "Who can participate?",
@@ -59,11 +59,12 @@ export default {
         {
           title: "How will project submissions work?",
           content:
-            'To participate, click on the "Apply with Devfolio" button. You will then be able to create your project once the hackathon starts. To be eligible for the judging process you\'ll have to submit the project before the hackathon ends.',
+            "To participate, register on <a rel='noopener noreferrer' href='//hackon.hackerearth.com' target= '_blank'>HackerEarth's platform</a>. You will then be able to create your project once the hackathon starts. To be eligible for the judging process you'll have to submit the project before the hackathon ends.",
         },
         {
           title: "How will judging work?",
-          content: "We'll be reviewing submissions on Devfolio!",
+          content:
+            "We'll be reviewing submissions on HackerEarth, and it will be judged by our team and judges mentioned on the page.",
         },
         {
           title: "Do I need to be a student?",
@@ -78,7 +79,7 @@ export default {
         {
           title: "Where can I find updates?",
           content:
-            "We have an active Discord for communication, along with a Telegram ",
+            "We have an active <a rel='noopener noreferrer' href='//discord.hackon.tech' target= '_blank'>Discord</a> for communication, along with a <a rel='noopener noreferrer' href='//telegram.hackon.tech' target= '_blank'>Telegram</a> ",
         },
         {
           title: "How big can a team be?",

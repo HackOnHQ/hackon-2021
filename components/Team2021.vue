@@ -1,7 +1,7 @@
 <template>
   <Container id="team2021">
     <section class="content-section">
-      <HashHeader title="Hackon Team 2021" />
+      <HashHeader title="HackOn Team 2021" />
       <div class="contents">
         <div class="team-grid">
           <div
@@ -10,15 +10,58 @@
             class="team-card"
           >
             <div class="picture-wrapper">
-              <img :src="teamMember.picture" alt="" class="profile-pic" />
+              <img
+                :src="teamMember.picture"
+                alt="profile picture"
+                class="profile-pic"
+              />
             </div>
             <h4 class="title">{{ teamMember.name }}</h4>
             <p class="description">{{ teamMember.description }}</p>
             <div class="socialLinks">
-              <a :href="teamMember.linkedIn">
+              <a
+                :href="teamMember.linkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src="~/assets/linkedin.svg" alt="LinkedInLink" />
               </a>
-              <a :href="teamMember.github">
+              <a
+                :href="teamMember.github"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="~/assets/github.svg" alt="GithubLink" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <HashHeader title="Founder" />
+      <div class="contents">
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="picture-wrapper">
+              <img
+                src="https://media-exp1.licdn.com/dms/image/C4E03AQGN9WF9aic8Aw/profile-displayphoto-shrink_200_200/0/1608998142556?e=1625702400&v=beta&t=w4s3tmsCcollSmJvlvazPiqQ6rcB7WBfq92ru4Il74I"
+                alt="profile picture"
+                class="profile-pic"
+              />
+            </div>
+            <h4 class="title">Rishabh Bansal</h4>
+            <div class="socialLinks">
+              <a
+                href="https://www.linkedin.com/in/rishabhbansal97/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="~/assets/linkedin.svg" alt="LinkedInLink" />
+              </a>
+              <a
+                href="https://github.com/rishabh-bansal"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src="~/assets/github.svg" alt="GithubLink" />
               </a>
             </div>
@@ -43,8 +86,8 @@ export default {
       team: [
         {
           name: "Musthaq Ahamad",
-          description:
-            "Building @localeai. UX Engineer. I write, design and build things on the internet",
+          //   description:
+          //     "Building @localeai. UX Engineer. I write, design and build things on the internet",
           picture:
             "https://avatars.githubusercontent.com/u/53584487?s=460&u=958300368b2eae87277477bf1fcead4dfa2e31ec&v=4",
           linkedIn: "https://www.linkedin.com/in/haxzie/",
@@ -52,8 +95,8 @@ export default {
         },
         {
           name: "Shubhangi Gupta",
-          description:
-            "Gold Microsoft Learn Ambassador | President at TechnoLiterati | Gold #IamRemarkable Facilitator",
+          //    description:
+          //      "Gold Microsoft Learn Ambassador | President at TechnoLiterati | Gold #IamRemarkable Facilitator",
           picture:
             "https://avatars.githubusercontent.com/u/31511497?s=460&u=8834975fa238be878ffd74092143a6bc15d38607&v=4",
           linkedIn: "https://www.linkedin.com/in/knowshubhangi/",
@@ -61,40 +104,73 @@ export default {
         },
         {
           name: "Aditya Oberai",
-          description:
-            "MLH Coach | Gold Microsoft Learn Student Ambassador | Active Member at .NET Foundation",
+          //    description:
+          //      "MLH Coach | Gold Microsoft Learn Student Ambassador | Active Member at .NET Foundation",
           picture:
             "https://avatars.githubusercontent.com/u/31401437?s=460&u=1ad52dad34daf68e98fd7324c94c97c3b369d471&v=4",
           linkedIn: "https://www.linkedin.com/in/adityaoberai1/",
           github: "https://github.com/adityaoberai"
         },
         {
-          name: "Apoorv dwivedi",
-          description:
-            "Btech sophomore from MAIT | Full Stack Web Developer (MERN) | ML and AI enthusiast",
+          name: "Apoorv Dwivedi",
+          //   description:
+          //     "Btech sophomore from MAIT | Full Stack Web Developer (MERN) | ML and AI enthusiast",
           picture:
             "https://avatars.githubusercontent.com/u/56197821?s=460&u=693be068482cf3a5b23a1bf708ee1e399487659a&v=4",
-          linkedIn: "https://www.linkedin.com/in/apoorv-dwivedi-84a42a174/",
+          linkedIn: "https://www.linkedin.com/in/apoorvdwi/",
           github: "https://github.com/apoorvdwi"
         },
         {
           name: "Paras Gupta",
-          description:
-            "Senior at IIIT Una | Open source @electron and @validatorjs | Full Stack Developer",
+          //     description:
+          //      "Senior at IIIT Una | Open source @electron and @validatorjs | Full Stack Developer",
           picture:
-            "https://media-exp1.licdn.com/dms/image/C4E03AQGYjE3bfB8EUw/profile-displayphoto-shrink_200_200/0/1613322899040?e=1619049600&v=beta&t=8-RMxay57AIZZNMRwC6KzyH5xtkuEBw9_KfkgW5oR9E",
+            "https://media-exp1.licdn.com/dms/image/C4E03AQGYjE3bfB8EUw/profile-displayphoto-shrink_200_200/0/1613322899040?e=1625702400&v=beta&t=vZPuUtz3KlckRhRS4s9FqBtP0BE_PLFXaF6vpuDbGFc",
           linkedIn: "https://www.linkedin.com/in/parasg1999/",
           github: "https://github.com/parasg1999"
         },
         {
           name: "Saish Adlak",
-          description:
-            "UI/UX Designer | Imagination and Implementation is what I do",
+          //   description:
+          //     "UI/UX Designer | Imagination and Implementation is what I do",
           picture:
             "https://avatars.githubusercontent.com/u/71888339?s=460&u=2be63077304e5b88c626b1fa64bc4c3a23ba72a1&v=4",
           linkedIn: "https://www.linkedin.com/in/saishadlak/",
           github: "https://github.com/saish-lmx"
+        },
+        {
+          name: "Ojasvi Khuranna",
+          //   description:
+          //     "Incoming SDE Intern at Amazon | Intuit Augment Mentee | GitHub Campus Expert",
+          picture:
+            "https://user-images.githubusercontent.com/44267452/74556077-29ded180-4f83-11ea-8b5b-0dc0611fa3c2.jpeg",
+          linkedIn: "https://www.linkedin.com/in/ojasvikhurana/",
+          github: "https://github.com/ojasvik"
+        },
+        {
+          name: "Siddharth Dayalwal",
+          // description:
+          //   "AngelHack Student Ambassador | Microsoft Learn Student Ambassador | Former Intern - @Progate",
+          picture:
+            "https://avatars.githubusercontent.com/u/41017419?s=460&u=ece0c309cba6ed5ecbe43a8845e2bd0e54fe210c&v=4",
+          linkedIn: "https://www.linkedin.com/in/siddharth-dayalwal/",
+          github: "https://github.com/siddharthdayalwal",
+        },
+        {
+          name: "Khushi Sharma",
+          picture: require("/assets/khushi.jpg"),
+          linkedIn: "https://www.linkedin.com/in/khushi-sharma-2201/",
+          github: "https://github.com/KhushiSharma22"
         }
+        // {
+        //   name: "Rishabh Bansal",
+        //   // description:
+        //   //   "Program Manager @HackerEarth. Conducting world-class Hackathons and Challenges to drive innovation and help companies hire developers.",
+        //   picture:
+        //     "https://media-exp1.licdn.com/dms/image/C4E03AQGN9WF9aic8Aw/profile-displayphoto-shrink_200_200/0/1608998142556?e=1625702400&v=beta&t=w4s3tmsCcollSmJvlvazPiqQ6rcB7WBfq92ru4Il74I",
+        //   linkedIn: "https://www.linkedin.com/in/rishabhbansal97/",
+        //   github: "https://github.com/rishabh-bansal"
+        // }
       ]
     };
   }
@@ -132,7 +208,7 @@ export default {
         display: flex;
         flex-direction: column;
         background: var(--color-secondary-light);
-        min-height: 400px;
+        // min-height: 400px;
         border-radius: 20px;
         padding: 15px;
         justify-content: center;
