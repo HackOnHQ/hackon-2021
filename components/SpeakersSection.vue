@@ -41,7 +41,7 @@ import HashHeader from "~/components/HashHeader";
 export default {
   components: {
     Container,
-    HashHeader,
+    HashHeader
   },
   data() {
     return {
@@ -52,7 +52,7 @@ export default {
           url: "https://twitter.com/OfficialLoganK",
           picture: require("~/assets/Speakers/Logan.jpeg"),
           companyLogo: require("~/assets/julia.svg"),
-          company: "The Julia Language",
+          company: "The Julia Language"
         },
         {
           name: "Ali Mustufa Shaikh",
@@ -60,7 +60,7 @@ export default {
           url: "https://twitter.com/ialimustufa",
           picture: require("~/assets/Speakers/Ali.jpg"),
           companyLogo: require("~/assets/postman.png"),
-          company: "Postman",
+          company: "Postman"
         },
         {
           name: "Haimantika Mitra",
@@ -68,7 +68,7 @@ export default {
           url: "https://twitter.com/HaimantikaM",
           picture: require("~/assets/Speakers/Haimantika.jpg"),
           companyLogo: require("~/assets/microsoft.svg"),
-          company: "Microsoft",
+          company: "Microsoft"
         },
         {
           name: "Kunal Kushwaha",
@@ -76,7 +76,7 @@ export default {
           url: "https://twitter.com/kunalstwt",
           picture: require("~/assets/Speakers/Kunal.jpg"),
           companyLogo: require("~/assets/Sponsors/mlh.svg"),
-          company: "MLH",
+          company: "MLH"
         },
         {
           name: "Wilson Wang",
@@ -84,20 +84,20 @@ export default {
           url: "https://www.linkedin.com/in/fengchi-w-b30a65132/",
           picture: require("~/assets/Speakers/Wilson-Wang.jpeg"),
           companyLogo: require("~/assets/opentext.svg"),
-          company: "OpenText",
+          company: "OpenText"
         },
         {
           name: "Bowen Sun",
           description: "",
           url: "https://www.linkedin.com/in/bowen-s/",
-          picture: require("~/assets/Speakers/Bowen-Sun.jpg"),
+          picture: require("~/assets/Speakers/Bowen-Sun.jpg")
         },
         {
           name: "Galicia Gordon",
           description: "Founder, Leading Learners",
           url: "https://www.linkedin.com/in/galicia-gordon",
           picture: require("~/assets/Speakers/Galicia-Gordon.jpg"),
-          company: "",
+          company: ""
         },
         {
           name: "Priyanka Yadav",
@@ -105,7 +105,7 @@ export default {
           url: "https://twitter.com/Priyanka__488",
           picture: require("~/assets/Speakers/Priyanka.jpg"),
           companyLogo: require("~/assets/commvault.svg"),
-          company: "Commvault",
+          company: "Commvault"
         },
         {
           name: "Juan Pablo Flores Cortés",
@@ -113,7 +113,7 @@ export default {
           url: "https://twitter.com/juanpflores_",
           picture: require("~/assets/Speakers/Juan-Pablo.png"),
           companyLogo: require("~/assets/Sponsors/github.svg"),
-          company: "GitHub",
+          company: "GitHub"
         },
         {
           name: "Mara Hart",
@@ -121,7 +121,7 @@ export default {
           url: "https://linkedin.com/in/maralihart",
           picture: require("~/assets/Speakers/Mara.jpg"),
           companyLogo: require("~/assets/microsoft.svg"),
-          company: "Microsoft",
+          company: "Microsoft"
         },
         {
           name: "Shivay Lamba",
@@ -129,7 +129,7 @@ export default {
           url: "https://www.linkedin.com/in/shivaylamba/",
           picture: require("~/assets/Speakers/Shivay.jpg"),
           companyLogo: require("~/assets/tensorflow.svg"),
-          company: "Tensorflow",
+          company: "Tensorflow"
         },
         {
           name: "Ranjoy Sen",
@@ -137,13 +137,13 @@ export default {
           url: "https://www.linkedin.com/in/ranjoysen/",
           picture: require("~/assets/Speakers/Ranjoy.png"),
           companyLogo: require("~/assets/collins.png"),
-          company: "Collins Aerospace",
+          company: "Collins Aerospace"
         },
         {
           name: "Eddie Jaoude",
           description: "GitHub Star of the Year",
           url: "https://twitter.com/eddiejaoude",
-          picture: require("~/assets/Speakers/Eddie.jpg"),
+          picture: require("~/assets/Speakers/Eddie.jpg")
         },
         {
           name: "Stephen Simon",
@@ -151,7 +151,7 @@ export default {
           url: "https://twitter.com/codewithsimon",
           picture: require("~/assets/Speakers/Stephen-Simon.jpg"),
           companyLogo: require("~/assets/c-sharp-corner.png"),
-          company: "C# Corner",
+          company: "C# Corner"
         },
         {
           name: "Mohammad Shahbaz Alam",
@@ -159,191 +159,280 @@ export default {
           url: "https://twitter.com/mdsbzalam",
           picture: require("~/assets/Speakers/Mohammad-Shahbaz-Alam.png"),
           companyLogo: require("~/assets/magic.svg"),
-          company: "Magic",
+          company: "Magic"
         },
         {
           name: "Kathita",
           description: "Judge",
           url: "https://www.linkedin.com/in/kathita",
-          picture: require("~/assets/Judges/Kathita.jpeg"),
+          picture: require("~/assets/Judges/Kathita.jpeg")
         },
         {
           name: "Santosh Yadav",
           description: "Judge",
           url: "https://twitter.com/SantoshYadavDev",
-          picture: require("~/assets/Judges/santosh.png"),
+          picture: require("~/assets/Judges/santosh.png")
         },
         {
           name: "Seema Saharan",
           description: "Judge",
           url: "https://twitter.com/SeemaSaharan5",
-          picture: require("~/assets/Judges/seema.png"),
+          picture: require("~/assets/Judges/seema.png")
         },
         {
           name: "Aanchal Mishra",
           description: "Judge",
           url: "https://twitter.com/Aanchalmishra__",
-          picture: require("~/assets/Judges/aanchal.jpg"),
+          picture: require("~/assets/Judges/aanchal.jpg")
         },
         {
           name: "Rishit Dagli",
           description: "Judge",
           url: "https://twitter.com/rishit_dagli",
-          picture: require("~/assets/Judges/rishit.png"),
+          picture: require("~/assets/Judges/rishit.png")
         },
         {
           name: "Praveen Kumar",
           description: "Judge and MERN Stack Mentor",
           url: "https://www.linkedin.com/in/praveentech/",
-          picture: require("~/assets/Judges/praveen.png"),
+          picture: require("~/assets/Judges/praveen.png")
         },
         {
           name: "Anush Krishna",
           description: "Judge and Quantum Computing Mentor",
           url: "https://twitter.com/Anush_krishna_v",
-          picture: require("~/assets/Judges/anush.png"),
+          picture: require("~/assets/Judges/anush.png")
         },
         {
           name: "Vedant Khairnar",
           description: "Judge and ML/AI Mentor",
           url: "https://twitter.com/VedantKhairnar3",
-          picture: require("~/assets/Judges/vedant.jpg"),
+          picture: require("~/assets/Judges/vedant.jpg")
         },
         {
           name: "Jai Dewani",
           description: "Judge and FullStack Development Mentor",
           url: "https://twitter.com/jai_dewani",
-          picture: require("~/assets/Judges/jai.jpg"),
+          picture: require("~/assets/Judges/jai.jpg")
         },
         {
           name: "Vitalii Honcharuk",
           description: "Judge",
           url: "http://linkedin.com/in/vitalii-honcharuk",
-          picture: require("~/assets/Judges/vitalii.jpg"),
+          picture: require("~/assets/Judges/vitalii.jpg")
         },
         {
           name: "Nikita Starichenko",
           description: "Judge",
           url: "https://www.linkedin.com/in/nikita-starichenko/",
-          picture: require("~/assets/Judges/nikita.jpg"),
+          picture: require("~/assets/Judges/nikita.jpg")
         },
         {
           name: "Zhen Ruming",
           description: "Judge",
           url: "https://www.linkedin.com/in/zhenruming/",
-          picture: require("~/assets/Judges/zhen.jpeg"),
+          picture: require("~/assets/Judges/zhen.jpeg")
         },
         {
           name: "George Andronchik",
           description: "Judge",
           url: "http://linkedin.com/in/george-andronchik-a75749a1",
-          picture: require("~/assets/Judges/george.png"),
+          picture: require("~/assets/Judges/george.png")
         },
         {
           name: "Reshul Dani",
           description: "Judge",
           url: "https://www.linkedin.com/in/reshuldani/",
-          picture: require("~/assets/Judges/reshul.jpeg"),
+          picture: require("~/assets/Judges/reshul.jpeg")
         },
         {
           name: "Gaurav Rawal",
           description: "Judge",
           url: "https://www.twitter.com/iamgrawal",
-          picture: require("~/assets/Judges/Gaurav.jpeg"),
+          picture: require("~/assets/Judges/Gaurav.jpeg")
+        },
+        {
+          name: "Sreekaran",
+          url: "https://twitter.com/sk4rn",
+          description: "Judge",
+          picture: require("~/assets/Judges/sreekaran.png")
+        },
+        {
+          name: "Haimantika Mitra",
+          description: "Judge",
+          picture: require("~/assets/Judges/Haimantika.jpg")
+        },
+        {
+          name: "Abir Pal",
+          description: "Judge",
+          url: "https://linkedin.com/in/imabp",
+          picture: require("~/assets/Judges/abir.jpeg")
+        },
+        {
+          name: "Avinash Koshal",
+          description: "Judge",
+          url: "",
+          picture: require("~/assets/Judges/avinash.jpg")
+        },
+        {
+          name: "Arsh Goyal",
+          description: "Judge",
+          url: "",
+          picture: require("~/assets/Judges/Arsh.jpg")
+        },
+        {
+          name: "Bhargav Patel",
+          description: "Judge",
+          url: "",
+          picture: require("~/assets/Judges/Bhargav.jpg")
+        },
+        {
+          name: "Shivam Goyal",
+          description: "Judge",
+          url: "",
+          picture: require("~/assets/Judges/shivamGoyal.png")
+        },
+        {
+          name: "Vedant Bahel",
+          description: "Judge",
+          url: "",
+          picture: require("~/assets/Judges/vedantBahel.png")
+        },
+        {
+          name: "Ishan Sharma",
+          description: "Judge",
+          url: "https://linkedin.com/in/ishandeveloper",
+          picture: require("~/assets/Judges/ishanSharma.png")
+        },
+        {
+          name: "Akanksha Tanwar",
+          description: "Judge",
+          url: "",
+          picture: require("~/assets/Judges/akanshaTanwar.jpg")
+        },
+        {
+          name: "Madhav Bahl",
+          description: "Judge",
+          url: "",
+          picture: require("~/assets/Judges/madhav.jpeg")
+        },
+        {
+          name: "Srashti Jain",
+          description: "Judge",
+          url: "",
+          picture: require("~/assets/Judges/srashti.jpg")
+        },
+        {
+          name: "Aanshul Sadaria",
+          description: "Judge",
+          url: "",
+          picture: require("~/assets/Judges/Aanshul.jpg")
+        },
+        {
+          name: "Viktor Vikhrov",
+          description: "Judge",
+          url: "",
+          picture: require("~/assets/Judges/viktor.jpg")
         },
         {
           name: "Kartikey Rawat",
           description: "Machine Learning Mentor",
           url: "https://twitter.com/carrycooldude",
-          picture: require("~/assets/Mentors/kartikey.png"),
+          picture: require("~/assets/Mentors/kartikey.png")
         },
         {
           name: "Shubham Patel",
           description: "IOT Mentor",
           url: "https://twitter.com/shubham_patel21",
-          picture: require("~/assets/Mentors/shubham.jpeg"),
+          picture: require("~/assets/Mentors/shubham.jpeg")
         },
         {
           name: "Hargun Kaur",
           description: "MERN and Selenium Mentor",
           url: "https://www.linkedin.com/in/hargun-k-0b7815194/",
-          picture: require("~/assets/Mentors/hargun.png"),
+          picture: require("~/assets/Mentors/hargun.png")
         },
         {
           name: "Vaibhav Arora",
           description: "Python, ML/DL Mentor",
           url: "https://www.linkedin.com/in/vaibhav-arora-3005a818a/",
-          picture: require("~/assets/Mentors/vaibhav.jpg"),
+          picture: require("~/assets/Mentors/vaibhav.jpg")
         },
         {
           name: "Kuldeep Patel",
           description: "React and Firebase Mentor",
           url: "https://www.linkedin.com/in/patelkuldeep/",
-          picture: require("~/assets/Mentors/kuldeep.jpg"),
+          picture: require("~/assets/Mentors/kuldeep.jpg")
         },
         {
           name: "Aditya Teltia",
           description: "Web Development Mentor",
           url: "https://www.linkedin.com/in/aditya-teltia-a9a7731b4/",
-          picture: require("~/assets/Mentors/aditya.jpeg"),
+          picture: require("~/assets/Mentors/aditya.jpeg")
         },
         {
           name: "Smaranjit Ghose",
           description: "Artificial Intelligence Mentor",
           url: "https://www.linkedin.com/in/smaranjitghose/",
-          picture: require("~/assets/Mentors/smaranjit.jpeg"),
+          picture: require("~/assets/Mentors/smaranjit.jpeg")
         },
         {
           name: "Anshumaan Kumar Prasad",
           description: "Backend and API Development Mentor",
           url: "",
-          picture: require("~/assets/Mentors/anshumaan.jpg"),
+          picture: require("~/assets/Mentors/anshumaan.jpg")
         },
         {
           name: "Poornakashi",
           description: "Web Development and Python Mentor",
           url: "",
-          picture: require("~/assets/Mentors/poornakashi.jpg"),
+          picture: require("~/assets/Mentors/poornakashi.jpg")
         },
         {
           name: "Raghav Awasthi",
           description: "Android Development Mentor",
           url: "",
-          picture: require("~/assets/Mentors/raghav.jpg"),
+          picture: require("~/assets/Mentors/raghav.jpg")
         },
         {
           name: "Vanshika Garg",
           description: "Web and Android Development Mentor",
           url: "",
-          picture: require("~/assets/Mentors/vanshika.jpg"),
+          picture: require("~/assets/Mentors/vanshika.jpg")
         },
         {
           name: "Avnish Singh",
           description: "Web Development Mentor",
           url: "",
-          picture: require("~/assets/Mentors/avnish.jpg"),
+          picture: require("~/assets/Mentors/avnish.jpg")
         },
         {
           name: "Vanshita Singh",
           description: "UI/UX Design Mentor",
           url: "",
-          picture: require("~/assets/Mentors/vanshita.jpg"),
+          picture: require("~/assets/Mentors/vanshita.jpg")
         },
         {
           name: "Harsh Jain",
           description: "FrontEnd Development Mentor",
           url: "",
-          picture: require("~/assets/Mentors/harsh.jpeg"),
+          picture: require("~/assets/Mentors/harsh.jpeg")
         },
         {
-          name: "Kumar Satyarth",
-          description: "Blockchain Development Mentor",
+          name: "Sri Manikanta Palakollu",
+          description: "Blockchain Development and ML Mentor",
           url: "",
-          picture: require("~/assets/Mentors/satyarth.jpg"),
+          picture: require("~/assets/Mentors/manikanta.jpg")
         },
-      ],
+        {
+          name: "Anush Bhatia",
+          description: "FullStack Development and Cloud Computing Mentor",
+          url: "",
+          picture: require("~/assets/Mentors/anushBhatia.jpg")
+        }
+      ]
     };
-  },
+  }
 };
 </script>
 
