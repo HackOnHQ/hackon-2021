@@ -3,54 +3,58 @@
     <section class="content-section">
       <HashHeader title="Schedule" />
       <div class="contents">
-        <div
+        <span
           v-for="(schedule, index) in scheduleComplete"
           :key="index"
-          class="card"
+          :class="[index === selectedIndex ? 'activeDate' : '', 'allHeaders']"
+          @click="changeShownSchedule(index)"
         >
-          <div class="daily-header">{{ schedule.header }}</div>
-          <div class="daily-schedule">
-            <div
-              v-for="(event, index) in schedule.items"
-              :key="index"
-              class="single-event"
-            >
-              <div class="date-time">
-                <span class="time">
-                  {{ event.time }}
-                </span>
-                <span class="date">
-                  {{ schedule.date }}
-                </span>
+          <div class="headers">{{ schedule.header.split(",")[0] }}</div>
+          <br />
+        </span>
+        <!-- <div v-for="(schedule, index) in scheduleComplete" :key="index"> -->
+        <div class="daily-schedule">
+          <div
+            v-for="(event, index) in scheduleComplete[selectedIndex].items"
+            :key="index"
+            class="single-event"
+          >
+            <div class="date-time">
+              <span class="time">
+                {{ event.time }}
+              </span>
+              <span class="date">
+                {{ scheduleComplete[selectedIndex].date }}
+              </span>
+            </div>
+            <div :class="['description', event.type]">
+              <div class="speaker">
+                <img
+                  v-if="event.speaker !== undefined"
+                  :src="event.speaker.picture"
+                  class="avatar"
+                />
+                <div class="details">
+                  <span class="title">
+                    {{ event.title }}
+                  </span>
+                  <span class="name">
+                    <span v-if="event.speaker !== undefined">
+                      {{ event.speaker.name }} /
+                    </span>
+                    <span v-if="event.type === 'Workshop'" class="type">
+                      {{ event.type }}
+                    </span>
+                  </span>
+                </div>
               </div>
-              <div :class="['description', event.type]">
-                <div class="speaker">
-                  <img
-                    v-if="event.speaker !== undefined"
-                    :src="event.speaker.picture"
-                    class="avatar"
-                  />
-                  <div class="details">
-                    <span class="title">
-                      {{ event.title }}
-                    </span>
-                    <span class="name">
-                      <span v-if="event.speaker !== undefined">
-                        {{ event.speaker.name }} /
-                      </span>
-                      <span v-if="event.type !== 'Break'" class="type">
-                        {{ event.type }}
-                      </span>
-                    </span>
-                  </div>
-                </div>
-                <div v-if="event.type === 'Workshop'" class="more-details">
-                  More Details
-                  <img src="~/assets/faq-up-arrow.svg" />
-                </div>
+              <div v-if="event.type === 'Workshop'" class="more-details">
+                More Details
+                <img src="~/assets/faq-up-arrow.svg" />
               </div>
             </div>
           </div>
+          <!-- </div> -->
         </div>
       </div>
     </section>
@@ -68,24 +72,96 @@ export default {
   },
   data() {
     return {
+      selectedIndex: 0,
       scheduleComplete: [
         {
-          header: "Day 1 - April 11, 2021",
-          date: "April 11",
+          header: "Day 1 - May 28, 2021",
+          date: "May 28",
+          items: [
+            // {
+            //   title: "Web Development 101 with Angular",
+            //   type: "Workshop",
+            //   time: "21:00",
+            //   about:
+            //     "Talk about the importance of communities, and how a group of like-minded people can bring about an essential change in our lives.",
+            //   speaker: {
+            //     name: "Arnav Gupta",
+            //     designation: "Program Manager, Reactor Bangalore, Microsoft",
+            //     about:
+            //       "Paras is the Program Manager at Microsoft Reactor, Bangalore, who is also the Community Professional of the Year 2020.",
+            //     picture:
+            //       "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/de2017b2f5cd44da90dc782b28469487/703.jpeg",
+            //   },
+            // },
+            // {
+            //   title: "Community as a Cure",
+            //   type: "Workshop",
+            //   time: "11:00",
+            //   about:
+            //     "Talk about the importance of communities, and how a group of like-minded people can bring about an essential change in our lives.",
+            //   speaker: {
+            //     name: "Paras Pundir",
+            //     designation: "Program Manager, Reactor Bangalore, Microsoft",
+            //     about:
+            //       "Paras is the Program Manager at Microsoft Reactor, Bangalore, who is also the Community Professional of the Year 2020.",
+            //     picture:
+            //       "https://miro.medium.com/fit/c/1360/1360/2*1d2PU06qLbaY-3EqeQBUZQ.jpeg",
+            //   },
+            // },
+            {
+              title: "Check-In",
+              type: "Hackathon",
+              time: "10:00",
+            },
+            {
+              title: "Opening Ceremony",
+              type: "Hackathon",
+              time: "11:30",
+            },
+            {
+              title: "Hacking Begins",
+              type: "Hackathon",
+              time: "12:00",
+            },
+            {
+              title: "Mentorship Hours",
+              type: "Hackathon",
+              time: "15:00",
+            },
+            {
+              title: "Session with Elastic",
+              type: "Hackathon",
+              time: "18:00",
+            },
+            {
+              title: "Hackathon AMA with Sashrika",
+              type: "Hackathon",
+              time: "21:00",
+            },
+            {
+              title: "Break",
+              type: "Break",
+              time: "11:00",
+            },
+          ],
+        },
+        {
+          header: "Day 2 - May 29, 2021",
+          date: "May 29",
           items: [
             {
-              title: "Web Development 101 with Angular",
+              title: "Community as a Cure",
               type: "Workshop",
-              time: "21:00",
+              time: "11:00",
               about:
                 "Talk about the importance of communities, and how a group of like-minded people can bring about an essential change in our lives.",
               speaker: {
-                name: "Arnav Gupta",
+                name: "Paras Pundir",
                 designation: "Program Manager, Reactor Bangalore, Microsoft",
                 about:
                   "Paras is the Program Manager at Microsoft Reactor, Bangalore, who is also the Community Professional of the Year 2020.",
                 picture:
-                  "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/de2017b2f5cd44da90dc782b28469487/703.jpeg",
+                  "https://miro.medium.com/fit/c/1360/1360/2*1d2PU06qLbaY-3EqeQBUZQ.jpeg",
               },
             },
             {
@@ -121,10 +197,9 @@ export default {
             },
           ],
         },
-
         {
-          header: "Day 2 - April 12, 2021",
-          date: "April 12",
+          header: "Day 3 - May 30, 2021",
+          date: "May 30",
           items: [
             {
               title: "Community as a Cure",
@@ -177,24 +252,56 @@ export default {
       ],
     };
   },
+  methods: {
+    changeShownSchedule(index) {
+      this.selectedIndex = index;
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .content-section {
-  // display: flex;
   flex-direction: column;
   padding: 20px 0;
   .contents {
     padding: 10px 0;
 
-    .daily-header {
-      display: inline-block;
-      color: black;
-      padding: 0.2em 0.8em;
-      border-radius: 1.5em;
-      background-color: #7fc1c8;
-      font-family: Sen;
+    .allHeaders {
+      margin-left: 0.5em;
+
+      @media (max-width: 465px) {
+        margin-left: 0em;
+      }
+
+      &.activeDate {
+        .headers {
+          background-color: #e58ab2;
+        }
+      }
+
+      .headers {
+        margin-top: 0.2em;
+        display: inline-block;
+        color: black;
+        padding: 0.2em 0.8em;
+        border-radius: 1.5em;
+        background-color: #7fc1c8;
+        font-family: Sen;
+        cursor: pointer;
+      }
+
+      br {
+        display: none;
+
+        @media (max-width: 465px) {
+          display: block;
+        }
+      }
+    }
+
+    .allHeaders:nth-of-type(1) {
+      margin-left: 0em;
     }
 
     .daily-schedule {
