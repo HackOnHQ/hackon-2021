@@ -4,26 +4,29 @@
       <div class="navigation-contents">
         <!-- Branding area -->
         <div class="branding">
-          <a href="/"
-            ><h1 class="brand-text">
+          <NuxtLink to="/">
+            <h1 class="brand-text">
               HACK<span class="brand-char-o">O</span>N<span
                 class="brand-edition"
                 >2.0</span
               >
-            </h1></a
-          >
+            </h1>
+          </NuxtLink>
         </div>
         <!-- Menu area -->
         <div class="menu-area">
           <ul class="nav-links">
             <li>
-              <a href="/team">Team</a>
+              <NuxtLink to="/team">Team</NuxtLink>
             </li>
             <li>
               <a href="/#speakers">Speakers</a>
             </li>
             <li>
-              <a href="/prizes">Prizes</a>
+              <NuxtLink to="/#schedule">Schedule</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/prizes">Prizes</NuxtLink>
             </li>
             <li>
               <a href="/#workshops">Workshops</a>
@@ -117,7 +120,7 @@ export default {
       }
 
       .register-button {
-        @include respond-below(md) {
+        @media (max-width: 1070px) {
           display: none;
         }
         .cta-button {

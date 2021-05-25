@@ -291,12 +291,10 @@ export default {
       this.isModalVisible = true;
       this.modalData = index;
       document.querySelector("body").style.overflow = "hidden";
-      // document.querySelector(".workshops").classList.add = "modalOpen";
     },
     closeModal() {
       this.isModalVisible = false;
       document.querySelector("body").style.overflow = "initial";
-      // document.querySelector(".workshops").classList.remove = "modalOpen";
     },
   },
 };

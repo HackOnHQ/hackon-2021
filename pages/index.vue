@@ -6,8 +6,8 @@
     <RiddleSection />
     <TracksSection />
     <PrizesSection />
-    <SpeakersSection />
     <ScheduleSection />
+    <SpeakersSection />
     <WorkshopsSection />
     <SponsorsSection />
     <CommunityPartnersSection />

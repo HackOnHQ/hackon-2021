@@ -9,8 +9,7 @@
           :class="[index === selectedIndex ? 'activeDate' : '', 'allHeaders']"
           @click="changeShownSchedule(index)"
         >
-          <div class="headers">{{ schedule.header.split(",")[0] }}</div>
-          <br />
+          <div class="headers">{{ schedule.header.split(" -")[0] }}</div>
         </span>
         <!-- <div v-for="(schedule, index) in scheduleComplete" :key="index"> -->
         <div class="daily-schedule">
@@ -184,7 +183,7 @@ export default {
     padding: 10px 0;
 
     .allHeaders {
-      margin-left: 0.5em;
+      // margin-left: 0.5em;
 
       @media (max-width: 465px) {
         margin-left: 0em;
@@ -192,27 +191,18 @@ export default {
 
       &.activeDate {
         .headers {
-          background-color: #e58ab2;
+          background-color: #fff;
+        color: black;
         }
       }
 
       .headers {
         margin-top: 0.2em;
         display: inline-block;
-        color: black;
         padding: 0.2em 0.8em;
-        border-radius: 1.5em;
-        background-color: #7fc1c8;
+        background-color: #313742;
         font-family: Sen;
         cursor: pointer;
-      }
-
-      br {
-        display: none;
-
-        @media (max-width: 465px) {
-          display: block;
-        }
       }
     }
 
