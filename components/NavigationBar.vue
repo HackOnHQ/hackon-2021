@@ -23,7 +23,7 @@
               <a href="/#speakers">Speakers</a>
             </li>
             <li>
-              <NuxtLink to="/#schedule">Schedule</NuxtLink>
+              <a href="/#schedule">Schedule</a>
             </li>
             <li>
               <NuxtLink to="/prizes">Prizes</NuxtLink>
