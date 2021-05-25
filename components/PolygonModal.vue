@@ -57,7 +57,7 @@ export default {
               eligible for Incubation and Marketing Support from Polygon.
               <br /><br />
               To learn more, visit
-              <a href="/polygon">hackon.tech/polygon</a>
+              <NuxtLink to="/polygon">hackon.tech/polygon</NuxtLink>
             </div>
           </div>
         </section>

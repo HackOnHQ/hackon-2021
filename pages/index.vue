@@ -6,6 +6,7 @@
     <RiddleSection />
     <TracksSection />
     <PrizesSection />
+    <ScheduleSection />
     <SpeakersSection />
     <WorkshopsSection />
     <SponsorsSection />
@@ -22,10 +23,10 @@ import RiddleSection from "~/components/RiddleSection";
 import TracksSection from "~/components/TracksSection";
 import PrizesSection from "~/components/PrizesSection";
 import SpeakersSection from "~/components/SpeakersSection";
+import ScheduleSection from "~/components/ScheduleSection";
 import WorkshopsSection from "~/components/WorkshopsSection";
 import SponsorsSection from "~/components/SponsorsSection";
 import FAQSection from "~/components/FAQSection";
-import SchedulesSection from "~/components/SchedulesSection";
 import CommunityPartnersSection from "~/components/CommunityPartnersSection";
 import ScrollTopArrow from "~/components/ScrollTopArrow";
 
@@ -39,7 +40,7 @@ export default {
     SpeakersSection,
     SponsorsSection,
     CommunityPartnersSection,
-    SchedulesSection,
+    ScheduleSection,
     WorkshopsSection,
     PrizesSection,
     FAQSection,
