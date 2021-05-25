@@ -211,7 +211,7 @@ export default {
           name: "Praveen Kumar",
           description: "Judge and MERN Stack Mentor",
           url: "https://www.linkedin.com/in/praveentech/",
-          picture: require("~/assets/Judges/praveen.png")
+          picture: require("~/assets/Judges/praveen.jpeg")
         },
         {
           name: "Anush Krishna",
@@ -399,40 +399,46 @@ export default {
           picture: require("~/assets/Mentors/anshumaan.jpg")
         },
         {
-          name: "Poornakashi",
+          name: "Poornachandra Kashi",
           description: "Web Development and Python Mentor",
-          url: "",
+          url: "https://www.linkedin.com/in/poornachandrakashi",
           picture: require("~/assets/Mentors/poornakashi.jpg")
         },
         {
           name: "Raghav Awasthi",
           description: "Android Development Mentor",
-          url: "",
+          url: "https://www.linkedin.com/mwlite/in/iamraghavawasthi",
           picture: require("~/assets/Mentors/raghav.jpg")
         },
         {
           name: "Vanshika Garg",
-          description: "Web and Android Development Mentor",
-          url: "",
-          picture: require("~/assets/Mentors/vanshika.jpg")
+          description: "Web and ML Mentor",
+          url: "https://www.linkedin.com/in/vanshikagarg17/",
+          picture: require("~/assets/Mentors/vanshika.png")
         },
         {
           name: "Avnish Singh",
           description: "Web Development Mentor",
-          url: "",
+          url: "https://www.linkedin.com/in/avnish-singh-55671b186",
           picture: require("~/assets/Mentors/avnish.jpg")
         },
         {
           name: "Vanshita Singh",
           description: "UI/UX Design Mentor",
-          url: "",
+          url: "https://www.linkedin.com/in/vanshita25/",
           picture: require("~/assets/Mentors/vanshita.jpg")
         },
         {
           name: "Harsh Jain",
           description: "FrontEnd Development Mentor",
-          url: "",
+          url: "https://www.linkedin.com/in/harshjain2710/",
           picture: require("~/assets/Mentors/harsh.jpeg")
+        },
+        {
+          name: "Kumar Satyarth",
+          description: "BlockChain Development Mentor",
+          url: "http://ksatyarth2.in/",
+          picture: require("~/assets/Mentors/satyarth.jpg")
         },
         {
           name: "Sri Manikanta Palakollu",
