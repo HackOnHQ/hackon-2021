@@ -17,9 +17,9 @@
 
         <div class="panel">
           <h4 class="title">About HackOn Foundation</h4>
-          <NuxtLink to="/coc">Event Code Of Conduct</NuxtLink>
-          <a href="/mlhcoc">MLH Code Of Conduct</a>
-          <NuxtLink to="/team">Team Behind HackOn</NuxtLink>
+          <a href="/coc">Event Code Of Conduct</a>
+          <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code Of Conduct</a>
+          <a href="/team">Team Behind HackOn</a>
         </div>
 
         <div class="panel">
