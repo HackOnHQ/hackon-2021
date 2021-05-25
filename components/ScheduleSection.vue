@@ -42,15 +42,8 @@
                     <span v-if="event.speaker !== undefined">
                       {{ event.speaker.name }} /
                     </span>
-                    <span v-if="event.type === 'Workshop'" class="type">
-                      {{ event.type }}
-                    </span>
                   </span>
                 </div>
-              </div>
-              <div v-if="event.type === 'Workshop'" class="more-details">
-                More Details
-                <img src="~/assets/faq-up-arrow.svg" />
               </div>
             </div>
           </div>
@@ -78,36 +71,6 @@ export default {
           header: "Day 1 - May 28, 2021",
           date: "May 28",
           items: [
-            // {
-            //   title: "Web Development 101 with Angular",
-            //   type: "Workshop",
-            //   time: "21:00",
-            //   about:
-            //     "Talk about the importance of communities, and how a group of like-minded people can bring about an essential change in our lives.",
-            //   speaker: {
-            //     name: "Arnav Gupta",
-            //     designation: "Program Manager, Reactor Bangalore, Microsoft",
-            //     about:
-            //       "Paras is the Program Manager at Microsoft Reactor, Bangalore, who is also the Community Professional of the Year 2020.",
-            //     picture:
-            //       "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/be0de8e087c844d79199695d8997779f/judges/de2017b2f5cd44da90dc782b28469487/703.jpeg",
-            //   },
-            // },
-            // {
-            //   title: "Community as a Cure",
-            //   type: "Workshop",
-            //   time: "11:00",
-            //   about:
-            //     "Talk about the importance of communities, and how a group of like-minded people can bring about an essential change in our lives.",
-            //   speaker: {
-            //     name: "Paras Pundir",
-            //     designation: "Program Manager, Reactor Bangalore, Microsoft",
-            //     about:
-            //       "Paras is the Program Manager at Microsoft Reactor, Bangalore, who is also the Community Professional of the Year 2020.",
-            //     picture:
-            //       "https://miro.medium.com/fit/c/1360/1360/2*1d2PU06qLbaY-3EqeQBUZQ.jpeg",
-            //   },
-            // },
             {
               title: "Check-In",
               type: "Hackathon",
@@ -130,18 +93,13 @@ export default {
             },
             {
               title: "Session with Elastic",
-              type: "Hackathon",
+              type: "Workshop",
               time: "18:00",
             },
             {
               title: "Hackathon AMA with Sashrika",
-              type: "Hackathon",
+              type: "Workshop",
               time: "21:00",
-            },
-            {
-              title: "Break",
-              type: "Break",
-              time: "11:00",
             },
           ],
         },
@@ -150,50 +108,29 @@ export default {
           date: "May 29",
           items: [
             {
-              title: "Community as a Cure",
-              type: "Workshop",
-              time: "11:00",
-              about:
-                "Talk about the importance of communities, and how a group of like-minded people can bring about an essential change in our lives.",
-              speaker: {
-                name: "Paras Pundir",
-                designation: "Program Manager, Reactor Bangalore, Microsoft",
-                about:
-                  "Paras is the Program Manager at Microsoft Reactor, Bangalore, who is also the Community Professional of the Year 2020.",
-                picture:
-                  "https://miro.medium.com/fit/c/1360/1360/2*1d2PU06qLbaY-3EqeQBUZQ.jpeg",
-              },
-            },
-            {
-              title: "Community as a Cure",
-              type: "Workshop",
-              time: "11:00",
-              about:
-                "Talk about the importance of communities, and how a group of like-minded people can bring about an essential change in our lives.",
-              speaker: {
-                name: "Paras Pundir",
-                designation: "Program Manager, Reactor Bangalore, Microsoft",
-                about:
-                  "Paras is the Program Manager at Microsoft Reactor, Bangalore, who is also the Community Professional of the Year 2020.",
-                picture:
-                  "https://miro.medium.com/fit/c/1360/1360/2*1d2PU06qLbaY-3EqeQBUZQ.jpeg",
-              },
-            },
-            {
-              title: "Hackathon Begins",
+              title: "Announcements Day 2",
               type: "Hackathon",
-              time: "11:00",
-            },
-
-            {
-              title: "Break",
-              type: "Break",
-              time: "11:00",
+              time: "9:00",
             },
             {
-              title: "Hackathon Begins",
+              title: "Hacker Hangout 1",
+              type: "Workshop",
+              time: "11:30",
+            },
+            {
+              title: "Mentorship Hours",
               type: "Hackathon",
-              time: "11:00",
+              time: "14:00",
+            },
+            {
+              title: "MS Paint Bob Ross",
+              type: "Workshop",
+              time: "17:00",
+            },
+            {
+              title: "Hacker Hangout 2",
+              type: "Workshop",
+              time: "21:00",
             },
           ],
         },
@@ -202,50 +139,29 @@ export default {
           date: "May 30",
           items: [
             {
-              title: "Community as a Cure",
-              type: "Workshop",
-              time: "11:00",
-              about:
-                "Talk about the importance of communities, and how a group of like-minded people can bring about an essential change in our lives.",
-              speaker: {
-                name: "Paras Pundir",
-                designation: "Program Manager, Reactor Bangalore, Microsoft",
-                about:
-                  "Paras is the Program Manager at Microsoft Reactor, Bangalore, who is also the Community Professional of the Year 2020.",
-                picture:
-                  "https://miro.medium.com/fit/c/1360/1360/2*1d2PU06qLbaY-3EqeQBUZQ.jpeg",
-              },
-            },
-            {
-              title: "Community as a Cure",
-              type: "Workshop",
-              time: "11:00",
-              about:
-                "Talk about the importance of communities, and how a group of like-minded people can bring about an essential change in our lives.",
-              speaker: {
-                name: "Paras Pundir",
-                designation: "Program Manager, Reactor Bangalore, Microsoft",
-                about:
-                  "Paras is the Program Manager at Microsoft Reactor, Bangalore, who is also the Community Professional of the Year 2020.",
-                picture:
-                  "https://miro.medium.com/fit/c/1360/1360/2*1d2PU06qLbaY-3EqeQBUZQ.jpeg",
-              },
-            },
-            {
-              title: "Hackathon Begins",
+              title: "Announcements Day 3",
               type: "Hackathon",
-              time: "11:00",
-            },
-
-            {
-              title: "Break",
-              type: "Break",
-              time: "11:00",
+              time: "9:00",
             },
             {
-              title: "Hackathon Begins",
+              title: "Soft Deadline",
               type: "Hackathon",
-              time: "11:00",
+              time: "10:30",
+            },
+            {
+              title: "Hacking Ends",
+              type: "Hackathon",
+              time: "12:00",
+            },
+            {
+              title: "Showcase",
+              type: "Workshop",
+              time: "14:00",
+            },
+            {
+              title: "Closing Ceremony ",
+              type: "Hackathon",
+              time: "18:00",
             },
           ],
         },
@@ -317,16 +233,12 @@ export default {
         background-color: #151629;
         display: flex;
         flex-direction: column;
-        padding: 2em 1em 2em 5em;
+        padding: 1em 1em 1em 5em;
         text-align: right;
         white-space: nowrap;
 
-        @include respond-below(md) {
-          padding: 2em 1em 2em 1em;
-        }
-
         @include respond-below(sm) {
-          padding: 2em 0.5em 2em 0.5em;
+          padding: 1em 1em 1em 2.5em;
         }
 
         .time {
@@ -348,7 +260,6 @@ export default {
         margin-left: 1rem;
 
         @include respond-below(sm) {
-          margin-left: 0;
           padding-left: 1em;
         }
 
