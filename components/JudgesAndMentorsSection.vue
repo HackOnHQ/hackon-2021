@@ -178,6 +178,18 @@ export default {
           company: "Magic"
         },
         {
+          name: "Eric Giannini",
+          description: "Judge",
+          url: "https://www.linkedin.com/in/unicornmobile",
+          picture: require("~/assets/Speakers/Eric.jpeg")
+        },
+        {
+          name: "Akanksha Bhasin",
+          description: "Judge",
+          url: "https://www.linkedin.com/in/akankshabhasin",
+          picture: require("~/assets/Speakers/Akanksha.jpg")
+        },
+        {
           name: "Kathita",
           description: "Judge",
           url: "https://www.linkedin.com/in/kathita",

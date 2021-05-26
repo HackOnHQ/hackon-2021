@@ -104,7 +104,7 @@ export default {
           about: "",
           date: "15/05/2021",
           time: "8:00 PM",
-          url: "",
+          url: "https://www.youtube.com/watch?v=gv9BmcbHrA4",
           speaker: {
             name: "Kunal Kushwaha",
             designation: "MLH Coach",
@@ -117,7 +117,7 @@ export default {
           about: "",
           date: "16/05/2021",
           time: "8:00 PM",
-          url: "",
+          url: "https://www.youtube.com/watch?v=KeaaBBwnauM",
           speaker: {
             name: "Wilson Wang",
             designation: "Engineer Intern, OpenText",
@@ -130,7 +130,7 @@ export default {
           about: "",
           date: "16/05/2021",
           time: "8:00 PM",
-          url: "",
+          url: "https://www.youtube.com/watch?v=KeaaBBwnauM",
           speaker: {
             name: "Bowen Sun",
             designation: "",
@@ -169,7 +169,7 @@ export default {
           about: "",
           date: "20/05/2021",
           time: "6:00 PM",
-          url: "",
+          url: "https://www.youtube.com/watch?v=XFExMgnTSio",
           speaker: {
             name: "Sahil Sen",
             designation: "Developer Advocate, QuikNode",
@@ -178,11 +178,11 @@ export default {
           },
         },
         {
-          name: "AMA",
+          name: "Ask Me Anything",
           about: "",
           date: "21/05/2021",
           time: "8:00 PM",
-          url: "",
+          url: "https://www.youtube.com/watch?v=tZtXOAynxhY",
           speaker: {
             name: "Juan Pablo Flores Cortés",
             designation: "Program Manager, GitHub",
@@ -195,7 +195,7 @@ export default {
           about: "",
           date: "22/05/2021",
           time: "8:00 PM",
-          url: "",
+          url: "https://www.youtube.com/watch?v=rzxJgH9WwvI",
           speaker: {
             name: "Mara Hart",
             designation: "Returning Software Engineer Intern, Microsoft",
@@ -208,7 +208,7 @@ export default {
           about: "",
           date: "23/05/2021",
           time: "8:00 PM",
-          url: "",
+          url: "https://www.youtube.com/watch?v=vE1hN4o4Ny0",
           speaker: {
             name: "Shivay Lamba",
             designation: "Google Summer of Code Mentor @ Tensorflow",
@@ -221,7 +221,7 @@ export default {
           about: "",
           date: "24/05/2021",
           time: "4:30 PM",
-          url: "",
+          url: "https://www.youtube.com/watch?v=AWORI0G03DY",
           speaker: {
             name: "Ranjoy Sen",
             designation: "Staff Software Developer, Collins Aerospace",
@@ -230,11 +230,37 @@ export default {
           },
         },
         {
+          name: "Getting started with Symbl.ai in 15 mins",
+          about: "",
+          date: "24/05/2021",
+          time: "9:30 PM",
+          url: "https://www.youtube.com/watch?v=mIFr2hxqAUg",
+          speaker: {
+            name: "Eric Giannini",
+            designation: "Lead Developer Evangelist, Symbl.ai",
+            about: "",
+            picture: require("~/assets/Speakers/Eric.jpeg"),
+          },
+        },
+        {
+          name: "Getting started with Symbl.ai in 15 mins",
+          about: "",
+          date: "24/05/2021",
+          time: "9:30 PM",
+          url: "https://www.youtube.com/watch?v=mIFr2hxqAUg",
+          speaker: {
+            name: "Akanksha Bhasin",
+            designation: "Community Evangelist, Symbl.ai",
+            about: "",
+            picture: require("~/assets/Speakers/Akanksha.jpg"),
+          },
+        },
+        {
           name: "How to make your Open Source Project a Success?",
           about: "",
           date: "25/05/2021",
           time: "8:30 PM",
-          url: "",
+          url: "https://www.youtube.com/watch?v=DwONvABme5M",
           speaker: {
             name: "Eddie Jaoude",
             designation: "GitHub Star of the Year",
