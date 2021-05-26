@@ -62,7 +62,7 @@ export default {
           image1: require("~/assets/Prizes/5000-amazon.svg"),
           image2: require("~/assets/Prizes/amazon.png"),
           details:
-            "The best hack that implements GraphQL will win an <b>Amazon Voucher worth ₹7500</b>",
+            "The best hack that implements GraphQL will win an <b>Amazon Voucher worth ₹5000</b>",
         },
       ],
     };
