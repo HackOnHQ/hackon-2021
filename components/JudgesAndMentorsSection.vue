@@ -202,6 +202,12 @@ export default {
           picture: require("~/assets/Judges/santosh.png")
         },
         {
+          name: "Ekansh Gupta",
+          description: "Judge",
+          url: "https://twitter.com/ekuekanshgupta",
+          picture: require("~/assets/Judges/ekansh.jpeg")
+        },
+        {
           name: "Seema Saharan",
           description: "Judge",
           url: "https://twitter.com/SeemaSaharan5",
@@ -266,12 +272,6 @@ export default {
           description: "Judge",
           url: "http://linkedin.com/in/george-andronchik-a75749a1",
           picture: require("~/assets/Judges/george.png")
-        },
-        {
-          name: "Reshul Dani",
-          description: "Judge",
-          url: "https://www.linkedin.com/in/reshuldani/",
-          picture: require("~/assets/Judges/reshul.jpeg")
         },
         {
           name: "Gaurav Rawal",
