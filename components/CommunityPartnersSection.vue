@@ -87,6 +87,10 @@ export default {
           url: "https://gdg.community.dev/gdg-gwalior"
         },
         {
+          image: require("~/assets/Community/GDG New Delhi.png"),
+          url: "https://gdg.community.dev/gdg-new-delhi"
+        },
+        {
           image: require("~/assets/Community/DSC Amity.png"),
           url: "https://discord.gg/BSng5bRgwa"
         },
