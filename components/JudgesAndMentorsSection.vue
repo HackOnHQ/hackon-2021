@@ -178,6 +178,30 @@ export default {
           company: "Magic"
         },
         {
+          name: "Aravind Putrevu",
+          description: "Senior Developer Advocate",
+          url: "https://www.linkedin.com/in/aravindputrevu/",
+          picture: require("~/assets/Speakers/Aravind.jpeg"),
+          companyLogo: require("~/assets/Sponsors/elastic.svg"),
+          company: "Elastic",
+        },
+        {
+          name: "Ben Dechrai",
+          description: "Senior Developer Advocate",
+          url: "https://www.linkedin.com/in/bendechrai",
+          picture: require("~/assets/Speakers/Ben.jpeg"),
+          companyLogo: require("~/assets/Sponsors/Auth0.png"),
+          company: "Auth0",
+        },
+        {
+          name: "Sashrika Kaur",
+          description: "MLH Coach",
+          url: "https://www.linkedin.com/in/sashrika-kaur/",
+          picture: require("~/assets/Speakers/Sashrika.jpeg"),
+          companyLogo: require("~/assets/Sponsors/mlh.svg"),
+          company: "MLH",
+        },
+        {
           name: "Eric Giannini",
           description: "Judge",
           url: "https://www.linkedin.com/in/unicornmobile",

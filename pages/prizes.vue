@@ -28,6 +28,7 @@
         </div>
         <OtherPrizes />
         <AmagiAndElastic />
+        <Auth0AndRaahee />
         <MagicLabs />
         <GraphCMS />
         <MLH />
@@ -44,6 +45,7 @@ import HashHeader from "~/components/HashHeader";
 import SubHashHeader from "~/components/SubHashHeader";
 import OtherPrizes from "~/components/prizesPage/OtherPrizes.vue";
 import AmagiAndElastic from "~/components/prizesPage/AmagiAndElastic.vue";
+import Auth0AndRaahee from "~/components/prizesPage/Auth0AndRaahee.vue";
 import MagicLabs from "~/components/prizesPage/magicLabs.vue";
 import SawoAndPolygon from "~/components/prizesPage/SawoAndPolygon.vue";
 import GraphCMS from "~/components/prizesPage/graphCMS.vue";
@@ -57,6 +59,7 @@ export default {
     SubHashHeader,
     OtherPrizes,
     AmagiAndElastic,
+    Auth0AndRaahee,
     MagicLabs,
     SawoAndPolygon,
     GraphCMS,

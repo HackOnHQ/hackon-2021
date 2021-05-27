@@ -91,7 +91,7 @@ export default {
         },
         {
           name: "Haimantika Mitra",
-          description: "Judge | Support Engineer Intern",
+          description: "Support Engineer Intern",
           url: "https://twitter.com/HaimantikaM",
           picture: require("~/assets/Speakers/Haimantika.jpg"),
           companyLogo: require("~/assets/microsoft.svg"),
@@ -106,14 +106,6 @@ export default {
           company: "OutSystems",
         },
         {
-          name: "Madhav Bahl",
-          description: "Judge | Software Engineer",
-          url: "",
-          picture: require("~/assets/Judges/madhav.jpeg"),
-          companyLogo: require("~/assets/microsoft.svg"),
-          company: "Microsoft",
-        },
-        {
           name: "Mohammad Shahbaz Alam",
           description: "Developer Advocate",
           url: "https://twitter.com/mdsbzalam",
@@ -122,12 +114,12 @@ export default {
           company: "Magic",
         },
         {
-          name: "Kathita",
-          description: "Judge | Senior Product Manager",
-          url: "https://www.linkedin.com/in/kathita",
-          picture: require("~/assets/Judges/Kathita.jpeg"),
-          companyLogo: require("~/assets/google.png"),
-          company: "Google",
+          name: "Ben Dechrai",
+          description: "Senior Developer Advocate",
+          url: "https://www.linkedin.com/in/bendechrai",
+          picture: require("~/assets/Speakers/Ben.jpeg"),
+          companyLogo: require("~/assets/Sponsors/Auth0.png"),
+          company: "Auth0",
         },
       ],
     };
