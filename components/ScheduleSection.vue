@@ -129,6 +129,11 @@ export default {
             {
               title: "Hangout with Raahee",
               type: "Workshop",
+              time: "19:30",
+            },
+            {
+              title: "Hacker Hangout 2",
+              type: "Workshop",
               time: "21:00",
             },
           ],
