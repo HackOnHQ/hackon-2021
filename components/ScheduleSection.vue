@@ -112,7 +112,7 @@ export default {
               time: "9:00",
             },
             {
-              title: "Hacker Hangout 1",
+              title: "Auth0 Session",
               type: "Workshop",
               time: "11:30",
             },
@@ -127,7 +127,7 @@ export default {
               time: "17:00",
             },
             {
-              title: "Hacker Hangout 2",
+              title: "Hangout with Raahee",
               type: "Workshop",
               time: "21:00",
             },
@@ -158,7 +158,7 @@ export default {
               time: "14:00",
             },
             {
-              title: "Closing Ceremony ",
+              title: "Closing Ceremony",
               type: "Hackathon",
               time: "18:00",
             },
