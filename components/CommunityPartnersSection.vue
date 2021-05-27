@@ -59,6 +59,26 @@ export default {
           url: "https://linktr.ee/Equicode"
         },
         {
+          image: require("~/assets/Community/GDG New Delhi.png"),
+          url: "https://gdg.community.dev/gdg-new-delhi"
+        },
+        {
+          image: require("~/assets/Community/commudle.png"),
+          url: "https://commudle.com/"
+        },
+        {
+          image: require("~/assets/Community/WWCode_Delhi_White.png"),
+          url: "https://www.womenwhocode.com/delhi/"
+        },
+        {
+          image: require("~/assets/Community/Ds-Logo.png"),
+          url: "https://www.meetup.com/DesignSundays/"
+        },
+        {
+          image: require("~/assets/Community/GDG Cloud New Delhi.png"),
+          url: "https://gdg.community.dev/gdg-cloud-new-delhi/"
+        },
+        {
           image: require("~/assets/Community/DSC.png"),
           url: "https://developerstudentcommunity.co"
         },
@@ -85,10 +105,6 @@ export default {
         {
           image: require("~/assets/Community/GDG Gwalior.png"),
           url: "https://gdg.community.dev/gdg-gwalior"
-        },
-        {
-          image: require("~/assets/Community/GDG New Delhi.png"),
-          url: "https://gdg.community.dev/gdg-new-delhi"
         },
         {
           image: require("~/assets/Community/DSC Amity.png"),
