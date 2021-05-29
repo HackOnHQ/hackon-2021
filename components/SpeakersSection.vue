@@ -121,6 +121,14 @@ export default {
           companyLogo: require("~/assets/Sponsors/Auth0.png"),
           company: "Auth0",
         },
+        {
+          name: "Eric Giannini",
+          description: " Lead Developer Evangelist and Advocate",
+          url: "https://www.linkedin.com/in/unicornmobile",
+          picture: require("~/assets/Speakers/Eric.jpeg"),
+          companyLogo: require("~/assets/Sponsors/symbl.png"),
+          company: "Symbl.ai",
+        },
       ],
     };
   },

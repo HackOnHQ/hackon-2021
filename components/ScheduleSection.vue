@@ -11,7 +11,7 @@
         >
           <div class="headers">{{ schedule.header.split(" -")[0] }}</div>
         </span>
-        <!-- <div v-for="(schedule, index) in scheduleComplete" :key="index"> -->
+        <div class="disclaimer">*All the timings mentioned are in the IST timezone</div>
         <div class="daily-schedule">
           <div
             v-for="(event, index) in scheduleComplete[selectedIndex].items"
@@ -46,7 +46,6 @@
               </div>
             </div>
           </div>
-          <!-- </div> -->
         </div>
       </div>
     </section>
@@ -188,8 +187,6 @@ export default {
     padding: 10px 0;
 
     .allHeaders {
-      // margin-left: 0.5em;
-
       @media (max-width: 465px) {
         margin-left: 0em;
       }
@@ -213,6 +210,10 @@ export default {
 
     .allHeaders:nth-of-type(1) {
       margin-left: 0em;
+    }
+
+    .disclaimer {
+      color: #9ca4b6;
     }
 
     .daily-schedule {

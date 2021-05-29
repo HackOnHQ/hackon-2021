@@ -514,6 +514,18 @@ export default {
           description: "FullStack Development and Cloud Computing Mentor",
           url: "",
           picture: require("~/assets/Mentors/anushBhatia.jpg")
+        },
+        {
+          name: "Himanshu Sharma",
+          description: "Flutter Mentor",
+          url: "https://linkedin.com/in/himanshusharma89",
+          picture: require("~/assets/Mentors/Himanshu Sharma.jpg")
+        },
+        {
+          name: "Sri Harsha M.",
+          description: "FullStack Development and Java, Spring, Javascript Mentor",
+          url: "https://www.linkedin.com/in/sriharshareddymadireddy/",
+          picture: require("~/assets/Mentors/Sri-Harsha.jpeg")
         }
       ]
     };
