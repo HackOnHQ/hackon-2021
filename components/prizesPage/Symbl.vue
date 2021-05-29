@@ -27,13 +27,21 @@
                     </p>
                   </div>
                   <div class="card-side back">
-                    <img v-if="prize.detailImage" :src="prize.detailImage" />
-                    <span
-                      v-for="(para, index) in prize.description"
-                      :key="index"
-                    >
-                      <span v-html="para">{{}}</span>
-                    </span>
+                    <div class="image">
+                      <img
+                        :src="prize.image1"
+                        :alt="prize.name"
+                        class="prizeImage1"
+                      />
+                      <img
+                        :src="prize.image2"
+                        alt="amazon logo"
+                        class="prizeImage2"
+                      />
+                    </div>
+                    <div class="texts">
+                      <h4 class="prizeName">{{ prize.description }}</h4>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -52,23 +60,24 @@ import SubHashHeader from "~/components/SubHashHeader";
 export default {
   components: {
     Container,
-    SubHashHeader
+    SubHashHeader,
   },
   data() {
     return {
       sponsoredPrizes: [
         {
           name: "Symbl.ai",
-          detailImage: require("~/assets/Prizes/100usd-amazon.svg"),
+          image1: require("~/assets/Prizes/100-usd.svg"),
+          image2: require("~/assets/Prizes/amazon.png"),
           background: require("~/assets/Prizes/symblTransparent.png"),
           logo: require("~/assets/Prizes/symbl.png"),
           heading: "Best use of Symbl.ai",
           details: "The best hack built using the Symbl APIs",
-          description: ["$100 Amazon Voucher to winning team"]
-        }
-      ]
+          description: "$100 Amazon Voucher to winning team",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
@@ -136,14 +145,19 @@ export default {
           left: 10%;
 
           .image {
-            background-color: #fff;
-            border-radius: 15px;
-            height: 110px;
-            width: 110px;
-            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            margin-left: auto;
+            margin-right: auto;
 
-            img {
-              height: 100%;
+            .prizeImage1 {
+              width: 130px;
+            }
+
+            .prizeImage2 {
+              margin-top: -0.5rem;
+              width: 130px;
             }
           }
 
@@ -200,10 +214,6 @@ export default {
             }
             .card-side.back {
               transform: rotateY(-180deg);
-              .learn-more {
-                cursor: pointer;
-                color: #00ffa4;
-              }
             }
             &:hover .card-side.front {
               transform: rotateY(180deg);

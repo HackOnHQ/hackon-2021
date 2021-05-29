@@ -203,15 +203,35 @@ export default {
         },
         {
           name: "Eric Giannini",
-          description: "Judge",
+          description: " Lead Developer Evangelist and Advocate",
           url: "https://www.linkedin.com/in/unicornmobile",
-          picture: require("~/assets/Speakers/Eric.jpeg")
+          picture: require("~/assets/Speakers/Eric.jpeg"),
+          companyLogo: require("~/assets/Sponsors/symbl.png"),
+          company: "Symbl.ai",
         },
         {
           name: "Akanksha Bhasin",
-          description: "Judge",
+          description: "Community Evangelist",
           url: "https://www.linkedin.com/in/akankshabhasin",
-          picture: require("~/assets/Speakers/Akanksha.jpg")
+          picture: require("~/assets/Speakers/Akanksha.jpg"),
+          companyLogo: require("~/assets/Sponsors/symbl.png"),
+          company: "Symbl.ai",
+        },
+        {
+          name: "Pranshu Khanna",
+          description: "Community & Events Manager",
+          url: "https://twitter.com/inmypranshoes",
+          picture: require("~/assets/Speakers/Pranshu.jpg"),
+          companyLogo: require("~/assets/Sponsors/GraphCMS.png"),
+          company: "GraphCMS",
+        },
+        {
+          name: "Scott Spence",
+          description: "Developer Advocate",
+          url: "https://twitter.com/spences10",
+          picture: require("~/assets/Speakers/Scott.jpg"),
+          companyLogo: require("~/assets/Sponsors/GraphCMS.png"),
+          company: "GraphCMS",
         },
         {
           name: "Kathita",
@@ -380,6 +400,18 @@ export default {
           description: "Judge",
           url: "",
           picture: require("~/assets/Judges/viktor.jpg")
+        },
+        {
+          name: "Akshita Gupta",
+          description: "Judge",
+          url: "https://www.linkedin.com/in/akshitagupta7/",
+          picture: require("~/assets/Judges/Akshita.jpeg")
+        },
+        {
+          name: "Bhavik Makwana",
+          description: "Judge",
+          url: "https://www.linkedin.com/in/ibhavikmakwana/",
+          picture: require("~/assets/Judges/Bhavik.jpeg")
         },
         {
           name: "Kartikey Rawat",
