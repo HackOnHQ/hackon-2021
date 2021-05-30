@@ -103,7 +103,7 @@ export default {
           organiser: {
             name: "Siddharth Dayalwal",
             picture:
-              "https://media-exp1.licdn.com/dms/image/C4D03AQG3Ijm4ORcasQ/profile-displayphoto-shrink_200_200/0/1612435094711?e=1623283200&v=beta&t=zpPrJ6VHNhZ_f0rzOlO4_C7jXttZDjA7AgeqeGbQZSg",
+            "https://avatars.githubusercontent.com/u/41017419?s=460&u=ece0c309cba6ed5ecbe43a8845e2bd0e54fe210c&v=4",
           },
         },
         {
