@@ -374,6 +374,9 @@ export default {
       }
       .certi-form {
         display: flex;
+        @include respond-below(sm) {
+          flex-direction: column;
+        }
 
         .username-input {
           align-self: flex-start;
@@ -395,6 +398,11 @@ export default {
           transition: 0.2s all ease-in-out;
           height: 100%;
           margin-left: 0.4rem;
+
+          @include respond-below(sm) {
+            margin-left: 0;
+            margin-top: 0.2rem;
+          }
 
           .contentsDiscord {
             padding: 10px;
