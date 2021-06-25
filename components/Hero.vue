@@ -81,7 +81,7 @@
           </button>
         </div>
         <div class="certi-container">
-          <span class="certi-heading">Get Cerificate</span>
+          <span class="certi-heading">Get Certificate</span>
           <div class="certi-form">
             <input
               type="text"
@@ -90,7 +90,7 @@
               placeholder="Enter name"
             />
             <button class="ctaDiscord" v-on:click="getCertificate">
-              <div class="contentsDiscord">Get Cerificate</div>
+              <div class="contentsDiscord">Get Certificate</div>
             </button>
           </div>
         </div>
