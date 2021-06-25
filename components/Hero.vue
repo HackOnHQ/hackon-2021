@@ -128,8 +128,20 @@ export default {
         const obj = {};
         this.firstCall = true;
         Object.keys(this.certificates).forEach((key) => {
-          obj[key.toString().toLowerCase()] = this.certificates[key];
+          let og_url = this.certificates[key];
+          let url = og_url
+            .toLowerCase()
+            .split("/")
+            .pop()
+            .split(".")[0]
+            .replace(/\++/g, " ");
+          if (url.includes("Data Set")) {
+            obj[key.toString().toLowerCase()] = og_url;
+          } else {
+            obj[url] = og_url;
+          }
         });
+        console.log(obj);
         this.certificates = obj;
       }
 
