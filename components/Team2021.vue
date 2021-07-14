@@ -161,15 +161,12 @@ export default {
           linkedIn: "https://www.linkedin.com/in/khushi-sharma-2201/",
           github: "https://github.com/KhushiSharma22",
         },
-        // {
-        //   name: "Rishabh Bansal",
-        //   // description:
-        //   //   "Program Manager @HackerEarth. Conducting world-class Hackathons and Challenges to drive innovation and help companies hire developers.",
-        //   picture:
-        //     "https://media-exp1.licdn.com/dms/image/C4E03AQGN9WF9aic8Aw/profile-displayphoto-shrink_200_200/0/1608998142556?e=1625702400&v=beta&t=w4s3tmsCcollSmJvlvazPiqQ6rcB7WBfq92ru4Il74I",
-        //   linkedIn: "https://www.linkedin.com/in/rishabhbansal97/",
-        //   github: "https://github.com/rishabh-bansal"
-        // }
+        {
+          name: "Priyanshi Bhola",
+          picture: "https://avatars.githubusercontent.com/u/43310746?v=4",
+          linkedIn: "https://www.linkedin.com/in/priyanshibhola/",
+          github: "https://github.com/priyanshibhola",
+        },
       ],
     };
   },

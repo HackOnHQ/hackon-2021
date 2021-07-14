@@ -80,6 +80,20 @@
             </a>
           </button>
         </div>
+        <div class="certi-container">
+          <span class="certi-heading">Get Certificate</span>
+          <div class="certi-form">
+            <input
+              type="text"
+              v-model="username"
+              class="username-input"
+              placeholder="Enter name"
+            />
+            <button class="ctaDiscord" v-on:click="getCertificate">
+              <div class="contentsDiscord">Get Certificate</div>
+            </button>
+          </div>
+        </div>
         <p class="call-for-proposals">
           Interested in giving a talk or workshop?
           <a href="/cfp">Submit a proposal</a>
@@ -103,7 +117,54 @@ export default {
     return {
       text: ["Change", "Inclusion", "Diversity", "Community"],
       delay: 150,
+      username: "",
+      certificates: {},
+      firstCall: false,
     };
+  },
+  methods: {
+    getCertificate() {
+      if (Object.keys(this.certificates).length > 0 && !this.firstCall) {
+        const obj = {};
+        this.firstCall = true;
+        Object.keys(this.certificates).forEach((key) => {
+          let og_url = this.certificates[key];
+          let url = og_url
+            .toLowerCase()
+            .split("/")
+            .pop()
+            .split(".")[0]
+            .replace(/\++/g, " ");
+          if (url.includes("Data Set")) {
+            obj[key.toString().toLowerCase()] = og_url;
+          } else {
+            obj[url] = og_url;
+          }
+        });
+        console.log(obj);
+        this.certificates = obj;
+      }
+
+      if (this.username == "") {
+        return alert("Enter a name");
+      }
+
+      const certiUrl = this.certificates[this.username.toLowerCase()];
+      if (!certiUrl) {
+        return alert(
+          `No certificate found for ${this.username}. Please make sure you entered the name which you used for registration.`
+        );
+      }
+
+      window.location.href = certiUrl;
+
+      console.log(certiUrl);
+    },
+  },
+  async fetch() {
+    this.certificates = await fetch(
+      "https://hackon.tech/certificate.json"
+    ).then((res) => res.json());
   },
 };
 </script>
@@ -308,6 +369,69 @@ export default {
         &:hover {
           box-shadow: 0px 5px 20px rgba(40, 129, 245, 0.164);
           cursor: pointer;
+        }
+      }
+    }
+
+    .certi-container {
+      margin-top: 1rem;
+      .certi-heading {
+        font-size: 1.3rem;
+        font-weight: bold;
+
+        @include respond-below(sm) {
+          margin: 50px 0 10px;
+          font-size: 1rem;
+        }
+      }
+      .certi-form {
+        display: flex;
+        @include respond-below(sm) {
+          flex-direction: column;
+        }
+
+        .username-input {
+          align-self: flex-start;
+          background: var(--font-color);
+          border: 0;
+          font-size: 1.1rem;
+          border-radius: 10px;
+          padding: 10px;
+          transition: 0.2s all ease-in-out;
+          color: black;
+        }
+
+        .ctaDiscord {
+          align-self: flex-start;
+          background: var(--font-color);
+          border: 0;
+          border-radius: 10px;
+          padding: 4px;
+          transition: 0.2s all ease-in-out;
+          height: 100%;
+          margin-left: 0.4rem;
+
+          @include respond-below(sm) {
+            margin-left: 0;
+            margin-top: 0.2rem;
+          }
+
+          .contentsDiscord {
+            padding: 10px;
+            background: var(--font-color);
+            border-radius: 10px;
+            color: var(--color-secondary);
+            font-size: 1.1rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            opacity: 0.9;
+          }
+
+          &:hover {
+            box-shadow: 0px 5px 20px rgba(40, 129, 245, 0.164);
+            cursor: pointer;
+          }
         }
       }
     }
